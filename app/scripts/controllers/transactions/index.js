@@ -414,6 +414,7 @@ export default class TransactionController extends EventEmitter {
   @param {Object} txMeta
   */
   async updateAndApproveTransaction (txMeta) {
+    console.log('updateAndApproveTransaction', txMeta)
     this.txStateManager.updateTx(txMeta, 'confTx: user approved transaction')
     await this.approveTransaction(txMeta.id)
   }
@@ -427,6 +428,7 @@ export default class TransactionController extends EventEmitter {
     @param {number} txId - the tx's Id
   */
   async approveTransaction (txId) {
+    console.log('approveTransaction', txId)
     // TODO: Move this safety out of this function.
     // Since this transaction is async,
     // we need to keep track of what is currently being signed,
@@ -489,13 +491,17 @@ export default class TransactionController extends EventEmitter {
     @returns {string} - rawTx
   */
   async signTransaction (txId) {
+    console.log('signTransaction', txId)
     const txMeta = this.txStateManager.getTx(txId)
+    console.log('txMeta', txMeta)
     // add network/chain id
     const chainId = this.getChainId()
     const txParams = { ...txMeta.txParams, chainId }
+    console.log('txParams', txParams)
     // sign tx
     const fromAddress = txParams.from
     const ethTx = new Transaction(txParams)
+    console.log('await this.signEthTx(ethTx, fromAddress)')
     await this.signEthTx(ethTx, fromAddress)
 
     // add r,s,v values for provider request purposes see createMetamaskMiddleware

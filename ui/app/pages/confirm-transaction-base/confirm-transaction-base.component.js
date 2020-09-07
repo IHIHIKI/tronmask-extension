@@ -446,6 +446,9 @@ export default class ConfirmTransactionBase extends Component {
   }
 
   handleSubmit () {
+    console.log('handleSubmit')
+    console.log('props', this.props)
+    console.log('state', this.state)
     const { metricsEvent } = this.context
     const {
       txData: { origin },
@@ -463,6 +466,7 @@ export default class ConfirmTransactionBase extends Component {
     } = this.props
     const { submitting } = this.state
 
+    console.log({ onSubmit })
     if (submitting) {
       return
     }
@@ -496,6 +500,7 @@ export default class ConfirmTransactionBase extends Component {
                 updateCustomNonce('')
               })
               .catch((error) => {
+                console.error(error)
                 this.setState({
                   submitting: false,
                   submitError: error.message,
@@ -514,6 +519,7 @@ export default class ConfirmTransactionBase extends Component {
                 })
               })
               .catch((error) => {
+                console.error(error)
                 this.setState({
                   submitting: false,
                   submitError: error.message,

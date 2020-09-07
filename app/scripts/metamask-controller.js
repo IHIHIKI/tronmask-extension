@@ -178,6 +178,7 @@ export default class MetamaskController extends EventEmitter {
     })
 
     const additionalKeyrings = [TrezorKeyring, LedgerBridgeKeyring]
+    // @TODO(tron): replace with tron-keyring-controller!
     this.keyringController = new KeyringController({
       keyringTypes: additionalKeyrings,
       initState: initState.KeyringController,

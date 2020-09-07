@@ -825,6 +825,7 @@ export function updateTransaction (txData) {
 }
 
 export function updateAndApproveTx (txData) {
+  console.log('updateAndApproveTx', txData)
   return (dispatch) => {
     dispatch(showLoadingIndication())
     return new Promise((resolve, reject) => {
@@ -856,6 +857,7 @@ export function updateAndApproveTx (txData) {
       })
       .catch((err) => {
         dispatch(hideLoadingIndication())
+        console.error({ err })
         return Promise.reject(err)
       })
   }
