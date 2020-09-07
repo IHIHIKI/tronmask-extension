@@ -1,18 +1,1 @@
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#343434;}
-	.st1{fill:#8C8C8C;}
-	.st2{fill:#3C3C3B;}
-	.st3{fill:#141414;}
-	.st4{fill:#393939;}
-</style>
-<g id="XMLID_1_">
-	<polygon id="XMLID_2_" class="st0" points="250,67.5 247.5,75.8 247.5,317.2 250,319.6 362,253.4 	"/>
-	<polygon id="XMLID_3_" class="st1" points="250,67.5 137.9,253.4 250,319.6 250,202.5 	"/>
-	<polygon id="XMLID_4_" class="st2" points="250,340.8 248.6,342.5 248.6,428.5 250,432.5 362.1,274.6 	"/>
-	<polygon id="XMLID_5_" class="st1" points="250,432.5 250,340.8 137.9,274.6 	"/>
-	<polygon id="XMLID_6_" class="st3" points="250,319.6 362,253.4 250,202.5 	"/>
-	<polygon id="XMLID_7_" class="st4" points="137.9,253.4 250,319.6 250,202.5 	"/>
-</g>
-</svg>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><style>.cls-1{fill:#ff060a;}</style></defs><title>tron</title><g id="tron"><path class="cls-1" d="M61.55,19.28c-3-2.77-7.15-7-10.53-10l-.2-.14a3.82,3.82,0,0,0-1.11-.62l0,0C41.56,7,3.63-.09,2.89,0a1.4,1.4,0,0,0-.58.22L2.12.37a2.23,2.23,0,0,0-.52.84l-.05.13v.71l0,.11C5.82,14.05,22.68,53,26,62.14c.2.62.58,1.8,1.29,1.86h.16c.38,0,2-2.14,2-2.14S58.41,26.74,61.34,23a9.46,9.46,0,0,0,1-1.48A2.41,2.41,0,0,0,61.55,19.28ZM36.88,23.37,49.24,13.12l7.25,6.68Zm-4.8-.67L10.8,5.26l34.43,6.35ZM34,27.27l21.78-3.51-24.9,30ZM7.91,7,30.3,26,27.06,53.78Z"/></g></svg>
