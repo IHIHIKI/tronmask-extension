@@ -394,6 +394,9 @@
   "connectingToMainnet": {
     "message": "Connecting to Main Ethereum Network"
   },
+  "connectingToTronnile": {
+    "message": "Connecting to Tron Nile Test Network"
+  },
   "connectingToRopsten": {
     "message": "Connecting to Ropsten Test Network"
   },
@@ -1230,6 +1233,9 @@
   },
   "ropsten": {
     "message": "Ropsten Test Network"
+  },
+  "tronnile": {
+    "message": "Tron Nile Test Network"
   },
   "goerli": {
     "message": "Goerli Test Network"

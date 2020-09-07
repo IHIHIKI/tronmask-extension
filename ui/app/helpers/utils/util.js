@@ -98,6 +98,9 @@ export function numericBalance (balance) {
   return new ethUtil.BN(stripped, 16)
 }
 
+// const DECIMALS = 18;
+const DECIMALS = 18
+
 // Takes  hex, returns [beforeDecimal, afterDecimal]
 export function parseBalance (balance) {
   let afterDecimal
@@ -105,8 +108,8 @@ export function parseBalance (balance) {
   const weiString = wei.toString()
   const trailingZeros = /0+$/u
 
-  const beforeDecimal = weiString.length > 18 ? weiString.slice(0, weiString.length - 18) : '0'
-  afterDecimal = (`000000000000000000${wei}`).slice(-18).replace(trailingZeros, '')
+  const beforeDecimal = weiString.length > DECIMALS ? weiString.slice(0, weiString.length - DECIMALS) : '0'
+  afterDecimal = (`000000000000000000${wei}`).slice(-DECIMALS).replace(trailingZeros, '')
   if (afterDecimal === '') {
     afterDecimal = '0'
   }

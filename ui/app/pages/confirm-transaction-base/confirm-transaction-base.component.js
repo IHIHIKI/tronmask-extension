@@ -495,6 +495,13 @@ export default class ConfirmTransactionBase extends Component {
                 })
                 updateCustomNonce('')
               })
+              .catch((error) => {
+                this.setState({
+                  submitting: false,
+                  submitError: error.message,
+                })
+                updateCustomNonce('')
+              })
           } else {
             sendTransaction(txData)
               .then(() => {

@@ -11,6 +11,7 @@ import createMetamaskMiddleware from './createMetamaskMiddleware'
 import createInfuraClient from './createInfuraClient'
 import createJsonRpcClient from './createJsonRpcClient'
 import createLocalhostClient from './createLocalhostClient'
+import createJavaTronClient from './createJavaTronClient'
 
 import {
   RINKEBY,
@@ -144,7 +145,7 @@ export default class NetworkController extends EventEmitter {
 
   async setProviderType (type, rpcTarget = '', ticker = 'ETH', nickname = '') {
     assert.notEqual(type, 'rpc', `NetworkController - cannot call "setProviderType" with type 'rpc'. use "setRpcTarget"`)
-    assert(INFURA_PROVIDER_TYPES.includes(type) || type === LOCALHOST, `NetworkController - Unknown rpc type "${type}"`)
+    // assert(INFURA_PROVIDER_TYPES.includes(type) || type === LOCALHOST, `NetworkController - Unknown rpc type "${type}"`)
     const providerConfig = { type, rpcTarget, ticker, nickname }
     this.providerConfig = providerConfig
   }
@@ -173,10 +174,14 @@ export default class NetworkController extends EventEmitter {
   }
 
   _configureProvider (opts) {
+    console.log('configurePovider', opts)
     const { type, rpcTarget, chainId, ticker, nickname } = opts
     // infura type-based endpoints
+    const isTron = ['tronnile', 'tronmainnet'].includes(type)
     const isInfura = INFURA_PROVIDER_TYPES.includes(type)
-    if (isInfura) {
+    if (isTron) {
+      this._configureJavaTronProvider(opts)
+    } else if (isInfura) {
       this._configureInfuraProvider(opts)
     // other type-based rpc endpoints
     } else if (type === LOCALHOST) {
@@ -187,6 +192,29 @@ export default class NetworkController extends EventEmitter {
     } else {
       throw new Error(`NetworkController - _configureProvider - unknown type "${type}"`)
     }
+  }
+
+  _configureJavaTronProvider ({ type }) {
+    log.info('NetworkController - configureJavaTronProvider', type)
+    console.log('todo')
+    const networkClient = createJavaTronClient(type)
+    this._setNetworkClient(networkClient)
+    const settings = {
+      ticker: 'TRX',
+    }
+    this.networkConfig.putState(settings)
+
+    /*
+    const networkClient = createInfuraClient({
+      network: type,
+    })
+    this._setNetworkClient(networkClient)
+    // setup networkConfig
+    const settings = {
+      ticker: 'ETH',
+    }
+    this.networkConfig.putState(settings)
+    */
   }
 
   _configureInfuraProvider ({ type }) {

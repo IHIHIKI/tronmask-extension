@@ -9,6 +9,15 @@ const defaultNetworksData = [
     blockExplorerUrl: 'https://etherscan.io',
   },
   {
+    labelKey: 'tronnile',
+    iconColor: '#29B6AF',
+    providerType: 'tronnile',
+    rpcUrl: 'https://java-tron-nile.opentron.org',
+    chainId: '201910292',
+    ticker: 'TRX',
+    blockExplorerUrl: 'https://tronscan.org',
+  },
+  {
     labelKey: 'ropsten',
     iconColor: '#FF4A8D',
     providerType: 'ropsten',

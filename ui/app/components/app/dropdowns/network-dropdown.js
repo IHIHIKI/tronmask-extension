@@ -129,7 +129,7 @@ class NetworkDropdown extends Component {
 
     return reversedRpcListDetail.map((entry) => {
       const rpc = entry.rpcUrl
-      const ticker = entry.ticker || 'ETH'
+      const ticker = entry.ticker || 'TRX'
       const nickname = entry.nickname || ''
       const currentRpcTarget = provider.type === 'rpc' && rpc === provider.rpcTarget
 
@@ -186,6 +186,8 @@ class NetworkDropdown extends Component {
       name = this.context.t('mainnet')
     } else if (providerName === 'ropsten') {
       name = this.context.t('ropsten')
+    } else if (providerName === 'tronnile') {
+      name = this.context.t('tronnile')
     } else if (providerName === 'kovan') {
       name = this.context.t('kovan')
     } else if (providerName === 'rinkeby') {
@@ -265,6 +267,29 @@ class NetworkDropdown extends Component {
             }}
           >
             {this.context.t('mainnet')}
+          </span>
+        </DropdownMenuItem>
+        <DropdownMenuItem
+          key="tronnile"
+          closeMenu={() => this.props.hideNetworkDropdown()}
+          onClick={() => this.handleClick('tronnile')}
+          style={dropdownMenuItemStyle}
+        >
+          {
+            providerType === 'tronnile'
+              ? <i className="fa fa-check" />
+              : <div className="network-check__transparent">✓</div>
+          }
+          <NetworkDropdownIcon backgroundColor="#ff4a8d" isSelected={providerType === 'tronnile'} />
+          <span
+            className="network-name-item"
+            style={{
+              color: providerType === 'tronnile'
+                ? '#ffffff'
+                : '#9b9b9b',
+            }}
+          >
+            {this.context.t('tronnile')}
           </span>
         </DropdownMenuItem>
         <DropdownMenuItem
