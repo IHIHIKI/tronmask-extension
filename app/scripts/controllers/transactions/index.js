@@ -7,6 +7,7 @@ import { ethErrors } from 'eth-json-rpc-errors'
 import abi from 'human-standard-token-abi'
 import { ethers } from 'ethers'
 import NonceTracker from 'nonce-tracker'
+import { broadcastTronTransaction } from '@opentron/tron-sig-util'
 import log from 'loglevel'
 import {
   TOKEN_METHOD_APPROVE,
@@ -414,7 +415,6 @@ export default class TransactionController extends EventEmitter {
   @param {Object} txMeta
   */
   async updateAndApproveTransaction (txMeta) {
-    console.log('updateAndApproveTransaction', txMeta)
     this.txStateManager.updateTx(txMeta, 'confTx: user approved transaction')
     await this.approveTransaction(txMeta.id)
   }
@@ -428,7 +428,6 @@ export default class TransactionController extends EventEmitter {
     @param {number} txId - the tx's Id
   */
   async approveTransaction (txId) {
-    console.log('approveTransaction', txId)
     // TODO: Move this safety out of this function.
     // Since this transaction is async,
     // we need to keep track of what is currently being signed,
@@ -465,7 +464,6 @@ export default class TransactionController extends EventEmitter {
       // sign transaction
       const rawTx = await this.signTransaction(txId)
       await this.publishTransaction(txId, rawTx)
-      // must set transaction to submitted/failed before releasing lock
       nonceLock.releaseLock()
     } catch (err) {
       // this is try-catch wrapped so that we can guarantee that the nonceLock is released
@@ -491,18 +489,16 @@ export default class TransactionController extends EventEmitter {
     @returns {string} - rawTx
   */
   async signTransaction (txId) {
-    console.log('signTransaction', txId)
     const txMeta = this.txStateManager.getTx(txId)
-    console.log('txMeta', txMeta)
     // add network/chain id
     const chainId = this.getChainId()
     const txParams = { ...txMeta.txParams, chainId }
-    console.log('txParams', txParams)
     // sign tx
     const fromAddress = txParams.from
     const ethTx = new Transaction(txParams)
-    console.log('await this.signEthTx(ethTx, fromAddress)')
-    await this.signEthTx(ethTx, fromAddress)
+    await this.signEthTx(ethTx, fromAddress, { chainId })
+    const { tronTx } = ethTx
+    txMeta.tronTx = tronTx
 
     // add r,s,v values for provider request purposes see createMetamaskMiddleware
     // and JSON rpc standard for further explanation
@@ -514,7 +510,11 @@ export default class TransactionController extends EventEmitter {
 
     // set state to signed
     this.txStateManager.setTxStatusSigned(txMeta.id)
-    const rawTx = ethUtil.bufferToHex(ethTx.serialize())
+    // const rawTx = ethUtil.bufferToHex(ethTx.serialize())
+    this.setTxHash(txId, tronTx.txID) // @TRON
+    // TODO: need to rebuild tx hex with the signature using protobuf
+    // lib... cant broadcast that rawTx directly as it is not signed
+    const rawTx = `0x${tronTx.raw_data_hex}`
     return rawTx
   }
 
@@ -530,11 +530,19 @@ export default class TransactionController extends EventEmitter {
     this.txStateManager.updateTx(txMeta, 'transactions#publishTransaction')
     let txHash
     try {
-      txHash = await this.query.sendRawTransaction(rawTx)
+      const chainId = this.getChainId()
+      const data = await broadcastTronTransaction(txMeta.tronTx, { chainId })
+      txHash = data.txid
+      // TODO: use this.query.sendRawTransaction when our rawTx contains the signature
+      // txHash = await this.query.sendRawTransaction(rawTx)
     } catch (error) {
+      console.error({ error })
+      // TRON: todo
       if (error.message.toLowerCase().includes('known transaction')) {
-        txHash = ethUtil.sha3(ethUtil.addHexPrefix(rawTx)).toString('hex')
-        txHash = ethUtil.addHexPrefix(txHash)
+        // txHash = rawTx.txID
+        // txHash = ethUtil.sha3(ethUtil.addHexPrefix(rawTx)).toString('hex')
+        // txHash = ethUtil.addHexPrefix(txHash)
+        throw error
       } else {
         throw error
       }
