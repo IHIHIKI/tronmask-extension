@@ -6,11 +6,9 @@ import { bnToHex } from '../lib/util'
 import fetchWithTimeout from '../lib/fetch-with-timeout'
 
 import {
-  ROPSTEN,
-  RINKEBY,
-  KOVAN,
-  GOERLI,
   MAINNET,
+  NILE,
+  SHASTA,
   NETWORK_TYPE_TO_ID_MAP,
 } from './network/enums'
 
@@ -43,10 +41,8 @@ export default class IncomingTransactionsController {
     const initState = {
       incomingTransactions: {},
       incomingTxLastFetchedBlocksByNetwork: {
-        [ROPSTEN]: null,
-        [RINKEBY]: null,
-        [KOVAN]: null,
-        [GOERLI]: null,
+        [NILE]: null,
+        [SHASTA]: null,
         [MAINNET]: null,
       }, ...opts.initState,
     }

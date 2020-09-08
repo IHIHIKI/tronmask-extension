@@ -1,5 +1,5 @@
 import ethUtil from 'ethereumjs-util'
-import { ETH, GWEI, WEI } from '../constants/common'
+import { TRX, GWEI, WEI } from '../constants/common'
 import { conversionUtil, addCurrencies, subtractCurrencies } from './conversion-util'
 
 export function bnToHex (inputBn) {
@@ -20,7 +20,7 @@ export function decimalToHex (decimal) {
   })
 }
 
-export function getEthConversionFromWeiHex ({ value, fromCurrency = ETH, conversionRate, numberOfDecimals = 6 }) {
+export function getEthConversionFromWeiHex ({ value, fromCurrency = TRX, conversionRate, numberOfDecimals = 6 }) {
   const denominations = [fromCurrency, GWEI, WEI]
 
   let nonZeroDenomination
@@ -46,7 +46,7 @@ export function getEthConversionFromWeiHex ({ value, fromCurrency = ETH, convers
 
 export function getValueFromWeiHex ({
   value,
-  fromCurrency = ETH,
+  fromCurrency = TRX,
   toCurrency,
   conversionRate,
   numberOfDecimals,
@@ -74,7 +74,7 @@ export function getWeiHexFromDecimalValue ({
   return conversionUtil(value, {
     fromNumericBase: 'dec',
     toNumericBase: 'hex',
-    toCurrency: ETH,
+    toCurrency: TRX,
     fromCurrency,
     conversionRate,
     invertConversionRate,
@@ -105,7 +105,7 @@ export function decEthToConvertedCurrency (ethTotal, convertedCurrency, conversi
   return conversionUtil(ethTotal, {
     fromNumericBase: 'dec',
     toNumericBase: 'dec',
-    fromCurrency: 'ETH',
+    fromCurrency: 'TRX',
     toCurrency: convertedCurrency,
     numberOfDecimals: 2,
     conversionRate,
@@ -134,7 +134,7 @@ export function decETHToDecWEI (decEth) {
   return conversionUtil(decEth, {
     fromNumericBase: 'dec',
     toNumericBase: 'dec',
-    fromDenomination: 'ETH',
+    fromDenomination: 'TRX',
     toDenomination: 'WEI',
   })
 }

@@ -45,3 +45,5 @@ notes.txt
 .nyc_output
 
 .metamaskrc
+# temp disable test.js for rg to work lol
+*.test.js

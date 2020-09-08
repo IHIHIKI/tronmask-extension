@@ -14,13 +14,14 @@ import log from 'loglevel'
 import pify from 'pify'
 import Web3 from 'web3'
 import SINGLE_CALL_BALANCES_ABI from 'single-call-balance-checker-abi'
-import { MAINNET_NETWORK_ID, RINKEBY_NETWORK_ID, ROPSTEN_NETWORK_ID, KOVAN_NETWORK_ID } from '../controllers/network/enums'
+import { /* MAINNET_NETWORK_ID,*/ NILE_NETWORK_ID } from '../controllers/network/enums'
 
 import {
-  SINGLE_CALL_BALANCES_ADDRESS,
-  SINGLE_CALL_BALANCES_ADDRESS_RINKEBY,
-  SINGLE_CALL_BALANCES_ADDRESS_ROPSTEN,
-  SINGLE_CALL_BALANCES_ADDRESS_KOVAN,
+  SINGLE_CALL_BALANCES_ADDRESS_NILE,
+  // @TODO(tron)
+  // SINGLE_CALL_BALANCES_ADDRESS_RINKEBY,
+  // SINGLE_CALL_BALANCES_ADDRESS_ROPSTEN,
+  // SINGLE_CALL_BALANCES_ADDRESS_KOVAN,
 } from '../controllers/network/contract-addresses'
 import { bnToHex } from './util'
 
@@ -199,6 +200,14 @@ export default class AccountTracker {
     const currentNetwork = this.network.getNetworkState()
 
     switch (currentNetwork) {
+      case NILE_NETWORK_ID.toString():
+        await this._updateAccountsViaBalanceChecker(addresses, SINGLE_CALL_BALANCES_ADDRESS_NILE)
+        break
+
+        /*
+
+         @TODO(tron): deploy mainnet BalanceChecker contract
+
       case MAINNET_NETWORK_ID.toString():
         await this._updateAccountsViaBalanceChecker(addresses, SINGLE_CALL_BALANCES_ADDRESS)
         break
@@ -214,6 +223,7 @@ export default class AccountTracker {
       case KOVAN_NETWORK_ID.toString():
         await this._updateAccountsViaBalanceChecker(addresses, SINGLE_CALL_BALANCES_ADDRESS_KOVAN)
         break
+        */
 
       default:
         await Promise.all(addresses.map(this._updateAccount.bind(this)))

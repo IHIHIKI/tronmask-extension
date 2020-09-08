@@ -1,13 +1,13 @@
 import { useSelector } from 'react-redux'
 import { getPreferences, getShouldShowFiat, getNativeCurrency } from '../selectors'
-import { PRIMARY, SECONDARY, ETH } from '../helpers/constants/common'
+import { PRIMARY, SECONDARY, TRX } from '../helpers/constants/common'
 
 /**
  * Defines the shape of the options parameter for useUserPreferencedCurrency
  * @typedef {Object} UseUserPreferencedCurrencyOptions
  * @property {number} [numberOfDecimals]     - Number of significant decimals to display
  * @property {number} [ethNumberOfDecimals]  - Number of significant decimals to display
- *                                             when using ETH
+ *                                             when using TRX
  * @property {number} [fiatNumberOfDecimals] - Number of significant decimals to display
  *                                            when using fiat
  */
@@ -15,7 +15,7 @@ import { PRIMARY, SECONDARY, ETH } from '../helpers/constants/common'
 /**
  * Defines the return shape of useUserPreferencedCurrency
  * @typedef {Object} UserPreferredCurrency
- * @property {string} currency         - the currency type to use (eg: 'ETH', 'usd')
+ * @property {string} currency         - the currency type to use (eg: 'TRX', 'usd')
  * @property {number} numberOfDecimals - Number of significant decimals to display
  */
 
@@ -39,8 +39,8 @@ export function useUserPreferencedCurrency (type, opts = {}) {
   let currency, numberOfDecimals
   if (!showFiat || (type === PRIMARY && useNativeCurrencyAsPrimaryCurrency) ||
     (type === SECONDARY && !useNativeCurrencyAsPrimaryCurrency)) {
-    // Display ETH
-    currency = nativeCurrency || ETH
+    // Display TRX
+    currency = nativeCurrency || TRX
     numberOfDecimals = opts.numberOfDecimals || opts.ethNumberOfDecimals || 6
   } else if ((type === SECONDARY && useNativeCurrencyAsPrimaryCurrency) ||
     (type === PRIMARY && !useNativeCurrencyAsPrimaryCurrency)) {

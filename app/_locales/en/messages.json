@@ -392,9 +392,9 @@
     "message": "Connecting to Kovan Test Network"
   },
   "connectingToMainnet": {
-    "message": "Connecting to Main Ethereum Network"
+    "message": "Connecting to Main Tron Network"
   },
-  "connectingToTronnile": {
+  "connectingToNile": {
     "message": "Connecting to Tron Nile Test Network"
   },
   "connectingToRopsten": {
@@ -907,7 +907,7 @@
     "message": "Lock time is too great"
   },
   "mainnet": {
-    "message": "Main Ethereum Network"
+    "message": "Main Tron Network"
   },
   "memorizePhrase": {
     "message": "Memorize this phrase."
@@ -1234,7 +1234,7 @@
   "ropsten": {
     "message": "Ropsten Test Network"
   },
-  "tronnile": {
+  "nile": {
     "message": "Tron Nile Test Network"
   },
   "goerli": {
