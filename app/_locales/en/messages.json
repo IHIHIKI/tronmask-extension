@@ -74,7 +74,7 @@
     "message": "Select this to use Etherscan to show incoming transactions in the transactions list"
   },
   "chartOnlyAvailableEth": {
-    "message": "Chart only available on Ethereum networks."
+    "message": "Chart only available on Tron networks."
   },
   "connecting": {
     "message": "Connecting..."
@@ -217,7 +217,7 @@
     "message": "Amount:"
   },
   "appDescription": {
-    "message": "An Ethereum Wallet in your Browser",
+    "message": "A Tron Wallet in your Browser",
     "description": "The description of the application"
   },
   "appName": {
@@ -576,7 +576,7 @@
     "message": "Error in ENS name registration"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "ENS name not found on the current network. Try switching to Main Ethereum Network."
+    "message": "ENS name not found on the current network. Try switching to Main Tron Network."
   },
   "enterAnAlias": {
     "message": "Enter an alias"
@@ -623,7 +623,7 @@
     "description": "Title for error stack, which is displayed for debugging purposes"
   },
   "ethereumPublicAddress": {
-    "message": "Ethereum Public Address"
+    "message": "Tron Public Address"
   },
   "etherscanView": {
     "message": "View account on Etherscan"
@@ -919,7 +919,7 @@
     "message": "Click it to manage your connected accounts."
   },
   "metamaskDescription": {
-    "message": "Connecting you to Ethereum and the Decentralized Web."
+    "message": "Connecting you to Tron and the Decentralized Web."
   },
   "metamaskVersion": {
     "message": "TronMask Version"
@@ -1005,7 +1005,7 @@
     "message": "Only connect with sites you trust."
   },
   "onlyAddTrustedNetworks": {
-    "message": "A malicious Ethereum network provider can lie about the state of the blockchain and record your network activity. Only add custom networks you trust."
+    "message": "A malicious Tron network provider can lie about the state of the blockchain and record your network activity. Only add custom networks you trust."
   },
   "optionalChainId": {
     "message": "ChainID (optional)"
@@ -1456,7 +1456,7 @@
     "message": "3. Start using web3 sites and more!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Use your hardware account like you would with any Ethereum account. Connect to web3 sites, send ETH, buy and store ERC20 tokens and non-fungible tokens like CryptoKitties."
+    "message": "Use your hardware account like you would with any Tron account. Connect to web3 sites, send ETH, buy and store ERC20 tokens and non-fungible tokens like CryptoKitties."
   },
   "storePhrase": {
     "message": "Store this phrase in a password manager like 1Password."
@@ -1589,7 +1589,7 @@
     "message": "Transaction Time"
   },
   "showTransactionTimeDescription": {
-    "message": "Select this to display pending transaction time estimates in the activity tab while on the Main Ethereum Network. Note: estimates are approximations based on network conditions."
+    "message": "Select this to display pending transaction time estimates in the activity tab while on the Main Tron Network. Note: estimates are approximations based on network conditions."
   },
   "transfer": {
     "message": "Transfer"
@@ -1663,7 +1663,7 @@
     "message": "Use Phishing Detection"
   },
   "usePhishingDetectionDescription": {
-    "message": "Display a warning for phishing domains targeting Ethereum users"
+    "message": "Display a warning for phishing domains targeting Tron users"
   },
   "userName": {
     "message": "Username"
