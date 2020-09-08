@@ -10,8 +10,8 @@ import { createJavaTronMiddleware } from '@opentron/java-tron-provider'
 const inTest = process.env.IN_TEST === 'true'
 
 const type2network = {
-  'tronnile': 'nile',
-  'tronmainnet': 'mainnet'
+  'nile': 'nile',
+  'mainnet': 'mainnet'
 }
 
 export default function createJavaTronClient (type) {

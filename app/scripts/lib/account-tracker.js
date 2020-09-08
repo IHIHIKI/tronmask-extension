@@ -200,11 +200,13 @@ export default class AccountTracker {
     const currentNetwork = this.network.getNetworkState()
 
     switch (currentNetwork) {
-      case NILE_NETWORK_ID.toString():
-        await this._updateAccountsViaBalanceChecker(addresses, SINGLE_CALL_BALANCES_ADDRESS_NILE)
-        break
 
-        /*
+      /*
+
+        @TODO: contract call works but still displaying 0 balance...maybe amount formatting issue
+        case NILE_NETWORK_ID.toString():
+          await this._updateAccountsViaBalanceChecker(addresses, SINGLE_CALL_BALANCES_ADDRESS_NILE)
+          break
 
          @TODO(tron): deploy mainnet BalanceChecker contract
 

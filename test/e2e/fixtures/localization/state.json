@@ -12,7 +12,7 @@
       "conversionDate": 1594323667.203,
       "conversionRate": 14205.88,
       "currentCurrency": "php",
-      "nativeCurrency": "ETH"
+      "nativeCurrency": "TRX"
     },
     "IncomingTransactionsController": {
       "incomingTransactions": {},
@@ -31,11 +31,11 @@
       "provider": {
         "nickname": "",
         "rpcTarget": "",
-        "ticker": "ETH",
+        "ticker": "TRX",
         "type": "localhost"
       },
       "settings": {
-        "ticker": "ETH"
+        "ticker": "TRX"
       }
     },
     "OnboardingController": {

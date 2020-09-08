@@ -8,11 +8,9 @@ function NetworkIndicator ({ disabled, children, hoverText, onClick, providerNam
     <div
       className={classnames('network-component pointer', {
         'network-component--disabled': disabled,
-        'ethereum-network': providerName === 'mainnet',
-        'ropsten-test-network': providerName === 'ropsten',
-        'kovan-test-network': providerName === 'kovan',
-        'rinkeby-test-network': providerName === 'rinkeby',
-        'goerli-test-network': providerName === 'goerli',
+        'tron-network': providerName === 'mainnet',
+        'nile-test-network': providerName === 'nile',
+        'shasta-test-network': providerName === 'shasta',
       })}
       title={hoverText}
       onClick={(event) => {
@@ -77,8 +75,8 @@ export default class Network extends Component {
         return (
           <NetworkIndicator disabled={disabled} hoverText={t('mainnet')} onClick={onClick} providerName={providerName}>
             <NetworkDropdownIcon
-              backgroundColor="#038789"
-              nonSelectBackgroundColor="#15afb2"
+              backgroundColor="#690496"
+              nonSelectBackgroundColor="#b039f3"
               loading={networkNumber === 'loading'}
             />
             <div className="network-name">{t('mainnet')}</div>
@@ -87,13 +85,13 @@ export default class Network extends Component {
 
       case 'nile':
         return (
-          <NetworkIndicator disabled={disabled} hoverText={t('tron')} onClick={onClick} providerName={providerName}>
+          <NetworkIndicator disabled={disabled} hoverText={t('nile')} onClick={onClick} providerName={providerName}>
             <NetworkDropdownIcon
               backgroundColor="#e91550"
               nonSelectBackgroundColor="#ec2c50"
               loading={networkNumber === 'loading'}
             />
-            <div className="network-name">{t('tron')}</div>
+            <div className="network-name">{t('nile')}</div>
           </NetworkIndicator>
         )
 
@@ -101,59 +99,11 @@ export default class Network extends Component {
         return (
           <NetworkIndicator disabled={disabled} hoverText={t('shasta')} onClick={onClick} providerName={providerName}>
             <NetworkDropdownIcon
-              backgroundColor="#e91550"
-              nonSelectBackgroundColor="#ec2c50"
+              backgroundColor="#038789"
+              nonSelectBackgroundColor="#15afb2"
               loading={networkNumber === 'loading'}
             />
             <div className="network-name">{t('shasta')}</div>
-          </NetworkIndicator>
-        )
-
-      case 'ropsten':
-        return (
-          <NetworkIndicator disabled={disabled} hoverText={t('ropsten')} onClick={onClick} providerName={providerName}>
-            <NetworkDropdownIcon
-              backgroundColor="#e91550"
-              nonSelectBackgroundColor="#ec2c50"
-              loading={networkNumber === 'loading'}
-            />
-            <div className="network-name">{t('ropsten')}</div>
-          </NetworkIndicator>
-        )
-
-      case 'kovan':
-        return (
-          <NetworkIndicator disabled={disabled} hoverText={t('kovan')} onClick={onClick} providerName={providerName}>
-            <NetworkDropdownIcon
-              backgroundColor="#690496"
-              nonSelectBackgroundColor="#b039f3"
-              loading={networkNumber === 'loading'}
-            />
-            <div className="network-name">{t('kovan')}</div>
-          </NetworkIndicator>
-        )
-
-      case 'rinkeby':
-        return (
-          <NetworkIndicator disabled={disabled} hoverText={t('rinkeby')} onClick={onClick} providerName={providerName}>
-            <NetworkDropdownIcon
-              backgroundColor="#ebb33f"
-              nonSelectBackgroundColor="#ecb23e"
-              loading={networkNumber === 'loading'}
-            />
-            <div className="network-name">{t('rinkeby')}</div>
-          </NetworkIndicator>
-        )
-
-      case 'goerli':
-        return (
-          <NetworkIndicator disabled={disabled} hoverText={t('goerli')} onClick={onClick} providerName={providerName}>
-            <NetworkDropdownIcon
-              backgroundColor="#3099f2"
-              nonSelectBackgroundColor="#ecb23e"
-              loading={networkNumber === 'loading'}
-            />
-            <div className="network-name">{t('goerli')}</div>
           </NetworkIndicator>
         )
 

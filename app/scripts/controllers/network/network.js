@@ -39,7 +39,7 @@ const defaultProviderConfig = {
 }
 
 const defaultNetworkConfig = {
-  ticker: 'ETH',
+  ticker: 'TRX',
 }
 
 export default class NetworkController extends EventEmitter {
@@ -131,7 +131,7 @@ export default class NetworkController extends EventEmitter {
     })
   }
 
-  setRpcTarget (rpcTarget, chainId, ticker = 'ETH', nickname = '', rpcPrefs) {
+  setRpcTarget (rpcTarget, chainId, ticker = 'TRX', nickname = '', rpcPrefs) {
     const providerConfig = {
       type: 'rpc',
       rpcTarget,
@@ -143,7 +143,7 @@ export default class NetworkController extends EventEmitter {
     this.providerConfig = providerConfig
   }
 
-  async setProviderType (type, rpcTarget = '', ticker = 'ETH', nickname = '') {
+  async setProviderType (type, rpcTarget = '', ticker = 'TRX', nickname = '') {
     assert.notEqual(type, 'rpc', `NetworkController - cannot call "setProviderType" with type 'rpc'. use "setRpcTarget"`)
     // assert(INFURA_PROVIDER_TYPES.includes(type) || type === LOCALHOST, `NetworkController - Unknown rpc type "${type}"`)
     const providerConfig = { type, rpcTarget, ticker, nickname }
@@ -177,7 +177,7 @@ export default class NetworkController extends EventEmitter {
     console.log('configurePovider', opts)
     const { type, rpcTarget, chainId, ticker, nickname } = opts
     // infura type-based endpoints
-    const isTron = ['tronnile', 'tronmainnet'].includes(type)
+    const isTron = ['nile', 'mainnet'].includes(type)
     const isInfura = INFURA_PROVIDER_TYPES.includes(type)
     if (isTron) {
       this._configureJavaTronProvider(opts)
@@ -211,7 +211,7 @@ export default class NetworkController extends EventEmitter {
     this._setNetworkClient(networkClient)
     // setup networkConfig
     const settings = {
-      ticker: 'ETH',
+      ticker: 'TRX',
     }
     this.networkConfig.putState(settings)
     */
@@ -225,7 +225,7 @@ export default class NetworkController extends EventEmitter {
     this._setNetworkClient(networkClient)
     // setup networkConfig
     const settings = {
-      ticker: 'ETH',
+      ticker: 'TRX',
     }
     this.networkConfig.putState(settings)
   }
@@ -243,7 +243,7 @@ export default class NetworkController extends EventEmitter {
     networks.networkList.rpc = {
       chainId,
       rpcUrl,
-      ticker: ticker || 'ETH',
+      ticker: ticker || 'TRX',
       nickname,
     }
     // setup networkConfig

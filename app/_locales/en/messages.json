@@ -388,26 +388,17 @@
   "connectingTo": {
     "message": "Connecting to $1"
   },
-  "connectingToKovan": {
-    "message": "Connecting to Kovan Test Network"
-  },
   "connectingToMainnet": {
     "message": "Connecting to Main Tron Network"
   },
   "connectingToNile": {
     "message": "Connecting to Tron Nile Test Network"
   },
-  "connectingToRopsten": {
-    "message": "Connecting to Ropsten Test Network"
-  },
-  "connectingToRinkeby": {
-    "message": "Connecting to Rinkeby Test Network"
+  "connectingToShasta": {
+    "message": "Connecting to Shasta Test Network"
   },
   "connectingToLocalhost": {
     "message": "Connecting to Localhost 8545"
-  },
-  "connectingToGoerli": {
-    "message": "Connecting to Goerli Test Network"
   },
   "contacts": {
     "message": "Contacts"
@@ -1228,17 +1219,11 @@
   "readyToConnect": {
     "message": "Ready to Connect?"
   },
-  "rinkeby": {
-    "message": "Rinkeby Test Network"
-  },
-  "ropsten": {
-    "message": "Ropsten Test Network"
-  },
   "nile": {
     "message": "Tron Nile Test Network"
   },
-  "goerli": {
-    "message": "Goerli Test Network"
+  "shasta": {
+    "message": "Tron Shasta Test Network"
   },
   "save": {
     "message": "Save"

@@ -1,5 +1,6 @@
 // @TRON
 // For addresses, check https://github.com/opentron/balance-checker
+
 export const SINGLE_CALL_BALANCES_ADDRESS_NILE = '0xA9190C50f3C19094A87Ea160fa6A556D2b876a39'
 // @TODO(tron): deploy BalanceChecker contract on mainnet
 // export const SINGLE_CALL_BALANCES_ADDRESS = '0xb1f8e55c7f64d203c1400b9d8555d050f94adf39'
