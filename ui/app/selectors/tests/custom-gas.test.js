@@ -10,7 +10,7 @@ const {
   getEstimatedGasTimes,
   getPriceAndTimeEstimates,
   getRenderableBasicEstimateData,
-  getRenderableEstimateDataForSmallButtonsFromGWEI,
+  getRenderableEstimateDataForSmallButtonsFromGSUN,
 } = proxyquire('../custom-gas', {})
 
 describe('custom-gas selectors', function () {
@@ -356,7 +356,7 @@ describe('custom-gas selectors', function () {
 
   })
 
-  describe('getRenderableEstimateDataForSmallButtonsFromGWEI()', function () {
+  describe('getRenderableEstimateDataForSmallButtonsFromGSUN()', function () {
     const tests = [
       {
         expectedResult: [
@@ -612,7 +612,7 @@ describe('custom-gas selectors', function () {
     it('should return renderable data about basic estimates appropriate for buttons with less info', function () {
       tests.forEach((test) => {
         assert.deepEqual(
-          getRenderableEstimateDataForSmallButtonsFromGWEI(test.mockState),
+          getRenderableEstimateDataForSmallButtonsFromGSUN(test.mockState),
           test.expectedResult,
         )
       })

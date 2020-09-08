@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import {
-  decGWEIToHexWEI,
+  decGSUNToHexSUN,
 } from '../../../../../helpers/utils/conversions.util'
 import Loading from '../../../../ui/loading-screen'
 import GasPriceChart from '../../gas-price-chart'
@@ -47,7 +47,7 @@ export default class AdvancedTabContent extends Component {
 
   onGasChartUpdate = (price) => {
     const { updateCustomGasPrice } = this.props
-    updateCustomGasPrice(decGWEIToHexWEI(price))
+    updateCustomGasPrice(decGSUNToHexSUN(price))
   }
 
   render () {

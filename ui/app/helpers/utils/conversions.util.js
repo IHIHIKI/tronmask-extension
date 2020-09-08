@@ -1,5 +1,5 @@
 import ethUtil from 'ethereumjs-util'
-import { TRX, GWEI, WEI } from '../constants/common'
+import { TRX, GSUN, SUN } from '../constants/common'
 import { conversionUtil, addCurrencies, subtractCurrencies } from './conversion-util'
 
 export function bnToHex (inputBn) {
@@ -21,7 +21,7 @@ export function decimalToHex (decimal) {
 }
 
 export function getEthConversionFromWeiHex ({ value, fromCurrency = TRX, conversionRate, numberOfDecimals = 6 }) {
-  const denominations = [fromCurrency, GWEI, WEI]
+  const denominations = [fromCurrency, GSUN, SUN]
 
   let nonZeroDenomination
 
@@ -58,7 +58,7 @@ export function getValueFromWeiHex ({
     fromCurrency,
     toCurrency,
     numberOfDecimals,
-    fromDenomination: WEI,
+    fromDenomination: SUN,
     toDenomination,
     conversionRate,
   })
@@ -79,24 +79,24 @@ export function getWeiHexFromDecimalValue ({
     conversionRate,
     invertConversionRate,
     fromDenomination,
-    toDenomination: WEI,
+    toDenomination: SUN,
   })
 }
 
-export function addHexWEIsToDec (aHexWEI, bHexWEI) {
-  return addCurrencies(aHexWEI, bHexWEI, {
+export function addHexSUNsToDec (aHexSUN, bHexSUN) {
+  return addCurrencies(aHexSUN, bHexSUN, {
     aBase: 16,
     bBase: 16,
-    fromDenomination: 'WEI',
+    fromDenomination: 'SUN',
     numberOfDecimals: 6,
   })
 }
 
-export function subtractHexWEIsToDec (aHexWEI, bHexWEI) {
-  return subtractCurrencies(aHexWEI, bHexWEI, {
+export function subtractHexSUNsToDec (aHexSUN, bHexSUN) {
+  return subtractCurrencies(aHexSUN, bHexSUN, {
     aBase: 16,
     bBase: 16,
-    fromDenomination: 'WEI',
+    fromDenomination: 'SUN',
     numberOfDecimals: 6,
   })
 }
@@ -112,29 +112,29 @@ export function decEthToConvertedCurrency (ethTotal, convertedCurrency, conversi
   })
 }
 
-export function decGWEIToHexWEI (decGWEI) {
-  return conversionUtil(decGWEI, {
+export function decGSUNToHexSUN (decGSUN) {
+  return conversionUtil(decGSUN, {
     fromNumericBase: 'dec',
     toNumericBase: 'hex',
-    fromDenomination: 'GWEI',
-    toDenomination: 'WEI',
+    fromDenomination: 'GSUN',
+    toDenomination: 'SUN',
   })
 }
 
-export function hexWEIToDecGWEI (decGWEI) {
-  return conversionUtil(decGWEI, {
+export function hexSUNToDecGSUN (decGSUN) {
+  return conversionUtil(decGSUN, {
     fromNumericBase: 'hex',
     toNumericBase: 'dec',
-    fromDenomination: 'WEI',
-    toDenomination: 'GWEI',
+    fromDenomination: 'SUN',
+    toDenomination: 'GSUN',
   })
 }
 
-export function decETHToDecWEI (decEth) {
+export function decETHToDecSUN (decEth) {
   return conversionUtil(decEth, {
     fromNumericBase: 'dec',
     toNumericBase: 'dec',
     fromDenomination: 'TRX',
-    toDenomination: 'WEI',
+    toDenomination: 'SUN',
   })
 }

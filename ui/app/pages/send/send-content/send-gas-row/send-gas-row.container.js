@@ -15,7 +15,7 @@ import {
   getCurrentEthBalance,
   getSendToken,
   getBasicGasEstimateLoadingStatus,
-  getRenderableEstimateDataForSmallButtonsFromGWEI,
+  getRenderableEstimateDataForSmallButtonsFromGSUN,
   getDefaultActiveButtonIndex,
   getIsMainnet,
 } from '../../../../selectors'
@@ -39,7 +39,7 @@ import SendGasRow from './send-gas-row.component'
 export default connect(mapStateToProps, mapDispatchToProps, mergeProps)(SendGasRow)
 
 function mapStateToProps (state) {
-  const gasButtonInfo = getRenderableEstimateDataForSmallButtonsFromGWEI(state)
+  const gasButtonInfo = getRenderableEstimateDataForSmallButtonsFromGSUN(state)
   const gasPrice = getGasPrice(state)
   const gasLimit = getGasLimit(state)
   const activeButtonIndex = getDefaultActiveButtonIndex(gasButtonInfo, gasPrice)

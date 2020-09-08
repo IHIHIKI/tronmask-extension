@@ -1,9 +1,6 @@
 export const TRX = 'TRX'
+export const GSUN = 'GSUN'
 export const SUN = 'SUN'
-
-// export const ETH = 'ETH'
-export const GWEI = 'GWEI'
-export const WEI = 'WEI'
 
 export const PRIMARY = 'PRIMARY'
 export const SECONDARY = 'SECONDARY'

@@ -458,7 +458,7 @@
     "message": "گاز استفاده شد"
   },
   "gasPrice": {
-    "message": "قیمت گاز (GWEI)"
+    "message": "قیمت گاز (GSUN)"
   },
   "gasPriceExtremelyLow": {
     "message": "قیمت گاز خیلی کم است"

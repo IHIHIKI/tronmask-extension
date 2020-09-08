@@ -454,7 +454,7 @@
     "message": "Upotrijebljeno gorivo"
   },
   "gasPrice": {
-    "message": "Cijena goriva (GWEI)"
+    "message": "Cijena goriva (GSUN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Iznimno niska cijena goriva"

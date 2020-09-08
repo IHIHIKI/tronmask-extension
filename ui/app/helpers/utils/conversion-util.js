@@ -10,7 +10,7 @@
 * @param {string} [options.toCurrency = 'ETH' | 'USD'] The desired currency of the result
 * @param {string} [options.fromNumericBase = 'hex' | 'dec' | 'BN'] The numeric basic of the passed value.
 * @param {string} [options.toNumericBase = 'hex' | 'dec' | 'BN'] The desired numeric basic of the result.
-* @param {string} [options.fromDenomination = 'WEI'] The denomination of the passed value
+* @param {string} [options.fromDenomination = 'SUN'] The denomination of the passed value
 * @param {string} [options.numberOfDecimals] The desired number of decimals in the result
 * @param {string} [options.roundDown] The desired number of decimals to round down to
 * @param {number} [options.conversionRate] The rate to use to make the fromCurrency -> toCurrency conversion
@@ -65,7 +65,7 @@ const baseChange = {
 
 /**
  * Defines which type of denomination a value is in
- * @typedef {('WEI' | 'GWEI' | 'ETH')} EthDenomination
+ * @typedef {('SUN' | 'GSUN' | 'ETH')} EthDenomination
  */
 
 /**

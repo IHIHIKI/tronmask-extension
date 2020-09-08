@@ -43,17 +43,17 @@ import {
   isCustomPriceSafe,
   getTokenBalance,
   getSendMaxModeState,
-  getFastPriceEstimateInHexWEI,
+  getFastPriceEstimateInHexSUN,
 } from '../../../../selectors'
 
 import {
   formatCurrency,
 } from '../../../../helpers/utils/confirm-tx.util'
 import {
-  addHexWEIsToDec,
-  subtractHexWEIsToDec,
+  addHexSUNsToDec,
+  subtractHexSUNsToDec,
   decEthToConvertedCurrency as ethTotalToConvertedCurrency,
-  hexWEIToDecGWEI,
+  hexSUNToDecGSUN,
 } from '../../../../helpers/utils/conversions.util'
 import { getRenderableTimeEstimate } from '../../../../helpers/utils/gas-time-estimates.util'
 import {
@@ -82,7 +82,7 @@ const mapStateToProps = (state, ownProps) => {
     ? selectedTransaction.txParams
     : {
       gas: send.gasLimit || '0x5208',
-      gasPrice: send.gasPrice || getFastPriceEstimateInHexWEI(state, true),
+      gasPrice: send.gasPrice || getFastPriceEstimateInHexSUN(state, true),
       value: sendToken ? '0x0' : send.amount,
     }
 
@@ -96,7 +96,7 @@ const mapStateToProps = (state, ownProps) => {
   const currentCurrency = getCurrentCurrency(state)
   const conversionRate = getConversionRate(state)
 
-  const newTotalFiat = addHexWEIsToRenderableFiat(value, customGasTotal, currentCurrency, conversionRate)
+  const newTotalFiat = addHexSUNsToRenderableFiat(value, customGasTotal, currentCurrency, conversionRate)
 
   const { hideBasic } = state.appState.modal.modalState.props
 
@@ -114,9 +114,9 @@ const mapStateToProps = (state, ownProps) => {
 
   const isSendTokenSet = Boolean(sendToken)
 
-  const newTotalEth = maxModeOn && !isSendTokenSet ? addHexWEIsToRenderableEth(balance, '0x0') : addHexWEIsToRenderableEth(value, customGasTotal)
+  const newTotalEth = maxModeOn && !isSendTokenSet ? addHexSUNsToRenderableEth(balance, '0x0') : addHexSUNsToRenderableEth(value, customGasTotal)
 
-  const sendAmount = maxModeOn && !isSendTokenSet ? subtractHexWEIsFromRenderableEth(balance, customGasTotal) : addHexWEIsToRenderableEth(value, '0x0')
+  const sendAmount = maxModeOn && !isSendTokenSet ? subtractHexSUNsFromRenderableEth(balance, customGasTotal) : addHexSUNsToRenderableEth(value, '0x0')
 
   const insufficientBalance = maxModeOn ? false : !isBalanceSufficient({
     amount: value,
@@ -158,11 +158,11 @@ const mapStateToProps = (state, ownProps) => {
       estimatedTimesMax: estimatedTimes[0],
     },
     infoRowProps: {
-      originalTotalFiat: addHexWEIsToRenderableFiat(value, customGasTotal, currentCurrency, conversionRate),
-      originalTotalEth: addHexWEIsToRenderableEth(value, customGasTotal),
+      originalTotalFiat: addHexSUNsToRenderableFiat(value, customGasTotal, currentCurrency, conversionRate),
+      originalTotalEth: addHexSUNsToRenderableEth(value, customGasTotal),
       newTotalFiat: showFiat ? newTotalFiat : '',
       newTotalEth,
-      transactionFee: addHexWEIsToRenderableEth('0x0', customGasTotal),
+      transactionFee: addHexSUNsToRenderableEth('0x0', customGasTotal),
       sendAmount,
     },
     transaction: txData || transaction,
@@ -307,24 +307,24 @@ function isConfirm (state) {
 }
 
 function calcCustomGasPrice (customGasPriceInHex) {
-  return Number(hexWEIToDecGWEI(customGasPriceInHex))
+  return Number(hexSUNToDecGSUN(customGasPriceInHex))
 }
 
 function calcCustomGasLimit (customGasLimitInHex) {
   return parseInt(customGasLimitInHex, 16)
 }
 
-function addHexWEIsToRenderableEth (aHexWEI, bHexWEI) {
-  return formatETHFee(addHexWEIsToDec(aHexWEI, bHexWEI))
+function addHexSUNsToRenderableEth (aHexSUN, bHexSUN) {
+  return formatETHFee(addHexSUNsToDec(aHexSUN, bHexSUN))
 }
 
-function subtractHexWEIsFromRenderableEth (aHexWEI, bHexWEI) {
-  return formatETHFee(subtractHexWEIsToDec(aHexWEI, bHexWEI))
+function subtractHexSUNsFromRenderableEth (aHexSUN, bHexSUN) {
+  return formatETHFee(subtractHexSUNsToDec(aHexSUN, bHexSUN))
 }
 
-function addHexWEIsToRenderableFiat (aHexWEI, bHexWEI, convertedCurrency, conversionRate) {
+function addHexSUNsToRenderableFiat (aHexSUN, bHexSUN, convertedCurrency, conversionRate) {
   const ethTotal = ethTotalToConvertedCurrency(
-    addHexWEIsToDec(aHexWEI, bHexWEI),
+    addHexSUNsToDec(aHexSUN, bHexSUN),
     convertedCurrency,
     conversionRate,
   )

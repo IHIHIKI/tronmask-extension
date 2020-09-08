@@ -458,7 +458,7 @@
     "message": "ጥቅም ላይ የዋለ ነዳጅ"
   },
   "gasPrice": {
-    "message": "የነዳጅ ዋጋ (GWEI)"
+    "message": "የነዳጅ ዋጋ (GSUN)"
   },
   "gasPriceExtremelyLow": {
     "message": "የነዳጅ ዋጋ እጅግ በጣም ዝቅ ያለ ነው"

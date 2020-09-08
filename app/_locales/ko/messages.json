@@ -455,7 +455,7 @@
     "message": "사용된 가스"
   },
   "gasPrice": {
-    "message": "가스 가격 (GWEI)"
+    "message": "가스 가격 (GSUN)"
   },
   "gasPriceExtremelyLow": {
     "message": "가스 가격 매우 낮음"

@@ -455,7 +455,7 @@
     "message": "Korišćen gas"
   },
   "gasPrice": {
-    "message": "Cena gasa (GWEI)"
+    "message": "Cena gasa (GSUN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Cena gasa izuzetno niska"

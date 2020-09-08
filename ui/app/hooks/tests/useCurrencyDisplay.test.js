@@ -58,7 +58,7 @@ const tests = [
     input: {
       value: '0x3b9aca00',
       currency: 'ETH',
-      denomination: 'GWEI',
+      denomination: 'GSUN',
       hideLabel: true,
     },
     result: {
@@ -71,7 +71,7 @@ const tests = [
     input: {
       value: '0x3b9aca00',
       currency: 'ETH',
-      denomination: 'WEI',
+      denomination: 'SUN',
       hideLabel: true,
     },
     result: {

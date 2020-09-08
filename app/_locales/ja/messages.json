@@ -226,7 +226,7 @@
     "message": "ガスリミットは最低21000です。"
   },
   "gasPrice": {
-    "message": "ガスプライス (GWEI)"
+    "message": "ガスプライス (GSUN)"
   },
   "getEther": {
     "message": "Etherを取得する"

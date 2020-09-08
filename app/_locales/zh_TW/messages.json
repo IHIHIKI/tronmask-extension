@@ -455,7 +455,7 @@
     "message": "Gas 用量"
   },
   "gasPrice": {
-    "message": "Gas 價格 (GWEI)"
+    "message": "Gas 價格 (GSUN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Gas 價格極低"

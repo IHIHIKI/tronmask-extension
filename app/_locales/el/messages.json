@@ -455,7 +455,7 @@
     "message": "Καύσιμο που Χρησιμοποιήθηκε"
   },
   "gasPrice": {
-    "message": "Τιμή Αερίου (GWEI)"
+    "message": "Τιμή Αερίου (GSUN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Τιμή Καυσίμου Εξαιρετικά Χαμηλή"

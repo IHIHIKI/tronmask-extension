@@ -60,12 +60,12 @@ export function getEstimatedGasTimes (state) {
   return getPriceAndTimeEstimates(state).map(({ expectedTime }) => expectedTime)
 }
 
-export function getAveragePriceEstimateInHexWEI (state) {
+export function getAveragePriceEstimateInHexSUN (state) {
   const averagePriceEstimate = state.gas.basicEstimates.average
   return getGasPriceInHexWei(averagePriceEstimate || '0x0')
 }
 
-export function getFastPriceEstimateInHexWEI (state) {
+export function getFastPriceEstimateInHexSUN (state) {
   const fastPriceEstimate = state.gas.basicEstimates.fast
   return getGasPriceInHexWei(fastPriceEstimate || '0x0')
 }
@@ -104,8 +104,8 @@ export function isCustomPriceSafe (state) {
     {
       value: customGasPrice,
       fromNumericBase: 'hex',
-      fromDenomination: 'WEI',
-      toDenomination: 'GWEI',
+      fromDenomination: 'SUN',
+      toDenomination: 'GSUN',
     },
     { value: safeLow, fromNumericBase: 'dec' },
   )
@@ -121,7 +121,7 @@ export function basicPriceEstimateToETHTotal (estimate, gasLimit, numberOfDecima
   return conversionUtil(calcGasTotal(gasLimit, estimate), {
     fromNumericBase: 'hex',
     toNumericBase: 'dec',
-    fromDenomination: 'GWEI',
+    fromDenomination: 'GSUN',
     numberOfDecimals,
   })
 }
@@ -180,8 +180,8 @@ export function priceEstimateToWei (priceEstimate) {
   return conversionUtil(priceEstimate, {
     fromNumericBase: 'hex',
     toNumericBase: 'hex',
-    fromDenomination: 'GWEI',
-    toDenomination: 'WEI',
+    fromDenomination: 'GSUN',
+    toDenomination: 'SUN',
     numberOfDecimals: 9,
   })
 }
@@ -245,7 +245,7 @@ export function getRenderableBasicEstimateData (state, gasLimit) {
   ]
 }
 
-export function getRenderableEstimateDataForSmallButtonsFromGWEI (state) {
+export function getRenderableEstimateDataForSmallButtonsFromGSUN (state) {
   if (getBasicGasEstimateLoadingStatus(state)) {
     return []
   }

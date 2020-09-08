@@ -108,7 +108,7 @@ export default class SignatureRequestOriginal extends Component {
     const balanceInEther = conversionUtil(balance, {
       fromNumericBase: 'hex',
       toNumericBase: 'dec',
-      fromDenomination: 'WEI',
+      fromDenomination: 'SUN',
       numberOfDecimals: 6,
       conversionRate,
     })

@@ -446,7 +446,7 @@
     "message": "Essence utilisée"
   },
   "gasPrice": {
-    "message": "Prix du gaz (GWEI)"
+    "message": "Prix du gaz (GSUN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Prix de l'essence extrêmement bas"

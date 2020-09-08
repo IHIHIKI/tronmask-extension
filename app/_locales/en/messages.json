@@ -689,7 +689,7 @@
     "message": "Gas Used"
   },
   "gasPrice": {
-    "message": "Gas Price (GWEI)"
+    "message": "Gas Price (GSUN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Gas Price Extremely Low"

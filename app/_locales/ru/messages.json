@@ -184,7 +184,7 @@
     "message": "Лимит газа должен быть как минимум 21000"
   },
   "gasPrice": {
-    "message": "Цена за газ (GWEI)"
+    "message": "Цена за газ (GSUN)"
   },
   "getEther": {
     "message": "Получить Ether"

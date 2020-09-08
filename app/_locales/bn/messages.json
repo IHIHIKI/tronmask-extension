@@ -458,7 +458,7 @@
     "message": "গ্যাস ব্যবহার করা হয়েছে"
   },
   "gasPrice": {
-    "message": "গ্যাসের মূল্য (GWEI)"
+    "message": "গ্যাসের মূল্য (GSUN)"
   },
   "gasPriceExtremelyLow": {
     "message": "গ্যাসের মূল্য অত্যন্ত কম"

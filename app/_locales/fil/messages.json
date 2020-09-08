@@ -424,7 +424,7 @@
     "message": "Gas na Ginamit"
   },
   "gasPrice": {
-    "message": "Presyo ng Gas (GWEI)"
+    "message": "Presyo ng Gas (GSUN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Napakababa ng Presyo ng Gas"

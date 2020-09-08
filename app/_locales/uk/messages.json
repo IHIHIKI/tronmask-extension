@@ -458,7 +458,7 @@
     "message": "Пального використано"
   },
   "gasPrice": {
-    "message": "Ціна на пальне (GWEI)"
+    "message": "Ціна на пальне (GSUN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Ціна газу дуже низька"

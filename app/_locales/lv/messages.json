@@ -454,7 +454,7 @@
     "message": "Izlietotie Gas"
   },
   "gasPrice": {
-    "message": "Gas cena (GWEI)"
+    "message": "Gas cena (GSUN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Ārkārtīgi zema Gas cena"

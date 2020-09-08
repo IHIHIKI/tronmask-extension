@@ -458,7 +458,7 @@
     "message": "ಗ್ಯಾಸ್ ಬಳಸಲಾಗಿದೆ"
   },
   "gasPrice": {
-    "message": "ಗ್ಯಾಸ್ ದರ (GWEI)"
+    "message": "ಗ್ಯಾಸ್ ದರ (GSUN)"
   },
   "gasPriceExtremelyLow": {
     "message": "ಗ್ಯಾಸ್ ದರವು ಅತ್ಯಂತ ಕಡಿಮೆಯಿದೆ"

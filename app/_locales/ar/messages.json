@@ -454,7 +454,7 @@
     "message": "وحدات جاس المستخدمة"
   },
   "gasPrice": {
-    "message": "سعر عملة جاس (GWEI)"
+    "message": "سعر عملة جاس (GSUN)"
   },
   "gasPriceExtremelyLow": {
     "message": "سعر الجاس منخفض للغاية"

@@ -23,7 +23,7 @@ import {
   getSendErrors,
   isSendFormInError,
   getGasIsLoading,
-  getRenderableEstimateDataForSmallButtonsFromGWEI,
+  getRenderableEstimateDataForSmallButtonsFromGSUN,
   getDefaultActiveButtonIndex,
 } from '../../../selectors'
 import { getMostRecentOverviewPage } from '../../../ducks/history/history'
@@ -38,7 +38,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(SendFooter)
 
 function mapStateToProps (state) {
 
-  const gasButtonInfo = getRenderableEstimateDataForSmallButtonsFromGWEI(state)
+  const gasButtonInfo = getRenderableEstimateDataForSmallButtonsFromGSUN(state)
   const gasPrice = getGasPrice(state)
   const activeButtonIndex = getDefaultActiveButtonIndex(gasButtonInfo, gasPrice)
   const gasEstimateType = activeButtonIndex >= 0

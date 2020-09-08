@@ -5,7 +5,7 @@ import {
   saveLocalStorageData,
 } from '../../../lib/local-storage-helpers'
 import {
-  decGWEIToHexWEI,
+  decGSUNToHexSUN,
 } from '../../helpers/utils/conversions.util'
 import {
   isEthereumNetwork,
@@ -455,7 +455,7 @@ export function setCustomGasPriceForRetry (newPrice) {
   return (dispatch) => {
     if (newPrice === '0x0') {
       const { fast } = loadLocalStorageData('BASIC_PRICE_ESTIMATES')
-      dispatch(setCustomGasPrice(decGWEIToHexWEI(fast)))
+      dispatch(setCustomGasPrice(decGSUNToHexSUN(fast)))
     } else {
       dispatch(setCustomGasPrice(newPrice))
     }

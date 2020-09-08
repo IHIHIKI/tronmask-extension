@@ -454,7 +454,7 @@
     "message": "Használt gáz"
   },
   "gasPrice": {
-    "message": "Gázár (GWEI)"
+    "message": "Gázár (GSUN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Üzemanyag ár Különösen alacsony"

@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux'
 import { useRef, useEffect, useState, useMemo } from 'react'
 import { isEqual } from 'lodash'
 import { captureException } from '@sentry/browser'
-import { hexWEIToDecGWEI } from '../helpers/utils/conversions.util'
+import { hexSUNToDecGSUN } from '../helpers/utils/conversions.util'
 import { getEstimatedGasPrices, getEstimatedGasTimes, getFeatureFlags, getIsMainnet } from '../selectors'
 import { getRawTimeEstimateData } from '../helpers/utils/gas-time-estimates.util'
 import { getCurrentLocale } from '../ducks/metamask/metamask'
@@ -54,7 +54,7 @@ export function useTransactionTimeRemaining (
 
   // Memoize this value so it can be used as a dependency in the effect below
   const initialTimeEstimate = useMemo(() => {
-    const customGasPrice = Number(hexWEIToDecGWEI(currentGasPrice))
+    const customGasPrice = Number(hexSUNToDecGSUN(currentGasPrice))
     try {
       const {
         newTimeEstimate,

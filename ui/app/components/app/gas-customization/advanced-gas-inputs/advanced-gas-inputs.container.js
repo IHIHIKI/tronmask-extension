@@ -1,18 +1,18 @@
 import { connect } from 'react-redux'
 import { showModal } from '../../../../store/actions'
 import {
-  decGWEIToHexWEI,
+  decGSUNToHexSUN,
   decimalToHex,
-  hexWEIToDecGWEI,
+  hexSUNToDecGSUN,
 } from '../../../../helpers/utils/conversions.util'
 import AdvancedGasInputs from './advanced-gas-inputs.component'
 
-function convertGasPriceForInputs (gasPriceInHexWEI) {
-  return Number(hexWEIToDecGWEI(gasPriceInHexWEI))
+function convertGasPriceForInputs (gasPriceInHexSUN) {
+  return Number(hexSUNToDecGSUN(gasPriceInHexSUN))
 }
 
-function convertGasLimitForInputs (gasLimitInHexWEI) {
-  return parseInt(gasLimitInHexWEI, 16) || 0
+function convertGasLimitForInputs (gasLimitInHexSUN) {
+  return parseInt(gasLimitInHexSUN, 16) || 0
 }
 
 const mapDispatchToProps = (dispatch) => {
@@ -30,7 +30,7 @@ const mergeProps = (stateProps, dispatchProps, ownProps) => {
     ...dispatchProps,
     customGasPrice: convertGasPriceForInputs(customGasPrice),
     customGasLimit: convertGasLimitForInputs(customGasLimit),
-    updateCustomGasPrice: (price) => updateCustomGasPrice(decGWEIToHexWEI(price)),
+    updateCustomGasPrice: (price) => updateCustomGasPrice(decGSUNToHexSUN(price)),
     updateCustomGasLimit: (limit) => updateCustomGasLimit(decimalToHex(limit)),
   }
 }

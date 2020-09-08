@@ -445,7 +445,7 @@
     "message": "Gas yang Digunakan"
   },
   "gasPrice": {
-    "message": "Harga Bensin (GWEI)"
+    "message": "Harga Bensin (GSUN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Harga Bensin Amat Rendah"

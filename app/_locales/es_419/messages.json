@@ -455,7 +455,7 @@
     "message": "Gas usado"
   },
   "gasPrice": {
-    "message": "Precio del gas (GWEI)"
+    "message": "Precio del gas (GSUN)"
   },
   "gasPriceExtremelyLow": {
     "message": "El precio del gas es extremadamente bajo"

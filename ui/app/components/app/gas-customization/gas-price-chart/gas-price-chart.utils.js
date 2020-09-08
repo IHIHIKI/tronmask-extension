@@ -216,7 +216,7 @@ export function generateChart (gasPrices, estimatedTimes, gasPricesMax, estimate
           values: [Math.floor(gasPrices[0]), Math.ceil(gasPricesMax)],
           outer: false,
           format (val) {
-            return `${val} GWEI`
+            return `${val} GSUN`
           },
         },
         padding: { left: gasPricesMax / 50, right: gasPricesMax / 50 },

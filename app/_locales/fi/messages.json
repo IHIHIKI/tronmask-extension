@@ -455,7 +455,7 @@
     "message": "Käytetty bensaa"
   },
   "gasPrice": {
-    "message": "Gas-hinta (GWEI)"
+    "message": "Gas-hinta (GSUN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Gas-hinta erittäin alhainen"

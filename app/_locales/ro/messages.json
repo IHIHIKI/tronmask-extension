@@ -454,7 +454,7 @@
     "message": "Suma gaz folosită"
   },
   "gasPrice": {
-    "message": "Preț gas (GWEI)"
+    "message": "Preț gas (GSUN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Prețul gaz este foarte scăzut"

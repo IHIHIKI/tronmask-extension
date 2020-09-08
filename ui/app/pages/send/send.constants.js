@@ -6,9 +6,9 @@ const MIN_GAS_PRICE_HEX = (parseInt(MIN_GAS_PRICE_DEC, 10)).toString(16)
 const MIN_GAS_LIMIT_DEC = '21000'
 const MIN_GAS_LIMIT_HEX = (parseInt(MIN_GAS_LIMIT_DEC, 10)).toString(16)
 
-const MIN_GAS_PRICE_GWEI = ethUtil.addHexPrefix(conversionUtil(MIN_GAS_PRICE_HEX, {
-  fromDenomination: 'WEI',
-  toDenomination: 'GWEI',
+const MIN_GAS_PRICE_GSUN = ethUtil.addHexPrefix(conversionUtil(MIN_GAS_PRICE_HEX, {
+  fromDenomination: 'SUN',
+  toDenomination: 'GSUN',
   fromNumericBase: 'hex',
   toNumericBase: 'hex',
   numberOfDecimals: 1,
@@ -42,7 +42,7 @@ export {
   MIN_GAS_LIMIT_DEC,
   MIN_GAS_LIMIT_HEX,
   MIN_GAS_PRICE_DEC,
-  MIN_GAS_PRICE_GWEI,
+  MIN_GAS_PRICE_GSUN,
   MIN_GAS_PRICE_HEX,
   MIN_GAS_TOTAL,
   NEGATIVE_ETH_ERROR,

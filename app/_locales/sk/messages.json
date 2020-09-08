@@ -449,7 +449,7 @@
     "message": "GAS použitý"
   },
   "gasPrice": {
-    "message": "Cena paliva (GWEI)"
+    "message": "Cena paliva (GSUN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Cena za GAS je mimoriadne nízka"
