@@ -177,7 +177,7 @@ export default class NetworkController extends EventEmitter {
     console.log('configurePovider', opts)
     const { type, rpcTarget, chainId, ticker, nickname } = opts
     // infura type-based endpoints
-    const isTron = ['nile', 'mainnet'].includes(type)
+    const isTron = ['nile', 'mainnet', 'shasta'].includes(type)
     const isInfura = INFURA_PROVIDER_TYPES.includes(type)
     if (isTron) {
       this._configureJavaTronProvider(opts)
