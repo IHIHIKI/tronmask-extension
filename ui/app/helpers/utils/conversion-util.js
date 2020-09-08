@@ -6,8 +6,8 @@
 *
 * @param {(number | string | BN)} value - The value to convert.
 * @param {Object} [options] Options to specify details of the conversion
-* @param {string} [options.fromCurrency = 'ETH' | 'USD'] The currency of the passed value
-* @param {string} [options.toCurrency = 'ETH' | 'USD'] The desired currency of the result
+* @param {string} [options.fromCurrency = 'TRX' | 'USD'] The currency of the passed value
+* @param {string} [options.toCurrency = 'TRX' | 'USD'] The desired currency of the result
 * @param {string} [options.fromNumericBase = 'hex' | 'dec' | 'BN'] The numeric basic of the passed value.
 * @param {string} [options.toNumericBase = 'hex' | 'dec' | 'BN'] The desired numeric basic of the result.
 * @param {string} [options.fromDenomination = 'SUN'] The denomination of the passed value
@@ -65,7 +65,7 @@ const baseChange = {
 
 /**
  * Defines which type of denomination a value is in
- * @typedef {('SUN' | 'GSUN' | 'ETH')} EthDenomination
+ * @typedef {('SUN' | 'GSUN' | 'TRX')} EthDenomination
  */
 
 /**
