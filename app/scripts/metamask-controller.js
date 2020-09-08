@@ -116,7 +116,7 @@ export default class MetamaskController extends EventEmitter {
       preferencesStore: this.preferencesController.store,
     })
 
-    this.currencyRateController = new CurrencyRateController(undefined, initState.CurrencyController)
+    this.currencyRateController = new CurrencyRateController({ nativeCurrency: 'TRX' }, initState.CurrencyController)
 
     this.phishingController = new PhishingController()
 
@@ -1858,6 +1858,7 @@ export default class MetamaskController extends EventEmitter {
       cb(null, this.currencyRateController.state)
       return
     } catch (err) {
+      console.error({ err })
       cb(err)
       // eslint-disable-next-line no-useless-return
       return

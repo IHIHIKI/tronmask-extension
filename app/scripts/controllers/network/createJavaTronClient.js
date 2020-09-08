@@ -10,14 +10,13 @@ import { createJavaTronMiddleware } from '@opentron/java-tron-provider'
 const inTest = process.env.IN_TEST === 'true'
 
 const type2network = {
+  'mainnet': 'mainnet',
   'nile': 'nile',
-  'mainnet': 'mainnet'
+  'shasta': 'shasta'
 }
 
 export default function createJavaTronClient (type) {
   const network = type2network[type];
-  console.log({ network });
-  console.log({ createJavaTronMiddleware });
   const fetchMiddleware = createJavaTronMiddleware({ network })
 
   const blockProvider = providerFromMiddleware(fetchMiddleware)

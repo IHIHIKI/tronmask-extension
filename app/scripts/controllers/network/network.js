@@ -14,7 +14,7 @@ import createLocalhostClient from './createLocalhostClient'
 import createJavaTronClient from './createJavaTronClient'
 
 import {
-  RINKEBY,
+  NILE,
   MAINNET,
   LOCALHOST,
   INFURA_PROVIDER_TYPES,
@@ -29,7 +29,7 @@ let defaultProviderConfigType
 if (process.env.IN_TEST === 'true') {
   defaultProviderConfigType = LOCALHOST
 } else if (METAMASK_DEBUG || env === 'test') {
-  defaultProviderConfigType = RINKEBY
+  defaultProviderConfigType = NILE
 } else {
   defaultProviderConfigType = MAINNET
 }
