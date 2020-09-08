@@ -3,6 +3,7 @@ import abi from 'human-standard-token-abi'
 import BigNumber from 'bignumber.js'
 import ethUtil from 'ethereumjs-util'
 import { DateTime } from 'luxon'
+import { ethAddress } from '@opentron/tron-eth-conversions'
 
 // formatData :: ( date: <Unix Timestamp> ) -> String
 export function formatDate (date, format = 'M/d/y \'at\' T') {
@@ -284,11 +285,12 @@ export function checksumAddress (address) {
  * than 10 characters.
  */
 export function shortenAddress (address = '') {
-  if (address.length < 11) {
-    return address
+  const tronAddress = ethAddress.toTron(address)
+  if (tronAddress.length < 11) {
+    return tronAddress
   }
 
-  return `${address.slice(0, 6)}...${address.slice(-4)}`
+  return `${tronAddress.slice(0, 5)}...${tronAddress.slice(-5)}`
 }
 
 export function isValidAddressHead (address) {

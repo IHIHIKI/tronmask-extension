@@ -2338,6 +2338,49 @@
     web3 "^1.2.11"
     web3-provider-engine "^15.0.12"
 
+"@opentron/java-tron-provider@^0.4.5":
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/@opentron/java-tron-provider/-/java-tron-provider-0.4.5.tgz#a0a3a59e529a31d5a00390795ae591edd3feed86"
+  integrity sha512-YLWEww99o+Cj66xdtwAshFlPX39OcFgXocBLmbkU/zYa5Wvc0ZdnmlR0kfPwb+nfDMWwSvy00sDcmZCCcXXbBw==
+  dependencies:
+    "@opentron/tron-eth-conversions" "^0.4.5"
+    axios "^0.19.2"
+    axios-retry "^3.1.8"
+    body-parser "^1.19.0"
+    convict "^6.0.0"
+    cross-fetch "^3.0.5"
+    debug "^4.1.1"
+    elliptic "^6.5.3"
+    eth-json-rpc-middleware "^5.0.2"
+    express "^4.17.1"
+    express-async-wrap "^1.0.0"
+    json-rpc-engine "^5.3.0"
+    morgan "^1.10.0"
+    p-limit "^3.0.2"
+    promise-retry "^2.0.1"
+    protobufjs "^6.10.1"
+    safe-event-emitter "^1.0.1"
+    web3 "^1.2.11"
+    web3-provider-engine "^15.0.12"
+
+"@opentron/keyring-controller@^0.4.6":
+  version "0.4.6"
+  resolved "https://registry.yarnpkg.com/@opentron/keyring-controller/-/keyring-controller-0.4.6.tgz#ef2dff08fe5ae72b2659ded79dbb71033df0a581"
+  integrity sha512-gilO90BmVkeD6Cde5R5S/Cg6BXtFIjp2yhTwN8k1IUGfY9DXGKEhaj6Wuvp4pxQkj51oZ+eZ9CREsmkGXZi+UQ==
+  dependencies:
+    "@opentron/tron-sig-util" "^0.4.5"
+    bip39 "^2.4.0"
+    bluebird "^3.5.0"
+    browser-passworder "^2.0.3"
+    eth-hd-keyring "^3.5.0"
+    eth-sig-util "^2.5.0"
+    eth-simple-keyring "^3.5.0"
+    ethereumjs-util "^5.1.1"
+    ethereumjs-wallet "^0.6.0"
+    events "^1.1.1"
+    loglevel "^1.5.0"
+    obs-store "^4.0.3"
+
 "@opentron/tron-eth-conversions@^0.4.0":
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/@opentron/tron-eth-conversions/-/tron-eth-conversions-0.4.0.tgz#a182e3ad18382bb3157c4353a6b490f1f83bf468"
@@ -2345,6 +2388,24 @@
   dependencies:
     bs58check "^2.1.2"
     web3 "^1.2.11"
+
+"@opentron/tron-eth-conversions@^0.4.5":
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/@opentron/tron-eth-conversions/-/tron-eth-conversions-0.4.5.tgz#6156e6cf72b7d950521e2b6d2632486afeb4c96c"
+  integrity sha512-/WLHyWjTrgPoTGn3Wuxh5HDVvSaCuJPAsjiOZZ++bA5aQAcm3aIFR02op8TtlBkmekGwXX8IZU0teNM+9wXf5w==
+  dependencies:
+    bs58check "^2.1.2"
+    web3 "^1.2.11"
+
+"@opentron/tron-sig-util@^0.4.4", "@opentron/tron-sig-util@^0.4.5":
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/@opentron/tron-sig-util/-/tron-sig-util-0.4.5.tgz#a259d7da6cacc0de4052077b5aa63ceb904e695d"
+  integrity sha512-vZo0RfYAZGZeA0yf7v5buCwLlP/zWFQwUAOHY/9QGHyJW7YhZgjoIJtQRkAJcrL6gZSB3zT0AEl4HoiISx90sQ==
+  dependencies:
+    "@opentron/java-tron-provider" "^0.4.5"
+    "@opentron/tron-eth-conversions" "^0.4.5"
+    axios "^0.20.0"
+    elliptic "^6.5.3"
 
 "@popperjs/core@^2.4.0":
   version "2.4.0"
@@ -4865,6 +4926,13 @@ axios@^0.19.2:
   integrity sha512-fjgm5MvRHLhx+osE2xoekY70AhARk3a6hkN+3Io1jc00jtquGvxYlKlsFUhmUET0V5te6CcZI7lcv2Ym61mjHA==
   dependencies:
     follow-redirects "1.5.10"
+
+axios@^0.20.0:
+  version "0.20.0"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.20.0.tgz#057ba30f04884694993a8cd07fa394cff11c50bd"
+  integrity sha512-ANA4rr2BDcmmAQLOKft2fufrtuvlqR+cXNNinUmvfeSNCOF98PZL+7M/v1zIdGo7OLjEA9J2gXJL+j4zGsl0bA==
+  dependencies:
+    follow-redirects "^1.10.0"
 
 babel-code-frame@^6.16.0, babel-code-frame@^6.22.0, babel-code-frame@^6.26.0:
   version "6.26.0"
@@ -12363,6 +12431,11 @@ follow-redirects@1.5.10:
   integrity sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==
   dependencies:
     debug "=3.1.0"
+
+follow-redirects@^1.10.0:
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
+  integrity sha512-aq6gF1BEKje4a9i9+5jimNFIpq4Q1WiwBToeRK5NvZBd/TRsmW8BsJfOEGkr76TbOyPVD3OVDN910EcUNtRYEA==
 
 for-each@^0.3.3, for-each@~0.3.3:
   version "0.3.3"
