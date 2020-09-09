@@ -311,10 +311,10 @@
     "message": "TronMask is designed and built in California."
   },
   "buyWithWyre": {
-    "message": "Buy ETH with Wyre"
+    "message": "Buy TRX with Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre lets you use a debit card to deposit ETH right in to your TronMask account."
+    "message": "Wyre lets you use a debit card to deposit TRX right in to your TronMask account."
   },
   "buyCoinSwitch": {
     "message": "Buy on CoinSwitch"
@@ -822,7 +822,7 @@
     "message": "A token here reuses a symbol from another token you watch, this can be confusing or deceptive."
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "Not ETH network, set to lowercase"
+    "message": "Not TRX network, set to lowercase"
   },
   "invalidInput": {
     "message": "Invalid input."
@@ -947,7 +947,7 @@
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "Can not send negative amounts of ETH."
+    "message": "Can not send negative amounts of TRX."
   },
   "networkName": {
     "message": "Network Name"
@@ -1104,7 +1104,7 @@
     "message": "Primary Currency"
   },
   "primaryCurrencySettingDescription": {
-    "message": "Select native to prioritize displaying values in the native currency of the chain (e.g. ETH). Select Fiat to prioritize displaying values in your selected fiat currency."
+    "message": "Select native to prioritize displaying values in the native currency of the chain (e.g. TRX). Select Fiat to prioritize displaying values in your selected fiat currency."
   },
   "privacyMsg": {
     "message": "Privacy Policy"
@@ -1310,7 +1310,7 @@
     "message": "Send Amount"
   },
   "sendETH": {
-    "message": "Send ETH"
+    "message": "Send TRX"
   },
   "sendTokens": {
     "message": "Send Tokens"
@@ -1456,7 +1456,7 @@
     "message": "3. Start using web3 sites and more!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Use your hardware account like you would with any Tron account. Connect to web3 sites, send ETH, buy and store ERC20 tokens and non-fungible tokens like CryptoKitties."
+    "message": "Use your hardware account like you would with any Tron account. Connect to web3 sites, send TRX, buy and store ERC20 tokens and non-fungible tokens like CryptoKitties."
   },
   "storePhrase": {
     "message": "Store this phrase in a password manager like 1Password."
