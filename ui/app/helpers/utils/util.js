@@ -285,10 +285,10 @@ export function checksumAddress (address) {
  * than 10 characters.
  */
 export function shortenAddress (address = '') {
-  const tronAddress = ethAddress.toTron(address)
-  if (tronAddress.length < 11) {
-    return tronAddress
+  if (address.length < 11) {
+    return address
   }
+  const tronAddress = ethAddress.toTron(address)
 
   return `${tronAddress.slice(0, 5)}...${tronAddress.slice(-5)}`
 }
