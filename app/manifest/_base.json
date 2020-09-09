@@ -60,6 +60,7 @@
     "clipboardWrite",
     "http://localhost:8545/",
     "https://*.infura.io/",
+    "https://*.opentron.org/",
     "activeTab",
     "webRequest",
     "*://*.eth/",
