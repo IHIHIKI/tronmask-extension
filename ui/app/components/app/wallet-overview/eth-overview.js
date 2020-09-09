@@ -80,17 +80,20 @@ const EthOverview = ({ className }) => {
       )}
       buttons={(
         <>
-          <Button
-            type="primary"
-            className="eth-overview__button"
-            rounded
-            onClick={() => {
-              depositEvent()
-              dispatch(showModal({ name: 'DEPOSIT_ETHER' }))
-            }}
-          >
-            { t('buy') }
-          </Button>
+          {/*
+            @TRON: disable Buy button for now
+            <Button
+              type="primary"
+              className="eth-overview__button"
+              rounded
+              onClick={() => {
+                depositEvent()
+                dispatch(showModal({ name: 'DEPOSIT_ETHER' }))
+              }}
+            >
+              { t('buy') }
+            </Button>
+          */}
           <Button
             type="secondary"
             className="eth-overview__button"
