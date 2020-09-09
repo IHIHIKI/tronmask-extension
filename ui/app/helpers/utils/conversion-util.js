@@ -47,10 +47,10 @@ const toNormalizedDenomination = {
   TRX: (bigNumber) => bigNumber.div(BIG_NUMBER_TRX_MULTIPLIER),
 }
 const toSpecifiedDenomination = {
-  SUN: (bigNumber) => bigNumber.div(BIG_NUMBER_SUN_MULTIPLIER).round(),
-  GSUN: (bigNumber) => bigNumber.div(BIG_NUMBER_SUN_MULTIPLIER).round(9),
+  SUN: (bigNumber) => bigNumber.times(BIG_NUMBER_SUN_MULTIPLIER).round(),
+  GSUN: (bigNumber) => bigNumber.times(BIG_NUMBER_GSUN_MULTIPLIER).round(),
   // @TODO(tron): is round(9) right for tron?
-  TRX: (bigNumber) => bigNumber.div(BIG_NUMBER_TRX_MULTIPLIER).round(9),
+  TRX: (bigNumber) => bigNumber.times(BIG_NUMBER_TRX_MULTIPLIER).round(),
 }
 const baseChange = {
   hex: (n) => n.toString(16),
@@ -97,7 +97,6 @@ const converter = ({
   roundDown,
 }) => {
   let convertedValue = fromNumericBase ? toBigNumber[fromNumericBase](value) : value
-
   if (fromDenomination) {
     convertedValue = toNormalizedDenomination[fromDenomination](convertedValue)
   }
@@ -128,6 +127,7 @@ const converter = ({
   if (toNumericBase) {
     convertedValue = baseChange[toNumericBase](convertedValue)
   }
+
   return convertedValue
 }
 
