@@ -16,7 +16,7 @@ import Eth from 'ethjs'
 import EthQuery from 'eth-query'
 import StreamProvider from 'web3-stream-provider'
 import log from 'loglevel'
-import launchMetaMaskUi from '../../ui'
+import launchTronMaskUi from '../../ui'
 import { setupMultiplex } from './lib/stream-utils'
 import setupSentry from './lib/setupSentry'
 import ExtensionPlatform from './platforms/extension'
@@ -51,7 +51,7 @@ async function start () {
   initializeUiWithTab(activeTab)
 
   function displayCriticalError (container, err) {
-    container.innerHTML = '<div class="critical-error">The MetaMask app failed to load: please open and close MetaMask again to restart.</div>'
+    container.innerHTML = '<div class="critical-error">The TronMask app failed to load: please open and close TronMask again to restart.</div>'
     container.style.height = '80px'
     log.error(err.stack)
     throw err
@@ -106,7 +106,7 @@ function initializeUi (activeTab, container, connectionStream, cb) {
       return
     }
 
-    launchMetaMaskUi({
+    launchTronMaskUi({
       activeTab,
       container,
       backgroundConnection,

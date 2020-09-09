@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { getMetaMaskAccounts, getSendTokenAddress } from '../../../../selectors'
+import { getTronMaskAccounts, getSendTokenAddress } from '../../../../selectors'
 import { updateSendToken } from '../../../../store/actions'
 import SendAssetRow from './send-asset-row.component'
 
@@ -8,7 +8,7 @@ function mapStateToProps (state) {
     tokens: state.metamask.tokens,
     selectedAddress: state.metamask.selectedAddress,
     sendTokenAddress: getSendTokenAddress(state),
-    accounts: getMetaMaskAccounts(state),
+    accounts: getTronMaskAccounts(state),
   }
 }
 

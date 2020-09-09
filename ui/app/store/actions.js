@@ -2439,17 +2439,17 @@ export function getRequestAccountTabIds () {
   }
 }
 
-export function setOpenMetamaskTabsIDs (openMetaMaskTabIDs) {
+export function setOpenMetamaskTabsIDs (openTronMaskTabIDs) {
   return {
     type: actionConstants.SET_OPEN_METAMASK_TAB_IDS,
-    value: openMetaMaskTabIDs,
+    value: openTronMaskTabIDs,
   }
 }
 
 export function getOpenMetamaskTabsIds () {
   return async (dispatch) => {
-    const openMetaMaskTabIDs = await promisifiedBackground.getOpenMetamaskTabsIds()
-    dispatch(setOpenMetamaskTabsIDs(openMetaMaskTabIDs))
+    const openTronMaskTabIDs = await promisifiedBackground.getOpenMetamaskTabsIds()
+    dispatch(setOpenMetamaskTabsIDs(openTronMaskTabIDs))
   }
 }
 

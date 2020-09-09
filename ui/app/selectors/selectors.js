@@ -50,9 +50,9 @@ export function getCurrentNetworkId (state) {
   return state.metamask.network
 }
 
-export const getMetaMaskAccounts = createSelector(
-  getMetaMaskAccountsRaw,
-  getMetaMaskCachedBalances,
+export const getTronMaskAccounts = createSelector(
+  getTronMaskAccountsRaw,
+  getTronMaskCachedBalances,
   (currentAccounts, cachedBalances) => Object.entries(currentAccounts).reduce((selectedAccounts, [accountID, account]) => {
     if (account.balance === null || account.balance === undefined) {
       return {
@@ -91,19 +91,19 @@ export function getNumberOfTokens (state) {
   return tokens ? tokens.length : 0
 }
 
-export function getMetaMaskKeyrings (state) {
+export function getTronMaskKeyrings (state) {
   return state.metamask.keyrings
 }
 
-export function getMetaMaskIdentities (state) {
+export function getTronMaskIdentities (state) {
   return state.metamask.identities
 }
 
-export function getMetaMaskAccountsRaw (state) {
+export function getTronMaskAccountsRaw (state) {
   return state.metamask.accounts
 }
 
-export function getMetaMaskCachedBalances (state) {
+export function getTronMaskCachedBalances (state) {
   const network = getCurrentNetworkId(state)
 
   return state.metamask.cachedBalances[network]
@@ -112,10 +112,10 @@ export function getMetaMaskCachedBalances (state) {
 /**
  * Get ordered (by keyrings) accounts with identity and balance
  */
-export const getMetaMaskAccountsOrdered = createSelector(
-  getMetaMaskKeyrings,
-  getMetaMaskIdentities,
-  getMetaMaskAccounts,
+export const getTronMaskAccountsOrdered = createSelector(
+  getTronMaskKeyrings,
+  getTronMaskIdentities,
+  getTronMaskAccounts,
   (keyrings, identities, accounts) => keyrings
     .reduce((list, keyring) => list.concat(keyring.accounts), [])
     .filter((address) => Boolean(identities[address]))
@@ -137,14 +137,14 @@ export function getSelectedAccountCachedBalance (state) {
 }
 
 export function getSelectedAccount (state) {
-  const accounts = getMetaMaskAccounts(state)
+  const accounts = getTronMaskAccounts(state)
   const selectedAddress = getSelectedAddress(state)
 
   return accounts[selectedAddress]
 }
 
 export function getTargetAccount (state, targetAddress) {
-  const accounts = getMetaMaskAccounts(state)
+  const accounts = getTronMaskAccounts(state)
   return accounts[targetAddress]
 }
 
@@ -175,8 +175,8 @@ export function getAddressBookEntryName (state, address) {
 }
 
 export function accountsWithSendEtherInfoSelector (state) {
-  const accounts = getMetaMaskAccounts(state)
-  const identities = getMetaMaskIdentities(state)
+  const accounts = getTronMaskAccounts(state)
+  const identities = getTronMaskIdentities(state)
 
   const accountsWithSendEtherInfo = Object.entries(identities).map(([key, identity]) => {
     return { ...identity, ...accounts[key] }
@@ -186,7 +186,7 @@ export function accountsWithSendEtherInfoSelector (state) {
 }
 
 export function getAccountsWithLabels (state) {
-  return getMetaMaskAccountsOrdered(state).map(({ address, name, balance }) => ({
+  return getTronMaskAccountsOrdered(state).map(({ address, name, balance }) => ({
     address,
     addressLabel: `${name} (...${address.slice(address.length - 4)})`,
     label: name,

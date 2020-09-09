@@ -10,8 +10,8 @@ import {
 } from '../../../store/actions'
 import {
   getAddressConnectedDomainMap,
-  getMetaMaskAccountsOrdered,
-  getMetaMaskKeyrings,
+  getTronMaskAccountsOrdered,
+  getTronMaskKeyrings,
   getOriginOfCurrentTab,
   getSelectedAddress,
 } from '../../../selectors'
@@ -24,7 +24,7 @@ const SHOW_SEARCH_ACCOUNTS_MIN_COUNT = 5
 
 function mapStateToProps (state) {
   const { metamask: { isAccountMenuOpen } } = state
-  const accounts = getMetaMaskAccountsOrdered(state)
+  const accounts = getTronMaskAccountsOrdered(state)
   const origin = getOriginOfCurrentTab(state)
   const selectedAddress = getSelectedAddress(state)
 
@@ -33,7 +33,7 @@ function mapStateToProps (state) {
     addressConnectedDomainMap: getAddressConnectedDomainMap(state),
     originOfCurrentTab: origin,
     selectedAddress,
-    keyrings: getMetaMaskKeyrings(state),
+    keyrings: getTronMaskKeyrings(state),
     accounts,
     shouldShowAccountsSearch: accounts.length >= SHOW_SEARCH_ACCOUNTS_MIN_COUNT,
   }

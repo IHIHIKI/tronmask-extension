@@ -79,7 +79,7 @@
   "connecting": {
     "message": "Connecting..."
   },
-  "connectWithMetaMask": {
+  "connectWithTronMask": {
     "message": "Connect With TronMask"
   },
   "connectTo": {
@@ -983,7 +983,7 @@
   "newNetwork": {
     "message": "New Network"
   },
-  "newToMetaMask": {
+  "newToTronMask": {
     "message": "New to TronMask?"
   },
   "noAlreadyHaveSeed": {

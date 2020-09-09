@@ -73,7 +73,7 @@ export default class Routes extends Component {
     setLastActiveTime: PropTypes.func,
     history: PropTypes.object,
     location: PropTypes.object,
-    lockMetaMask: PropTypes.func,
+    lockTronMask: PropTypes.func,
     submittedPendingTransactions: PropTypes.array,
     isMouseUser: PropTypes.bool,
     setMouseUserState: PropTypes.func,
@@ -267,7 +267,7 @@ export default class Routes extends Component {
   toggleMetamaskActive () {
     if (this.props.isUnlocked) {
       // currently active: deactivate
-      this.props.lockMetaMask()
+      this.props.lockTronMask()
     } else {
       // currently inactive: redirect to password box
       const passwordBox = document.querySelector('input[type=password]')

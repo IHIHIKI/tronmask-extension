@@ -2,7 +2,7 @@ import { forOwn } from 'lodash'
 import {
   CAVEAT_NAMES,
 } from '../../../app/scripts/controllers/permissions/enums'
-import { getMetaMaskAccountsOrdered, getOriginOfCurrentTab, getSelectedAddress } from '.'
+import { getTronMaskAccountsOrdered, getOriginOfCurrentTab, getSelectedAddress } from '.'
 
 // selectors
 
@@ -211,7 +211,7 @@ export function getOrderedConnectedAccountsForActiveTab (state) {
   const { activeTab, metamask: { permissionsHistory } } = state
 
   const permissionsHistoryByAccount = permissionsHistory[activeTab.origin]?.['eth_accounts']?.accounts
-  const orderedAccounts = getMetaMaskAccountsOrdered(state)
+  const orderedAccounts = getTronMaskAccountsOrdered(state)
   const connectedAccounts = getPermittedAccountsForCurrentTab(state)
 
   return orderedAccounts
