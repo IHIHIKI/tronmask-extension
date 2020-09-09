@@ -1316,7 +1316,7 @@
     "message": "Send Tokens"
   },
   "sentEther": {
-    "message": "sent ether"
+    "message": "sent trx"
   },
   "sentTokens": {
     "message": "sent tokens"

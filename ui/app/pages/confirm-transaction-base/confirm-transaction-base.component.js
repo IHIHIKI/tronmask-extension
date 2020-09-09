@@ -249,7 +249,8 @@ export default class ConfirmTransactionBase extends Component {
     return (
       detailsComponent || (
         <div className="confirm-page-container-content__details">
-          <div className="confirm-page-container-content__gas-fee">
+          {/* @TRON hide for now */}
+          <div className="confirm-page-container-content__gas-fee" style={{ display: 'none' }}>
             <ConfirmDetailRow
               label="Gas Fee"
               value={hexTransactionFee}
@@ -279,7 +280,8 @@ export default class ConfirmTransactionBase extends Component {
               value={hexTransactionTotal}
               primaryText={primaryTotalTextOverride}
               secondaryText={hideFiatConversion ? this.context.t('noConversionRateAvailable') : secondaryTotalTextOverride}
-              headerText="Amount + Gas Fee"
+              // @TRON
+              headerText="Amount"
               headerTextClassName="confirm-detail-row__header-text--total"
               primaryValueTextColor="#2f9ae0"
             />
