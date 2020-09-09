@@ -79,7 +79,6 @@ export default class SendAmountRow extends Component {
   }
 
   updateAmount (amount) {
-    console.log('updateAmount', amount)
     const { updateSendAmount, setMaxModeTo } = this.props
 
     setMaxModeTo(false)

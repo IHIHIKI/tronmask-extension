@@ -172,6 +172,7 @@ export function gasEstimatesLoadingFinished () {
   }
 }
 
+// @TRON is there a tron equivalent for this?
 async function queryEthGasStationBasic () {
   const apiKey = process.env.ETH_GAS_STATION_API_KEY ? `?api-key=${process.env.ETH_GAS_STATION_API_KEY}` : ''
   const url = `https://ethgasstation.info/json/ethgasAPI.json${apiKey}`
