@@ -6,9 +6,9 @@
 import 'web3/dist/web3.min'
 
 const shouldLogUsage = !([
-  'docs.metamask.io',
+  'docs.tronmask.org',
   'metamask.github.io',
-  'metamask.io',
+  'tronmask.org',
 ].includes(window.location.hostname))
 
 export default function setupWeb3 (log) {

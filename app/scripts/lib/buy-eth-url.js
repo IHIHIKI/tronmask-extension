@@ -21,7 +21,7 @@ export default function getBuyEthUrl ({ network, address, service }) {
     case 'coinswitch':
       return `https://metamask.coinswitch.co/?address=${address}&to=eth`
     case 'metamask-faucet':
-      return 'https://faucet.metamask.io/'
+      return 'https://faucet.tronmask.org/'
     case 'rinkeby-faucet':
       return 'https://www.rinkeby.io/'
     case 'kovan-faucet':
