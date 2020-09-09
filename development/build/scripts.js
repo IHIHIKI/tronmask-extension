@@ -289,6 +289,14 @@ function createScriptTasks ({ browserPlatforms, livereload }) {
 
     let bundler = browserify(browserifyOpts)
       .transform('babelify')
+      .transform('babelify', {
+        // otherwise, parse error from "p-limit" package
+        only: [
+          './**/node_modules/p-limit',
+        ],
+        global: true,
+        plugins: ['@babel/plugin-proposal-optional-catch-binding'],
+      })
       // Transpile any dependencies using the object spread/rest operator
       // because it is incompatible with `esprima`, which is used by `envify`
       // See https://github.com/jquery/esprima/issues/1927
