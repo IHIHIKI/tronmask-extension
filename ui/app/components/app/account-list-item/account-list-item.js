@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { checksumAddress } from '../../../helpers/utils/util'
+import { formatAddressForTron } from '../../../helpers/utils/util'
 import Identicon from '../../ui/identicon'
 import AccountMismatchWarning from '../../ui/account-mismatch-warning/account-mismatch-warning.component'
 
@@ -35,7 +35,7 @@ export default function AccountListItem ({
 
       {displayAddress && name && (
         <div className="account-list-item__account-address">
-          { checksumAddress(address) }
+          { formatAddressForTron(address, { shorten: false }) }
         </div>
       )}
     </div>

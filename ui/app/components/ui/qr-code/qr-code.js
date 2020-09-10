@@ -2,9 +2,9 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import qrCode from 'qrcode-generator'
 import { connect } from 'react-redux'
-import { isHexPrefixed } from 'ethereumjs-util'
+// import { isHexPrefixed } from 'ethereumjs-util'
 import ReadOnlyInput from '../readonly-input/readonly-input'
-import { checksumAddress } from '../../../helpers/utils/util'
+import { formatAddressForTron } from '../../../helpers/utils/util'
 
 export default connect(mapStateToProps)(QrCodeView)
 
@@ -16,9 +16,10 @@ function mapStateToProps (state) {
   }
 }
 
+// @TODO(tron).. check how tronlink uses qr codes
 function QrCodeView (props) {
   const { message, data } = props.Qr
-  const address = `${isHexPrefixed(data) ? 'ethereum:' : ''}${checksumAddress(data)}`
+  const address = formatAddressForTron(data, { shorten: false })
   const qrImage = qrCode(4, 'M')
   qrImage.addData(address)
   qrImage.make()
@@ -59,7 +60,7 @@ function QrCodeView (props) {
       />
       <ReadOnlyInput
         wrapperClass="ellip-address-wrapper"
-        value={checksumAddress(data)}
+        value={address}
       />
     </div>
   )

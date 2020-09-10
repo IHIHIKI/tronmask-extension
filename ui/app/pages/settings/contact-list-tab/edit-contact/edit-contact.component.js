@@ -4,7 +4,7 @@ import { Redirect } from 'react-router-dom'
 import Identicon from '../../../../components/ui/identicon'
 import Button from '../../../../components/ui/button/button.component'
 import TextField from '../../../../components/ui/text-field'
-import { isValidAddress } from '../../../../helpers/utils/util'
+import { isValidAddress, formatAddressForTron } from '../../../../helpers/utils/util'
 import PageContainerFooter from '../../../../components/ui/page-container/page-container-footer'
 
 export default class EditContact extends PureComponent {
@@ -34,7 +34,7 @@ export default class EditContact extends PureComponent {
 
   state = {
     newName: this.props.name,
-    newAddress: this.props.address,
+    newAddress: formatAddressForTron(this.props.address, { shorten: false }),
     newMemo: this.props.memo,
     error: '',
   }

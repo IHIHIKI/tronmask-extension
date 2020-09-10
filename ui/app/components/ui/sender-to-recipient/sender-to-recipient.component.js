@@ -4,7 +4,7 @@ import classnames from 'classnames'
 import copyToClipboard from 'copy-to-clipboard'
 import Tooltip from '../tooltip'
 import Identicon from '../identicon'
-import { checksumAddress, shortenAddress } from '../../../helpers/utils/util'
+import { checksumAddress, shortenAddress, formatAddressForTron } from '../../../helpers/utils/util'
 import AccountMismatchWarning from '../account-mismatch-warning/account-mismatch-warning.component'
 import { useI18nContext } from '../../../hooks/useI18nContext'
 import { DEFAULT_VARIANT, CARDS_VARIANT, FLAT_VARIANT } from './sender-to-recipient.constants'
@@ -31,7 +31,7 @@ function SenderAddress ({
       ? <p>{t('copyAddress')}</p>
       : (
         <p>
-          {shortenAddress(checksummedSenderAddress)}<br />
+          {formatAddressForTron(checksummedSenderAddress)}<br />
           {t('copyAddress')}
         </p>
       )
@@ -41,7 +41,7 @@ function SenderAddress ({
       className={classnames('sender-to-recipient__party sender-to-recipient__party--sender')}
       onClick={() => {
         setAddressCopied(true)
-        copyToClipboard(checksummedSenderAddress)
+        copyToClipboard(formatAddressForTron(checksummedSenderAddress, { shorten: false }))
         if (onSenderClick) {
           onSenderClick()
         }
@@ -65,7 +65,7 @@ function SenderAddress ({
         <div className="sender-to-recipient__name">
           {
             addressOnly
-              ? <span>{`${t('from')}: ${senderName || checksummedSenderAddress}`}</span>
+              ? <span>{`${t('from')}: ${senderName || formatAddressForTron(checksummedSenderAddress, { shorten: false })}`}</span>
               : senderName
           }
         </div>
@@ -103,7 +103,7 @@ function RecipientWithAddress ({
     } else {
       tooltipHtml = (
         <p>
-          {shortenAddress(checksummedRecipientAddress)}<br />
+          {formatAddressForTron(checksummedRecipientAddress)}<br />
           {t('copyAddress')}
         </p>
       )
@@ -114,7 +114,7 @@ function RecipientWithAddress ({
       className="sender-to-recipient__party sender-to-recipient__party--recipient sender-to-recipient__party--recipient-with-address"
       onClick={() => {
         setAddressCopied(true)
-        copyToClipboard(checksummedRecipientAddress)
+        copyToClipboard(formatAddressForTron(checksummedRecipientAddress, { shorten: false }))
         if (onRecipientClick) {
           onRecipientClick()
         }
@@ -141,7 +141,7 @@ function RecipientWithAddress ({
           <span>{ addressOnly ? `${t('to')}: ` : '' }</span>
           {
             addressOnly
-              ? (recipientNickname || recipientEns || checksummedRecipientAddress)
+              ? (recipientNickname || recipientEns || formatAddressForTron(checksummedRecipientAddress, { shorten:  false }))
               : (recipientNickname || recipientEns || recipientName || t('newContract'))
           }
         </div>
