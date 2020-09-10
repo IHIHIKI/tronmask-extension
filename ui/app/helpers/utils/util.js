@@ -100,7 +100,7 @@ export function numericBalance (balance) {
 }
 
 // const DECIMALS = 18;
-const DECIMALS = 18
+const DECIMALS = 6
 
 // Takes  hex, returns [beforeDecimal, afterDecimal]
 export function parseBalance (balance) {
