@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import ethUtil from 'ethereumjs-util'
-import { checkExistingAddresses } from '../../helpers/utils/util'
+import { checkExistingAddresses, isValidTronAddress } from '../../helpers/utils/util'
 import { tokenInfoGetter } from '../../helpers/utils/token-util'
 import { CONFIRM_ADD_TOKEN_ROUTE } from '../../helpers/constants/routes'
 import TextField from '../../components/ui/text-field'
@@ -9,6 +9,7 @@ import PageContainer from '../../components/ui/page-container'
 import { Tabs, Tab } from '../../components/ui/tabs'
 import TokenList from './token-list'
 import TokenSearch from './token-search'
+import { ethAddress } from '@opentron/tron-eth-conversions'
 
 const emptyAddr = '0x0000000000000000000000000000000000000000'
 
@@ -122,8 +123,13 @@ class AddToken extends Component {
       selectedTokens,
     } = this.state
 
+    let hexAddress = address
+    if (isValidTronAddress(hexAddress)) {
+      hexAddress = ethAddress.fromTron(hexAddress)
+    }
+
     const customToken = {
-      address,
+      address: hexAddress,
       symbol,
       decimals,
     }
@@ -142,13 +148,18 @@ class AddToken extends Component {
   }
 
   handleCustomAddressChange (value) {
-    const customAddress = value.trim()
+    let customAddress = value.trim()
     this.setState({
       customAddress,
       customAddressError: null,
       tokenSelectorError: null,
       autoFilled: false,
     })
+
+    // @TRON
+    if (isValidTronAddress(customAddress)) {
+      customAddress = ethAddress.fromTron(customAddress)
+    }
 
     const isValidAddress = ethUtil.isValidAddress(customAddress)
     const standardAddress = ethUtil.addHexPrefix(customAddress).toLowerCase()
