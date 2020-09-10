@@ -827,7 +827,7 @@
     "message": "כתובת הנמען"
   },
   "recipientAddressPlaceholder": {
-    "message": "חיפוש, כתובת ציבורית (0x), או TNS"
+    "message": "חיפוש, כתובת ציבורית (T...), או TNS"
   },
   "rejectAll": {
     "message": "דחה הכל"

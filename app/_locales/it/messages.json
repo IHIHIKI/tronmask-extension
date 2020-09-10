@@ -1137,7 +1137,7 @@
     "message": "Indirizzo Destinatario"
   },
   "recipientAddressPlaceholder": {
-    "message": "Ricerca, indirizzo pubblico (0x) o TNS"
+    "message": "Ricerca, indirizzo pubblico (T...) o TNS"
   },
   "rejectAll": {
     "message": "Respingi Tutto"

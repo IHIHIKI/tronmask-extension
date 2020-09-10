@@ -826,7 +826,7 @@
     "message": "Saņēmēja adrese"
   },
   "recipientAddressPlaceholder": {
-    "message": "Meklēšana, publiskā adrese (0x) vai TNS"
+    "message": "Meklēšana, publiskā adrese (T...) vai TNS"
   },
   "rejectAll": {
     "message": "Noraidīt visus"

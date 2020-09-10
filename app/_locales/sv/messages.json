@@ -814,7 +814,7 @@
     "message": "Mottagaradress"
   },
   "recipientAddressPlaceholder": {
-    "message": "Sök, allmän adress (0x) eller TNS"
+    "message": "Sök, allmän adress (T...) eller TNS"
   },
   "rejectAll": {
     "message": "Neka alla"

@@ -830,7 +830,7 @@
     "message": "Gavėjo adresas"
   },
   "recipientAddressPlaceholder": {
-    "message": "Ieška, viešieji adresai (0x) arba TNS"
+    "message": "Ieška, viešieji adresai (T...) arba TNS"
   },
   "rejectAll": {
     "message": "Atmesti viską"

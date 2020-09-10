@@ -817,7 +817,7 @@
     "message": "Adresă destinatar"
   },
   "recipientAddressPlaceholder": {
-    "message": "Căutare, adresa publică (0x) sau TNS"
+    "message": "Căutare, adresa publică (T...) sau TNS"
   },
   "rejectAll": {
     "message": "Respingere toate"

@@ -823,7 +823,7 @@
     "message": "Adresa primatelja"
   },
   "recipientAddressPlaceholder": {
-    "message": "Pretraži, javne adrese (0x) ili TNS"
+    "message": "Pretraži, javne adrese (T...) ili TNS"
   },
   "rejectAll": {
     "message": "Odbaci sve"

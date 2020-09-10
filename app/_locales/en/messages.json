@@ -1141,7 +1141,7 @@
     "message": "Recipient Address"
   },
   "recipientAddressPlaceholder": {
-    "message": "Search, public address (0x), or TNS"
+    "message": "Search, public address (T...), or TNS"
   },
   "rejectAll": {
     "message": "Reject All"

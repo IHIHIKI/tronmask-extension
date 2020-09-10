@@ -983,7 +983,7 @@
     "message": "Недавние"
   },
   "recipientAddressPlaceholder": {
-    "message": "Поиск, публичный адрес  (0x)или TNS"
+    "message": "Поиск, публичный адрес  (T...)или TNS"
   },
   "rejectAll": {
     "message": "Отклонить все"

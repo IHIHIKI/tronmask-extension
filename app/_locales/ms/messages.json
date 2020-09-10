@@ -804,7 +804,7 @@
     "message": "Alamat Penerima"
   },
   "recipientAddressPlaceholder": {
-    "message": "Cari, alamat awam (0x), atau TNS"
+    "message": "Cari, alamat awam (T...), atau TNS"
   },
   "rejectAll": {
     "message": "Tolak Semua"

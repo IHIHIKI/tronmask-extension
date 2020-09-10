@@ -808,7 +808,7 @@
     "message": "Adreça del destinatari"
   },
   "recipientAddressPlaceholder": {
-    "message": "Cerca, adreça pública (0x), o TNS"
+    "message": "Cerca, adreça pública (T...), o TNS"
   },
   "rejectAll": {
     "message": "Rebutja-ho tot"

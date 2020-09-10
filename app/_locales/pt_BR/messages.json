@@ -818,7 +818,7 @@
     "message": "Endereço do Destinatário"
   },
   "recipientAddressPlaceholder": {
-    "message": "Buscar, endereço público (0x) ou TNS"
+    "message": "Buscar, endereço público (T...) ou TNS"
   },
   "rejectAll": {
     "message": "Recusar tudo"

@@ -811,7 +811,7 @@
     "message": "Alamat Penerima"
   },
   "recipientAddressPlaceholder": {
-    "message": "Pencarian, alamat publik  (0x), atau TNS"
+    "message": "Pencarian, alamat publik  (T...), atau TNS"
   },
   "rejectAll": {
     "message": "Tolak Semua"

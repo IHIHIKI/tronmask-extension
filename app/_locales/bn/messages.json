@@ -830,7 +830,7 @@
     "message": "প্রাপকের ঠিকানা"
   },
   "recipientAddressPlaceholder": {
-    "message": "অনুসন্ধান, সার্বজনীন ঠিকানা (0x), বা TNS"
+    "message": "অনুসন্ধান, সার্বজনীন ঠিকানা (T...), বা TNS"
   },
   "rejectAll": {
     "message": "সব খারিজ করুন"

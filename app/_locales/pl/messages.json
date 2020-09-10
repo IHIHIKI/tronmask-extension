@@ -824,7 +824,7 @@
     "message": "Adres odbiorcy"
   },
   "recipientAddressPlaceholder": {
-    "message": "Szukaj, adres publiczny (0x) lub TNS"
+    "message": "Szukaj, adres publiczny (T...) lub TNS"
   },
   "rejectAll": {
     "message": "Odrzuć wszystkie"

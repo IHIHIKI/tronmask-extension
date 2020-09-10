@@ -815,7 +815,7 @@
     "message": "Dirección del destinatario"
   },
   "recipientAddressPlaceholder": {
-    "message": "Buscar, dirección pública (0x) o TNS"
+    "message": "Buscar, dirección pública (T...) o TNS"
   },
   "rejectAll": {
     "message": "Rechazar todo"

@@ -827,7 +827,7 @@
     "message": "Vastaanottajan osoite"
   },
   "recipientAddressPlaceholder": {
-    "message": "Haku, julkinen osoite (0x) tai TNS"
+    "message": "Haku, julkinen osoite (T...) tai TNS"
   },
   "rejectAll": {
     "message": "Hylkää kaikki"

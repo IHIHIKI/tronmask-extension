@@ -757,7 +757,7 @@
     "message": "Address ng Recipient"
   },
   "recipientAddressPlaceholder": {
-    "message": "Maghanap, pampublikong address (0x), o TNS"
+    "message": "Maghanap, pampublikong address (T...), o TNS"
   },
   "rejectAll": {
     "message": "Tanggihan Lahat"

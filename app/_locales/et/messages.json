@@ -820,7 +820,7 @@
     "message": "Saaja aadress"
   },
   "recipientAddressPlaceholder": {
-    "message": "Otsing, avalik aadress (0x) või TNS"
+    "message": "Otsing, avalik aadress (T...) või TNS"
   },
   "rejectAll": {
     "message": "Lükka kõik tagasi"

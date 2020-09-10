@@ -827,7 +827,7 @@
     "message": "የተቀባይ አድራሻ"
   },
   "recipientAddressPlaceholder": {
-    "message": "ፍለጋ፣ ለሕዝብ ክፍት የሆነ አድራሻ (0x), ወይም TNS"
+    "message": "ፍለጋ፣ ለሕዝብ ክፍት የሆነ አድራሻ (T...), ወይም TNS"
   },
   "rejectAll": {
     "message": "ሁሉንም አትቀበል"

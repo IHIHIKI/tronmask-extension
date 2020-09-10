@@ -821,7 +821,7 @@
     "message": "받는 주소"
   },
   "recipientAddressPlaceholder": {
-    "message": "검색, 공개 주소 (0x), 또는 TNS"
+    "message": "검색, 공개 주소 (T...), 또는 TNS"
   },
   "rejectAll": {
     "message": "모두 거부"

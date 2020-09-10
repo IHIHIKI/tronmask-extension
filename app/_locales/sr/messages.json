@@ -821,7 +821,7 @@
     "message": "Adresa primaoca"
   },
   "recipientAddressPlaceholder": {
-    "message": "Pretraga, javna adresa (0x) ili TNS"
+    "message": "Pretraga, javna adresa (T...) ili TNS"
   },
   "rejectAll": {
     "message": "Odbacite sve"

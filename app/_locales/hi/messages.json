@@ -827,7 +827,7 @@
     "message": "प्राप्तकर्ता का पता"
   },
   "recipientAddressPlaceholder": {
-    "message": "ढूँढें, सार्वजनिक पता (0x), या TNS"
+    "message": "ढूँढें, सार्वजनिक पता (T...), या TNS"
   },
   "rejectAll": {
     "message": "सभी को अस्वीकार करें"

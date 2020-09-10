@@ -826,7 +826,7 @@
     "message": "Адрес на получателя"
   },
   "recipientAddressPlaceholder": {
-    "message": "Търсене, публичен адрес (0x) или TNS"
+    "message": "Търсене, публичен адрес (T...) или TNS"
   },
   "rejectAll": {
     "message": "Отхвърлете всички"

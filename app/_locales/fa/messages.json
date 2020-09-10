@@ -830,7 +830,7 @@
     "message": "آدرس دریافت کننده"
   },
   "recipientAddressPlaceholder": {
-    "message": "جستجو، آدرس عمومی (0x)، یا TNS"
+    "message": "جستجو، آدرس عمومی (T...)، یا TNS"
   },
   "rejectAll": {
     "message": "رد همه"

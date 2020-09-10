@@ -812,7 +812,7 @@
     "message": "Adresse du destinataire"
   },
   "recipientAddressPlaceholder": {
-    "message": "Recherche, adresse publique (0x) ou TNS"
+    "message": "Recherche, adresse publique (T...) ou TNS"
   },
   "rejectAll": {
     "message": "Tout rejeter"

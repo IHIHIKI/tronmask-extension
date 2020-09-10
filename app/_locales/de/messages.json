@@ -796,7 +796,7 @@
     "message": "Empfängeradresse"
   },
   "recipientAddressPlaceholder": {
-    "message": "Suchen, öffentliche Adresse (0x) oder TNS"
+    "message": "Suchen, öffentliche Adresse (T...) oder TNS"
   },
   "rejectAll": {
     "message": "Alle verwerfen"

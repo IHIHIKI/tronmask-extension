@@ -808,7 +808,7 @@
     "message": "Anwani ya Mpokeaji"
   },
   "recipientAddressPlaceholder": {
-    "message": "Tafuta, anwani za umma (0x), au TNS"
+    "message": "Tafuta, anwani za umma (T...), au TNS"
   },
   "rejectAll": {
     "message": "Kataa Zote"

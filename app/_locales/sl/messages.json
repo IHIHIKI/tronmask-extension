@@ -815,7 +815,7 @@
     "message": "Prejemnikov naslov"
   },
   "recipientAddressPlaceholder": {
-    "message": "Iskanje, javni naslov (0x) ali TNS"
+    "message": "Iskanje, javni naslov (T...) ali TNS"
   },
   "rejectAll": {
     "message": "Zavrni vse"

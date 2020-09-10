@@ -823,7 +823,7 @@
     "message": "Címzett címe"
   },
   "recipientAddressPlaceholder": {
-    "message": "Keresés, nyilvános cím (0x) vagy TNS"
+    "message": "Keresés, nyilvános cím (T...) vagy TNS"
   },
   "rejectAll": {
     "message": "Mindet elutasít"

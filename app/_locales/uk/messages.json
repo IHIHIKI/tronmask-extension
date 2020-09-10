@@ -830,7 +830,7 @@
     "message": "Адреса отримувача"
   },
   "recipientAddressPlaceholder": {
-    "message": "Пошук, публічна адреса (0x), або TNS"
+    "message": "Пошук, публічна адреса (T...), або TNS"
   },
   "rejectAll": {
     "message": "Відхилити все"
