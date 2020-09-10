@@ -8,5 +8,5 @@
   - [x] display balances correctly in import page...
   - [x] normal transfer transaction
   - [] trc20 token transfer
-  - [] contract trigger transaction
+  - [x] contract trigger transaction
   - [] better handle errors (e.g. when ledger not unlocked/connected)
