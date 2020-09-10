@@ -7,6 +7,6 @@
   - [x] import account from ledger
   - [x] display balances correctly in import page...
   - [x] normal transfer transaction
-  - [] trc20 token transfer
+  - [x] trc20 token transfer
   - [x] contract trigger transaction
   - [] better handle errors (e.g. when ledger not unlocked/connected)
