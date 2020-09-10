@@ -63,9 +63,16 @@ export function addressSummary (address, firstSegLength = 10, lastSegLength = 4,
   return checked ? `${checked.slice(0, firstSegLength)}...${checked.slice(checked.length - lastSegLength)}` : '...'
 }
 
+export function isValidTronAddress (address) {
+  return ethAddress.isValidTronAddress(address)
+}
+
 export function isValidAddress (address) {
   if (!address || address === '0x0000000000000000000000000000000000000000') {
     return false
+  }
+  if (isValidTronAddress(address)) {
+    return true
   }
   const prefixed = address.startsWith('0X') ? address : ethUtil.addHexPrefix(address)
   return (isAllOneCase(prefixed.slice(2)) && ethUtil.isValidAddress(prefixed)) || ethUtil.isValidChecksumAddress(prefixed)

@@ -4,11 +4,13 @@ import classnames from 'classnames'
 
 import { debounce } from 'lodash'
 import copyToClipboard from 'copy-to-clipboard/index'
+// @TODO(tron): port ethjs-ens?
 import ENS from 'ethjs-ens'
 import networkMap from 'ethereum-ens-network-map'
 import log from 'loglevel'
-import { ellipsify } from '../../send.utils'
-import { isValidDomainName, isValidAddress, isValidAddressHead, formatAddressForTron } from '../../../../helpers/utils/util'
+// import { ellipsify } from '../../send.utils'
+import { ethAddress } from '@opentron/tron-eth-conversions'
+import { isValidDomainName, isValidTronAddress, isValidAddress, isValidAddressHead, formatAddressForTron } from '../../../../helpers/utils/util'
 import { MAINNET_NETWORK_ID } from '../../../../../../app/scripts/controllers/network/enums'
 
 // Local Constants
@@ -53,7 +55,7 @@ export default class EnsInput extends Component {
     }
   }
 
-  // If an address is sent without a nickname, meaning not from ENS or from
+  // If an address is sent without a nickname, meaning not from TNS or from
   // the user's own accounts, a default of a one-space string is used.
   componentDidUpdate (prevProps) {
     const {
@@ -105,7 +107,9 @@ export default class EnsInput extends Component {
 
   onPaste = (event) => {
     event.clipboardData.items[0].getAsString((text) => {
-      if (isValidAddress(text)) {
+      if (isValidTronAddress(text)) {
+        this.props.onPaste(ethAddress.fromTron(text))
+      } else if (isValidAddress(text)) {
         this.props.onPaste(text)
       }
     })
@@ -123,14 +127,18 @@ export default class EnsInput extends Component {
 
     if (!networkHasEnsSupport && !isValidAddress(input) && !isValidAddressHead(input)) {
       updateEnsResolution('')
-      updateEnsResolutionError(networkHasEnsSupport ? '' : 'Network does not support ENS')
+      updateEnsResolutionError(networkHasEnsSupport ? '' : 'Network does not support TNS')
       return
     }
 
     if (isValidDomainName(input)) {
       this.lookupEnsName(input)
     } else if (onValidAddressTyped && isValidAddress(input)) {
-      onValidAddressTyped(input)
+      if (isValidTronAddress(input)) {
+        onValidAddressTyped(ethAddress.fromTron(input))
+      } else {
+        onValidAddressTyped(input)
+      }
     } else {
       updateEnsResolution('')
       updateEnsResolutionError('')
@@ -201,7 +209,7 @@ export default class EnsInput extends Component {
             onChange={this.onChange}
           >
             <div className="ens-input__selected-input__title">
-              {name || formatAddressForTron(selectedAddress)}
+              {name || formatAddressForTron(selectedAddress, { shortenLength: 14 })}
             </div>
             {name && (
               <div className="ens-input__selected-input__subtitle">
