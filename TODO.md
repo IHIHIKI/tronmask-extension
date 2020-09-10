@@ -5,7 +5,7 @@
 - Addresses should be input in Tron format
 - Ledger support
   - [x] import account from ledger
-  - [] display balances correctly in import page...
+  - [x] display balances correctly in import page...
   - [] normal transfer transaction
   - [] trc20 token transfer
   - [] contract trigger transaction

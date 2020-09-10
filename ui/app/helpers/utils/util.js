@@ -288,9 +288,16 @@ export function shortenAddress (address = '') {
   if (address.length < 11) {
     return address
   }
+  return formatAddressForTron(address, { shorten: true })
+}
+
+export function formatAddressForTron (address, { shorten = true } = {}) {
   const tronAddress = ethAddress.toTron(address)
 
-  return `${tronAddress.slice(0, 5)}...${tronAddress.slice(-5)}`
+  if (shorten) {
+    return `${tronAddress.slice(0, 5)}...${tronAddress.slice(-5)}`
+  }
+  return tronAddress
 }
 
 export function isValidAddressHead (address) {

@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import Select from 'react-select'
 import getAccountLink from '../../../../lib/account-link'
 import Button from '../../../components/ui/button'
+import { formatAddressForTron } from '../../../helpers/utils/util'
 
 class AccountList extends Component {
   getHdPaths () {
@@ -98,7 +99,7 @@ class AccountList extends Component {
                 />
                 <label className="hw-account-list__item__label" htmlFor={`address-${idx}`}>
                   <span className="hw-account-list__item__index">{account.index + 1}</span>
-                  {`${account.address.slice(0, 4)}...${account.address.slice(-4)}`}
+                  {formatAddressForTron(account.address, { shorten: true })}
                   <span className="hw-account-list__item__balance">{`${account.balance}`}</span>
                 </label>
               </div>
