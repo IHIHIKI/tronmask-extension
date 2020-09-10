@@ -10,6 +10,8 @@ import Tooltip from '../../../../components/ui/tooltip'
 import { useI18nContext } from '../../../../hooks/useI18nContext'
 import { useCopyToClipboard } from '../../../../hooks/useCopyToClipboard'
 
+import { formatAddressForTron } from '../../../../helpers/utils/util'
+
 function quadSplit (address) {
   return (
     `0x ${
@@ -59,7 +61,7 @@ function ViewContact ({
           </div>
           <div className="address-book__view-contact__group__value">
             <div className="address-book__view-contact__group__static-address">
-              {quadSplit(checkSummedAddress)}
+              {formatAddressForTron(checkSummedAddress, { shorten: false })}
             </div>
             <Tooltip
               position="bottom"
@@ -68,7 +70,7 @@ function ViewContact ({
               <button
                 className="address-book__view-contact__group__static-address--copy-icon"
                 onClick={() => {
-                  handleCopy(checkSummedAddress)
+                  handleCopy(formatAddressForTron(checkSummedAddress, { shorten: false }))
                 }}
               >
                 <Copy size={20} color="#3098DC" />

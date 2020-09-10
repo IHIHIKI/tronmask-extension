@@ -291,11 +291,11 @@ export function shortenAddress (address = '') {
   return formatAddressForTron(address, { shorten: true })
 }
 
-export function formatAddressForTron (address, { shorten = true } = {}) {
+export function formatAddressForTron (address, { shorten = true, shortenLength = 5 } = {}) {
   const tronAddress = ethAddress.toTron(address)
 
   if (shorten) {
-    return `${tronAddress.slice(0, 5)}...${tronAddress.slice(-5)}`
+    return `${tronAddress.slice(0, shortenLength)}...${tronAddress.slice(-shortenLength)}`
   }
   return tronAddress
 }

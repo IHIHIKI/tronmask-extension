@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Fuse from 'fuse.js'
 import Identicon from '../../../../components/ui/identicon'
-import { isValidAddress } from '../../../../helpers/utils/util'
+import { isValidAddress, formatAddressForTron } from '../../../../helpers/utils/util'
 import Dialog from '../../../../components/ui/dialog'
 import ContactList from '../../../../components/app/contact-list'
 import RecipientGroup from '../../../../components/app/contact-list/recipient-group/recipient-group.component'
@@ -127,12 +127,12 @@ export default class AddRecipient extends Component {
         <Identicon address={address} diameter={28} />
         <div className="send__select-recipient-wrapper__group-item__content">
           <div className="send__select-recipient-wrapper__group-item__title">
-            {name || ellipsify(address)}
+            {name || formatAddressForTron(address, { shorten: false })}
           </div>
           {
             name && (
               <div className="send__select-recipient-wrapper__group-item__subtitle">
-                {ellipsify(address)}
+                {formatAddressForTron(address, { shorten: false })}
               </div>
             )
           }

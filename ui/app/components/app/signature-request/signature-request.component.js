@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { getEnvironmentType } from '../../../../../app/scripts/lib/util'
 import Identicon from '../../ui/identicon'
+import { formatAddressForTron } from '../../../helpers/utils/util'
 import Header from './signature-request-header'
 import Footer from './signature-request-footer'
 import Message from './signature-request-message'
@@ -45,7 +46,8 @@ export default class SignatureRequest extends PureComponent {
   }
 
   formatWallet (wallet) {
-    return `${wallet.slice(0, 8)}...${wallet.slice(wallet.length - 8, wallet.length)}`
+    return formatAddressForTron(wallet, { shortenLength: 8 })
+    // return `${wallet.slice(0, 8)}...${wallet.slice(wallet.length - 8, wallet.length)}`
   }
 
   render () {

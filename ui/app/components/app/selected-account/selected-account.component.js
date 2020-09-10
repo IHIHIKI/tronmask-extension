@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import copyToClipboard from 'copy-to-clipboard'
-import { shortenAddress, checksumAddress } from '../../../helpers/utils/util'
+import { formatAddressForTron } from '../../../helpers/utils/util'
 
 import Tooltip from '../../ui/tooltip'
 
@@ -21,7 +21,7 @@ class SelectedAccount extends Component {
   render () {
     const { t } = this.context
     const { selectedIdentity } = this.props
-    const checksummedAddress = checksumAddress(selectedIdentity.address)
+    const { address } = selectedIdentity
 
     return (
       <div className="selected-account">
@@ -35,14 +35,14 @@ class SelectedAccount extends Component {
             onClick={() => {
               this.setState({ copied: true })
               setTimeout(() => this.setState({ copied: false }), 3000)
-              copyToClipboard(checksummedAddress)
+              copyToClipboard(formatAddressForTron(address, { shorten: false }))
             }}
           >
             <div className="selected-account__name">
               { selectedIdentity.name }
             </div>
             <div className="selected-account__address">
-              { shortenAddress(checksummedAddress) }
+              { formatAddressForTron(address) }
             </div>
           </div>
         </Tooltip>

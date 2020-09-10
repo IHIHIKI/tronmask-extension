@@ -8,6 +8,7 @@ import {
   conversionGreaterThan,
   conversionLessThan,
 } from '../../helpers/utils/conversion-util'
+import { formatAddressForTron } from '../../helpers/utils/util'
 
 import { calcTokenAmount } from '../../helpers/utils/token-util'
 
@@ -318,5 +319,7 @@ function removeLeadingZeroes (str) {
 }
 
 function ellipsify (text, first = 6, last = 4) {
-  return `${text.slice(0, first)}...${text.slice(-last)}`
+  // @TRON.. todo: make sure only used to format addresses (not tx
+  // hashes)
+  return formatAddressForTron(text, { shortenLength: Math.ceil((first + last) / 2) })
 }

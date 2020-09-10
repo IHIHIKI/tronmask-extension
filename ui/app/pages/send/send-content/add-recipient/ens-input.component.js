@@ -8,7 +8,7 @@ import ENS from 'ethjs-ens'
 import networkMap from 'ethereum-ens-network-map'
 import log from 'loglevel'
 import { ellipsify } from '../../send.utils'
-import { isValidDomainName, isValidAddress, isValidAddressHead } from '../../../../helpers/utils/util'
+import { isValidDomainName, isValidAddress, isValidAddressHead, formatAddressForTron } from '../../../../helpers/utils/util'
 import { MAINNET_NETWORK_ID } from '../../../../../../app/scripts/controllers/network/enums'
 
 // Local Constants
@@ -201,9 +201,13 @@ export default class EnsInput extends Component {
             onChange={this.onChange}
           >
             <div className="ens-input__selected-input__title">
-              {name || ellipsify(selectedAddress)}
+              {name || formatAddressForTron(selectedAddress)}
             </div>
-            { name && <div className="ens-input__selected-input__subtitle">{selectedAddress}</div> }
+            {name && (
+              <div className="ens-input__selected-input__subtitle">
+                {formatAddressForTron(selectedAddress, { shorten: false })}
+              </div>
+            )}
           </div>
           <div
             className="ens-input__wrapper__action-icon ens-input__wrapper__action-icon--erase"
