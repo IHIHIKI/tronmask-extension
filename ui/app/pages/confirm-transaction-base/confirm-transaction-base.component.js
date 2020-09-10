@@ -177,7 +177,9 @@ export default class ConfirmTransactionBase extends Component {
       }
     }
 
-    if (hexToDecimal(customGas.gasLimit) < 21000) {
+    // if (hexToDecimal(customGas.gasLimit) < 21000) {
+    // @TRON
+    if (hexToDecimal(customGas.gasLimit) < 0) {
       return {
         valid: false,
         errorKey: GAS_LIMIT_TOO_LOW_ERROR_KEY,
@@ -249,7 +251,7 @@ export default class ConfirmTransactionBase extends Component {
     return (
       detailsComponent || (
         <div className="confirm-page-container-content__details">
-          {/* @TRON hide for now */}
+          {/* @TRON hide gas details */}
           <div className="confirm-page-container-content__gas-fee" style={{ display: 'none' }}>
             <ConfirmDetailRow
               label="Gas Fee"

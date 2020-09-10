@@ -251,7 +251,9 @@ export const transactionFeeSelector = function (state, txData) {
     value, fromCurrency: nativeCurrency, toCurrency: nativeCurrency, conversionRate, numberOfDecimals: 6,
   })
 
-  const hexTransactionFee = getHexGasTotal({ gasLimit, gasPrice })
+  // const hexTransactionFee = getHexGasTotal({ gasLimit, gasPrice })
+  // @TODO(tron) calculate TRX to burn based on energy?
+  const hexTransactionFee = '0x0'
 
   const fiatTransactionFee = getTransactionFee({
     value: hexTransactionFee,

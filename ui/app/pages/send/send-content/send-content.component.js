@@ -34,6 +34,7 @@ export default class SendContent extends Component {
           <SendAssetRow />
           <SendAmountRow updateGas={this.updateGas} />
           {/* @TRON disable gas row for now <SendGasRow /> */}
+          {/* <SendGasRow /> */}
           {
             this.props.showHexData && (
               <SendHexDataRow

@@ -33,7 +33,9 @@ import {
 
 const hstInterface = new ethers.utils.Interface(abi)
 
-const SIMPLE_GAS_COST = '0x5208' // Hex for 21000, cost of a simple send.
+// const SIMPLE_GAS_COST = '0x5208' // Hex for 21000, cost of a simple send.
+// @TRON
+const SIMPLE_GAS_COST = '0x1' // Hex for 1, cost of a simple send.
 const MAX_MEMSTORE_TX_LIST_SIZE = 100 // Number of transactions (by unique nonces) to keep in memory
 
 /**
@@ -291,9 +293,14 @@ export default class TransactionController extends EventEmitter {
     if (txMeta.txParams.gasPrice) {
       return undefined
     }
+
+    /*
     const gasPrice = await this.query.gasPrice()
 
     return ethUtil.addHexPrefix(gasPrice.toString(16))
+    */
+    // @TRON: do this properly with energy cost?
+    return '0x0'
   }
 
   /**
