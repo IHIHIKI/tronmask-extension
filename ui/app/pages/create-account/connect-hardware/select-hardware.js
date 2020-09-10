@@ -63,7 +63,7 @@ export default class SelectHardware extends Component {
       <>
         <div className="hw-connect__btn-wrapper">
           {this.renderConnectToLedgerButton()}
-          {this.renderConnectToTrezorButton()}
+          {/* @TRON does not support trezor this.renderConnectToTrezorButton()*/}
         </div>
         <Button
           type="primary"
