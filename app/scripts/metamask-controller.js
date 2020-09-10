@@ -18,7 +18,8 @@ import ethUtil from 'ethereumjs-util'
 import log from 'loglevel'
 // @TODO(tron): port trezor/ledger for tron
 import TrezorKeyring from 'eth-trezor-keyring'
-import LedgerBridgeKeyring from '@metamask/eth-ledger-bridge-keyring'
+// import LedgerBridgeKeyring from '@metamask/eth-ledger-bridge-keyring'
+import LedgerBridgeKeyring from '@tronmask/trx-ledger-bridge-keyring'
 import EthQuery from 'eth-query'
 import nanoid from 'nanoid'
 import contractMap from 'eth-contract-metadata'
@@ -849,7 +850,9 @@ export default class MetamaskController extends EventEmitter {
    * @returns [] accounts
    */
   async connectHardware (deviceName, page, hdPath) {
+    console.log('connecting hardware', deviceName, page, hdPath)
     const keyring = await this.getKeyringForDevice(deviceName, hdPath)
+    console.log('keyring', keyring)
     let accounts = []
     switch (page) {
       case -1:
@@ -861,6 +864,7 @@ export default class MetamaskController extends EventEmitter {
       default:
         accounts = await keyring.getFirstPage()
     }
+    console.log('accounts', accounts)
 
     // Merge with existing accounts
     // and make sure addresses are not repeated

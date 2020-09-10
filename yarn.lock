@@ -3170,6 +3170,17 @@
     "@babel/runtime" "^7.10.3"
     "@testing-library/dom" "^7.17.1"
 
+"@tronmask/trx-ledger-bridge-keyring@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@tronmask/trx-ledger-bridge-keyring/-/trx-ledger-bridge-keyring-1.0.0.tgz#3f664f1db6305155232d4226064f30007ff44ac2"
+  integrity sha512-rPa7ZAhn/KTKhIbwL7D7l7Nwo4nNbRSilm5s2Wak/mS7YpVILRZz4oQZzPQiqArPnLENYz6xqNT+4zthFiOZOQ==
+  dependencies:
+    eth-sig-util "^1.4.2"
+    ethereumjs-tx "^1.3.4"
+    ethereumjs-util "^5.1.5"
+    events "^2.0.0"
+    hdkey "0.8.0"
+
 "@types/aria-query@^4.2.0":
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@types/aria-query/-/aria-query-4.2.0.tgz#14264692a9d6e2fa4db3df5e56e94b5e25647ac0"

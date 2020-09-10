@@ -84,6 +84,7 @@
     "@reduxjs/toolkit": "^1.3.2",
     "@sentry/browser": "^5.11.1",
     "@sentry/integrations": "^5.11.1",
+    "@tronmask/trx-ledger-bridge-keyring": "^1.0.0",
     "@zxing/library": "^0.8.0",
     "abortcontroller-polyfill": "^1.4.0",
     "await-semaphore": "^0.1.1",

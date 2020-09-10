@@ -111,6 +111,7 @@ class ConnectHardwareForm extends Component {
         }
       })
       .catch((e) => {
+        console.error({ e })
         const errorMessage = e.message
         if (errorMessage === 'Window blocked') {
           this.setState({ browserSupported: false, error: null })
