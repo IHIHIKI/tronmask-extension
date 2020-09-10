@@ -390,10 +390,10 @@
     "message": "Pabeigts"
   },
   "ensRegistrationError": {
-    "message": "Kļūda ENS vārda reģistrācijā"
+    "message": "Kļūda TNS vārda reģistrācijā"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Šajā tīklā ENS nosaukums nav atrasts. Pamēģiniet pārslēgties uz galveno Ethereum tīklu."
+    "message": "Šajā tīklā TNS nosaukums nav atrasts. Pamēģiniet pārslēgties uz galveno Ethereum tīklu."
   },
   "enterAnAlias": {
     "message": "Ievadiet segvārdu"
@@ -826,7 +826,7 @@
     "message": "Saņēmēja adrese"
   },
   "recipientAddressPlaceholder": {
-    "message": "Meklēšana, publiskā adrese (0x) vai ENS"
+    "message": "Meklēšana, publiskā adrese (0x) vai TNS"
   },
   "rejectAll": {
     "message": "Noraidīt visus"

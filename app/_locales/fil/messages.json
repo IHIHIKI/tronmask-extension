@@ -363,10 +363,10 @@
     "message": "Tapos na Lahat"
   },
   "ensRegistrationError": {
-    "message": "May error sa pagrerehistro ng ENS name"
+    "message": "May error sa pagrerehistro ng TNS name"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Hindi nakita ang ENS name sa kasalukuyang network. Subukang lumipat sa Main Ethereum Network."
+    "message": "Hindi nakita ang TNS name sa kasalukuyang network. Subukang lumipat sa Main Ethereum Network."
   },
   "enterAnAlias": {
     "message": "Maglagay ng alias"
@@ -757,7 +757,7 @@
     "message": "Address ng Recipient"
   },
   "recipientAddressPlaceholder": {
-    "message": "Maghanap, pampublikong address (0x), o ENS"
+    "message": "Maghanap, pampublikong address (0x), o TNS"
   },
   "rejectAll": {
     "message": "Tanggihan Lahat"

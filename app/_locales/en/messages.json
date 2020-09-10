@@ -573,10 +573,10 @@
     "description": "Return the user to the site that initiated onboarding"
   },
   "ensRegistrationError": {
-    "message": "Error in ENS name registration"
+    "message": "Error in TNS name registration"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "ENS name not found on the current network. Try switching to Main Tron Network."
+    "message": "TNS name not found on the current network. Try switching to Main Tron Network."
   },
   "enterAnAlias": {
     "message": "Enter an alias"
@@ -840,7 +840,7 @@
     "message": "IPFS Gateway"
   },
   "ipfsGatewayDescription": {
-    "message": "Enter the URL of the IPFS CID gateway to use for ENS content resolution."
+    "message": "Enter the URL of the IPFS CID gateway to use for TNS content resolution."
   },
   "invalidIpfsGateway": {
     "message": "Invalid IPFS Gateway: The value must be a valid URL"
@@ -1141,7 +1141,7 @@
     "message": "Recipient Address"
   },
   "recipientAddressPlaceholder": {
-    "message": "Search, public address (0x), or ENS"
+    "message": "Search, public address (0x), or TNS"
   },
   "rejectAll": {
     "message": "Reject All"

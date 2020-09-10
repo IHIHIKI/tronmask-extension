@@ -390,10 +390,10 @@
     "message": "Minden kész"
   },
   "ensRegistrationError": {
-    "message": "Hiba történt az ENS név regisztrációjakor"
+    "message": "Hiba történt az TNS név regisztrációjakor"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "ENS név nem található a jelenlegi hálózaton. Próbálj váltani Ethereum főhálózatra."
+    "message": "TNS név nem található a jelenlegi hálózaton. Próbálj váltani Ethereum főhálózatra."
   },
   "enterAnAlias": {
     "message": "Adjon meg álnevet"
@@ -823,7 +823,7 @@
     "message": "Címzett címe"
   },
   "recipientAddressPlaceholder": {
-    "message": "Keresés, nyilvános cím (0x) vagy ENS"
+    "message": "Keresés, nyilvános cím (0x) vagy TNS"
   },
   "rejectAll": {
     "message": "Mindet elutasít"

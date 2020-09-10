@@ -390,10 +390,10 @@
     "message": "Sve završeno"
   },
   "ensRegistrationError": {
-    "message": "Greška u registraciji naziva ENS"
+    "message": "Greška u registraciji naziva TNS"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Naziv ENS nije pronađen na trenutačnoj mreži. Pokušajte prebaciti na glavnu mrežu Ethereum."
+    "message": "Naziv TNS nije pronađen na trenutačnoj mreži. Pokušajte prebaciti na glavnu mrežu Ethereum."
   },
   "enterAnAlias": {
     "message": "Upiši pseudonim"
@@ -823,7 +823,7 @@
     "message": "Adresa primatelja"
   },
   "recipientAddressPlaceholder": {
-    "message": "Pretraži, javne adrese (0x) ili ENS"
+    "message": "Pretraži, javne adrese (0x) ili TNS"
   },
   "rejectAll": {
     "message": "Odbaci sve"

@@ -384,10 +384,10 @@
     "message": "Allt klart"
   },
   "ensRegistrationError": {
-    "message": "Fel i ENS-namnregistrering"
+    "message": "Fel i TNS-namnregistrering"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "ENS-namnet hittades inte i det aktuella nätverket. Prova att byta till Main Ethereum Network."
+    "message": "TNS-namnet hittades inte i det aktuella nätverket. Prova att byta till Main Ethereum Network."
   },
   "enterAnAlias": {
     "message": "Ange ett alias"
@@ -814,7 +814,7 @@
     "message": "Mottagaradress"
   },
   "recipientAddressPlaceholder": {
-    "message": "Sök, allmän adress (0x) eller ENS"
+    "message": "Sök, allmän adress (0x) eller TNS"
   },
   "rejectAll": {
     "message": "Neka alla"

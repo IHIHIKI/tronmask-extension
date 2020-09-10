@@ -387,10 +387,10 @@
     "message": "都完成了"
   },
   "ensRegistrationError": {
-    "message": "ENS 名稱註冊錯誤"
+    "message": "TNS 名稱註冊錯誤"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "現有網路中找不到 ENS 名稱。嘗試轉換到主要以太坊網路。"
+    "message": "現有網路中找不到 TNS 名稱。嘗試轉換到主要以太坊網路。"
   },
   "enterAnAlias": {
     "message": "輸入化名"
@@ -735,7 +735,7 @@
     "message": "下一頁"
   },
   "noAddressForName": {
-    "message": "此 ENS 尚未指定位址。"
+    "message": "此 TNS 尚未指定位址。"
   },
   "noConversionRateAvailable": {
     "message": "尚未有匯率比較值"
@@ -818,7 +818,7 @@
     "message": "接收位址"
   },
   "recipientAddressPlaceholder": {
-    "message": "搜尋，公開地址 (0x)，或 ENS"
+    "message": "搜尋，公開地址 (0x)，或 TNS"
   },
   "rejectAll": {
     "message": "全部拒絕"

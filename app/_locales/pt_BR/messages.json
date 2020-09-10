@@ -384,10 +384,10 @@
     "message": "Pronto"
   },
   "ensRegistrationError": {
-    "message": "Erro ao registrar nome de ENS"
+    "message": "Erro ao registrar nome de TNS"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Nome de ENS não encontrado na rede atual. Experimente alternar para a Rede Principal de Ethereum."
+    "message": "Nome de TNS não encontrado na rede atual. Experimente alternar para a Rede Principal de Ethereum."
   },
   "enterAnAlias": {
     "message": "Digite um pseudônimo"
@@ -818,7 +818,7 @@
     "message": "Endereço do Destinatário"
   },
   "recipientAddressPlaceholder": {
-    "message": "Buscar, endereço público (0x) ou ENS"
+    "message": "Buscar, endereço público (0x) ou TNS"
   },
   "rejectAll": {
     "message": "Recusar tudo"

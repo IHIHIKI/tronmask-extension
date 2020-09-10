@@ -390,10 +390,10 @@
     "message": "Helt klar"
   },
   "ensRegistrationError": {
-    "message": "Fejl i ENS-navneregistrering"
+    "message": "Fejl i TNS-navneregistrering"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "ENS-navn ikke fundet for det nuværende netværk. Prøv at skifte til Ethereums hovednetværk."
+    "message": "TNS-navn ikke fundet for det nuværende netværk. Prøv at skifte til Ethereums hovednetværk."
   },
   "enterAnAlias": {
     "message": "Indtast et alias"
@@ -811,7 +811,7 @@
     "message": "Modtagerens adresse"
   },
   "recipientAddressPlaceholder": {
-    "message": "Søg, offentlig adresse (0x) eller ENS"
+    "message": "Søg, offentlig adresse (0x) eller TNS"
   },
   "rejectAll": {
     "message": "Afvis Alle"

@@ -387,10 +387,10 @@
     "message": "Todo listo"
   },
   "ensRegistrationError": {
-    "message": "Error en el registro de nombres de ENS"
+    "message": "Error en el registro de nombres de TNS"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "No se pudo encontrar el nombre de ENS en la red actual. Intenta cambiar a la red principal de Ethereum."
+    "message": "No se pudo encontrar el nombre de TNS en la red actual. Intenta cambiar a la red principal de Ethereum."
   },
   "enterAnAlias": {
     "message": "Ingresa un alias"
@@ -815,7 +815,7 @@
     "message": "Dirección del destinatario"
   },
   "recipientAddressPlaceholder": {
-    "message": "Buscar, dirección pública (0x) o ENS"
+    "message": "Buscar, dirección pública (0x) o TNS"
   },
   "rejectAll": {
     "message": "Rechazar todo"

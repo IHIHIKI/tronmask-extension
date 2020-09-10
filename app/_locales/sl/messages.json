@@ -390,10 +390,10 @@
     "message": "Končano"
   },
   "ensRegistrationError": {
-    "message": "Napaka pri registraciji imena ENS"
+    "message": "Napaka pri registraciji imena TNS"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Imena ENS v trenutnem omrežju ni mogoče najti. Poskusite preklopiti na glavno omrežje Ethereum."
+    "message": "Imena TNS v trenutnem omrežju ni mogoče najti. Poskusite preklopiti na glavno omrežje Ethereum."
   },
   "enterAnAlias": {
     "message": "Vnesite vzdevek"
@@ -815,7 +815,7 @@
     "message": "Prejemnikov naslov"
   },
   "recipientAddressPlaceholder": {
-    "message": "Iskanje, javni naslov (0x) ali ENS"
+    "message": "Iskanje, javni naslov (0x) ali TNS"
   },
   "rejectAll": {
     "message": "Zavrni vse"

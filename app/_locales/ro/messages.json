@@ -390,10 +390,10 @@
     "message": "Gata"
   },
   "ensRegistrationError": {
-    "message": "Eroare la înregistrarea numelui ENS"
+    "message": "Eroare la înregistrarea numelui TNS"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Numele ENS nu s-a găsit pe rețeaua curentă. Încercați să comutați la Rețeaua Ethereum principală."
+    "message": "Numele TNS nu s-a găsit pe rețeaua curentă. Încercați să comutați la Rețeaua Ethereum principală."
   },
   "enterAnAlias": {
     "message": "Introduceți un alias"
@@ -817,7 +817,7 @@
     "message": "Adresă destinatar"
   },
   "recipientAddressPlaceholder": {
-    "message": "Căutare, adresa publică (0x) sau ENS"
+    "message": "Căutare, adresa publică (0x) sau TNS"
   },
   "rejectAll": {
     "message": "Respingere toate"

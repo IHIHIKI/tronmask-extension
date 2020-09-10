@@ -393,7 +393,7 @@
     "message": "ईएनएस नाम पंजीकरण में त्रुटि"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "वर्तमान नेटवर्क पर ENS नाम नहीं मिला। मुख्य Ethereum नेटवर्क पर स्विच करने का प्रयास करें।"
+    "message": "वर्तमान नेटवर्क पर TNS नाम नहीं मिला। मुख्य Ethereum नेटवर्क पर स्विच करने का प्रयास करें।"
   },
   "enterAnAlias": {
     "message": "एक उपनाम दर्ज करें"
@@ -827,7 +827,7 @@
     "message": "प्राप्तकर्ता का पता"
   },
   "recipientAddressPlaceholder": {
-    "message": "ढूँढें, सार्वजनिक पता (0x), या ENS"
+    "message": "ढूँढें, सार्वजनिक पता (0x), या TNS"
   },
   "rejectAll": {
     "message": "सभी को अस्वीकार करें"

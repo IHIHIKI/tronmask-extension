@@ -390,10 +390,10 @@
     "message": "הכל בוצע"
   },
   "ensRegistrationError": {
-    "message": "שגיאה ברישום שם ENS"
+    "message": "שגיאה ברישום שם TNS"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "שם ENS לא נמצא ברשת הנוכחית. נסה/י לעבור לרשת אתריום הראשית."
+    "message": "שם TNS לא נמצא ברשת הנוכחית. נסה/י לעבור לרשת אתריום הראשית."
   },
   "enterAnAlias": {
     "message": "יש להזין כינוי"
@@ -827,7 +827,7 @@
     "message": "כתובת הנמען"
   },
   "recipientAddressPlaceholder": {
-    "message": "חיפוש, כתובת ציבורית (0x), או ENS"
+    "message": "חיפוש, כתובת ציבורית (0x), או TNS"
   },
   "rejectAll": {
     "message": "דחה הכל"

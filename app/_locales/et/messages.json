@@ -390,10 +390,10 @@
     "message": "Valmis"
   },
   "ensRegistrationError": {
-    "message": "Tõrge ENS-i nime registreerimisel"
+    "message": "Tõrge TNS-i nime registreerimisel"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "ENS-i nime ei leitud praegusest võrgust. Proovige lülituda peamisele Ethereumi võrgule."
+    "message": "TNS-i nime ei leitud praegusest võrgust. Proovige lülituda peamisele Ethereumi võrgule."
   },
   "enterAnAlias": {
     "message": "Sisestage alias"
@@ -820,7 +820,7 @@
     "message": "Saaja aadress"
   },
   "recipientAddressPlaceholder": {
-    "message": "Otsing, avalik aadress (0x) või ENS"
+    "message": "Otsing, avalik aadress (0x) või TNS"
   },
   "rejectAll": {
     "message": "Lükka kõik tagasi"

@@ -378,10 +378,10 @@
     "message": "Semua Selesai"
   },
   "ensRegistrationError": {
-    "message": "Ralat dalam pendaftaran nama ENS"
+    "message": "Ralat dalam pendaftaran nama TNS"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Nama ENS tidak ditemui di rangkaian semasa. Cuba beralih kepada Rangkaian Ethereum Utama."
+    "message": "Nama TNS tidak ditemui di rangkaian semasa. Cuba beralih kepada Rangkaian Ethereum Utama."
   },
   "enterAnAlias": {
     "message": "Masukkan alias"
@@ -804,7 +804,7 @@
     "message": "Alamat Penerima"
   },
   "recipientAddressPlaceholder": {
-    "message": "Cari, alamat awam (0x), atau ENS"
+    "message": "Cari, alamat awam (0x), atau TNS"
   },
   "rejectAll": {
     "message": "Tolak Semua"

@@ -381,10 +381,10 @@
     "message": "Všetko vykonané"
   },
   "ensRegistrationError": {
-    "message": "Chyba pri registrácii názvu ENS"
+    "message": "Chyba pri registrácii názvu TNS"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Názov ENS sa nenašiel v aktuálnej sieti. Skúste sa prepnúť na hlavnú sieť Ethereum."
+    "message": "Názov TNS sa nenašiel v aktuálnej sieti. Skúste sa prepnúť na hlavnú sieť Ethereum."
   },
   "enterAnAlias": {
     "message": "Zadať alias"
@@ -799,7 +799,7 @@
     "message": "Adresa příjemce"
   },
   "recipientAddressPlaceholder": {
-    "message": "Vyhľadávať verejnú adresu (0x) alebo ENS"
+    "message": "Vyhľadávať verejnú adresu (0x) alebo TNS"
   },
   "rejectAll": {
     "message": "Odmietnuť všetko"

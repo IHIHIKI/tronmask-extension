@@ -390,10 +390,10 @@
     "message": "全部完成"
   },
   "ensRegistrationError": {
-    "message": "ENS 名称登记错误"
+    "message": "TNS 名称登记错误"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "未在当前网络找到 ENS 名称。请尝试切换至主以太坊网络。"
+    "message": "未在当前网络找到 TNS 名称。请尝试切换至主以太坊网络。"
   },
   "enterAnAlias": {
     "message": "输入别名"
@@ -723,7 +723,7 @@
     "message": "下一步"
   },
   "noAddressForName": {
-    "message": "此 ENS 名字还没有指定地址。"
+    "message": "此 TNS 名字还没有指定地址。"
   },
   "noConversionRateAvailable": {
     "message": "无可用兑换率"
@@ -812,7 +812,7 @@
     "message": "接收地址"
   },
   "recipientAddressPlaceholder": {
-    "message": "查找、公用地址 (0x) 或 ENS"
+    "message": "查找、公用地址 (0x) 或 TNS"
   },
   "rejectAll": {
     "message": "拒绝所有"

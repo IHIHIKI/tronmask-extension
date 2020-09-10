@@ -378,10 +378,10 @@
     "message": "Tout est terminé"
   },
   "ensRegistrationError": {
-    "message": "Erreur dans l'enregistrement du nom ENS"
+    "message": "Erreur dans l'enregistrement du nom TNS"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Nom ENS non trouvé sur le réseau actuel. Essayez de passer au réseau Ethereum principal."
+    "message": "Nom TNS non trouvé sur le réseau actuel. Essayez de passer au réseau Ethereum principal."
   },
   "enterAnAlias": {
     "message": "Saisissez un pseudonyme"
@@ -570,7 +570,7 @@
     "message": "IPFS Gateway"
   },
   "ipfsGatewayDescription": {
-    "message": "Entrez l'URL de la gateway CID IPFS à utiliser pour résoudre les contenus ENS."
+    "message": "Entrez l'URL de la gateway CID IPFS à utiliser pour résoudre les contenus TNS."
   },
   "invalidIpfsGateway": {
     "message": "IPFS Gateway Invalide: la valeur doit être une URL valide"
@@ -812,7 +812,7 @@
     "message": "Adresse du destinataire"
   },
   "recipientAddressPlaceholder": {
-    "message": "Recherche, adresse publique (0x) ou ENS"
+    "message": "Recherche, adresse publique (0x) ou TNS"
   },
   "rejectAll": {
     "message": "Tout rejeter"

@@ -390,10 +390,10 @@
     "message": "Усе готово"
   },
   "ensRegistrationError": {
-    "message": "Помилка у реєстрації ENS ім'я"
+    "message": "Помилка у реєстрації TNS ім'я"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Ім'я ENS не знайдено у даній мережі. Спробуйте перейти у Main Ethereum Network."
+    "message": "Ім'я TNS не знайдено у даній мережі. Спробуйте перейти у Main Ethereum Network."
   },
   "enterAnAlias": {
     "message": "Введіть псевдонім"
@@ -830,7 +830,7 @@
     "message": "Адреса отримувача"
   },
   "recipientAddressPlaceholder": {
-    "message": "Пошук, публічна адреса (0x), або ENS"
+    "message": "Пошук, публічна адреса (0x), або TNS"
   },
   "rejectAll": {
     "message": "Відхилити все"

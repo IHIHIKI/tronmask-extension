@@ -384,10 +384,10 @@
     "message": "Yote Imekamilika"
   },
   "ensRegistrationError": {
-    "message": "Hitilafu imetokea kwenye usajili wa jina la ENS"
+    "message": "Hitilafu imetokea kwenye usajili wa jina la TNS"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Jina la ENS halipatikani kwenye mtandao wa sasa. Jaribu kuhamia kwenye Mtandao Mkuu wa Ethereum."
+    "message": "Jina la TNS halipatikani kwenye mtandao wa sasa. Jaribu kuhamia kwenye Mtandao Mkuu wa Ethereum."
   },
   "enterAnAlias": {
     "message": "Ingiza majina mengine"
@@ -808,7 +808,7 @@
     "message": "Anwani ya Mpokeaji"
   },
   "recipientAddressPlaceholder": {
-    "message": "Tafuta, anwani za umma (0x), au ENS"
+    "message": "Tafuta, anwani za umma (0x), au TNS"
   },
   "rejectAll": {
     "message": "Kataa Zote"

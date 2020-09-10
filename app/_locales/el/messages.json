@@ -387,10 +387,10 @@
     "message": "Όλα Έτοιμα"
   },
   "ensRegistrationError": {
-    "message": "Σφάλμα στην καταχώριση ονόματος ENS"
+    "message": "Σφάλμα στην καταχώριση ονόματος TNS"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Το όνομα ENS δεν βρέθηκε στο τρέχον δίκτυο. Δοκιμάστε να μεταβείτε στο Κύριο Δίκτυο Ethereum."
+    "message": "Το όνομα TNS δεν βρέθηκε στο τρέχον δίκτυο. Δοκιμάστε να μεταβείτε στο Κύριο Δίκτυο Ethereum."
   },
   "enterAnAlias": {
     "message": "Δώστε ένα ψευδώνυμο"
@@ -827,7 +827,7 @@
     "message": "Διεύθυνση Παραλήπτη"
   },
   "recipientAddressPlaceholder": {
-    "message": "Αναζήτηση, δημόσια διεύθυνση (0x) ή ENS"
+    "message": "Αναζήτηση, δημόσια διεύθυνση (0x) ή TNS"
   },
   "rejectAll": {
     "message": "Απόρριψη Όλων"

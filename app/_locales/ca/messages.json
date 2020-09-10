@@ -387,10 +387,10 @@
     "message": "Tot fet"
   },
   "ensRegistrationError": {
-    "message": "Error al registre de nom ENS"
+    "message": "Error al registre de nom TNS"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "El nom ENS no s'ha trovat a la xarxa actual. Prova a cambiar a la xarxa principal d'Ethereum."
+    "message": "El nom TNS no s'ha trovat a la xarxa actual. Prova a cambiar a la xarxa principal d'Ethereum."
   },
   "enterAnAlias": {
     "message": "Introdueix Àlies"
@@ -808,7 +808,7 @@
     "message": "Adreça del destinatari"
   },
   "recipientAddressPlaceholder": {
-    "message": "Cerca, adreça pública (0x), o ENS"
+    "message": "Cerca, adreça pública (0x), o TNS"
   },
   "rejectAll": {
     "message": "Rebutja-ho tot"

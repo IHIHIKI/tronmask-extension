@@ -734,10 +734,10 @@
     "message": "Завершено"
   },
   "ensRegistrationError": {
-    "message": "Ошибка в регистрации имени ENS"
+    "message": "Ошибка в регистрации имени TNS"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Имя ENS не найдено в текущей сети. Попробуйте переключиться на основную сеть Ethereum"
+    "message": "Имя TNS не найдено в текущей сети. Попробуйте переключиться на основную сеть Ethereum"
   },
   "enterAnAlias": {
     "message": "Введите алиас"
@@ -983,7 +983,7 @@
     "message": "Недавние"
   },
   "recipientAddressPlaceholder": {
-    "message": "Поиск, публичный адрес  (0x)или ENS"
+    "message": "Поиск, публичный адрес  (0x)или TNS"
   },
   "rejectAll": {
     "message": "Отклонить все"
