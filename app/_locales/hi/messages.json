@@ -408,7 +408,7 @@
     "message": "ईथरअम पब्लिक एड्रेस"
   },
   "etherscanView": {
-    "message": "Etherscan पर खाता दिखाएँ"
+    "message": "Tronscan पर खाता दिखाएँ"
   },
   "estimatedProcessingTimes": {
     "message": "प्रोसेस करने के अनुमानित समय"
@@ -1265,7 +1265,7 @@
   "viewOnCustomBlockExplorer": {
     "message": "$1 पर देखें"
   },
-  "viewOnEtherscan": {
+  "viewOnTronscan": {
     "message": "इथरस्कैन पर देखें"
   },
   "visitWebSite": {

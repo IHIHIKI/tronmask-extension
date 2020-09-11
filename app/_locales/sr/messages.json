@@ -405,7 +405,7 @@
     "message": "Ethereum javna adresa"
   },
   "etherscanView": {
-    "message": "Pogledajte račun na Etherscan-u"
+    "message": "Pogledajte račun na Tronscan-u"
   },
   "estimatedProcessingTimes": {
     "message": "Procenjeno vreme za obradu"
@@ -1256,8 +1256,8 @@
   "viewOnCustomBlockExplorer": {
     "message": "Pogledaj na $1"
   },
-  "viewOnEtherscan": {
-    "message": "Pogledaj na Etherscan-u"
+  "viewOnTronscan": {
+    "message": "Pogledaj na Tronscan-u"
   },
   "visitWebSite": {
     "message": "Posetite našu veb lokaciju"

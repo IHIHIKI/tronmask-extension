@@ -402,7 +402,7 @@
     "message": "Ethereum offentlig adress"
   },
   "etherscanView": {
-    "message": "Visa konto på Etherscan"
+    "message": "Visa konto på Tronscan"
   },
   "estimatedProcessingTimes": {
     "message": "Uppskattade behandlingstider"
@@ -1246,8 +1246,8 @@
   "viewOnCustomBlockExplorer": {
     "message": "Visa vid $1"
   },
-  "viewOnEtherscan": {
-    "message": "Visa på Etherscan"
+  "viewOnTronscan": {
+    "message": "Visa på Tronscan"
   },
   "visitWebSite": {
     "message": "Besök vår hemsida"

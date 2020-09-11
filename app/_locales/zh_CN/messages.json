@@ -408,7 +408,7 @@
     "message": "以太坊公共地址"
   },
   "etherscanView": {
-    "message": "在 Etherscan 上查看账户"
+    "message": "在 Tronscan 上查看账户"
   },
   "estimatedProcessingTimes": {
     "message": "预估处理时间"
@@ -1250,8 +1250,8 @@
   "viewOnCustomBlockExplorer": {
     "message": "在 $1 查看"
   },
-  "viewOnEtherscan": {
-    "message": "在 Etherscan 上查看"
+  "viewOnTronscan": {
+    "message": "在 Tronscan 上查看"
   },
   "visitWebSite": {
     "message": "访问我们的网站"

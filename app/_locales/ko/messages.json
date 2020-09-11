@@ -1262,7 +1262,7 @@
   "viewOnCustomBlockExplorer": {
     "message": "$1에 보기"
   },
-  "viewOnEtherscan": {
+  "viewOnTronscan": {
     "message": "이더스캔에서 보기"
   },
   "visitWebSite": {

@@ -408,7 +408,7 @@
     "message": "آدرس عمومی ایتریم"
   },
   "etherscanView": {
-    "message": "حساب را در Etherscan ببینید"
+    "message": "حساب را در Tronscan ببینید"
   },
   "estimatedProcessingTimes": {
     "message": "زمان های تخمینی پروسس"
@@ -1271,7 +1271,7 @@
   "viewOnCustomBlockExplorer": {
     "message": "مشاهده در 1$1"
   },
-  "viewOnEtherscan": {
+  "viewOnTronscan": {
     "message": "مشاهده در ایترسکن"
   },
   "visitWebSite": {

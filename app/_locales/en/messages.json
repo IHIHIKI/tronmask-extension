@@ -71,7 +71,7 @@
     "message": "Show Incoming Transactions"
   },
   "showIncomingTransactionsDescription": {
-    "message": "Select this to use Etherscan to show incoming transactions in the transactions list"
+    "message": "Select this to use Tronscan to show incoming transactions in the transactions list"
   },
   "chartOnlyAvailableEth": {
     "message": "Chart only available on Tron networks."
@@ -626,7 +626,7 @@
     "message": "Tron Public Address"
   },
   "etherscanView": {
-    "message": "View account on Etherscan"
+    "message": "View account on Tronscan"
   },
   "estimatedProcessingTimes": {
     "message": "Estimated Processing Times"
@@ -1559,10 +1559,10 @@
     "message": "Transaction dropped at $2."
   },
   "transactionSubmitted": {
-    "message": "Transaction submitted with gas fee of $1 at $2."
+    "message": "Transaction submitted at $2."
   },
   "transactionResubmitted": {
-    "message": "Transaction resubmitted with gas fee increased to $1 at $2"
+    "message": "Transaction resubmitted at $2"
   },
   "transactionUpdated": {
     "message": "Transaction updated at $2."
@@ -1571,7 +1571,7 @@
     "message": "Transaction encountered an error."
   },
   "transactionCancelAttempted": {
-    "message": "Transaction cancel attempted with gas fee of $1 at $2"
+    "message": "Transaction cancel attempted at $2"
   },
   "transactionCancelSuccess": {
     "message": "Transaction successfully cancelled at $2"
@@ -1680,8 +1680,8 @@
   "viewOnCustomBlockExplorer": {
     "message": "View at $1"
   },
-  "viewOnEtherscan": {
-    "message": "View on Etherscan"
+  "viewOnTronscan": {
+    "message": "View on Tronscan"
   },
   "retryTransaction": {
     "message": "Retry Transaction"

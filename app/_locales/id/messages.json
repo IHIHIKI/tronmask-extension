@@ -399,7 +399,7 @@
     "message": "Alamat Publik Ethereum "
   },
   "etherscanView": {
-    "message": "Lihat akun di Etherscan"
+    "message": "Lihat akun di Tronscan"
   },
   "estimatedProcessingTimes": {
     "message": "Estimasi Waktu Pemrosesan"
@@ -1243,8 +1243,8 @@
   "viewOnCustomBlockExplorer": {
     "message": "Lihat di $1"
   },
-  "viewOnEtherscan": {
-    "message": "Lihat di Etherscan"
+  "viewOnTronscan": {
+    "message": "Lihat di Tronscan"
   },
   "visitWebSite": {
     "message": "Kunjungi website kami"

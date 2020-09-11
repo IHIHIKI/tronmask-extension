@@ -155,7 +155,7 @@
     "message": "Parolanızı girin"
   },
   "etherscanView": {
-    "message": "Hesabı Etherscan üzerinde izle"
+    "message": "Hesabı Tronscan üzerinde izle"
   },
   "exportPrivateKey": {
     "message": "Özel anahtarı ver"

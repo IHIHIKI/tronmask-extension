@@ -405,7 +405,7 @@
     "message": "Dirección pública de Ethereum"
   },
   "etherscanView": {
-    "message": "Ver cuenta en Etherscan"
+    "message": "Ver cuenta en Tronscan"
   },
   "estimatedProcessingTimes": {
     "message": "Tiempo estimado de procesamiento"
@@ -1250,8 +1250,8 @@
   "viewOnCustomBlockExplorer": {
     "message": "Ver en $1"
   },
-  "viewOnEtherscan": {
-    "message": "Ver en Etherscan"
+  "viewOnTronscan": {
+    "message": "Ver en Tronscan"
   },
   "visitWebSite": {
     "message": "Visita nuestro sitio web"

@@ -378,7 +378,7 @@
     "message": "Ilagay ang password para magpatuloy"
   },
   "etherscanView": {
-    "message": "Tingnan ang account sa Etherscan"
+    "message": "Tingnan ang account sa Tronscan"
   },
   "estimatedProcessingTimes": {
     "message": "Tinatantiyang Tagal ng Pagproseso"
@@ -1165,8 +1165,8 @@
   "viewOnCustomBlockExplorer": {
     "message": "Tingnan sa $1"
   },
-  "viewOnEtherscan": {
-    "message": "Tingnan sa Etherscan"
+  "viewOnTronscan": {
+    "message": "Tingnan sa Tronscan"
   },
   "visitWebSite": {
     "message": "Bisitahin ang aming web site"

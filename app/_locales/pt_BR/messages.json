@@ -402,7 +402,7 @@
     "message": "Endereço Público do Ethereum"
   },
   "etherscanView": {
-    "message": "Ver conta no Etherscan"
+    "message": "Ver conta no Tronscan"
   },
   "estimatedProcessingTimes": {
     "message": "Tempos de Processamento Estimados"
@@ -1253,8 +1253,8 @@
   "viewOnCustomBlockExplorer": {
     "message": "Ver em $1"
   },
-  "viewOnEtherscan": {
-    "message": "Ver no Etherscan"
+  "viewOnTronscan": {
+    "message": "Ver no Tronscan"
   },
   "visitWebSite": {
     "message": "Visite nosso site"

@@ -68,7 +68,7 @@
     "message": "Mostra Transazioni in Ingresso"
   },
   "showIncomingTransactionsDescription": {
-    "message": "Usa Etherscan per visualizzare le transazioni in ingresso nella lista delle transazioni"
+    "message": "Usa Tronscan per visualizzare le transazioni in ingresso nella lista delle transazioni"
   },
   "chartOnlyAvailableEth": {
     "message": "Grafico disponibile solo per le reti Ethereum."
@@ -622,7 +622,7 @@
     "message": "Indirizzo pubblico Ethereum "
   },
   "etherscanView": {
-    "message": "Vedi account su Etherscan"
+    "message": "Vedi account su Tronscan"
   },
   "estimatedProcessingTimes": {
     "message": "Tempi di Elaborazione Stimati"
@@ -1679,8 +1679,8 @@
   "viewOnCustomBlockExplorer": {
     "message": "Vedi su $1"
   },
-  "viewOnEtherscan": {
-    "message": "Vedi su Etherscan"
+  "viewOnTronscan": {
+    "message": "Vedi su Tronscan"
   },
   "retryTransaction": {
     "message": "Retry Transaction"

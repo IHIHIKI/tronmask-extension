@@ -408,7 +408,7 @@
     "message": "Ethereumi avalik aadress"
   },
   "etherscanView": {
-    "message": "Vaadake kontot Etherscanil"
+    "message": "Vaadake kontot Tronscanil"
   },
   "estimatedProcessingTimes": {
     "message": "Eeldatavad töötlemisajad"
@@ -1261,8 +1261,8 @@
   "viewOnCustomBlockExplorer": {
     "message": "Vaata $1"
   },
-  "viewOnEtherscan": {
-    "message": "Kuva Etherscanil"
+  "viewOnTronscan": {
+    "message": "Kuva Tronscanil"
   },
   "visitWebSite": {
     "message": "Külastage meie veebilehte"

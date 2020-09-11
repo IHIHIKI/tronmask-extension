@@ -405,7 +405,7 @@
     "message": "Adreça Pública d'Ethereum"
   },
   "etherscanView": {
-    "message": "Veure compte a Etherscan"
+    "message": "Veure compte a Tronscan"
   },
   "estimatedProcessingTimes": {
     "message": "Temps de processament estimats"
@@ -1240,8 +1240,8 @@
   "viewOnCustomBlockExplorer": {
     "message": "Mostra a $1"
   },
-  "viewOnEtherscan": {
-    "message": "Veure a Etherscan"
+  "viewOnTronscan": {
+    "message": "Veure a Tronscan"
   },
   "visitWebSite": {
     "message": "Visita el nostre lloc web"

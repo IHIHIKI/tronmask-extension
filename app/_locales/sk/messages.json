@@ -399,7 +399,7 @@
     "message": "Verejná adresa Ethereum"
   },
   "etherscanView": {
-    "message": "Prohlédněte si účet na Etherscan"
+    "message": "Prohlédněte si účet na Tronscan"
   },
   "estimatedProcessingTimes": {
     "message": "Odhadovaný čas spracovania"
@@ -1228,8 +1228,8 @@
   "viewOnCustomBlockExplorer": {
     "message": "Zobraziť na $1"
   },
-  "viewOnEtherscan": {
-    "message": "Zobraziť na Etherscan"
+  "viewOnTronscan": {
+    "message": "Zobraziť na Tronscan"
   },
   "visitWebSite": {
     "message": "Navštivte naši stránku"

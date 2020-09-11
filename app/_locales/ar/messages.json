@@ -408,7 +408,7 @@
     "message": "عنوان الإيثيريوم العمومي"
   },
   "etherscanView": {
-    "message": "عرض الحساب على Etherscan"
+    "message": "عرض الحساب على Tronscan"
   },
   "estimatedProcessingTimes": {
     "message": "أوقات المعالجة المقدرة"
@@ -1264,8 +1264,8 @@
   "viewOnCustomBlockExplorer": {
     "message": "عرض في $1"
   },
-  "viewOnEtherscan": {
-    "message": "عرضه على Etherscan"
+  "viewOnTronscan": {
+    "message": "عرضه على Tronscan"
   },
   "visitWebSite": {
     "message": "قم بزيارة موقعنا على الإنترنت"

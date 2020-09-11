@@ -408,7 +408,7 @@
     "message": "„Ethereum“ viešasis adresas"
   },
   "etherscanView": {
-    "message": "Peržiūrėti paskyrą „Etherscan“ programoje"
+    "message": "Peržiūrėti paskyrą „Tronscan“ programoje"
   },
   "estimatedProcessingTimes": {
     "message": "Numatomos apdorojimo trukmės"
@@ -1271,8 +1271,8 @@
   "viewOnCustomBlockExplorer": {
     "message": "Peržiūrėti $1"
   },
-  "viewOnEtherscan": {
-    "message": "Peržiūrėti „Etherscan“"
+  "viewOnTronscan": {
+    "message": "Peržiūrėti „Tronscan“"
   },
   "visitWebSite": {
     "message": "Apsilankykite mūsų svetainėje"

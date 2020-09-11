@@ -107,7 +107,7 @@
     "message": "Nhập mật khẩu"
   },
   "etherscanView": {
-    "message": "Xem tài khoản trên Etherscan"
+    "message": "Xem tài khoản trên Tronscan"
   },
   "exportPrivateKey": {
     "message": "Xuất mã khóa cá nhân"

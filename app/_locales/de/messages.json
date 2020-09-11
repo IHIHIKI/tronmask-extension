@@ -393,7 +393,7 @@
     "message": "Öffentliche Ethereum-Adresse"
   },
   "etherscanView": {
-    "message": "Account auf Etherscan anschauen"
+    "message": "Account auf Tronscan anschauen"
   },
   "estimatedProcessingTimes": {
     "message": "Geschätzte Bearbeitungszeiten"
@@ -1228,8 +1228,8 @@
   "viewOnCustomBlockExplorer": {
     "message": "Für $1 ansehen"
   },
-  "viewOnEtherscan": {
-    "message": "Auf Etherscan ansehen"
+  "viewOnTronscan": {
+    "message": "Auf Tronscan ansehen"
   },
   "visitWebSite": {
     "message": "Gehe zu unserer Webseite"

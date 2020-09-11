@@ -158,7 +158,7 @@
     "message": "Введите пароль"
   },
   "etherscanView": {
-    "message": "Просмотреть счет на Etherscan"
+    "message": "Просмотреть счет на Tronscan"
   },
   "exportPrivateKey": {
     "message": "Экспортировать закрытый ключ"
@@ -1292,8 +1292,8 @@
   "viewOnCustomBlockExplorer": {
     "message": "Посмотреть на $1"
   },
-  "viewOnEtherscan": {
-    "message": "Посмотреть на Etherscan"
+  "viewOnTronscan": {
+    "message": "Посмотреть на Tronscan"
   },
   "welcomeBack": {
     "message": "Рад видеть вас снова!"

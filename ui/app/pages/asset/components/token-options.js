@@ -30,7 +30,7 @@ const TokenOptions = ({ onRemove, onViewEtherscan, tokenSymbol }) => {
                   onViewEtherscan()
                 }}
               >
-                { t('viewOnEtherscan') }
+                { t('viewOnTronscan') }
               </MenuItem>
               <MenuItem
                 iconClassName="fas fa-trash-alt token-options__icon"

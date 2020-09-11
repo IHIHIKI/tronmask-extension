@@ -1,5 +1,5 @@
 import extension from 'extensionizer'
-import { createExplorerLink as explorerLink } from '@metamask/etherscan-link'
+import { createExplorerLink as explorerLink } from '@tronmask/tronscan-link'
 import { getEnvironmentType, checkForError } from '../lib/util'
 import { ENVIRONMENT_TYPE_BACKGROUND } from '../lib/enums'
 
@@ -194,7 +194,7 @@ export default class ExtensionPlatform {
     const nonce = parseInt(txMeta.txParams.nonce, 16)
 
     const title = 'Confirmed transaction'
-    const message = `Transaction ${nonce} confirmed! View on Etherscan`
+    const message = `Transaction ${nonce} confirmed! View on Tronscan`
     this._showNotification(title, message, url)
   }
 
@@ -219,12 +219,12 @@ export default class ExtensionPlatform {
   }
 
   _subscribeToNotificationClicked () {
-    if (!extension.notifications.onClicked.hasListener(this._viewOnEtherscan)) {
-      extension.notifications.onClicked.addListener(this._viewOnEtherscan)
+    if (!extension.notifications.onClicked.hasListener(this._viewOnTronscan)) {
+      extension.notifications.onClicked.addListener(this._viewOnTronscan)
     }
   }
 
-  _viewOnEtherscan (txId) {
+  _viewOnTronscan (txId) {
     if (txId.startsWith('https://')) {
       extension.tabs.create({ url: txId })
     }

@@ -144,7 +144,7 @@ export default class TransactionListItemDetails extends PureComponent {
     const {
       transactionGroup,
       showSpeedUp,
-      showRetry,
+      // showRetry,
       recipientEns,
       recipientAddress,
       rpcPrefs: { blockExplorerUrl } = {},
@@ -157,6 +157,7 @@ export default class TransactionListItemDetails extends PureComponent {
     } = this.props
     const { primaryTransaction: transaction } = transactionGroup
     const { hash } = transaction
+    const showRetry = false
 
     return (
       <Popover title={title} onClose={onClose}>
@@ -186,7 +187,7 @@ export default class TransactionListItemDetails extends PureComponent {
                   <Copy size={10} color="#3098DC" />
                 </Button>
               </Tooltip>
-              <Tooltip title={blockExplorerUrl ? t('viewOnCustomBlockExplorer', [blockExplorerUrl]) : t('viewOnEtherscan')}>
+              <Tooltip title={blockExplorerUrl ? t('viewOnCustomBlockExplorer', [blockExplorerUrl]) : t('viewOnTronscan')}>
                 <Button
                   type="raised"
                   onClick={this.handleEtherscanClick}

@@ -107,7 +107,7 @@ export default function AccountOptionsMenu ({ anchorElement, onClose }) {
         {
           rpcPrefs.blockExplorerUrl
             ? t('viewinExplorer')
-            : t('viewOnEtherscan')
+            : t('viewOnTronscan')
         }
       </MenuItem>
       <MenuItem

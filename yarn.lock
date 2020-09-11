@@ -3188,6 +3188,11 @@
     "@babel/runtime" "^7.10.3"
     "@testing-library/dom" "^7.17.1"
 
+"@tronmask/tronscan-link@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@tronmask/tronscan-link/-/tronscan-link-1.1.1.tgz#2cced6534b5f24d3e9b40d6c518f806b3b7ad33c"
+  integrity sha512-9UsEYMwb8ZnrXoFQsE7ohp70mXqJI2McwsGCE3zeHyV0DgN83IAh2rYgTomr5sBNpYDPo/e6mdpDST9TRh3Nbw==
+
 "@tronmask/trx-ledger-bridge-keyring@^1.0.4":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@tronmask/trx-ledger-bridge-keyring/-/trx-ledger-bridge-keyring-1.0.4.tgz#19a2de1030b4f9eb37f9a63f64b13fad560a8701"

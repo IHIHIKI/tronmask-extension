@@ -255,8 +255,8 @@ export function getStatusKey (transaction) {
  */
 export function getBlockExplorerUrlForTx (networkId, hash, rpcPrefs = {}) {
   if (rpcPrefs.blockExplorerUrl) {
-    return `${rpcPrefs.blockExplorerUrl.replace(/\/+$/u, '')}/tx/${hash}`
+    return `${rpcPrefs.blockExplorerUrl.replace(/\/+$/u, '')}/#/transaction/${hash}`
   }
   const prefix = getEtherscanNetworkPrefix(networkId)
-  return `https://${prefix}etherscan.io/tx/${hash}`
+  return `https://${prefix}tronscan.org/#/transaction/${hash}`
 }

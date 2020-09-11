@@ -122,7 +122,7 @@
     "message": "Voer wachtwoord in"
   },
   "etherscanView": {
-    "message": "Bekijk account op Etherscan"
+    "message": "Bekijk account op Tronscan"
   },
   "exportPrivateKey": {
     "message": "Exporteer privésleutel"

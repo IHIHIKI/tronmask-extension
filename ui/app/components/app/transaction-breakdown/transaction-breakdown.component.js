@@ -54,6 +54,8 @@ export default class TransactionBreakdown extends PureComponent {
             value={value}
           />
         </TransactionBreakdownRow>
+        {/*
+        @TRON hide gas details for now
         <TransactionBreakdownRow
           title={`${t('gasLimit')} (${t('units')})`}
           className="transaction-breakdown__row-title"
@@ -96,6 +98,7 @@ export default class TransactionBreakdown extends PureComponent {
             )
           }
         </TransactionBreakdownRow>
+        */}
         <TransactionBreakdownRow title={t('total')}>
           <div>
             <UserPreferencedCurrencyDisplay

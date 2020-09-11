@@ -408,7 +408,7 @@
     "message": "Ethereum ሕዝባዊ አድራሻ"
   },
   "etherscanView": {
-    "message": "መለያውን በ Etherscan ላይ ይመልከቱ"
+    "message": "መለያውን በ Tronscan ላይ ይመልከቱ"
   },
   "estimatedProcessingTimes": {
     "message": "የሚገመት የክወና ጊዜያት"
@@ -1268,8 +1268,8 @@
   "viewOnCustomBlockExplorer": {
     "message": "በ $1ይመልከቱ"
   },
-  "viewOnEtherscan": {
-    "message": "በ Etherscan ላይ ይመልከቱ"
+  "viewOnTronscan": {
+    "message": "በ Tronscan ላይ ይመልከቱ"
   },
   "visitWebSite": {
     "message": "ድረ ገጻችንን ይጎብኙ"

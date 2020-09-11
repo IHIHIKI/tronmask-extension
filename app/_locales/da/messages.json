@@ -408,7 +408,7 @@
     "message": "Offentlig Ethereum-adresse"
   },
   "etherscanView": {
-    "message": "Se konto på Etherscan"
+    "message": "Se konto på Tronscan"
   },
   "estimatedProcessingTimes": {
     "message": "Estimerede behandlingstider"
@@ -1240,8 +1240,8 @@
   "viewOnCustomBlockExplorer": {
     "message": "Se på $1"
   },
-  "viewOnEtherscan": {
-    "message": "Se på Etherscan"
+  "viewOnTronscan": {
+    "message": "Se på Tronscan"
   },
   "visitWebSite": {
     "message": "Besøg vores webside"

@@ -402,7 +402,7 @@
     "message": "Anwani ya Umma ya Ethereum"
   },
   "etherscanView": {
-    "message": "Tazama akaunti kwenye Etherscan"
+    "message": "Tazama akaunti kwenye Tronscan"
   },
   "estimatedProcessingTimes": {
     "message": "Muda wa Kuchakata Uliokadiriwa"
@@ -1249,8 +1249,8 @@
   "viewOnCustomBlockExplorer": {
     "message": "Tazama kwenye $1"
   },
-  "viewOnEtherscan": {
-    "message": "Tazama kwenye Etherscan"
+  "viewOnTronscan": {
+    "message": "Tazama kwenye Tronscan"
   },
   "visitWebSite": {
     "message": "Tembelea Tovuti yetu"

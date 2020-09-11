@@ -405,7 +405,7 @@
     "message": "Adres publiczny Ethereum"
   },
   "etherscanView": {
-    "message": "Zobacz konto na Etherscan"
+    "message": "Zobacz konto na Tronscan"
   },
   "estimatedProcessingTimes": {
     "message": "Szacunkowy czas przetwarzania"
@@ -1259,8 +1259,8 @@
   "viewOnCustomBlockExplorer": {
     "message": "Wyświetl w $1"
   },
-  "viewOnEtherscan": {
-    "message": "Zobacz na Etherscan"
+  "viewOnTronscan": {
+    "message": "Zobacz na Tronscan"
   },
   "visitWebSite": {
     "message": "Odwiedź naszą stronę"

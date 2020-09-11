@@ -405,7 +405,7 @@
     "message": "Δημόσια Διεύθυνση Ethereum"
   },
   "etherscanView": {
-    "message": "Προβολή λογαριασμού στο Etherscan"
+    "message": "Προβολή λογαριασμού στο Tronscan"
   },
   "estimatedProcessingTimes": {
     "message": "Εκτιμώμενοι Χρόνοι Επεξεργασίας"
@@ -1265,8 +1265,8 @@
   "viewOnCustomBlockExplorer": {
     "message": "Προβολή σε $1"
   },
-  "viewOnEtherscan": {
-    "message": "Προβολή στο Etherscan"
+  "viewOnTronscan": {
+    "message": "Προβολή στο Tronscan"
   },
   "visitWebSite": {
     "message": "Επισκεφθείτε τον ιστότοπό μας"
