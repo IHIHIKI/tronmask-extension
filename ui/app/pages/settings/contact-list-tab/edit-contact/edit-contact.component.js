@@ -1,10 +1,11 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { Redirect } from 'react-router-dom'
+import { ethAddress } from '@opentron/tron-eth-conversions'
 import Identicon from '../../../../components/ui/identicon'
 import Button from '../../../../components/ui/button/button.component'
 import TextField from '../../../../components/ui/text-field'
-import { isValidAddress, formatAddressForTron } from '../../../../helpers/utils/util'
+import { isValidAddress, isValidTronAddress, formatAddressForTron } from '../../../../helpers/utils/util'
 import PageContainerFooter from '../../../../components/ui/page-container/page-container-footer'
 
 export default class EditContact extends PureComponent {
@@ -134,13 +135,18 @@ export default class EditContact extends PureComponent {
         <PageContainerFooter
           cancelText={this.context.t('cancel')}
           onSubmit={async () => {
-            if (this.state.newAddress !== '' && this.state.newAddress !== address) {
+            let { newAddress } = this.state
+            if (isValidTronAddress(newAddress)) {
+              newAddress = ethAddress.fromTron(newAddress)
+            }
+            if (newAddress !== '' && newAddress.toLowerCase() !== address.toLowerCase()) {
               // if the user makes a valid change to the address field, remove the original address
-              if (isValidAddress(this.state.newAddress)) {
+              console.log({ newAddress })
+              if (isValidAddress(newAddress)) {
                 await removeFromAddressBook(chainId, address)
-                await addToAddressBook(this.state.newAddress, this.state.newName || name, this.state.newMemo || memo)
+                await addToAddressBook(newAddress, this.state.newName || name, this.state.newMemo || memo)
                 if (showingMyAccounts) {
-                  setAccountLabel(this.state.newAddress, this.state.newName || name)
+                  setAccountLabel(newAddress, this.state.newName || name)
                 }
                 history.push(listRoute)
               } else {

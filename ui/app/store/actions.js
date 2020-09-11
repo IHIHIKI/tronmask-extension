@@ -1584,7 +1584,7 @@ export function removeFromAddressBook (chainId, addressToRemove) {
   log.debug(`background.removeFromAddressBook`)
 
   return async () => {
-    await promisifiedBackground.removeFromAddressBook(chainId, checksumAddress(addressToRemove))
+    return await promisifiedBackground.removeFromAddressBook(chainId, checksumAddress(addressToRemove))
   }
 }
 
