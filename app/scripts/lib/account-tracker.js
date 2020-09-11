@@ -14,10 +14,11 @@ import log from 'loglevel'
 import pify from 'pify'
 import Web3 from 'web3'
 import SINGLE_CALL_BALANCES_ABI from 'single-call-balance-checker-abi'
-import { /* MAINNET_NETWORK_ID,*/ NILE_NETWORK_ID } from '../controllers/network/enums'
+import { MAINNET_NETWORK_ID, NILE_NETWORK_ID } from '../controllers/network/enums'
 
 import {
   SINGLE_CALL_BALANCES_ADDRESS_NILE,
+  SINGLE_CALL_BALANCES_ADDRESS,
   // @TODO(tron)
   // SINGLE_CALL_BALANCES_ADDRESS_RINKEBY,
   // SINGLE_CALL_BALANCES_ADDRESS_ROPSTEN,
@@ -202,6 +203,9 @@ export default class AccountTracker {
     switch (currentNetwork) {
       case NILE_NETWORK_ID.toString():
         await this._updateAccountsViaBalanceChecker(addresses, SINGLE_CALL_BALANCES_ADDRESS_NILE)
+        break
+      case MAINNET_NETWORK_ID.toString():
+        await this._updateAccountsViaBalanceChecker(addresses, SINGLE_CALL_BALANCES_ADDRESS)
         break
 
         /*
