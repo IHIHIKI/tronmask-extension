@@ -753,7 +753,7 @@
     "message": "無法搜尋到攝影鏡頭裝置。請再試一次"
   },
   "orderOneHere": {
-    "message": "訂購 Trezor 或 Ledger 讓資產保存於硬體裝置。"
+    "message": "訂購 Ledger 讓資產保存於硬體裝置。"
   },
   "origin": {
     "message": "來源"

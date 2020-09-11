@@ -744,7 +744,7 @@
     "message": "de"
   },
   "orderOneHere": {
-    "message": "Commander un Trezor ou un Ledger et conserver vos fonds en \"cold storage\""
+    "message": "Commander un Ledger et conserver vos fonds en \"cold storage\""
   },
   "origin": {
     "message": "Origine"

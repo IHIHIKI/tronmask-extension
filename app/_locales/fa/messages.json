@@ -762,7 +762,7 @@
     "message": "به"
   },
   "orderOneHere": {
-    "message": "یک Trezor یا Ledger را سفارش داده و پول های تان را در ذخیره سرد نگهدارید"
+    "message": "یک Ledger را سفارش داده و پول های تان را در ذخیره سرد نگهدارید"
   },
   "origin": {
     "message": "مبدأ"

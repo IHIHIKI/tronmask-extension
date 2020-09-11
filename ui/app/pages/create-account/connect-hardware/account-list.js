@@ -74,7 +74,8 @@ class AccountList extends Component {
           <h3 className="hw-connect__unlock-title">
             {`${this.context.t('unlock')} ${this.capitalizeDevice(device)}`}
           </h3>
-          {device.toLowerCase() === 'ledger' ? this.renderHdPathSelector() : null}
+          {/* tron */}
+          {/* device.toLowerCase() === 'ledger' ? this.renderHdPathSelector() : null */}
           <h3 className="hw-connect__hdPath__title">
             {this.context.t('selectAnAccount')}
           </h3>
