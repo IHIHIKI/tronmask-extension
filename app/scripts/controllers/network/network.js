@@ -174,7 +174,6 @@ export default class NetworkController extends EventEmitter {
   }
 
   _configureProvider (opts) {
-    console.log('configurePovider', opts)
     const { type, rpcTarget, chainId, ticker, nickname } = opts
     // infura type-based endpoints
     const isTron = ['nile', 'mainnet', 'shasta'].includes(type)
@@ -185,6 +184,7 @@ export default class NetworkController extends EventEmitter {
       this._configureInfuraProvider(opts)
     // other type-based rpc endpoints
     } else if (type === LOCALHOST) {
+      // TODO(tron): configure javaTronProvider with custom API URL
       this._configureLocalhostProvider()
     // url-based rpc endpoints
     } else if (type === 'rpc') {
@@ -196,25 +196,12 @@ export default class NetworkController extends EventEmitter {
 
   _configureJavaTronProvider ({ type }) {
     log.info('NetworkController - configureJavaTronProvider', type)
-    console.log('todo')
     const networkClient = createJavaTronClient(type)
     this._setNetworkClient(networkClient)
     const settings = {
       ticker: 'TRX',
     }
     this.networkConfig.putState(settings)
-
-    /*
-    const networkClient = createInfuraClient({
-      network: type,
-    })
-    this._setNetworkClient(networkClient)
-    // setup networkConfig
-    const settings = {
-      ticker: 'TRX',
-    }
-    this.networkConfig.putState(settings)
-    */
   }
 
   _configureInfuraProvider ({ type }) {
