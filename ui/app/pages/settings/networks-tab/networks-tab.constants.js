@@ -1,7 +1,7 @@
 const defaultNetworksData = [
   {
     labelKey: 'mainnet',
-    iconColor: '#9064FF',
+    iconColor: '#4eb754',
     providerType: 'mainnet',
     rpcUrl: 'https://java-tron.opentron.org',
     chainId: '11111',
@@ -32,7 +32,7 @@ const defaultNetworksData = [
     border: '1px solid #6A737D',
     providerType: 'localhost',
     rpcUrl: 'http://localhost:8545/',
-    blockExplorerUrl: 'https://etherscan.io',
+    blockExplorerUrl: 'https://localhost',
   },
 ]
 
