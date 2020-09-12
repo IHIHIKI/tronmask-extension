@@ -34,6 +34,7 @@ export default class FirstTimeFlow extends PureComponent {
     showingSeedPhraseBackupAfterOnboarding: PropTypes.bool,
     seedPhraseBackedUp: PropTypes.bool,
     verifySeedPhrase: PropTypes.func,
+    tronmaskV1Keystore: PropTypes.object,
   }
 
   state = {
