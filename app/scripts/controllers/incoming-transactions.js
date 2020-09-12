@@ -4,6 +4,7 @@ import BN from 'bn.js'
 import createId from '../lib/random-id'
 import { bnToHex } from '../lib/util'
 import fetchWithTimeout from '../lib/fetch-with-timeout'
+import { ethAddress } from '@opentron/tron-eth-conversions'
 
 import {
   MAINNET,
@@ -169,24 +170,49 @@ export default class IncomingTransactionsController {
   }
 
   async _fetchTxs (address, fromBlock, networkType) {
-    let etherscanSubdomain = 'api'
     const currentNetworkID = NETWORK_TYPE_TO_ID_MAP[networkType]?.networkId
 
     if (!currentNetworkID) {
       return {}
     }
 
-    if (networkType !== MAINNET) {
-      etherscanSubdomain = `api-${networkType}`
+    let tronscanSubdomain = 'apilist'
+    if (networkType === NILE) {
+      tronscanSubdomain = 'nileapi'
+    } else if (networkType === SHASTA) {
+      tronscanSubdomain = 'api.shasta'
     }
-    const apiUrl = `https://${etherscanSubdomain}.etherscan.io`
-    let url = `${apiUrl}/api?module=account&action=txlist&address=${address}&tag=latest&page=1`
+    const tronAddress = ethAddress.toTron(address)
+    const apiUrl = `https://${tronscanSubdomain}.tronscan.org`
+
+    /**
+     *
+     * https://github.com/tronscan/tronscan-frontend/blob/dev2019/document/api.md#8
+     * Tronscan API params:
+     *
+     * @param sort: define the sequence of the records return;
+     * @param limit: page size for pagination;
+     * @param start: query index for pagination;
+     * @param count: total number of records;
+     * @param start_timestamp: query date range;
+     * @param end_timestamp: query date range;
+     * @return: transactions list;
+     *
+     */
+    const url = `${apiUrl}/api/transaction?sort=-timestamp&count=true&limit=200&start=0&address=${tronAddress}`
 
     if (fromBlock) {
-      url += `&startBlock=${parseInt(fromBlock, 10)}`
+      // TODO: fromBlock not supported by tronscan
+      console.warn('fromBlock not supported by tronscan')
+      // url += `&startBlock=${parseInt(fromBlock, 10)}`
     }
     const response = await fetch(url)
     const parsedResponse = await response.json()
+    console.log({
+      ...parsedResponse,
+      address,
+      currentNetworkID,
+    })
 
     return {
       ...parsedResponse,
@@ -195,16 +221,17 @@ export default class IncomingTransactionsController {
     }
   }
 
-  _processTxFetchResponse ({ status, result = [], address, currentNetworkID }) {
-    if (status === '1' && Array.isArray(result) && result.length > 0) {
+  _processTxFetchResponse ({ data = [], address, currentNetworkID }) {
+    if (Array.isArray(data) && data.length > 0) {
       const remoteTxList = {}
       const remoteTxs = []
-      result.forEach((tx) => {
+      data.forEach((tx) => {
         if (!remoteTxList[tx.hash]) {
-          remoteTxs.push(this._normalizeTxFromEtherscan(tx, currentNetworkID))
+          remoteTxs.push(this._normalizeTxFromTronscan(tx, currentNetworkID))
           remoteTxList[tx.hash] = 1
         }
       })
+      console.log({ remoteTxs })
 
       const incomingTxs = remoteTxs.filter((tx) => tx.txParams.to && tx.txParams.to.toLowerCase() === address.toLowerCase())
       incomingTxs.sort((a, b) => (a.time < b.time ? -1 : 1))
@@ -227,6 +254,66 @@ export default class IncomingTransactionsController {
     return {
       latestIncomingTxBlockNumber: null,
       txs: [],
+    }
+  }
+
+  _normalizeTxFromTronscan (txMeta, currentNetworkID) {
+
+    /**
+     *
+     * Example data element:
+     *
+     *   {
+     *    Events: ""
+     *    SmartCalls: ""
+     *    amount: "10000000"
+     *    block: 9005304
+     *    confirmed: true
+     *    contractData: {amount: 10000000, owner_address: "TL6Cczh3GT7YC34i9c98r5fYHgs1MnuhyF", to_address: "TGMQEjzELVx8GfHroWtXUd6pVMBQtxBYK2"}
+     *    contractRet: "SUCCESS"
+     *    contractType: 1
+     *    cost: {net_fee: 0, energy_usage: 0, energy_fee: 0, energy_usage_total: 0, origin_energy_usage: 0, …}
+     *    data: ""
+     *    fee: ""
+     *    hash: "ac1c0cb7d8f4be15e5b43765ed7dcb3686972ab02e420a0b0b30192fc6aa1766"
+     *    id: ""
+     *    ownerAddress: "TL6Cczh3GT7YC34i9c98r5fYHgs1MnuhyF"
+     *    result: "SUCCESS"
+     *    revert: false
+     *    timestamp: 1599857415000
+     *    toAddress: "TGMQEjzELVx8GfHroWtXUd6pVMBQtxBYK2"
+     *    toAddressList: ["TGMQEjzELVx8GfHroWtXUd6pVMBQtxBYK2"]
+     *    tokenAbbr: "trx"
+     *    tokenCanShow: 1
+     *    tokenId: "_"
+     *    tokenType: "trc10"
+     *  }
+     */
+
+    /*
+    const CONTRACT_TYPES = {
+      TRANSFER: 1,
+    }
+    */
+    return {
+      blockNumber: `${txMeta.block}`,
+      id: createId(),
+      metamaskNetworkId: currentNetworkID,
+      // status: txMeta.contractRet === 'SUCCESS' ? 1 : 0,
+      status: txMeta.revert ? 'failed' : 'confirmed',
+      time: parseInt(txMeta.timestamp, 10) * 1000,
+      txParams: {
+        // TODO: handle different contract types...
+        from: ethAddress.fromTron(txMeta.ownerAddress),
+        to: ethAddress.fromTron(txMeta.toAddress),
+        value: bnToHex(new BN(txMeta.amount)),
+        gas: '0x0',
+        gasPrice: '0x0',
+        // TODO: no nonce? random nonce?
+        nonce: bnToHex(new BN(0)),
+      },
+      hash: `0x${txMeta.hash}`,
+      transactionCategory: 'incoming',
     }
   }
 
