@@ -301,7 +301,7 @@ export default class IncomingTransactionsController {
       metamaskNetworkId: currentNetworkID,
       // status: txMeta.contractRet === 'SUCCESS' ? 1 : 0,
       status: txMeta.revert ? 'failed' : 'confirmed',
-      time: parseInt(txMeta.timestamp, 10) * 1000,
+      time: txMeta.timestamp,
       txParams: {
         // TODO: handle different contract types...
         from: ethAddress.fromTron(txMeta.ownerAddress),
