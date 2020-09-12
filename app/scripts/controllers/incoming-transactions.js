@@ -203,16 +203,11 @@ export default class IncomingTransactionsController {
 
     if (fromBlock) {
       // TODO: fromBlock not supported by tronscan
-      console.warn('fromBlock not supported by tronscan')
+      // console.warn('fromBlock not supported by tronscan')
       // url += `&startBlock=${parseInt(fromBlock, 10)}`
     }
     const response = await fetch(url)
     const parsedResponse = await response.json()
-    console.log({
-      ...parsedResponse,
-      address,
-      currentNetworkID,
-    })
 
     return {
       ...parsedResponse,
