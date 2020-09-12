@@ -253,7 +253,9 @@ export function getStatusKey (transaction) {
  * @param {string} hash
  * @param {Object} rpcPrefs
  */
-export function getBlockExplorerUrlForTx (networkId, hash, rpcPrefs = {}) {
+export function getBlockExplorerUrlForTx (networkId, hash_, rpcPrefs = {}) {
+  // strip leading 0x
+  const hash = hash_.replace(/^0x/u, '')
   if (rpcPrefs.blockExplorerUrl) {
     return `${rpcPrefs.blockExplorerUrl.replace(/\/+$/u, '')}/#/transaction/${hash}`
   }
