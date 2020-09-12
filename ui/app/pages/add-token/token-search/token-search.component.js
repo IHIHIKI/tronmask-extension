@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import contractMap from 'eth-contract-metadata'
+import contractMap from '@tronmask/trx-contract-metadata'
 import Fuse from 'fuse.js'
 import InputAdornment from '@material-ui/core/InputAdornment'
 import TextField from '../../../components/ui/text-field'
 
 const contractList = Object.entries(contractMap)
   .map(([address, tokenData]) => ({ ...tokenData, address }))
-  .filter((tokenData) => Boolean(tokenData.erc20))
+  .filter((tokenData) => Boolean(tokenData.trc20))
 
 const fuse = new Fuse(contractList, {
   shouldSort: true,

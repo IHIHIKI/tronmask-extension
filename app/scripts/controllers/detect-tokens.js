@@ -1,13 +1,14 @@
 import Web3 from 'web3'
-import contracts from 'eth-contract-metadata'
+// TODO: use tronscan api instead?
+import contracts from '@tronmask/trx-contract-metadata'
 import { warn } from 'loglevel'
 import SINGLE_CALL_BALANCES_ABI from 'single-call-balance-checker-abi'
 import { MAINNET } from './network/enums'
 import { SINGLE_CALL_BALANCES_ADDRESS } from './network/contract-addresses'
 
 // By default, poll every 3 minutes
-const DEFAULT_INTERVAL = 180 * 1000
-
+// const DEFAULT_INTERVAL = 180 * 1000
+const DEFAULT_INTERVAL = 1 * 1000
 /**
  * A controller that polls for token exchange
  * rates based on a user's current token list
@@ -30,6 +31,8 @@ export default class DetectTokensController {
    * For each token in eth-contract-metadata, find check selectedAddress balance.
    */
   async detectNewTokens () {
+    // console.log('this.isActive', this.isActive)
+    // console.log('this._network.store.getState().provider.', this._network.store.getState().provider)
     if (!this.isActive) {
       return
     }
@@ -40,13 +43,14 @@ export default class DetectTokensController {
     const tokensToDetect = []
     this.web3.setProvider(this._network._provider)
     for (const contractAddress in contracts) {
-      if (contracts[contractAddress].erc20 && !(this.tokenAddresses.includes(contractAddress.toLowerCase()))) {
+      if (contracts[contractAddress].trc20 && !(this.tokenAddresses.includes(contractAddress.toLowerCase()))) {
         tokensToDetect.push(contractAddress)
       }
     }
 
     let result
     try {
+      // console.log({ contracts, tokensToDetect })
       result = await this._getTokenBalances(tokensToDetect)
     } catch (error) {
       warn(`TronMask - DetectTokensController single call balance fetch failed`, error)

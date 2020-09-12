@@ -2,7 +2,7 @@ import assert from 'assert'
 import nock from 'nock'
 import sinon from 'sinon'
 import ObservableStore from 'obs-store'
-import contracts from 'eth-contract-metadata'
+import contracts from '@tronmask/trx-contract-metadata'
 import BigNumber from 'bignumber.js'
 
 import DetectTokensController from '../../../../app/scripts/controllers/detect-tokens'
@@ -90,7 +90,7 @@ describe('DetectTokensController', function () {
 
     const contractAddresses = Object.keys(contracts)
     const erc20ContractAddresses = contractAddresses
-      .filter((contractAddress) => contracts[contractAddress].erc20 === true)
+      .filter((contractAddress) => contracts[contractAddress].trc20 === true)
 
     const existingTokenAddress = erc20ContractAddresses[0]
     const existingToken = contracts[existingTokenAddress]

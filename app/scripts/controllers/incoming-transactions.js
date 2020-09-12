@@ -226,7 +226,6 @@ export default class IncomingTransactionsController {
           remoteTxList[tx.hash] = 1
         }
       })
-      console.log({ remoteTxs })
 
       const incomingTxs = remoteTxs.filter((tx) => tx.txParams.to && tx.txParams.to.toLowerCase() === address.toLowerCase())
       incomingTxs.sort((a, b) => (a.time < b.time ? -1 : 1))

@@ -2241,11 +2241,6 @@
     human-standard-token-abi "^1.0.2"
     safe-event-emitter "^1.0.1"
 
-"@metamask/etherscan-link@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@metamask/etherscan-link/-/etherscan-link-1.1.0.tgz#8c69f3659558074e48e85d52b3db36a3dd93e3e3"
-  integrity sha512-kdgz4OpAQM6kOSuXv8/yfW9kTKxPCFUxQGE4RKBzlpy9HkFcI6XWu3Uw3hOWPBFmI8uPwU8KxBIpdCts8jL7WA==
-
 "@metamask/forwarder@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@metamask/forwarder/-/forwarder-1.1.0.tgz#13829d8244bbf19ea658c0b20d21a77b67de0bdd"
@@ -3192,6 +3187,11 @@
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@tronmask/tronscan-link/-/tronscan-link-1.1.1.tgz#2cced6534b5f24d3e9b40d6c518f806b3b7ad33c"
   integrity sha512-9UsEYMwb8ZnrXoFQsE7ohp70mXqJI2McwsGCE3zeHyV0DgN83IAh2rYgTomr5sBNpYDPo/e6mdpDST9TRh3Nbw==
+
+"@tronmask/trx-contract-metadata@^1.15.1":
+  version "1.15.1"
+  resolved "https://registry.yarnpkg.com/@tronmask/trx-contract-metadata/-/trx-contract-metadata-1.15.1.tgz#2a127f6553538b3a310c1d3d4bfb77a3cf616b28"
+  integrity sha512-IdTDtCW9PMKy6Lx0xA8139apuEqJ6C6ob48UiNlDAE9z8mGQ+2mPe5qvIUNSatipd6Q43KsFQcVi5a88P49VPw==
 
 "@tronmask/trx-ledger-bridge-keyring@^1.0.4":
   version "1.0.4"
