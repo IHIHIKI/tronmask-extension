@@ -2246,21 +2246,6 @@
   resolved "https://registry.yarnpkg.com/@metamask/forwarder/-/forwarder-1.1.0.tgz#13829d8244bbf19ea658c0b20d21a77b67de0bdd"
   integrity sha512-Hggj4y0QIjDzKGTXzarhEPIQyFSB2bi2y6YLJNwaT4JmP30UB5Cj6gqoY0M4pj3QT57fzp0BUuGp7F/AUe28tw==
 
-"@metamask/inpage-provider@^6.1.0":
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/@metamask/inpage-provider/-/inpage-provider-6.1.0.tgz#6a4ec9437169b6d6f2b439dd7a2e604ebcfc2fca"
-  integrity sha512-Sgl+kHyJCTkyWzNKIX18/O+CJUMWlc5jWB27p3NBfA/r1ldr87n7wdJhK9VnHrKZ2GMJtwBmtuE9Do+mLIKHXA==
-  dependencies:
-    eth-json-rpc-errors "^2.0.2"
-    fast-deep-equal "^2.0.1"
-    json-rpc-engine "^5.1.5"
-    json-rpc-middleware-stream "^2.1.1"
-    loglevel "^1.6.1"
-    obj-multiplex "^1.0.0"
-    obs-store "^4.0.3"
-    pump "^3.0.0"
-    safe-event-emitter "^1.0.1"
-
 "@metamask/jazzicon@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@metamask/jazzicon/-/jazzicon-2.0.0.tgz#5615528e91c0fc5c9d79202d1f0954a7922525a0"
@@ -2323,12 +2308,14 @@
   dependencies:
     mkdirp "^1.0.4"
 
-"@opentron/java-tron-provider@^0.4.4":
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/@opentron/java-tron-provider/-/java-tron-provider-0.4.4.tgz#ed62a16ac3e9a1ef4bb66d3b45f30b73947fb614"
-  integrity sha512-QE0bVC9WTXpFSQu63wzkcysjzvJzloud91t9cQ+GRwg4LO5XkkNWxfSu6ItTuw9mTX41ZxWp607VjILkjfXQOQ==
+"@opentron/java-tron-provider@^0.4.10":
+  version "0.4.10"
+  resolved "https://registry.yarnpkg.com/@opentron/java-tron-provider/-/java-tron-provider-0.4.10.tgz#7ee6b493a13b4152f413b122bb34cdf743b75f99"
+  integrity sha512-ZIc+H8MBwo6IZikw3IY5hK4FFW+mRX5aK2ryYzKsJ6FnwlbAxL9HMUSfVF+zl9/LjIMWqkzpKg06vBdUKRnWjg==
   dependencies:
-    "@opentron/tron-eth-conversions" "^0.4.0"
+    "@opentron/tron-eth-conversions" "^0.4.9"
+    "@opentron/tron-networks" "^0.4.10"
+    "@opentron/tron-sig-util" "^0.4.10"
     axios "^0.19.2"
     axios-retry "^3.1.8"
     body-parser "^1.19.0"
@@ -2391,14 +2378,6 @@
     loglevel "^1.5.0"
     obs-store "^4.0.3"
 
-"@opentron/tron-eth-conversions@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@opentron/tron-eth-conversions/-/tron-eth-conversions-0.4.0.tgz#a182e3ad18382bb3157c4353a6b490f1f83bf468"
-  integrity sha512-tz4QPwNNFeGGUuxLDcaKYknXgmVrzQVQYTWouL/n2lEEeOGi6b7Y50DLqM7ABu+vUB+XzSRT/3gksJkPahlvFg==
-  dependencies:
-    bs58check "^2.1.2"
-    web3 "^1.2.11"
-
 "@opentron/tron-eth-conversions@^0.4.5":
   version "0.4.5"
   resolved "https://registry.yarnpkg.com/@opentron/tron-eth-conversions/-/tron-eth-conversions-0.4.5.tgz#6156e6cf72b7d950521e2b6d2632486afeb4c96c"
@@ -2423,6 +2402,21 @@
     bs58check "^2.1.2"
     web3 "^1.2.11"
 
+"@opentron/tron-networks@^0.4.10":
+  version "0.4.10"
+  resolved "https://registry.yarnpkg.com/@opentron/tron-networks/-/tron-networks-0.4.10.tgz#2e6522c89e4bad8ae3ce8d1b785ac3a8196c815d"
+  integrity sha512-PpBazZYUBBkB81v+q0ht7M/V8IePRGn/JWL9qaWPoiWPdxyFs0s/WjuoifaXL0Y+zzN2i6AKCxrlyYDo2buLsg==
+
+"@opentron/tron-sig-util@^0.4.10":
+  version "0.4.10"
+  resolved "https://registry.yarnpkg.com/@opentron/tron-sig-util/-/tron-sig-util-0.4.10.tgz#b0ca7e65356d64c5189126be48c2924d65f7eff6"
+  integrity sha512-FOknIab99k633erzdkwuK0xdo1aoRH8B2ZgDA537rJFrJ9QO9iLtIfCIfvbJ1iX7voAidcMJnuT7oSQziNE7mA==
+  dependencies:
+    "@opentron/tron-eth-conversions" "^0.4.9"
+    "@opentron/tron-networks" "^0.4.10"
+    axios "^0.20.0"
+    elliptic "^6.5.3"
+
 "@opentron/tron-sig-util@^0.4.5":
   version "0.4.5"
   resolved "https://registry.yarnpkg.com/@opentron/tron-sig-util/-/tron-sig-util-0.4.5.tgz#a259d7da6cacc0de4052077b5aa63ceb904e695d"
@@ -2442,6 +2436,15 @@
     "@opentron/tron-eth-conversions" "^0.4.5"
     axios "^0.20.0"
     elliptic "^6.5.3"
+
+"@opentron/tronweb-from-provider@^0.4.11":
+  version "0.4.11"
+  resolved "https://registry.yarnpkg.com/@opentron/tronweb-from-provider/-/tronweb-from-provider-0.4.11.tgz#73f53a8221534b1fbe8a886ea2ae939438b2732b"
+  integrity sha512-ZJ7bl5xLB2rg5sSN7X4Dl1iKyfsMb4TlnzjyqJW+tiG3H1hjCc32XTjLnGmgl88Fo9D4pXqFULkZACYw5daGSw==
+  dependencies:
+    "@opentron/tron-eth-conversions" "^0.4.9"
+    tronweb "^3.0.0"
+    web3 "^1.2.11"
 
 "@popperjs/core@^2.4.0":
   version "2.4.0"
@@ -3190,6 +3193,21 @@
   dependencies:
     "@babel/runtime" "^7.10.3"
     "@testing-library/dom" "^7.17.1"
+
+"@tronmask/inpage-provider@^7.0.1":
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/@tronmask/inpage-provider/-/inpage-provider-7.0.1.tgz#79afd109be5ae720e05b8a7b2a99bacc3a2d2ea5"
+  integrity sha512-8MuTw/6q8TNXPXYTSVh+KeJ9BvY05E5RniZDnV9cMOd1m1fEJMYmtANlvtBS9Xep5kJtD8asdyMFcr3ETadzuQ==
+  dependencies:
+    eth-rpc-errors "^2.1.1"
+    fast-deep-equal "^2.0.1"
+    is-stream "^2.0.0"
+    json-rpc-engine "^5.2.0"
+    json-rpc-middleware-stream "^2.1.1"
+    obj-multiplex "^1.0.0"
+    obs-store "^4.0.3"
+    pump "^3.0.0"
+    safe-event-emitter "^1.0.1"
 
 "@tronmask/tronscan-link@^1.1.1":
   version "1.1.1"
@@ -4989,7 +5007,7 @@ axios-retry@^3.1.8:
   dependencies:
     is-retry-allowed "^1.1.0"
 
-axios@^0.19.2:
+axios@^0.19.0, axios@^0.19.2:
   version "0.19.2"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
   integrity sha512-fjgm5MvRHLhx+osE2xoekY70AhARk3a6hkN+3Io1jc00jtquGvxYlKlsFUhmUET0V5te6CcZI7lcv2Ym61mjHA==
@@ -5969,6 +5987,11 @@ bignumber.js@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-4.1.0.tgz#db6f14067c140bd46624815a7916c92d9b6c24b1"
   integrity sha512-eJzYkFYy9L4JzXsbymsFn3p54D+llV27oTQ+ziJG7WFRheJcNZilgVXMG0LoZtlQSKBsJdWtLFqOD0u+U0jZKA==
+
+bignumber.js@^7.2.1:
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-7.2.1.tgz#80c048759d826800807c4bfd521e50edbba57a5f"
+  integrity sha512-S4XzBk5sMB+Rcb/LNcpzXr57VRTxgAvaAEDAl1AwRx27j00hT84O6OkteE7u8UB3NuaaygCRrEpqox4uDOrbdQ==
 
 bignumber.js@^8.0.1, bignumber.js@^8.0.2, bignumber.js@^8.1.1:
   version "8.1.1"
@@ -11318,6 +11341,21 @@ ethers@^4.0.20, ethers@^4.0.28:
     uuid "2.0.1"
     xmlhttprequest "1.8.0"
 
+ethers@^4.0.7:
+  version "4.0.48"
+  resolved "https://registry.yarnpkg.com/ethers/-/ethers-4.0.48.tgz#330c65b8133e112b0613156e57e92d9009d8fbbe"
+  integrity sha512-sZD5K8H28dOrcidzx9f8KYh8083n5BexIO3+SbE4jK83L85FxtpXZBCQdXb8gkg+7sBqomcLhhkU7UHL+F7I2g==
+  dependencies:
+    aes-js "3.0.0"
+    bn.js "^4.4.0"
+    elliptic "6.5.3"
+    hash.js "1.1.3"
+    js-sha3 "0.5.7"
+    scrypt-js "2.0.4"
+    setimmediate "1.0.4"
+    uuid "2.0.1"
+    xmlhttprequest "1.8.0"
+
 ethers@^5.0.8:
   version "5.0.8"
   resolved "https://registry.yarnpkg.com/ethers/-/ethers-5.0.8.tgz#c13d0fdf5e66db8085e2036d3309ed2f8a17ed89"
@@ -14675,6 +14713,11 @@ ini@^1.3.4, ini@^1.3.5, ini@~1.3.0:
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
   integrity sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
 
+injectpromise@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/injectpromise/-/injectpromise-1.0.0.tgz#c621f7df2bbfc1164d714f1fb229adec2079da39"
+  integrity sha512-qNq5wy4qX4uWHcVFOEU+RqZkoVG65FhvGkyDWbuBxILMjK6A1LFf5A1mgXZkD4nRx5FCorD81X/XvPKp/zVfPA==
+
 inline-source-map@~0.6.0:
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/inline-source-map/-/inline-source-map-0.6.2.tgz#f9393471c18a79d1724f863fa38b586370ade2a5"
@@ -16512,7 +16555,7 @@ json-rpc-engine@^3.4.0, json-rpc-engine@^3.6.0:
     promise-to-callback "^1.0.0"
     safe-event-emitter "^1.0.1"
 
-json-rpc-engine@^5.1.3, json-rpc-engine@^5.1.5:
+json-rpc-engine@^5.1.3:
   version "5.1.8"
   resolved "https://registry.yarnpkg.com/json-rpc-engine/-/json-rpc-engine-5.1.8.tgz#5ba0147ce571899bbaa7133ffbc05317c34a3c7f"
   integrity sha512-vTBSDEPJV1fPAsbm2g5sEuPjsgLdiab2f1CTn2PyRr8nxggUpA996PDlNQDsM0gnrA99F8KIBLq2nIKrOFl1Mg==
@@ -18192,11 +18235,6 @@ loglevel@^1.4.1, loglevel@^1.5.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.6.0.tgz#ae0caa561111498c5ba13723d6fb631d24003934"
   integrity sha1-rgyqVhERSYxboTcj1vtjHSQAOTQ=
-
-loglevel@^1.6.1:
-  version "1.6.8"
-  resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.6.8.tgz#8a25fb75d092230ecd4457270d80b54e28011171"
-  integrity sha512-bsU7+gc9AJ2SqpzxwU3+1fedl8zAntbtC5XYlt3s2j1hJcn2PsXSmgN8TaLG/J1/2mod4+cE/3vNL70/c1RNCA==
 
 logplease@^1.2.14, logplease@~1.2.14, logplease@~1.2.15:
   version "1.2.15"
@@ -26904,6 +26942,23 @@ trim@0.0.1:
   resolved "https://registry.yarnpkg.com/trim/-/trim-0.0.1.tgz#5858547f6b290757ee95cccc666fb50084c460dd"
   integrity sha1-WFhUf2spB1fulczMZm+1AITEYN0=
 
+tronweb@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/tronweb/-/tronweb-3.0.0.tgz#d69589cc6ad7be5ec574ed4b55bf52986942e417"
+  integrity sha512-aaiHuFMXbMfO3QrlbyxGXsxfosEoJS2gJ6s7VXnLirkEFkSXs5a/u/rsMXpVXTRtoQpI7R5ux5zYKqMG5L+fgw==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    axios "^0.19.0"
+    babel-runtime "^6.26.0"
+    bignumber.js "^7.2.1"
+    elliptic "^6.4.1"
+    ethers "^4.0.7"
+    eventemitter3 "^3.1.0"
+    injectpromise "^1.0.0"
+    lodash "^4.17.14"
+    semver "^5.6.0"
+    validator "^10.7.1"
+
 trough@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trough/-/trough-1.0.1.tgz#a9fd8b0394b0ae8fff82e0633a0a36ccad5b5f86"
@@ -27695,6 +27750,11 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "~1.0.0"
     spdx-expression-parse "~1.0.0"
+
+validator@^10.7.1:
+  version "10.11.0"
+  resolved "https://registry.yarnpkg.com/validator/-/validator-10.11.0.tgz#003108ea6e9a9874d31ccc9e5006856ccd76b228"
+  integrity sha512-X/p3UZerAIsbBfN/IwahhYaBbY68EN/UQBWHtsbXGT5bfrH/p4NQzUCG1kF/rtKaNpnJ7jAu6NGTdSNtyNIXMw==
 
 value-equal@^1.0.1:
   version "1.0.1"

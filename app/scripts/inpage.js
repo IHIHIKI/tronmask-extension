@@ -33,10 +33,11 @@ cleanContextForImports()
 /* eslint-disable import/first */
 import log from 'loglevel'
 import LocalMessageDuplexStream from 'post-message-stream'
-import { initProvider } from '@metamask/inpage-provider'
+import { initProvider } from '@tronmask/inpage-provider'
 
 // TODO:deprecate:2020
 import setupWeb3 from './lib/setupWeb3'
+import setupTronweb from './lib/setupTronweb'
 /* eslint-enable import/first */
 
 restoreContextAfterImports()
@@ -53,13 +54,24 @@ const metamaskStream = new LocalMessageDuplexStream({
   target: 'contentscript',
 })
 
-initProvider({
+const provider = initProvider({
   connectionStream: metamaskStream,
 })
+
+if (typeof window.tronWeb !== 'undefined') {
+  throw new Error(`TronMask detected another tronWeb.
+     TronMask will not work reliably with another Tron wallet extension.
+     This usually happens if you have TronLink installed,
+     or TronMask and another Tron extension. Please remove one
+     and try again.`)
+}
+
+setupTronweb(provider)
 
 // TODO:deprecate:2020
 // Setup web3
 
+/*
 if (typeof window.web3 !== 'undefined') {
   throw new Error(`TronMask detected another web3.
      TronMask will not work reliably with another web3 extension.
@@ -70,3 +82,4 @@ if (typeof window.web3 !== 'undefined') {
 
 // proxy web3, assign to window, and set up site auto reload
 setupWeb3(log)
+*/

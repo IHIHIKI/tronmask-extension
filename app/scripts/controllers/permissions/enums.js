@@ -89,4 +89,6 @@ export const SAFE_METHODS = [
   'wallet_watchAsset',
   'eth_getEncryptionPublicKey',
   'eth_decrypt',
+  // @TRON
+  'tron_rawJavaTronApiRequest',
 ]

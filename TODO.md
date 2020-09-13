@@ -3,6 +3,8 @@
 - Method name display when triggering a contract
 - Always display addresses in Tron format
 - Addresses should be input in Tron format
+- It seems only "Received" transactions are displayed in transactions
+  list fetched from tronscan? (not Sent)
 - Ledger support
   - [x] import account from ledger
   - [x] display balances correctly in import page...
