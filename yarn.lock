@@ -2308,14 +2308,14 @@
   dependencies:
     mkdirp "^1.0.4"
 
-"@opentron/java-tron-provider@^0.4.10":
-  version "0.4.10"
-  resolved "https://registry.yarnpkg.com/@opentron/java-tron-provider/-/java-tron-provider-0.4.10.tgz#7ee6b493a13b4152f413b122bb34cdf743b75f99"
-  integrity sha512-ZIc+H8MBwo6IZikw3IY5hK4FFW+mRX5aK2ryYzKsJ6FnwlbAxL9HMUSfVF+zl9/LjIMWqkzpKg06vBdUKRnWjg==
+"@opentron/java-tron-provider@^0.4.16":
+  version "0.4.16"
+  resolved "https://registry.yarnpkg.com/@opentron/java-tron-provider/-/java-tron-provider-0.4.16.tgz#2b4a6e96e1463d7189c3e5ea664a2462e6839f42"
+  integrity sha512-/ZYS6koyIrzUs5JATRJzQIwIk/GbYs8SakkHAgwOqdv/vsxXtTarG1T3e6NzkAa0HiwwptDsJyNSFIy3aLrNog==
   dependencies:
     "@opentron/tron-eth-conversions" "^0.4.9"
     "@opentron/tron-networks" "^0.4.10"
-    "@opentron/tron-sig-util" "^0.4.10"
+    "@opentron/tron-sig-util" "^0.4.16"
     axios "^0.19.2"
     axios-retry "^3.1.8"
     body-parser "^1.19.0"
@@ -2360,12 +2360,12 @@
     web3 "^1.2.11"
     web3-provider-engine "^15.0.12"
 
-"@opentron/keyring-controller@^0.4.6":
-  version "0.4.6"
-  resolved "https://registry.yarnpkg.com/@opentron/keyring-controller/-/keyring-controller-0.4.6.tgz#ef2dff08fe5ae72b2659ded79dbb71033df0a581"
-  integrity sha512-gilO90BmVkeD6Cde5R5S/Cg6BXtFIjp2yhTwN8k1IUGfY9DXGKEhaj6Wuvp4pxQkj51oZ+eZ9CREsmkGXZi+UQ==
+"@opentron/keyring-controller@^0.4.16":
+  version "0.4.16"
+  resolved "https://registry.yarnpkg.com/@opentron/keyring-controller/-/keyring-controller-0.4.16.tgz#10fb08465c47ff879287518456d42340d2f3ac10"
+  integrity sha512-t4LO7AGBDI25VkoYeT86ncZBuRxRLiEHYJge73wqtnUa7vjHwpCiiSOY2tC33GZHV9CO/d2nfDtlJxtgUPlpZQ==
   dependencies:
-    "@opentron/tron-sig-util" "^0.4.5"
+    "@opentron/tron-sig-util" "^0.4.16"
     bip39 "^2.4.0"
     bluebird "^3.5.0"
     browser-passworder "^2.0.3"
@@ -2386,14 +2386,6 @@
     bs58check "^2.1.2"
     web3 "^1.2.11"
 
-"@opentron/tron-eth-conversions@^0.4.8":
-  version "0.4.8"
-  resolved "https://registry.yarnpkg.com/@opentron/tron-eth-conversions/-/tron-eth-conversions-0.4.8.tgz#d88471e29fe37a5c0976dfe8f42cc13b2688ce5f"
-  integrity sha512-z/eaRBQviMC01Cc3DC19rY646oN9Mfm+bhJudJCL/za1zqOMA62M4/QwRZ4jiWAA2xbW0dIq2J8lEsdtD8/iCQ==
-  dependencies:
-    bs58check "^2.1.2"
-    web3 "^1.2.11"
-
 "@opentron/tron-eth-conversions@^0.4.9":
   version "0.4.9"
   resolved "https://registry.yarnpkg.com/@opentron/tron-eth-conversions/-/tron-eth-conversions-0.4.9.tgz#6624ae9f0dced4a0e22b6b53c79f24dc4b136c67"
@@ -2407,25 +2399,16 @@
   resolved "https://registry.yarnpkg.com/@opentron/tron-networks/-/tron-networks-0.4.10.tgz#2e6522c89e4bad8ae3ce8d1b785ac3a8196c815d"
   integrity sha512-PpBazZYUBBkB81v+q0ht7M/V8IePRGn/JWL9qaWPoiWPdxyFs0s/WjuoifaXL0Y+zzN2i6AKCxrlyYDo2buLsg==
 
-"@opentron/tron-sig-util@^0.4.10":
-  version "0.4.10"
-  resolved "https://registry.yarnpkg.com/@opentron/tron-sig-util/-/tron-sig-util-0.4.10.tgz#b0ca7e65356d64c5189126be48c2924d65f7eff6"
-  integrity sha512-FOknIab99k633erzdkwuK0xdo1aoRH8B2ZgDA537rJFrJ9QO9iLtIfCIfvbJ1iX7voAidcMJnuT7oSQziNE7mA==
+"@opentron/tron-sig-util@^0.4.16":
+  version "0.4.16"
+  resolved "https://registry.yarnpkg.com/@opentron/tron-sig-util/-/tron-sig-util-0.4.16.tgz#9aff15e1ac96fdb0f4d0ae28c9de154b0e9621d1"
+  integrity sha512-qK1F0HgxL7UntOQlxctl25J86rNgj3NGuXBPqjZYYuBOR9/V+SPrr9Z1AipbQYruz0+osebs6ImiTsW3Q5A7QQ==
   dependencies:
     "@opentron/tron-eth-conversions" "^0.4.9"
     "@opentron/tron-networks" "^0.4.10"
     axios "^0.20.0"
     elliptic "^6.5.3"
-
-"@opentron/tron-sig-util@^0.4.5":
-  version "0.4.5"
-  resolved "https://registry.yarnpkg.com/@opentron/tron-sig-util/-/tron-sig-util-0.4.5.tgz#a259d7da6cacc0de4052077b5aa63ceb904e695d"
-  integrity sha512-vZo0RfYAZGZeA0yf7v5buCwLlP/zWFQwUAOHY/9QGHyJW7YhZgjoIJtQRkAJcrL6gZSB3zT0AEl4HoiISx90sQ==
-  dependencies:
-    "@opentron/java-tron-provider" "^0.4.5"
-    "@opentron/tron-eth-conversions" "^0.4.5"
-    axios "^0.20.0"
-    elliptic "^6.5.3"
+    web3 "^1.2.11"
 
 "@opentron/tron-sig-util@^0.4.7":
   version "0.4.7"
@@ -2437,10 +2420,10 @@
     axios "^0.20.0"
     elliptic "^6.5.3"
 
-"@opentron/tronweb-from-provider@^0.4.11":
-  version "0.4.11"
-  resolved "https://registry.yarnpkg.com/@opentron/tronweb-from-provider/-/tronweb-from-provider-0.4.11.tgz#73f53a8221534b1fbe8a886ea2ae939438b2732b"
-  integrity sha512-ZJ7bl5xLB2rg5sSN7X4Dl1iKyfsMb4TlnzjyqJW+tiG3H1hjCc32XTjLnGmgl88Fo9D4pXqFULkZACYw5daGSw==
+"@opentron/tronweb-from-provider@^0.4.16":
+  version "0.4.16"
+  resolved "https://registry.yarnpkg.com/@opentron/tronweb-from-provider/-/tronweb-from-provider-0.4.16.tgz#e36944d6b53bcfd54c30a4803b1cd12311fca013"
+  integrity sha512-O60eI9S1mNLcghptUDWd3tIQY+V0oWd/b5KbJ1DfkAYnFqYuDRC8sqiPuQqhjEqRqf37y9ZGuHy4R2DTyOPCCQ==
   dependencies:
     "@opentron/tron-eth-conversions" "^0.4.9"
     tronweb "^3.0.0"

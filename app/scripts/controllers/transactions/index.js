@@ -518,7 +518,8 @@ export default class TransactionController extends EventEmitter {
     // set state to signed
     this.txStateManager.setTxStatusSigned(txMeta.id)
     // const rawTx = ethUtil.bufferToHex(ethTx.serialize())
-    this.setTxHash(txId, tronTx.txID) // @TRON
+    const txHash = `0x${tronTx.txID}`
+    this.setTxHash(txId, txHash) // @TRON
     // TODO: need to rebuild tx hex with the signature using protobuf
     // lib... cant broadcast that rawTx directly as it is not signed
     const rawTx = `0x${tronTx.raw_data_hex}`
@@ -539,7 +540,7 @@ export default class TransactionController extends EventEmitter {
     try {
       const chainId = this.getChainId()
       const data = await broadcastTronTransaction(txMeta.tronTx, { chainId })
-      txHash = data.txid
+      txHash = `0x${data.txid}`
       // TODO: use this.query.sendRawTransaction when our rawTx contains the signature
       // txHash = await this.query.sendRawTransaction(rawTx)
     } catch (error) {
