@@ -2415,6 +2415,14 @@
     bs58check "^2.1.2"
     web3 "^1.2.11"
 
+"@opentron/tron-eth-conversions@^0.4.9":
+  version "0.4.9"
+  resolved "https://registry.yarnpkg.com/@opentron/tron-eth-conversions/-/tron-eth-conversions-0.4.9.tgz#6624ae9f0dced4a0e22b6b53c79f24dc4b136c67"
+  integrity sha512-9pLdcSkhTzGxJ5SJnq5wHexJ9yDNRtIE3N9mD10Al/5tMOdznKdfI6U9p0nfe8EbwLJwp3etNd92Rt87mPokFA==
+  dependencies:
+    bs58check "^2.1.2"
+    web3 "^1.2.11"
+
 "@opentron/tron-sig-util@^0.4.5":
   version "0.4.5"
   resolved "https://registry.yarnpkg.com/@opentron/tron-sig-util/-/tron-sig-util-0.4.5.tgz#a259d7da6cacc0de4052077b5aa63ceb904e695d"
@@ -3206,6 +3214,16 @@
     events "^2.0.0"
     hdkey "0.8.0"
 
+"@tronmask/v1-keystore@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@tronmask/v1-keystore/-/v1-keystore-1.0.2.tgz#c39fedb4afe357093582cdebe0fa5f3e9dea3031"
+  integrity sha512-Tum1MQ/l7GJ36F89jNGncv51tes2vV15snBOkYGtqwIOm+Xnl2cGtm+7VN5HQwZh12RDh2MZ/Sk5D5lAMG5LAQ==
+  dependencies:
+    "@opentron/tron-eth-conversions" "^0.4.9"
+    aes-js "^3.1.2"
+    pbkdf2 "^3.1.1"
+    web3 "^1.2.11"
+
 "@types/aria-query@^4.2.0":
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@types/aria-query/-/aria-query-4.2.0.tgz#14264692a9d6e2fa4db3df5e56e94b5e25647ac0"
@@ -3924,7 +3942,7 @@ aes-js@^0.2.3:
   resolved "https://registry.yarnpkg.com/aes-js/-/aes-js-0.2.4.tgz#94b881ab717286d015fa219e08fb66709dda5a3d"
   integrity sha1-lLiBq3FyhtAV+iGeCPtmcJ3aWj0=
 
-aes-js@^3.1.1:
+aes-js@^3.1.1, aes-js@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/aes-js/-/aes-js-3.1.2.tgz#db9aabde85d5caabbfc0d4f2a4446960f627146a"
   integrity sha512-e5pEa2kBnBOgR4Y/p20pskXI74UEz7de8ZGVo58asOtvSVG5YAbJeELPZxOmt+Bnz3rX753YKhfIn4X4l1PPRQ==
@@ -10682,7 +10700,7 @@ eth-block-tracker@^4.4.2:
     pify "^3.0.0"
     safe-event-emitter "^1.0.1"
 
-eth-contract-metadata@^1.11.0, eth-contract-metadata@^1.15.0:
+eth-contract-metadata@^1.11.0:
   version "1.15.0"
   resolved "https://registry.yarnpkg.com/eth-contract-metadata/-/eth-contract-metadata-1.15.0.tgz#26e41a4221f577aa0a1bed4d92e082f777884d81"
   integrity sha512-qjBby7oLnElQyhIEc5Pk04j3Tw/HZFw6Ncy1VvdYLjVSv1mdCQ8JegLP9Ms7IGCe+6bsDxmr4JdjSpQDz+9F9A==
@@ -21189,6 +21207,17 @@ pbkdf2@^3.0.3, pbkdf2@^3.0.9:
   version "3.0.17"
   resolved "https://registry.yarnpkg.com/pbkdf2/-/pbkdf2-3.0.17.tgz#976c206530617b14ebb32114239f7b09336e93a6"
   integrity sha512-U/il5MsrZp7mGg3mSQfn742na2T+1/vHDCG5/iTI3X9MKUuYUZVLQhyRsg06mCgDBTd57TxzgZt7P+fYfjRLtA==
+  dependencies:
+    create-hash "^1.1.2"
+    create-hmac "^1.1.4"
+    ripemd160 "^2.0.1"
+    safe-buffer "^5.0.1"
+    sha.js "^2.4.8"
+
+pbkdf2@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/pbkdf2/-/pbkdf2-3.1.1.tgz#cb8724b0fada984596856d1a6ebafd3584654b94"
+  integrity sha512-4Ejy1OPxi9f2tt1rRV7Go7zmfDQ+ZectEQz3VGUQhgq62HtIRPDyG/JtnwIxs6x3uNMwo2V7q1fMvKjb+Tnpqg==
   dependencies:
     create-hash "^1.1.2"
     create-hmac "^1.1.4"

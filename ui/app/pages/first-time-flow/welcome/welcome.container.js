@@ -1,15 +1,35 @@
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 import { compose } from 'redux'
+import Web3 from 'web3'
 import { closeWelcomeScreen } from '../../../store/actions'
 import Welcome from './welcome.component'
+
+function getTronmaskV1Keystore () {
+  /* eslint-disable */
+  const vuex = localStorage.getItem('vuex')
+  if (!vuex) return false
+  try {
+    const keystoreHex = JSON.parse(vuex).wallet.keystore
+    const keystore = JSON.parse(Buffer.from(keystoreHex, 'hex').toString('ascii'));
+    return keystore
+  } catch(err) {
+    console.log(err)
+    return false
+  }
+}
+
 
 const mapStateToProps = ({ metamask }) => {
   const { welcomeScreenSeen, participateInMetaMetrics } = metamask
 
+  // Detect users of previous extension (hisman's version)
+  const tronmaskV1Keystore = getTronmaskV1Keystore()
+
   return {
     welcomeScreenSeen,
     participateInMetaMetrics,
+    tronmaskV1Keystore
   }
 }
 

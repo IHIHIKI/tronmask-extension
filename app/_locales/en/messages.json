@@ -921,6 +921,9 @@
   "metamaskDescription": {
     "message": "Connecting you to Tron and the Decentralized Web."
   },
+  "tronmaskV1UpgradeDescription": {
+    "message": "You will need to create a new wallet in order to use this version of TronMask. Please enter your current wallet password to reveal and backup your private key. Once your new wallet is created, you will be able to import your old private key and transfer its funds to an address from the new wallet (recommended)."
+  },
   "metamaskVersion": {
     "message": "TronMask Version"
   },
@@ -1697,6 +1700,9 @@
   },
   "welcome": {
     "message": "Welcome to TronMask"
+  },
+  "welcomeV1User": {
+    "message": "TronMask got a big upgrade!"
   },
   "whatsThis": {
     "message": "What's this?"
