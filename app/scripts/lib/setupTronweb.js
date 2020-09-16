@@ -14,6 +14,7 @@ export default function setupTronweb (tronmaskProvider) {
   // Proxy
   const tronweb = new Proxy(tronwebTarget, {
     get: (...args) => {
+      // console.log(...args)
       const [target, prop, receiver] = args
       propAccessEmitter.emit(prop, { target, prop, receiver })
       return Reflect.get(...args)
@@ -46,6 +47,13 @@ export default function setupTronweb (tronmaskProvider) {
 
   // TODO: detect if window.tronWeb already set?
   Object.defineProperty(global, 'tronWeb', {
+    enumerable: false,
+    writable: true,
+    configurable: true,
+    value: tronweb,
+  })
+  // Also inject window.sunWeb otherwise tronscan does not work
+  Object.defineProperty(global, 'sunWeb', {
     enumerable: false,
     writable: true,
     configurable: true,

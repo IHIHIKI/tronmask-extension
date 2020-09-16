@@ -8,14 +8,14 @@ import Welcome from './welcome.component'
 function getTronmaskV1Keystore () {
   /* eslint-disable */
   const vuex = localStorage.getItem('vuex')
-  if (!vuex) return false
+  if (!vuex) return null
   try {
     const keystoreHex = JSON.parse(vuex).wallet.keystore
     const keystore = JSON.parse(Buffer.from(keystoreHex, 'hex').toString('ascii'));
     return keystore
   } catch(err) {
     console.log(err)
-    return false
+    return null
   }
 }
 
