@@ -31,6 +31,7 @@ export const TOKEN_CATEGORY_HASH = {
 
 export const INCOMING_TRANSACTION = 'incoming'
 
+export const SIGN_TRON_TRANSACTION_ACTION_KEY = 'signTronTransaction'
 export const SEND_ETHER_ACTION_KEY = 'sentEther'
 export const DEPLOY_CONTRACT_ACTION_KEY = 'contractDeployment'
 export const APPROVE_ACTION_KEY = 'approve'
@@ -50,3 +51,4 @@ export const TRANSACTION_CATEGORY_RECEIVE = 'receive'
 export const TRANSACTION_CATEGORY_INTERACTION = 'interaction'
 export const TRANSACTION_CATEGORY_APPROVAL = 'approval'
 export const TRANSACTION_CATEGORY_SIGNATURE_REQUEST = 'signature-request'
+export const TRANSACTION_CATEGORY_SIGN_TRON_TRANSACTION = 'sign-tron-transaction'

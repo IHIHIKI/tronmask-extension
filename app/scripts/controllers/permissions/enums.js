@@ -91,4 +91,5 @@ export const SAFE_METHODS = [
   'eth_decrypt',
   // @TRON
   'tron_rawJavaTronApiRequest',
+  'tron_signTransaction',
 ]

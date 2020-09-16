@@ -92,11 +92,13 @@ const mapStateToProps = (state, ownProps) => {
 
   const { balance } = accounts[fromAddress]
   const { name: fromName } = identities[fromAddress]
+  // @TRON
+  // PS: tron transactions do not have a "to" param
   const toAddress = propsToAddress || txParamsToAddress
 
   const toName = identities[toAddress]?.name ||
     casedContractMap[toAddress]?.name ||
-    formatAddressForTron(toAddress)
+    toAddress ? formatAddressForTron(toAddress) : ''
 
   const checksummedAddress = checksumAddress(toAddress)
   const addressBookObject = addressBook[checksummedAddress]

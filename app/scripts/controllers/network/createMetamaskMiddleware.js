@@ -1,4 +1,5 @@
 import mergeMiddleware from 'json-rpc-engine/src/mergeMiddleware'
+import createAsyncMiddleware from 'json-rpc-engine/src/createAsyncMiddleware'
 import createScaffoldMiddleware from 'json-rpc-engine/src/createScaffoldMiddleware'
 import createWalletSubprovider from 'eth-json-rpc-middleware/wallet'
 import { createPendingNonceMiddleware, createPendingTxMiddleware } from './middleware/pending'
@@ -7,6 +8,7 @@ export default function createMetamaskMiddleware ({
   version,
   getAccounts,
   processTransaction,
+  processSignTronTransaction,
   processEthSignMessage,
   processTypedMessage,
   processTypedMessageV3,
@@ -22,6 +24,12 @@ export default function createMetamaskMiddleware ({
       // staticSubprovider
       eth_syncing: false,
       web3_clientVersion: `TronMask/v${version}`,
+    }),
+    // @TRON
+    createScaffoldMiddleware({
+      tron_signTransaction: createAsyncMiddleware(async (req, res) => {
+        res.result = await processSignTronTransaction(req.params[0], req)
+      }),
     }),
     createWalletSubprovider({
       getAccounts,

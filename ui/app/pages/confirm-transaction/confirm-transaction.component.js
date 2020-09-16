@@ -5,6 +5,7 @@ import Loading from '../../components/ui/loading-screen'
 import ConfirmTransactionSwitch from '../confirm-transaction-switch'
 import ConfirmTransactionBase from '../confirm-transaction-base'
 import ConfirmSendEther from '../confirm-send-ether'
+import ConfirmSignTronTransaction from '../confirm-sign-tron-transaction'
 import ConfirmSendToken from '../confirm-send-token'
 import ConfirmDeployContract from '../confirm-deploy-contract'
 import ConfirmApprove from '../confirm-approve'
@@ -20,6 +21,7 @@ import {
   CONFIRM_APPROVE_PATH,
   CONFIRM_TRANSFER_FROM_PATH,
   CONFIRM_TOKEN_METHOD_PATH,
+  CONFIRM_SIGN_TRON_TRANSACTION_PATH,
   SIGNATURE_REQUEST_PATH,
   DECRYPT_MESSAGE_REQUEST_PATH,
   ENCRYPTION_PUBLIC_KEY_REQUEST_PATH,
@@ -119,6 +121,11 @@ export default class ConfirmTransaction extends Component {
             exact
             path={`${CONFIRM_TRANSACTION_ROUTE}/:id?${CONFIRM_TOKEN_METHOD_PATH}`}
             component={ConfirmTransactionBase}
+          />
+          <Route
+            exact
+            path={`${CONFIRM_TRANSACTION_ROUTE}/:id?${CONFIRM_SIGN_TRON_TRANSACTION_PATH}`}
+            component={ConfirmSignTronTransaction}
           />
           <Route
             exact
