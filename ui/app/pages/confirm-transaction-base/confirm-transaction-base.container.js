@@ -52,6 +52,8 @@ const customNonceMerge = (txData) => (customNonceValue ? ({
   customNonceValue,
 }) : txData)
 
+const zeroAdress = '0x0000000000000000000000000000000000000000'
+
 const mapStateToProps = (state, ownProps) => {
   const { toAddress: propsToAddress, customTxParamsData, match: { params = {} } } = ownProps
   const { id: paramsTransactionId } = params
@@ -92,7 +94,9 @@ const mapStateToProps = (state, ownProps) => {
 
   const { balance } = accounts[fromAddress]
   const { name: fromName } = identities[fromAddress]
-  const toAddress = propsToAddress || txParamsToAddress
+  // @TRON
+  // PS: tron transactions do not have a "to" param
+  const toAddress = propsToAddress || txParamsToAddress || zeroAdress
 
   const toName = identities[toAddress]?.name ||
     casedContractMap[toAddress]?.name ||

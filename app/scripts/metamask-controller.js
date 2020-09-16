@@ -236,6 +236,7 @@ export default class MetamaskController extends EventEmitter {
       blockTracker: this.blockTracker,
     })
     this.txController.on('newUnapprovedTx', () => opts.showUnapprovedTx())
+    this.txController.on('newSignTronTransaction', () => opts.showUnapprovedTx())
 
     this.txController.on(`tx:status-update`, async (txId, status) => {
       if (status === 'confirmed' || status === 'failed') {
@@ -347,6 +348,8 @@ export default class MetamaskController extends EventEmitter {
       },
       // tx signing
       processTransaction: this.newUnapprovedTransaction.bind(this),
+      // @TODO(tron): processSignTronTransaction...
+      processSignTronTransaction: this.newSignTronTransaction.bind(this),
       // msg signing
       processEthSignMessage: this.newUnsignedMessage.bind(this),
       processTypedMessage: this.newUnsignedTypedMessage.bind(this),
@@ -1054,6 +1057,10 @@ export default class MetamaskController extends EventEmitter {
    */
   async newUnapprovedTransaction (txParams, req) {
     return await this.txController.newUnapprovedTransaction(txParams, req)
+  }
+
+  async newSignTronTransaction (txParams, req) {
+    return await this.txController.newSignTronTransaction(txParams, req)
   }
 
   // eth_sign methods:

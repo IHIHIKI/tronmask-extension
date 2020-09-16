@@ -1,3 +1,4 @@
+import { ethAddress } from '@opentron/tron-eth-conversions'
 import EventEmitter from 'safe-event-emitter'
 import ObservableStore from 'obs-store'
 import ethUtil from 'ethereumjs-util'
@@ -16,6 +17,7 @@ import {
   SEND_ETHER_ACTION_KEY,
   DEPLOY_CONTRACT_ACTION_KEY,
   CONTRACT_INTERACTION_KEY,
+  SIGN_TRON_TRANSACTION_ACTION_KEY,
 } from '../../../../ui/app/helpers/constants/transactions'
 import cleanErrorStack from '../../lib/cleanErrorStack'
 import { hexToBn, bnToHex, BnMultiplyByFraction } from '../../lib/util'
@@ -28,6 +30,7 @@ import {
   TRANSACTION_TYPE_CANCEL,
   TRANSACTION_TYPE_RETRY,
   TRANSACTION_TYPE_STANDARD,
+  TRANSACTION_TYPE_TRON,
   TRANSACTION_STATUS_APPROVED,
 } from './enums'
 
@@ -186,6 +189,32 @@ export default class TransactionController extends EventEmitter {
     })
   }
 
+  async newSignTronTransaction (unsignedTransaction, opts = {}) {
+
+    log.debug(`TronMaskController newSignTronTransaction ${JSON.stringify(unsignedTransaction)}`)
+    console.log('TronMaskController newSignTronTransaction', unsignedTransaction)
+
+    const initialTxMeta = await this.addUnapprovedSignTronTransaction(unsignedTransaction, opts.origin)
+
+    // listen for tx completion (success, fail)
+    return new Promise((resolve, reject) => {
+      this.txStateManager.once(`${initialTxMeta.id}:finished`, (finishedTxMeta) => {
+        switch (finishedTxMeta.status) {
+          case 'signed':
+          // case 'submitted':
+            // return resolve(finishedTxMeta.hash)
+            return resolve(finishedTxMeta)
+          case 'rejected':
+            return reject(cleanErrorStack(ethErrors.provider.userRejectedRequest('TronMask Tx Signature: User denied transaction signature.')))
+          case 'failed':
+            return reject(cleanErrorStack(ethErrors.rpc.internal(finishedTxMeta.err.message)))
+          default:
+            return reject(cleanErrorStack(ethErrors.rpc.internal(`TronMask Tx Signature: Unknown problem: ${JSON.stringify(finishedTxMeta.txParams)}`)))
+        }
+      })
+    })
+  }
+
   /**
    * Validates and generates a txMeta with defaults and puts it in txStateManager
    * store.
@@ -253,6 +282,72 @@ export default class TransactionController extends EventEmitter {
       this.txStateManager.updateTx(txMeta, 'Failed to calculate gas defaults.')
       throw error
     }
+
+    txMeta.loadingDefaults = false
+    // save txMeta
+    this.txStateManager.updateTx(txMeta, 'Added new unapproved transaction.')
+
+    return txMeta
+  }
+
+  async addUnapprovedSignTronTransaction (unsignedTransaction, origin) {
+
+    const from = ethAddress.fromTronHex(unsignedTransaction.raw_data.contract[0].parameter.value.owner_address)
+
+    const normalizedTxParams = txUtils.normalizeTxParams({ from })
+    // validate
+    // const normalizedTxParams = txUtils.normalizeTxParams(txParams)
+
+    // txUtils.validateTxParams(normalizedTxParams)
+
+    /**
+    `generateTxMeta` adds the default txMeta properties to the passed object.
+    These include the tx's `id`. As we use the id for determining order of
+    txes in the tx-state-manager, it is necessary to call the asynchronous
+    method `this._determineTransactionCategory` after `generateTxMeta`.
+    */
+    console.log(normalizedTxParams)
+    const txMeta = this.txStateManager.generateTxMeta({
+      txParams: normalizedTxParams,
+      type: TRANSACTION_TYPE_TRON,
+    })
+
+    console.log(txMeta)
+
+    if (origin === 'metamask') {
+      // Assert the from address is the selected address
+      if (normalizedTxParams.from !== this.getSelectedAddress()) {
+        throw ethErrors.rpc.internal({
+          message: `Internally initiated transaction is using invalid account.`,
+          data: {
+            origin,
+            fromAddress: normalizedTxParams.from,
+            selectedAddress: this.getSelectedAddress(),
+          },
+        })
+      }
+    } else {
+      // Assert that the origin has permissions to initiate transactions from
+      // the specified address
+      const permittedAddresses = await this.getPermittedAccounts(origin)
+      console.log({ permittedAddresses, origin, normalizedTxParams })
+      if (!permittedAddresses.includes(normalizedTxParams.from)) {
+        throw ethErrors.provider.unauthorized({ data: { origin } })
+      }
+    }
+
+    txMeta.origin = origin
+
+    const transactionCategory = SIGN_TRON_TRANSACTION_ACTION_KEY
+    txMeta.transactionCategory = transactionCategory
+
+    // ensure value
+    txMeta.txParams.value = '0x0'
+
+    this.addTx(txMeta)
+    // TODO(tron): newSignTronTransaction
+    this.emit('newSignTronTransaction', txMeta)
+    // this.emit('newUnapprovedTx', txMeta)
 
     txMeta.loadingDefaults = false
     // save txMeta
