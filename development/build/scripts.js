@@ -15,7 +15,7 @@ const pify = require('pify')
 const endOfStream = pify(require('end-of-stream'))
 const { makeStringTransform } = require('browserify-transform-tools')
 
-const conf = require('rc')('metamask', {})
+const conf = require('rc')('tronmask', {})
 
 const packageJSON = require('../../package.json')
 const { createTask, composeParallel, composeSeries, runInChildProcess } = require('./task')
@@ -197,7 +197,7 @@ function createScriptTasks ({ browserPlatforms, livereload }) {
         buildStream = buildStream
           .pipe(terser({
             mangle: {
-              reserved: ['MetamaskInpageProvider'],
+              reserved: ['TronmaskInpageProvider'],
             },
             sourceMap: {
               content: true,
@@ -324,8 +324,8 @@ function createScriptTasks ({ browserPlatforms, livereload }) {
 
     // Inject variables into bundle
     bundler.transform(envify({
-      METAMASK_DEBUG: opts.devMode,
-      METAMASK_ENVIRONMENT: environment,
+      TRONMASK_DEBUG: opts.devMode,
+      TRONMASK_ENVIRONMENT: environment,
       METAMETRICS_PROJECT_ID: process.env.METAMETRICS_PROJECT_ID,
       NODE_ENV: opts.devMode ? 'development' : 'production',
       IN_TEST: opts.testing ? 'true' : false,
