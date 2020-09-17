@@ -407,7 +407,7 @@
   "tronPublicAddress": {
     "message": "כתובת אתריום ציבורית"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "הצג חשבון ב- Tronscan"
   },
   "estimatedProcessingTimes": {

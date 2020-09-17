@@ -407,7 +407,7 @@
   "tronPublicAddress": {
     "message": "Публічна адреса Tron"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Переглянути обліковий запис на Tronscan"
   },
   "estimatedProcessingTimes": {

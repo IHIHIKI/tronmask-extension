@@ -154,7 +154,7 @@
   "enterPassword": {
     "message": "Parolanızı girin"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Hesabı Tronscan üzerinde izle"
   },
   "exportPrivateKey": {

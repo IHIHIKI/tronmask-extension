@@ -377,7 +377,7 @@
   "enterPasswordContinue": {
     "message": "Ilagay ang password para magpatuloy"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Tingnan ang account sa Tronscan"
   },
   "estimatedProcessingTimes": {

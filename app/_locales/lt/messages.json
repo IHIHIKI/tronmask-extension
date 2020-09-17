@@ -407,7 +407,7 @@
   "tronPublicAddress": {
     "message": "„Tron“ viešasis adresas"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Peržiūrėti paskyrą „Tronscan“ programoje"
   },
   "estimatedProcessingTimes": {

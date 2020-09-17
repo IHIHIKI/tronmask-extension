@@ -395,7 +395,7 @@
   "tronPublicAddress": {
     "message": "Alamat Awam Tron"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Lihat akaun di Tronscan"
   },
   "estimatedProcessingTimes": {

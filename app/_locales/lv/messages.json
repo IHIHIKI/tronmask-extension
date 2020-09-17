@@ -407,7 +407,7 @@
   "tronPublicAddress": {
     "message": "Tron publiskā adrese"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Skatīt kontu ar Tronscan"
   },
   "estimatedProcessingTimes": {

@@ -21,7 +21,7 @@ const newTestRpc = 'https://testrpc.tronmask.io/'
 
 describe('wallet1 is migrated successfully', function () {
   it('should convert providers', function () {
-    wallet1.data.config.provider = { type: 'etherscan', rpcTarget: null }
+    wallet1.data.config.provider = { type: 'tronscan', rpcTarget: null }
 
     return migration2.migrate(wallet1)
       .then((secondResult) => {

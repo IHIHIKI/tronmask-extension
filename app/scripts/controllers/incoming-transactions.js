@@ -326,28 +326,6 @@ export default class IncomingTransactionsController {
       transactionCategory: 'incoming',
     }
   }
-
-  _normalizeTxFromEtherscan (txMeta, currentNetworkID) {
-    const time = parseInt(txMeta.timeStamp, 10) * 1000
-    const status = txMeta.isError === '0' ? 'confirmed' : 'failed'
-    return {
-      blockNumber: txMeta.blockNumber,
-      id: createId(),
-      tronmaskNetworkId: currentNetworkID,
-      status,
-      time,
-      txParams: {
-        from: txMeta.from,
-        gas: bnToHex(new BN(txMeta.gas)),
-        gasPrice: bnToHex(new BN(txMeta.gasPrice)),
-        nonce: bnToHex(new BN(txMeta.nonce)),
-        to: txMeta.to,
-        value: bnToHex(new BN(txMeta.value)),
-      },
-      hash: txMeta.hash,
-      transactionCategory: 'incoming',
-    }
-  }
 }
 
 function pairwise (fn) {

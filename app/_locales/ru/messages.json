@@ -157,7 +157,7 @@
   "enterPassword": {
     "message": "Введите пароль"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Просмотреть счет на Tronscan"
   },
   "exportPrivateKey": {

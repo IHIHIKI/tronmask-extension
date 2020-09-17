@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import { I18nContext } from '../../../contexts/i18n'
 import { Menu, MenuItem } from '../../../components/ui/menu'
 
-const TokenOptions = ({ onRemove, onViewEtherscan, tokenSymbol }) => {
+const TokenOptions = ({ onRemove, onViewTronscan, tokenSymbol }) => {
   const t = useContext(I18nContext)
   const [tokenOptionsButtonElement, setTokenOptionsButtonElement] = useState(null)
   const [tokenOptionsOpen, setTokenOptionsOpen] = useState(false)
@@ -24,10 +24,10 @@ const TokenOptions = ({ onRemove, onViewEtherscan, tokenSymbol }) => {
             <Menu anchorElement={tokenOptionsButtonElement} onHide={() => setTokenOptionsOpen(false)} >
               <MenuItem
                 iconClassName="fas fa-external-link-alt token-options__icon"
-                data-testid="token-options__etherscan"
+                data-testid="token-options__tronscan"
                 onClick={() => {
                   setTokenOptionsOpen(false)
-                  onViewEtherscan()
+                  onViewTronscan()
                 }}
               >
                 { t('viewOnTronscan') }
@@ -52,7 +52,7 @@ const TokenOptions = ({ onRemove, onViewEtherscan, tokenSymbol }) => {
 
 TokenOptions.propTypes = {
   onRemove: PropTypes.func.isRequired,
-  onViewEtherscan: PropTypes.func.isRequired,
+  onViewTronscan: PropTypes.func.isRequired,
   tokenSymbol: PropTypes.string.isRequired,
 }
 

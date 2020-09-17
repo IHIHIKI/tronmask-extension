@@ -47,7 +47,7 @@ export default class TransactionListItemDetails extends PureComponent {
     justCopied: false,
   }
 
-  handleEtherscanClick = () => {
+  handleTronscanClick = () => {
     const { transactionGroup: { primaryTransaction }, rpcPrefs } = this.props
     const { hash, tronmaskNetworkId } = primaryTransaction
 
@@ -55,7 +55,7 @@ export default class TransactionListItemDetails extends PureComponent {
       eventOpts: {
         category: 'Navigation',
         action: 'Activity Log',
-        name: 'Clicked "View on Etherscan"',
+        name: 'Clicked "View on Tronscan"',
       },
     })
 
@@ -190,7 +190,7 @@ export default class TransactionListItemDetails extends PureComponent {
               <Tooltip title={blockExplorerUrl ? t('viewOnCustomBlockExplorer', [blockExplorerUrl]) : t('viewOnTronscan')}>
                 <Button
                   type="raised"
-                  onClick={this.handleEtherscanClick}
+                  onClick={this.handleTronscanClick}
                   className="transaction-list-item-details__header-button"
                   disabled={!hash}
                 >

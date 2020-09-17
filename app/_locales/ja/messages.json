@@ -199,7 +199,7 @@
   "enterPassword": {
     "message": "パスワードを入力"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Tronscanでアカウントを確認"
   },
   "exportPrivateKey": {

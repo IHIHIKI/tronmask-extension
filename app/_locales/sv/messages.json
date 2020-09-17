@@ -401,7 +401,7 @@
   "tronPublicAddress": {
     "message": "Tron offentlig adress"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Visa konto på Tronscan"
   },
   "estimatedProcessingTimes": {

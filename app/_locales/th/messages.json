@@ -190,7 +190,7 @@
   "enterPassword": {
     "message": "ใส่รหัสผ่าน"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "ดูบัญชีบน Tronscan"
   },
   "expandView": {

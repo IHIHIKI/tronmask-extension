@@ -404,7 +404,7 @@
   "tronPublicAddress": {
     "message": "Tronin julkinen osoite"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Tarkastele tiliä Tronscanissa"
   },
   "estimatedProcessingTimes": {

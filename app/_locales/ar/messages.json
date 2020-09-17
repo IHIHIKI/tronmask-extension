@@ -407,7 +407,7 @@
   "tronPublicAddress": {
     "message": "عنوان الإيثيريوم العمومي"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "عرض الحساب على Tronscan"
   },
   "estimatedProcessingTimes": {

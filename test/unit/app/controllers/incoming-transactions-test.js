@@ -334,7 +334,7 @@ describe('IncomingTransactionsController', function () {
       await incomingTransactionsController._fetchTxs('0xfakeaddress', '789', ROPSTEN)
 
       assert(mockFetch.calledOnce)
-      assert.equal(mockFetch.getCall(0).args[0], `https://api-${ROPSTEN}.etherscan.io/api?module=account&action=txlist&address=0xfakeaddress&tag=latest&page=1&startBlock=789`)
+      assert.equal(mockFetch.getCall(0).args[0], `https://api-${ROPSTEN}.tronscan.io/api?module=account&action=txlist&address=0xfakeaddress&tag=latest&page=1&startBlock=789`)
     })
 
     it('should call fetch with the expected url when passed an address, block number and MAINNET', async function () {
@@ -348,7 +348,7 @@ describe('IncomingTransactionsController', function () {
       await incomingTransactionsController._fetchTxs('0xfakeaddress', '789', MAINNET)
 
       assert(mockFetch.calledOnce)
-      assert.equal(mockFetch.getCall(0).args[0], `https://api.etherscan.io/api?module=account&action=txlist&address=0xfakeaddress&tag=latest&page=1&startBlock=789`)
+      assert.equal(mockFetch.getCall(0).args[0], `https://api.tronscan.io/api?module=account&action=txlist&address=0xfakeaddress&tag=latest&page=1&startBlock=789`)
     })
 
     it('should call fetch with the expected url when passed an address and supported network, but a falsy block number', async function () {
@@ -362,7 +362,7 @@ describe('IncomingTransactionsController', function () {
       await incomingTransactionsController._fetchTxs('0xfakeaddress', null, ROPSTEN)
 
       assert(mockFetch.calledOnce)
-      assert.equal(mockFetch.getCall(0).args[0], `https://api-${ROPSTEN}.etherscan.io/api?module=account&action=txlist&address=0xfakeaddress&tag=latest&page=1`)
+      assert.equal(mockFetch.getCall(0).args[0], `https://api-${ROPSTEN}.tronscan.io/api?module=account&action=txlist&address=0xfakeaddress&tag=latest&page=1`)
     })
 
     it('should not fetch and return an empty object when passed an unsported network', async function () {
@@ -447,7 +447,7 @@ describe('IncomingTransactionsController', function () {
         initState: NON_EMPTY_INIT_STATE,
       })
 
-      incomingTransactionsController._normalizeTxFromEtherscan = (tx, currentNetworkID) => ({
+      incomingTransactionsController._normalizeTxFromTronscan = (tx, currentNetworkID) => ({
         ...tx,
         currentNetworkID,
         normalized: true,
@@ -557,7 +557,7 @@ describe('IncomingTransactionsController', function () {
     })
   })
 
-  describe('_normalizeTxFromEtherscan', function () {
+  describe('_normalizeTxFromTronscan', function () {
     it('should return the expected data when the tx is in error', function () {
       const incomingTransactionsController = new IncomingTransactionsController({
         blockTracker: MOCK_BLOCKTRACKER,
@@ -566,7 +566,7 @@ describe('IncomingTransactionsController', function () {
         initState: NON_EMPTY_INIT_STATE,
       })
 
-      const result = incomingTransactionsController._normalizeTxFromEtherscan({
+      const result = incomingTransactionsController._normalizeTxFromTronscan({
         timeStamp: '4444',
         isError: '1',
         blockNumber: 333,
@@ -606,7 +606,7 @@ describe('IncomingTransactionsController', function () {
         initState: NON_EMPTY_INIT_STATE,
       })
 
-      const result = incomingTransactionsController._normalizeTxFromEtherscan({
+      const result = incomingTransactionsController._normalizeTxFromTronscan({
         timeStamp: '4444',
         isError: '0',
         blockNumber: 333,

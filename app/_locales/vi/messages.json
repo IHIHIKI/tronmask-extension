@@ -106,7 +106,7 @@
   "enterPassword": {
     "message": "Nhập mật khẩu"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Xem tài khoản trên Tronscan"
   },
   "exportPrivateKey": {

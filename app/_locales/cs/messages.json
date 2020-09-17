@@ -151,7 +151,7 @@
   "enterPassword": {
     "message": "Zadejte heslo"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Prohlédněte si účet na Tronscan"
   },
   "exportPrivateKey": {

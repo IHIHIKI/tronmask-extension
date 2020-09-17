@@ -1,12 +1,12 @@
 import * as networkEnums from '../../app/scripts/controllers/network/enums'
 
 /**
- * Gets the etherscan.io URL prefix for a given network ID.
+ * Gets the tronscan.io URL prefix for a given network ID.
  *
  * @param {string} networkId - The network ID to get the prefix for.
- * @returns {string} The etherscan.io URL prefix for the given network ID.
+ * @returns {string} The tronscan.io URL prefix for the given network ID.
  */
-export function getEtherscanNetworkPrefix (networkId) {
+export function getTronscanNetworkPrefix (networkId) {
   switch (networkId) {
     case networkEnums.NILE_NETWORK_ID:
       return 'nile.'

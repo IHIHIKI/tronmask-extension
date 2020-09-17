@@ -407,7 +407,7 @@
   "tronPublicAddress": {
     "message": "Публичен адрес за етереум"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Преглед на акаунта в Tronscan"
   },
   "estimatedProcessingTimes": {

@@ -407,7 +407,7 @@
   "tronPublicAddress": {
     "message": "آدرس عمومی ایتریم"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "حساب را در Tronscan ببینید"
   },
   "estimatedProcessingTimes": {

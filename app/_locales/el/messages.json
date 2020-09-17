@@ -404,7 +404,7 @@
   "tronPublicAddress": {
     "message": "Δημόσια Διεύθυνση Tron"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Προβολή λογαριασμού στο Tronscan"
   },
   "estimatedProcessingTimes": {

@@ -407,7 +407,7 @@
   "tronPublicAddress": {
     "message": "Tron ሕዝባዊ አድራሻ"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "መለያውን በ Tronscan ላይ ይመልከቱ"
   },
   "estimatedProcessingTimes": {

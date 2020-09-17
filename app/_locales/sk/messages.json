@@ -398,7 +398,7 @@
   "tronPublicAddress": {
     "message": "Verejná adresa Tron"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Prohlédněte si účet na Tronscan"
   },
   "estimatedProcessingTimes": {

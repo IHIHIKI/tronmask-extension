@@ -404,7 +404,7 @@
   "tronPublicAddress": {
     "message": "以太坊公開位址"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "在 Tronscan 上查看帳戶"
   },
   "estimatedProcessingTimes": {

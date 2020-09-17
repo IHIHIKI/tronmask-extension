@@ -407,7 +407,7 @@
   "tronPublicAddress": {
     "message": "Javna adresa Tron"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Prikaži račun na Tronscanu"
   },
   "estimatedProcessingTimes": {

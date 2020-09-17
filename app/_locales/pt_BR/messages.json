@@ -401,7 +401,7 @@
   "tronPublicAddress": {
     "message": "Endereço Público do Tron"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Ver conta no Tronscan"
   },
   "estimatedProcessingTimes": {

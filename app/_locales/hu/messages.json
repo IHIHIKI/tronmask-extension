@@ -407,7 +407,7 @@
   "tronPublicAddress": {
     "message": "Tron nyilvános címe"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Fiók megtekintése Tronscanen"
   },
   "estimatedProcessingTimes": {

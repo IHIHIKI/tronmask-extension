@@ -121,7 +121,7 @@
   "enterPassword": {
     "message": "Voer wachtwoord in"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Bekijk account op Tronscan"
   },
   "exportPrivateKey": {

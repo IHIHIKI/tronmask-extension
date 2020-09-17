@@ -127,7 +127,7 @@
   "enterPassword": {
     "message": "पासवर्ड दर्ज करें"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "ईथरस्कैन पर खाता देखें"
   },
   "exportPrivateKey": {

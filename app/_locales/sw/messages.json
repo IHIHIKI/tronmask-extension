@@ -401,7 +401,7 @@
   "tronPublicAddress": {
     "message": "Anwani ya Umma ya Tron"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Tazama akaunti kwenye Tronscan"
   },
   "estimatedProcessingTimes": {

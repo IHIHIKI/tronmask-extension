@@ -407,7 +407,7 @@
   "tronPublicAddress": {
     "message": "Troni avalik aadress"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Vaadake kontot Tronscanil"
   },
   "estimatedProcessingTimes": {

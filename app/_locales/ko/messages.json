@@ -404,7 +404,7 @@
   "tronPublicAddress": {
     "message": "이더리움 공개 주소"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "이더스캔에서 계정보기"
   },
   "estimatedProcessingTimes": {

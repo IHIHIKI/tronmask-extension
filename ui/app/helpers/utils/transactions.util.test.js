@@ -58,12 +58,12 @@ describe('Transactions utils', function () {
     it('should return the correct block explorer url for a transaction', function () {
       const tests = [
         {
-          expected: 'https://etherscan.io/tx/0xabcd',
+          expected: 'https://tronscan.io/tx/0xabcd',
           networkId: '1',
           hash: '0xabcd',
         },
         {
-          expected: 'https://ropsten.etherscan.io/tx/0xdef0',
+          expected: 'https://ropsten.tronscan.io/tx/0xdef0',
           networkId: '3',
           hash: '0xdef0',
           rpcPrefs: {},

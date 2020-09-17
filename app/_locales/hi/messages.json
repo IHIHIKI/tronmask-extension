@@ -407,7 +407,7 @@
   "tronPublicAddress": {
     "message": "ईथरअम पब्लिक एड्रेस"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Tronscan पर खाता दिखाएँ"
   },
   "estimatedProcessingTimes": {

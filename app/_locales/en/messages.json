@@ -625,7 +625,7 @@
   "tronPublicAddress": {
     "message": "Tron Public Address"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "View account on Tronscan"
   },
   "estimatedProcessingTimes": {

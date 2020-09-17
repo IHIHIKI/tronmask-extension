@@ -148,7 +148,7 @@
   "passwordsDontMatch": {
     "message": "கடவுச்சொற்கள் பொருந்தாதே"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Tronscan கணக்கைப் பார்க்கவும்"
   },
   "exportPrivateKey": {

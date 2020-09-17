@@ -8,7 +8,7 @@ import {
   TRANSACTION_STATUS_CONFIRMED,
 } from '../../../../app/scripts/controllers/transactions/enums'
 import { MESSAGE_TYPE } from '../../../../app/scripts/lib/enums'
-import { getEtherscanNetworkPrefix } from '../../../lib/etherscan-prefix-for-network'
+import { getTronscanNetworkPrefix } from '../../../lib/tronscan-prefix-for-network'
 import {
   TOKEN_METHOD_TRANSFER,
   TOKEN_METHOD_APPROVE,
@@ -259,6 +259,6 @@ export function getBlockExplorerUrlForTx (networkId, hash_, rpcPrefs = {}) {
   if (rpcPrefs.blockExplorerUrl) {
     return `${rpcPrefs.blockExplorerUrl.replace(/\/+$/u, '')}/#/transaction/${hash}`
   }
-  const prefix = getEtherscanNetworkPrefix(networkId)
+  const prefix = getTronscanNetworkPrefix(networkId)
   return `https://${prefix}tronscan.org/#/transaction/${hash}`
 }

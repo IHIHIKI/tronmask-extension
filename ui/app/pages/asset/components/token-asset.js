@@ -28,7 +28,7 @@ export default function TokenAsset ({ token }) {
         optionsButton={(
           <TokenOptions
             onRemove={() => dispatch(showModal({ name: 'HIDE_TOKEN_CONFIRMATION', token }))}
-            onViewEtherscan={() => {
+            onViewTronscan={() => {
               const url = createAccountLink(token.address, network)
               global.platform.openTab({ url })
             }}

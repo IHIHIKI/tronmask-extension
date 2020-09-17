@@ -55,17 +55,17 @@ describe('Account Details Modal', function () {
 
   it('opens new tab when view block explorer is clicked', function () {
     const modalButton = wrapper.find('.account-details-modal__button')
-    const etherscanLink = modalButton.first()
+    const tronscanLink = modalButton.first()
 
-    etherscanLink.simulate('click')
+    tronscanLink.simulate('click')
     assert(global.platform.openTab.calledOnce)
   })
 
   it('shows export private key modal when clicked', function () {
     const modalButton = wrapper.find('.account-details-modal__button')
-    const etherscanLink = modalButton.last()
+    const tronscanLink = modalButton.last()
 
-    etherscanLink.simulate('click')
+    tronscanLink.simulate('click')
     assert(props.showExportPrivateKeyModal.calledOnce)
   })
 

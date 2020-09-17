@@ -325,7 +325,7 @@
   "enterPasswordContinue": {
     "message": "Introducir contraseña para seguir"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Ver la cuenta en Tronscan"
   },
   "estimatedProcessingTimes": {

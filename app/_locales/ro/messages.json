@@ -407,7 +407,7 @@
   "tronPublicAddress": {
     "message": "Adresa publică Tron"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Vizualizare cont pe Tronscan"
   },
   "estimatedProcessingTimes": {

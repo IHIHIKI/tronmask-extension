@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import { getEthConversionFromWeiHex, getValueFromWeiHex } from '../../../helpers/utils/conversions.util'
 import { formatDate } from '../../../helpers/utils/util'
-import { getEtherscanNetworkPrefix } from '../../../../lib/etherscan-prefix-for-network'
+import { getTronscanNetworkPrefix } from '../../../../lib/tronscan-prefix-for-network'
 import TransactionActivityLogIcon from './transaction-activity-log-icon'
 import { CONFIRMED_STATUS } from './transaction-activity-log.constants'
 
@@ -30,10 +30,10 @@ export default class TransactionActivityLog extends PureComponent {
     const { primaryTransaction } = this.props
     const { tronmaskNetworkId } = primaryTransaction
 
-    const prefix = getEtherscanNetworkPrefix(tronmaskNetworkId)
-    const etherscanUrl = `https://${prefix}tronscan.org/#/transaction/${hash}`
+    const prefix = getTronscanNetworkPrefix(tronmaskNetworkId)
+    const tronscanUrl = `https://${prefix}tronscan.org/#/transaction/${hash}`
 
-    global.platform.openTab({ url: etherscanUrl })
+    global.platform.openTab({ url: tronscanUrl })
   }
 
   renderInlineRetry (index) {

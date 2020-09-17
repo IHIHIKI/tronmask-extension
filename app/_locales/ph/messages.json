@@ -100,7 +100,7 @@
   "enterPassword": {
     "message": "I-enter ang password"
   },
-  "etherscanView": {
+  "tronscanView": {
     "message": "Tingnan ang account sa Tronscan"
   },
   "exportPrivateKey": {

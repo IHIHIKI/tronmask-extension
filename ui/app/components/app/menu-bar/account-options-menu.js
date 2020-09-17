@@ -31,11 +31,11 @@ export default function AccountOptionsMenu ({ anchorElement, onClose }) {
       name: 'Viewed Account Details',
     },
   })
-  const viewOnEtherscanEvent = useMetricEvent({
+  const viewOnTronscanEvent = useMetricEvent({
     eventOpts: {
       category: 'Navigation',
       action: 'Account Options',
-      name: 'Clicked View on Etherscan',
+      name: 'Clicked View on Tronscan',
     },
   })
   const openConnectedSitesEvent = useMetricEvent({
@@ -89,7 +89,7 @@ export default function AccountOptionsMenu ({ anchorElement, onClose }) {
       </MenuItem>
       <MenuItem
         onClick={() => {
-          viewOnEtherscanEvent()
+          viewOnTronscanEvent()
           global.platform.openTab({ url: getAccountLink(address, network, rpcPrefs) })
           onClose()
         }}
