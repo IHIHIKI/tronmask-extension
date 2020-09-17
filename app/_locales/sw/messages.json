@@ -398,7 +398,7 @@
   "enterPasswordContinue": {
     "message": "Ingiza nenosiri ili uendelee"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "Anwani ya Umma ya Ethereum"
   },
   "etherscanView": {

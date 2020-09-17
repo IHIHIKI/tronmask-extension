@@ -98,7 +98,7 @@ export default class EditContact extends PureComponent {
 
           <div className="address-book__view-contact__group">
             <div className="address-book__view-contact__group__label">
-              { t('ethereumPublicAddress') }
+              { t('tronPublicAddress') }
             </div>
             <TextField
               type="text"

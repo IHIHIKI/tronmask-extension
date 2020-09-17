@@ -39,7 +39,7 @@ export function useTokenTracker (tokens) {
     teardownTracker()
     tokenTracker.current = new TokenTracker({
       userAddress: address,
-      provider: global.ethereumProvider,
+      provider: global.tronProvider,
       tokens: tokenList,
       pollingInterval: 8000,
     })
@@ -68,7 +68,7 @@ export function useTokenTracker (tokens) {
     // values are in the process of updating by setting loading state.
     setLoading(true)
 
-    if (!userAddress || network === 'loading' || !global.ethereumProvider) {
+    if (!userAddress || network === 'loading' || !global.tronProvider) {
       // If we do not have enough information to build a TokenTracker, we exit early
       // When the values above change, the effect will be restarted. We also teardown
       // tracker because inevitably this effect will run again momentarily.

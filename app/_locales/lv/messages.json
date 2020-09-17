@@ -404,7 +404,7 @@
   "enterPasswordContinue": {
     "message": "Ievadiet paroli, lai turpinātu"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "Ethereum publiskā adrese"
   },
   "etherscanView": {

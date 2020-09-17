@@ -401,7 +401,7 @@
   "enterPasswordContinue": {
     "message": "Syötä salasana voidaksesi jatkaa"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "Ethereumin julkinen osoite"
   },
   "etherscanView": {
@@ -1088,7 +1088,7 @@
     "message": "3. Ota käyttöön dApps ja paljon muuta!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Käytä laitteistosi tiliä minkä tahansa Ethereum-tilin tavoin. Kirjaudu dAppsiin, lähettää ethereumeja, ostaa ja tallentaa ERC20-tunnuksia sekä CryptoKittiesin kaltaisia ei-korvattavia tunnuksia."
+    "message": "Käytä laitteistosi tiliä minkä tahansa Ethereum-tilin tavoin. Kirjaudu dAppsiin, lähettää troneja, ostaa ja tallentaa ERC20-tunnuksia sekä CryptoKittiesin kaltaisia ei-korvattavia tunnuksia."
   },
   "storePhrase": {
     "message": "Tallenna tämä teksti johonkin salasanojen hallintaohjelmaan (esim. 1Password)."

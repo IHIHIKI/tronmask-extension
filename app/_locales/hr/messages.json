@@ -404,7 +404,7 @@
   "enterPasswordContinue": {
     "message": "Upišite lozinku za nastavak"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "Javna adresa Ethereum"
   },
   "etherscanView": {

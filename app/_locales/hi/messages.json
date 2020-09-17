@@ -404,7 +404,7 @@
   "enterPasswordContinue": {
     "message": "जारी रखने के लिए पासवर्ड दर्ज करें"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "ईथरअम पब्लिक एड्रेस"
   },
   "etherscanView": {

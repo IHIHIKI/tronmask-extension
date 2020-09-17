@@ -404,7 +404,7 @@
   "enterPasswordContinue": {
     "message": "ለመቀጠል የይለፍ ቃል ያስገቡ"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "Ethereum ሕዝባዊ አድራሻ"
   },
   "etherscanView": {

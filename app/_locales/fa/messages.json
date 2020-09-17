@@ -404,7 +404,7 @@
   "enterPasswordContinue": {
     "message": "برای ادامه رمز عبور را وارد کنید"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "آدرس عمومی ایتریم"
   },
   "etherscanView": {

@@ -404,7 +404,7 @@
   "enterPasswordContinue": {
     "message": "Введіть пароль, щоб продовжити"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "Публічна адреса Ethereum"
   },
   "etherscanView": {

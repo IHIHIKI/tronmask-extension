@@ -194,7 +194,7 @@ export function shortenBalance (balance, decimalsToKeep = 1) {
   return convertedBalance.toFixed(decimalsToKeep)
 }
 
-// Takes a BN and an ethereum currency name,
+// Takes a BN and an tron currency name,
 // returns a BN in wei
 export function normalizeToWei (amount, currency) {
   try {

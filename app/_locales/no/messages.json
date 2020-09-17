@@ -401,7 +401,7 @@
   "enterPasswordContinue": {
     "message": "Skriv inn passord for å fortsette"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "Ethereum offentlig adresse"
   },
   "etherscanView": {

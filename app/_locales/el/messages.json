@@ -401,7 +401,7 @@
   "enterPasswordContinue": {
     "message": "Πληκτρολογήστε τον κωδικό πρόσβασης για να συνεχίσετε"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "Δημόσια Διεύθυνση Ethereum"
   },
   "etherscanView": {

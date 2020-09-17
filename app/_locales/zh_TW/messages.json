@@ -401,7 +401,7 @@
   "enterPasswordContinue": {
     "message": "請輸入密碼"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "以太坊公開位址"
   },
   "etherscanView": {

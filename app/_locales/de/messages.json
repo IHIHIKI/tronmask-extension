@@ -389,7 +389,7 @@
   "enterPasswordContinue": {
     "message": "Zum Fortfahren Passwort eingeben"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "Öffentliche Ethereum-Adresse"
   },
   "etherscanView": {

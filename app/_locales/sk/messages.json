@@ -395,7 +395,7 @@
   "enterPasswordContinue": {
     "message": "Pokračujte zadaním hesla"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "Verejná adresa Ethereum"
   },
   "etherscanView": {

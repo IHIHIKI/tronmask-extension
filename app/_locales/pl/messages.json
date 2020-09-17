@@ -401,7 +401,7 @@
   "enterPasswordContinue": {
     "message": "Podaj hasło żeby kontynuować"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "Adres publiczny Ethereum"
   },
   "etherscanView": {

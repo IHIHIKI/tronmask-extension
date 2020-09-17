@@ -404,7 +404,7 @@
   "enterPasswordContinue": {
     "message": "Jätkamiseks sisestage parool"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "Ethereumi avalik aadress"
   },
   "etherscanView": {

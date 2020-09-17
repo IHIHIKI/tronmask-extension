@@ -18,10 +18,10 @@ describe('selectors', function () {
               'name': 'Peepeth',
               'host': 'peepeth.com',
             },
-            'https://remix.ethereum.org': {
-              'icon': 'https://remix.ethereum.org/icon.png',
+            'https://remix.tron.org': {
+              'icon': 'https://remix.tron.org/icon.png',
               'name': 'Remix - Ethereum IDE',
-              'host': 'remix.ethereum.org',
+              'host': 'remix.tron.org',
             },
           },
           domains: {
@@ -47,7 +47,7 @@ describe('selectors', function () {
                 },
               ],
             },
-            'https://remix.ethereum.org': {
+            'https://remix.tron.org': {
               'permissions': [
                 {
                   '@context': [
@@ -64,7 +64,7 @@ describe('selectors', function () {
                   ],
                   'date': 1585685128948,
                   'id': '6b9615cc-64e4-4317-afab-3c4f8ee0244a',
-                  'invoker': 'https://remix.ethereum.org',
+                  'invoker': 'https://remix.tron.org',
                   'parentCapability': 'eth_accounts',
                 },
               ],
@@ -82,9 +82,9 @@ describe('selectors', function () {
       }, {
         extensionId,
         name: 'Remix - Ethereum IDE',
-        icon: 'https://remix.ethereum.org/icon.png',
-        origin: 'https://remix.ethereum.org',
-        host: 'remix.ethereum.org',
+        icon: 'https://remix.tron.org/icon.png',
+        origin: 'https://remix.tron.org',
+        host: 'remix.tron.org',
       }])
     })
 
@@ -98,10 +98,10 @@ describe('selectors', function () {
               'name': 'Peepeth',
               'host': 'peepeth.com',
             },
-            'https://remix.ethereum.org': {
-              'icon': 'https://remix.ethereum.org/icon.png',
+            'https://remix.tron.org': {
+              'icon': 'https://remix.tron.org/icon.png',
               'name': 'Remix - Ethereum IDE',
-              'host': 'remix.ethereum.com',
+              'host': 'remix.tron.com',
             },
           },
           domains: {
@@ -127,7 +127,7 @@ describe('selectors', function () {
                 },
               ],
             },
-            'https://remix.ethereum.org': {
+            'https://remix.tron.org': {
               'permissions': [
                 {
                   '@context': [
@@ -145,7 +145,7 @@ describe('selectors', function () {
                   ],
                   'date': 1585685128948,
                   'id': '6b9615cc-64e4-4317-afab-3c4f8ee0244a',
-                  'invoker': 'https://remix.ethereum.org',
+                  'invoker': 'https://remix.tron.org',
                   'parentCapability': 'eth_accounts',
                 },
               ],
@@ -157,9 +157,9 @@ describe('selectors', function () {
       assert.deepEqual(getConnectedDomainsForSelectedAddress(mockState), [{
         extensionId,
         name: 'Remix - Ethereum IDE',
-        icon: 'https://remix.ethereum.org/icon.png',
-        origin: 'https://remix.ethereum.org',
-        host: 'remix.ethereum.com',
+        icon: 'https://remix.tron.org/icon.png',
+        origin: 'https://remix.tron.org',
+        host: 'remix.tron.com',
       }])
     })
   })
@@ -168,9 +168,9 @@ describe('selectors', function () {
     const mockState = {
       activeTab: {
         'title': 'Eth Sign Tests',
-        'origin': 'https://remix.ethereum.org',
+        'origin': 'https://remix.tron.org',
         'protocol': 'https:',
-        'url': 'https://remix.ethereum.org/',
+        'url': 'https://remix.tron.org/',
       },
       tronmask: {
         accounts: {
@@ -192,7 +192,7 @@ describe('selectors', function () {
         },
         cachedBalances: {},
         domains: {
-          'https://remix.ethereum.org': {
+          'https://remix.tron.org': {
             'permissions': [
               {
                 '@context': [
@@ -213,7 +213,7 @@ describe('selectors', function () {
                 ],
                 'date': 1586359844177,
                 'id': '3aa65a8b-3bcb-4944-941b-1baa5fe0ed8b',
-                'invoker': 'https://remix.ethereum.org',
+                'invoker': 'https://remix.tron.org',
                 'parentCapability': 'eth_accounts',
               },
             ],
@@ -276,7 +276,7 @@ describe('selectors', function () {
           ],
         }],
         permissionsHistory: {
-          'https://remix.ethereum.org': {
+          'https://remix.tron.org': {
             'eth_accounts': {
               'accounts': {
                 '0x7250739de134d33ec7ab1ee592711e15098c9d2d': 1586359844192,
@@ -330,9 +330,9 @@ describe('selectors', function () {
     const mockState = {
       activeTab: {
         'title': 'Eth Sign Tests',
-        'origin': 'https://remix.ethereum.org',
+        'origin': 'https://remix.tron.org',
         'protocol': 'https:',
-        'url': 'https://remix.ethereum.org/',
+        'url': 'https://remix.tron.org/',
       },
       tronmask: {
         identities: {
@@ -350,7 +350,7 @@ describe('selectors', function () {
           },
         },
         domains: {
-          'https://remix.ethereum.org': {
+          'https://remix.tron.org': {
             'permissions': [
               {
                 '@context': [
@@ -368,7 +368,7 @@ describe('selectors', function () {
                 ],
                 'date': 1586359844177,
                 'id': '3aa65a8b-3bcb-4944-941b-1baa5fe0ed8b',
-                'invoker': 'https://remix.ethereum.org',
+                'invoker': 'https://remix.tron.org',
                 'parentCapability': 'eth_accounts',
               },
             ],
@@ -419,13 +419,13 @@ describe('selectors', function () {
           },
         },
         domainMetadata: {
-          'https://remix.ethereum.org': {
-            'icon': 'https://remix.ethereum.org/icon.png',
+          'https://remix.tron.org': {
+            'icon': 'https://remix.tron.org/icon.png',
             'name': 'Remix - Ethereum IDE',
           },
         },
         permissionsHistory: {
-          'https://remix.ethereum.org': {
+          'https://remix.tron.org': {
             'eth_accounts': {
               'accounts': {
                 '0x7250739de134d33ec7ab1ee592711e15098c9d2d': 1586359844192,

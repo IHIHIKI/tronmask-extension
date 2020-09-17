@@ -745,7 +745,7 @@
   "enterPasswordContinue": {
     "message": "Введите пароль для продолжения"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "Публичный адрес Ethereum"
   },
   "estimatedProcessingTimes": {

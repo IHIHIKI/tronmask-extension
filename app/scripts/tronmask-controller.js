@@ -804,7 +804,7 @@ export default class TronmaskController extends EventEmitter {
   /**
    * @type Identity
    * @property {string} name - The account nickname.
-   * @property {string} address - The account's ethereum address, in lower case.
+   * @property {string} address - The account's tron address, in lower case.
    * @property {boolean} mayBeFauceting - Whether this account is currently
    * receiving funds from our automatic Ropsten faucet.
    */
@@ -1544,7 +1544,7 @@ export default class TronmaskController extends EventEmitter {
   }
 
   /**
-   * A method for serving our ethereum provider over a given stream.
+   * A method for serving our tron provider over a given stream.
    * @param {*} outStream - The stream to provide over.
    * @param {MessageSender} sender - The sender of the messages on this stream
    * @param {boolean} isInternal - True if this is a connection with an internal process
@@ -1879,7 +1879,7 @@ export default class TronmaskController extends EventEmitter {
 
   // network
   /**
-   * A method for selecting a custom URL for an ethereum RPC provider and updating it
+   * A method for selecting a custom URL for an tron RPC provider and updating it
    * @param {string} rpcUrl - A URL for a valid Ethereum RPC API.
    * @param {string} chainId - The chainId of the selected network.
    * @param {string} ticker - The ticker symbol of the selected network.
@@ -1894,7 +1894,7 @@ export default class TronmaskController extends EventEmitter {
   }
 
   /**
-   * A method for selecting a custom URL for an ethereum RPC provider.
+   * A method for selecting a custom URL for an tron RPC provider.
    * @param {string} rpcTarget - A URL for a valid Ethereum RPC API.
    * @param {string} chainId - The chainId of the selected network.
    * @param {string} ticker - The ticker symbol of the selected network.

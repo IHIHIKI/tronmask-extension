@@ -404,7 +404,7 @@
   "enterPasswordContinue": {
     "message": "অবিরত রাখতে পাসওয়ার্ড লিখুন"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "Ethereum পাবলিক অ্যাড্রেস"
   },
   "etherscanView": {

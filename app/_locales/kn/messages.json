@@ -404,7 +404,7 @@
   "enterPasswordContinue": {
     "message": "ಮುಂದುವರೆಯಲು ಪಾಸ್‌ವರ್ಡ್ ನಮೂದಿಸಿ"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "ಎಥೆರಿಯಮ್ ಸಾರ್ವಜನಿಕ ವಿಳಾಸ"
   },
   "etherscanView": {

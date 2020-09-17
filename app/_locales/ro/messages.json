@@ -404,7 +404,7 @@
   "enterPasswordContinue": {
     "message": "Introduceți parola pentru a continua"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "Adresa publică Ethereum"
   },
   "etherscanView": {

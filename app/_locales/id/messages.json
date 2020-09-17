@@ -395,7 +395,7 @@
   "enterPasswordContinue": {
     "message": "Masukkan sandi untuk melanjutkan"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "Alamat Publik Ethereum "
   },
   "etherscanView": {

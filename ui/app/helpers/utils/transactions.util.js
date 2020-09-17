@@ -84,7 +84,7 @@ export async function getMethodDataAsync (fourBytePrefix) {
     })
 
     if (!registry) {
-      registry = new MethodRegistry({ provider: global.ethereumProvider })
+      registry = new MethodRegistry({ provider: global.tronProvider })
     }
 
     let sig = await registry.lookup(fourBytePrefix)

@@ -9,7 +9,7 @@ import { MESSAGE_TYPE } from './enums'
  * Represents, and contains data about, an 'eth_sign' type signature request. These are created when a signature for
  * an eth_sign call is requested.
  *
- * @see {@link https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_sign}
+ * @see {@link https://github.com/tron/wiki/wiki/JSON-RPC#eth_sign}
  *
  * @typedef {Object} Message
  * @property {number} id An id to track and identify the message object

@@ -49,7 +49,7 @@ export default class EnsInput extends Component {
     this.setState({ ensResolution: ZERO_ADDRESS })
 
     if (networkHasEnsSupport) {
-      const provider = global.ethereumProvider
+      const provider = global.tronProvider
       this.ens = new ENS({ provider, network })
       this.checkName = debounce(this.lookupEnsName, 200)
     }
@@ -66,7 +66,7 @@ export default class EnsInput extends Component {
     } = this.props
 
     if (prevProps.network !== network) {
-      const provider = global.ethereumProvider
+      const provider = global.tronProvider
       this.ens = new ENS({ provider, network })
       this.onChange({ target: { value: input } })
     }

@@ -401,7 +401,7 @@
   "enterPasswordContinue": {
     "message": "계속하기 위해 비밀번호 입력"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "이더리움 공개 주소"
   },
   "etherscanView": {

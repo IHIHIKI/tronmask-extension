@@ -404,7 +404,7 @@
   "enterPasswordContinue": {
     "message": "أدخل كلمة المرور للمتابعة"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "عنوان الإيثيريوم العمومي"
   },
   "etherscanView": {

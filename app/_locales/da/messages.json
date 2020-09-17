@@ -404,7 +404,7 @@
   "enterPasswordContinue": {
     "message": "Indtast adgangskode for at fortsætte"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "Offentlig Ethereum-adresse"
   },
   "etherscanView": {

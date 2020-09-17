@@ -34,7 +34,7 @@ export default class TokenRatesController {
     if (this._tokens.length > 0) {
       try {
         // @TODO(tron) use tron token price URL...
-        const response = await window.fetch(`https://api.coingecko.com/api/v3/simple/token_price/ethereum?${query}`)
+        const response = await window.fetch(`https://api.coingecko.com/api/v3/simple/token_price/tron?${query}`)
         const prices = await response.json()
         this._tokens.forEach((token) => {
           const price = prices[token.address.toLowerCase()] || prices[ethUtil.toChecksumAddress(token.address)]

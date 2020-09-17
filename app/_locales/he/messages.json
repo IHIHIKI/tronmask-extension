@@ -404,7 +404,7 @@
   "enterPasswordContinue": {
     "message": "יש להזין ססמה כדי להמשיך"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "כתובת אתריום ציבורית"
   },
   "etherscanView": {

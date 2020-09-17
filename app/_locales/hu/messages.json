@@ -404,7 +404,7 @@
   "enterPasswordContinue": {
     "message": "A folytatáshoz adja meg a jelszót"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "Ethereum nyilvános címe"
   },
   "etherscanView": {

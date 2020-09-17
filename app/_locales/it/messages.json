@@ -618,7 +618,7 @@
     "message": "Stack:",
     "description": "Title for error stack, which is displayed for debugging purposes"
   },
-  "ethereumPublicAddress": {
+  "tronPublicAddress": {
     "message": "Indirizzo pubblico Ethereum "
   },
   "etherscanView": {
