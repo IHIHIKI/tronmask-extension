@@ -43,7 +43,7 @@ const MAX_MEMSTORE_TX_LIST_SIZE = 100 // Number of transactions (by unique nonce
 
 /**
   Transaction Controller is an aggregate of sub-controllers and trackers
-  composing them in a way to be exposed to the metamask controller
+  composing them in a way to be exposed to the tronmask controller
     <br>- txStateManager
       responsible for the state of a transaction and
       storing the transaction
@@ -238,7 +238,7 @@ export default class TransactionController extends EventEmitter {
       type: TRANSACTION_TYPE_STANDARD,
     })
 
-    if (origin === 'metamask') {
+    if (origin === 'tronmask') {
       // Assert the from address is the selected address
       if (normalizedTxParams.from !== this.getSelectedAddress()) {
         throw ethErrors.rpc.internal({
@@ -312,7 +312,7 @@ export default class TransactionController extends EventEmitter {
       tronTx: unsignedTransaction,
     })
 
-    if (origin === 'metamask') {
+    if (origin === 'tronmask') {
       // Assert the from address is the selected address
       if (normalizedTxParams.from !== this.getSelectedAddress()) {
         throw ethErrors.rpc.internal({
@@ -613,7 +613,7 @@ export default class TransactionController extends EventEmitter {
       tronTx = ethTx.tronTx
       txMeta.tronTx = tronTx
 
-      // add r,s,v values for provider request purposes see createMetamaskMiddleware
+      // add r,s,v values for provider request purposes see createTronmaskMiddleware
       // and JSON rpc standard for further explanation
       txMeta.r = ethUtil.bufferToHex(ethTx.r)
       txMeta.s = ethUtil.bufferToHex(ethTx.s)

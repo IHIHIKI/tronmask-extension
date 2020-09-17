@@ -374,10 +374,10 @@
   "message": {
     "message": "Mesaje"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "TronMask sekirize idantite pou Ethereum."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "TronMask Vèsyon"
   },
   "myAccounts": {

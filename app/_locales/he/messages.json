@@ -639,10 +639,10 @@
   "message": {
     "message": "הודעה"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "מחבר אותך לאתריום ולרשת המבוזרת."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "גרסת TronMask"
   },
   "mobileSyncText": {

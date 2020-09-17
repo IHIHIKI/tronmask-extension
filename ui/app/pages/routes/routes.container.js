@@ -9,7 +9,7 @@ import {
 } from '../../selectors'
 import {
   hideSidebar,
-  lockMetamask,
+  lockTronmask,
   setCurrentCurrency,
   setLastActiveTime,
   setMouseUserState,
@@ -32,15 +32,15 @@ function mapStateToProps (state) {
     sidebar,
     alertOpen,
     alertMessage,
-    textDirection: state.metamask.textDirection,
+    textDirection: state.tronmask.textDirection,
     isLoading,
     loadingMessage,
-    isUnlocked: state.metamask.isUnlocked,
+    isUnlocked: state.tronmask.isUnlocked,
     submittedPendingTransactions: submittedPendingTransactionsSelector(state),
-    network: state.metamask.network,
-    provider: state.metamask.provider,
-    frequentRpcListDetail: state.metamask.frequentRpcListDetail || [],
-    currentCurrency: state.metamask.currentCurrency,
+    network: state.tronmask.network,
+    provider: state.tronmask.provider,
+    frequentRpcListDetail: state.tronmask.frequentRpcListDetail || [],
+    currentCurrency: state.tronmask.currentCurrency,
     isMouseUser: state.appState.isMouseUser,
     providerId: getNetworkIdentifier(state),
     autoLockTimeLimit,
@@ -50,7 +50,7 @@ function mapStateToProps (state) {
 
 function mapDispatchToProps (dispatch) {
   return {
-    lockTronMask: () => dispatch(lockMetamask(false)),
+    lockTronMask: () => dispatch(lockTronmask(false)),
     hideSidebar: () => dispatch(hideSidebar()),
     setCurrentCurrencyToUSD: () => dispatch(setCurrentCurrency('usd')),
     setMouseUserState: (isMouseUser) => dispatch(setMouseUserState(isMouseUser)),

@@ -635,10 +635,10 @@
   "message": {
     "message": "رسالة"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "إيصالك بالإيثيريوم وبالشبكة اللامركزية."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "إصدار TronMask "
   },
   "mobileSyncText": {

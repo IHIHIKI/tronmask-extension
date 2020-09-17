@@ -639,10 +639,10 @@
   "message": {
     "message": "መልዕክት"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "ከ Ethereum እና ያልተማከለ መረብ ጋር እርስዎን ማገናኘት።"
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "የ TronMask ስሪት"
   },
   "mobileSyncText": {

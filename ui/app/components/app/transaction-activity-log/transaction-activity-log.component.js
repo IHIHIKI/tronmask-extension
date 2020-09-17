@@ -28,9 +28,9 @@ export default class TransactionActivityLog extends PureComponent {
 
   handleActivityClick = (hash) => {
     const { primaryTransaction } = this.props
-    const { metamaskNetworkId } = primaryTransaction
+    const { tronmaskNetworkId } = primaryTransaction
 
-    const prefix = getEtherscanNetworkPrefix(metamaskNetworkId)
+    const prefix = getEtherscanNetworkPrefix(tronmaskNetworkId)
     const etherscanUrl = `https://${prefix}tronscan.org/#/transaction/${hash}`
 
     global.platform.openTab({ url: etherscanUrl })

@@ -5,7 +5,7 @@ import * as actionConstants from '../../../ui/app/store/actionConstants'
 
 describe('config view actions', function () {
   const initialState = {
-    metamask: {
+    tronmask: {
       rpcTarget: 'foo',
       frequentRpcList: [],
     },
@@ -18,15 +18,15 @@ describe('config view actions', function () {
   freeze(initialState)
 
   describe('SET_RPC_TARGET', function () {
-    it('sets the state.metamask.rpcTarget property of the state to the action.value', function () {
+    it('sets the state.tronmask.rpcTarget property of the state to the action.value', function () {
       const action = {
         type: actionConstants.SET_RPC_TARGET,
         value: 'foo',
       }
 
       const result = reducers(initialState, action)
-      assert.equal(result.metamask.provider.type, 'rpc')
-      assert.equal(result.metamask.provider.rpcTarget, 'foo')
+      assert.equal(result.tronmask.provider.type, 'rpc')
+      assert.equal(result.tronmask.provider.rpcTarget, 'foo')
     })
   })
 })

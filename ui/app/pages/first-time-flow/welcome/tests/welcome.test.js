@@ -7,7 +7,7 @@ import Welcome from '..'
 
 describe('Welcome', function () {
   const mockStore = {
-    metamask: {},
+    tronmask: {},
   }
 
   const store = configureMockStore()(mockStore)

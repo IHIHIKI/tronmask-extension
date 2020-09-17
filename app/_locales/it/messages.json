@@ -81,7 +81,7 @@
   },
   "connectTo": {
     "message": "Connettiti a $1",
-    "description": "$1 is the name/origin of a site/dapp that the user can connect to metamask"
+    "description": "$1 is the name/origin of a site/dapp that the user can connect to tronmask"
   },
   "connectToAll": {
     "message": "Connettiti a tutti i tuoi $1",
@@ -905,19 +905,19 @@
   "message": {
     "message": "Messaggio"
   },
-  "metaMaskConnectStatusParagraphOne": {
+  "tronMaskConnectStatusParagraphOne": {
     "message": "Ora hai piu controllo sulle connessioni del tuo account in TronMask."
   },
-  "metaMaskConnectStatusParagraphTwo": {
+  "tronMaskConnectStatusParagraphTwo": {
     "message": "Il bottone di stato della connessione mostra se il sito che stai visitando è connesso all'account corrente"
   },
-  "metaMaskConnectStatusParagraphThree": {
+  "tronMaskConnectStatusParagraphThree": {
     "message": "Clicca per gestire i tuo account connessi."
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "TronMask è una cassaforte sicura per identità su Ethereum."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "versione di TronMask"
   },
   "mobileSyncText": {
@@ -1735,7 +1735,7 @@
     "message": "$1 vorrebbe leggere questo messaggio per completare l'azione",
     "description": "$1 is website or dapp name"
   },
-  "decryptMetamask": {
+  "decryptTronmask": {
     "message": "Decifra messaggio"
   },
   "decryptCopy": {

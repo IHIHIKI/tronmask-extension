@@ -642,10 +642,10 @@
   "message": {
     "message": "ಸಂದೇಶ"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "ನಿಮ್ಮನ್ನು ಎಥೆರಿಯಮ್ ಮತ್ತು ವಿಕೇಂದ್ರೀಕೃತ ವೆಬ್‌ಗೆ ಸಂಪರ್ಕಿಸಲಾಗುತ್ತಿದೆ."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "TronMask ಆವೃತ್ತಿ"
   },
   "mobileSyncText": {

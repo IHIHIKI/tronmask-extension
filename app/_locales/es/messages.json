@@ -518,10 +518,10 @@
   "message": {
     "message": "Mensaje"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "TronMask es una identidad segura en Ethereum"
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "Versión de TronMask"
   },
   "myAccounts": {

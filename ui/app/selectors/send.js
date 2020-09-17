@@ -9,27 +9,27 @@ import {
 } from '.'
 
 export function getBlockGasLimit (state) {
-  return state.metamask.currentBlockGasLimit
+  return state.tronmask.currentBlockGasLimit
 }
 
 export function getConversionRate (state) {
-  return state.metamask.conversionRate
+  return state.tronmask.conversionRate
 }
 
 export function getNativeCurrency (state) {
-  return state.metamask.nativeCurrency
+  return state.tronmask.nativeCurrency
 }
 
 export function getCurrentNetwork (state) {
-  return state.metamask.network
+  return state.tronmask.network
 }
 
 export function getGasLimit (state) {
-  return state.metamask.send.gasLimit || '0'
+  return state.tronmask.send.gasLimit || '0'
 }
 
 export function getGasPrice (state) {
-  return state.metamask.send.gasPrice || getAveragePriceEstimateInHexSUN(state)
+  return state.tronmask.send.gasPrice || getAveragePriceEstimateInHexSUN(state)
 }
 
 export function getGasTotal (state) {
@@ -42,7 +42,7 @@ export function getPrimaryCurrency (state) {
 }
 
 export function getSendToken (state) {
-  return state.metamask.send.token
+  return state.tronmask.send.token
 }
 
 export function getSendTokenAddress (state) {
@@ -57,19 +57,19 @@ export function getSendTokenContract (state) {
 }
 
 export function getSendAmount (state) {
-  return state.metamask.send.amount
+  return state.tronmask.send.amount
 }
 
 export function getSendHexData (state) {
-  return state.metamask.send.data
+  return state.tronmask.send.data
 }
 
 export function getSendHexDataFeatureFlagState (state) {
-  return state.metamask.featureFlags.sendHexData
+  return state.tronmask.featureFlags.sendHexData
 }
 
 export function getSendEditingTransactionId (state) {
-  return state.metamask.send.editingTransactionId
+  return state.tronmask.send.editingTransactionId
 }
 
 export function getSendErrors (state) {
@@ -81,7 +81,7 @@ export function sendAmountIsInError (state) {
 }
 
 export function getSendFrom (state) {
-  return state.metamask.send.from
+  return state.tronmask.send.from
 }
 
 export function getSendFromBalance (state) {
@@ -97,15 +97,15 @@ export function getSendFromObject (state) {
 }
 
 export function getSendMaxModeState (state) {
-  return state.metamask.send.maxModeOn
+  return state.tronmask.send.maxModeOn
 }
 
 export function getSendTo (state) {
-  return state.metamask.send.to
+  return state.tronmask.send.to
 }
 
 export function getSendToNickname (state) {
-  return state.metamask.send.toNickname
+  return state.tronmask.send.toNickname
 }
 
 export function getSendToAccounts (state) {
@@ -114,19 +114,19 @@ export function getSendToAccounts (state) {
   return [...fromAccounts, ...addressBookAccounts]
 }
 export function getTokenBalance (state) {
-  return state.metamask.send.tokenBalance
+  return state.tronmask.send.tokenBalance
 }
 
 export function getSendEnsResolution (state) {
-  return state.metamask.send.ensResolution
+  return state.tronmask.send.ensResolution
 }
 
 export function getSendEnsResolutionError (state) {
-  return state.metamask.send.ensResolutionError
+  return state.tronmask.send.ensResolutionError
 }
 
 export function getUnapprovedTxs (state) {
-  return state.metamask.unapprovedTxs
+  return state.tronmask.unapprovedTxs
 }
 
 export function getQrCodeData (state) {

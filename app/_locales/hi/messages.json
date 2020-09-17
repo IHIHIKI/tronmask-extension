@@ -639,10 +639,10 @@
   "message": {
     "message": "संदेश"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "आपको Ethereum और विकेंद्रीकृत वेब से कनेक्ट कर रहे हैं।"
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "TronMask का संस्करण"
   },
   "mobileSyncText": {

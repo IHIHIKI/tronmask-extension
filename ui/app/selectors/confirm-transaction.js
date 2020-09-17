@@ -14,13 +14,13 @@ import {
 } from '../helpers/utils/transactions.util'
 import { getNativeCurrency } from '.'
 
-const unapprovedTxsSelector = (state) => state.metamask.unapprovedTxs
-const unapprovedMsgsSelector = (state) => state.metamask.unapprovedMsgs
-const unapprovedPersonalMsgsSelector = (state) => state.metamask.unapprovedPersonalMsgs
-const unapprovedDecryptMsgsSelector = (state) => state.metamask.unapprovedDecryptMsgs
-const unapprovedEncryptionPublicKeyMsgsSelector = (state) => state.metamask.unapprovedEncryptionPublicKeyMsgs
-const unapprovedTypedMessagesSelector = (state) => state.metamask.unapprovedTypedMessages
-const networkSelector = (state) => state.metamask.network
+const unapprovedTxsSelector = (state) => state.tronmask.unapprovedTxs
+const unapprovedMsgsSelector = (state) => state.tronmask.unapprovedMsgs
+const unapprovedPersonalMsgsSelector = (state) => state.tronmask.unapprovedPersonalMsgs
+const unapprovedDecryptMsgsSelector = (state) => state.tronmask.unapprovedDecryptMsgs
+const unapprovedEncryptionPublicKeyMsgsSelector = (state) => state.tronmask.unapprovedEncryptionPublicKeyMsgs
+const unapprovedTypedMessagesSelector = (state) => state.tronmask.unapprovedTypedMessages
+const networkSelector = (state) => state.tronmask.network
 
 export const unconfirmedTransactionsListSelector = createSelector(
   unapprovedTxsSelector,
@@ -67,10 +67,10 @@ export const unconfirmedTransactionsHashSelector = createSelector(
     network,
   ) => {
     const filteredUnapprovedTxs = Object.keys(unapprovedTxs).reduce((acc, address) => {
-      const { metamaskNetworkId } = unapprovedTxs[address]
+      const { tronmaskNetworkId } = unapprovedTxs[address]
       const transactions = { ...acc }
 
-      if (metamaskNetworkId === network) {
+      if (tronmaskNetworkId === network) {
         transactions[address] = unapprovedTxs[address]
       }
 
@@ -88,11 +88,11 @@ export const unconfirmedTransactionsHashSelector = createSelector(
   },
 )
 
-const unapprovedMsgCountSelector = (state) => state.metamask.unapprovedMsgCount
-const unapprovedPersonalMsgCountSelector = (state) => state.metamask.unapprovedPersonalMsgCount
-const unapprovedDecryptMsgCountSelector = (state) => state.metamask.unapprovedDecryptMsgCount
-const unapprovedEncryptionPublicKeyMsgCountSelector = (state) => state.metamask.unapprovedEncryptionPublicKeyMsgCount
-const unapprovedTypedMessagesCountSelector = (state) => state.metamask.unapprovedTypedMessagesCount
+const unapprovedMsgCountSelector = (state) => state.tronmask.unapprovedMsgCount
+const unapprovedPersonalMsgCountSelector = (state) => state.tronmask.unapprovedPersonalMsgCount
+const unapprovedDecryptMsgCountSelector = (state) => state.tronmask.unapprovedDecryptMsgCount
+const unapprovedEncryptionPublicKeyMsgCountSelector = (state) => state.tronmask.unapprovedEncryptionPublicKeyMsgCount
+const unapprovedTypedMessagesCountSelector = (state) => state.tronmask.unapprovedTypedMessagesCount
 
 export const unconfirmedTransactionsCountSelector = createSelector(
   unapprovedTxsSelector,
@@ -112,8 +112,8 @@ export const unconfirmedTransactionsCountSelector = createSelector(
     network,
   ) => {
     const filteredUnapprovedTxIds = Object.keys(unapprovedTxs).filter((txId) => {
-      const { metamaskNetworkId } = unapprovedTxs[txId]
-      return metamaskNetworkId === network
+      const { tronmaskNetworkId } = unapprovedTxs[txId]
+      return tronmaskNetworkId === network
     })
 
     return filteredUnapprovedTxIds.length + unapprovedTypedMessagesCount + unapprovedMsgCount +
@@ -121,14 +121,14 @@ export const unconfirmedTransactionsCountSelector = createSelector(
   },
 )
 
-export const currentCurrencySelector = (state) => state.metamask.currentCurrency
-export const conversionRateSelector = (state) => state.metamask.conversionRate
+export const currentCurrencySelector = (state) => state.tronmask.currentCurrency
+export const conversionRateSelector = (state) => state.tronmask.conversionRate
 
 export const txDataSelector = (state) => state.confirmTransaction.txData
 const tokenDataSelector = (state) => state.confirmTransaction.tokenData
 const tokenPropsSelector = (state) => state.confirmTransaction.tokenProps
 
-const contractExchangeRatesSelector = (state) => state.metamask.contractExchangeRates
+const contractExchangeRatesSelector = (state) => state.tronmask.contractExchangeRates
 
 const tokenDecimalsSelector = createSelector(
   tokenPropsSelector,

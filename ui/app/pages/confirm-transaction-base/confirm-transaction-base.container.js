@@ -57,7 +57,7 @@ const mapStateToProps = (state, ownProps) => {
   const { id: paramsTransactionId } = params
   const { showFiatInTestnets } = getPreferences(state)
   const isMainnet = getIsMainnet(state)
-  const { confirmTransaction, metamask } = state
+  const { confirmTransaction, tronmask } = state
   const {
     ensResolutionsByAddress,
     conversionRate,
@@ -68,7 +68,7 @@ const mapStateToProps = (state, ownProps) => {
     unapprovedTxs,
     metaMetricsSendCount,
     nextNonce,
-  } = metamask
+  } = tronmask
   const {
     tokenData,
     txData,
@@ -118,7 +118,7 @@ const mapStateToProps = (state, ownProps) => {
   }
 
   const currentNetworkUnapprovedTxs = Object.keys(unapprovedTxs)
-    .filter((key) => unapprovedTxs[key].metamaskNetworkId === network)
+    .filter((key) => unapprovedTxs[key].tronmaskNetworkId === network)
     .reduce((acc, key) => ({ ...acc, [key]: unapprovedTxs[key] }), {})
   const unapprovedTxCount = valuesFor(currentNetworkUnapprovedTxs).length
 

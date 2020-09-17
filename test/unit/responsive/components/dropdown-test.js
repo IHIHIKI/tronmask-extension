@@ -9,7 +9,7 @@ import { Dropdown } from '../../../../ui/app/components/app/dropdowns/components
 describe('Dropdown components', function () {
 
   const mockState = {
-    metamask: {},
+    tronmask: {},
   }
 
   const props = {

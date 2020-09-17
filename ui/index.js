@@ -18,20 +18,20 @@ import { ALERT_STATE } from './app/ducks/alerts/unconnected-account'
 import {
   getUnconnectedAccountAlertEnabledness,
   getUnconnectedAccountAlertShown,
-} from './app/ducks/metamask/metamask'
+} from './app/ducks/tronmask/tronmask'
 
 log.setLevel(global.METAMASK_DEBUG ? 'debug' : 'warn')
 
-export default function launchMetamaskUi (opts, cb) {
+export default function launchTronmaskUi (opts, cb) {
   const { backgroundConnection } = opts
   actions._setBackgroundConnection(backgroundConnection)
   // check if we are unlocked first
-  backgroundConnection.getState(function (err, metamaskState) {
+  backgroundConnection.getState(function (err, tronmaskState) {
     if (err) {
       cb(err)
       return
     }
-    startApp(metamaskState, backgroundConnection, opts)
+    startApp(tronmaskState, backgroundConnection, opts)
       .then((store) => {
         setupDebuggingHelpers(store)
         cb(null, store)
@@ -39,31 +39,31 @@ export default function launchMetamaskUi (opts, cb) {
   })
 }
 
-async function startApp (metamaskState, backgroundConnection, opts) {
+async function startApp (tronmaskState, backgroundConnection, opts) {
   // parse opts
-  if (!metamaskState.featureFlags) {
-    metamaskState.featureFlags = {}
+  if (!tronmaskState.featureFlags) {
+    tronmaskState.featureFlags = {}
   }
 
-  const currentLocaleMessages = metamaskState.currentLocale
-    ? await fetchLocale(metamaskState.currentLocale)
+  const currentLocaleMessages = tronmaskState.currentLocale
+    ? await fetchLocale(tronmaskState.currentLocale)
     : {}
   const enLocaleMessages = await fetchLocale('en')
 
   await loadRelativeTimeFormatLocaleData('en')
-  if (metamaskState.currentLocale) {
-    await loadRelativeTimeFormatLocaleData(metamaskState.currentLocale)
+  if (tronmaskState.currentLocale) {
+    await loadRelativeTimeFormatLocaleData(tronmaskState.currentLocale)
   }
 
-  if (metamaskState.textDirection === 'rtl') {
+  if (tronmaskState.textDirection === 'rtl') {
     await switchDirection('rtl')
   }
 
   const draftInitialState = {
     activeTab: opts.activeTab,
 
-    // metamaskState represents the cross-tab state
-    metamask: metamaskState,
+    // tronmaskState represents the cross-tab state
+    tronmask: tronmaskState,
 
     // appState represents the current tab's popup state
     appState: {},
@@ -97,13 +97,13 @@ async function startApp (metamaskState, backgroundConnection, opts) {
 
   // if unconfirmed txs, start on txConf page
   const unapprovedTxsAll = txHelper(
-    metamaskState.unapprovedTxs,
-    metamaskState.unapprovedMsgs,
-    metamaskState.unapprovedPersonalMsgs,
-    metamaskState.unapprovedDecryptMsgs,
-    metamaskState.unapprovedEncryptionPublicKeyMsgs,
-    metamaskState.unapprovedTypedMessages,
-    metamaskState.network,
+    tronmaskState.unapprovedTxs,
+    tronmaskState.unapprovedMsgs,
+    tronmaskState.unapprovedPersonalMsgs,
+    tronmaskState.unapprovedDecryptMsgs,
+    tronmaskState.unapprovedEncryptionPublicKeyMsgs,
+    tronmaskState.unapprovedTypedMessages,
+    tronmaskState.network,
   )
   const numberOfUnapprivedTx = unapprovedTxsAll.length
   if (numberOfUnapprivedTx > 0) {
@@ -113,11 +113,11 @@ async function startApp (metamaskState, backgroundConnection, opts) {
   }
 
   backgroundConnection.on('update', function (state) {
-    store.dispatch(actions.updateMetamaskState(state))
+    store.dispatch(actions.updateTronmaskState(state))
   })
 
-  // global metamask api - used by tooling
-  global.metamask = {
+  // global tronmask api - used by tooling
+  global.tronmask = {
     updateCurrentLocale: (code) => {
       store.dispatch(actions.updateCurrentLocale(code))
     },

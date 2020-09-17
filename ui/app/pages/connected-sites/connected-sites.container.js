@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import {
-  getOpenMetamaskTabsIds,
+  getOpenTronmaskTabsIds,
   requestAccountsPermissionWithId,
   removePermissionsFor,
   removePermittedAccount,
@@ -51,7 +51,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    getOpenMetamaskTabsIds: () => dispatch(getOpenMetamaskTabsIds()),
+    getOpenTronmaskTabsIds: () => dispatch(getOpenTronmaskTabsIds()),
     disconnectAccount: (domainKey, address) => {
       dispatch(removePermittedAccount(domainKey, address))
     },

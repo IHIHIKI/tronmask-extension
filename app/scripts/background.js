@@ -27,7 +27,7 @@ import LocalStore from './lib/local-store'
 import ReadOnlyNetworkStore from './lib/network-store'
 import createStreamSink from './lib/createStreamSink'
 import NotificationManager from './lib/notification-manager'
-import MetamaskController from './metamask-controller'
+import TronmaskController from './tronmask-controller'
 import rawFirstTimeState from './first-time-state'
 import setupSentry from './lib/setupSentry'
 import getFirstPreferredLangCode from './lib/get-first-preferred-lang-code'
@@ -56,7 +56,7 @@ const sentry = setupSentry({ release })
 
 let popupIsOpen = false
 let notificationIsOpen = false
-const openMetamaskTabsIDs = {}
+const openTronmaskTabsIDs = {}
 const requestAccountTabIds = {}
 
 // state persistence
@@ -67,7 +67,7 @@ const localStore = inTest
 let versionedData
 
 if (inTest || process.env.METAMASK_DEBUG) {
-  global.metamaskGetState = localStore.get.bind(localStore)
+  global.tronmaskGetState = localStore.get.bind(localStore)
 }
 
 // initialization flow
@@ -80,7 +80,7 @@ initialize().catch(log.error)
  * @property {number} id - An internally unique tx identifier.
  * @property {number} time - Time the tx was first suggested, in unix epoch time (ms).
  * @property {string} status - The current transaction status (unapproved, signed, submitted, dropped, failed, rejected), as defined in `tx-state-manager.js`.
- * @property {string} metamaskNetworkId - The transaction's network ID, used for EIP-155 compliance.
+ * @property {string} tronmaskNetworkId - The transaction's network ID, used for EIP-155 compliance.
  * @property {boolean} loadingDefaults - TODO: Document
  * @property {Object} txParams - The tx params as passed to the network provider.
  * @property {Object[]} history - A history of mutations to this TransactionMeta object.
@@ -92,7 +92,7 @@ initialize().catch(log.error)
  */
 
 /**
- * The data emitted from the TronMaskController.store EventEmitter, also used to initialize the TronMaskController. Available in UI on React state as state.metamask.
+ * The data emitted from the TronMaskController.store EventEmitter, also used to initialize the TronMaskController. Available in UI on React state as state.tronmask.
  * @typedef TronMaskState
  * @property {boolean} isInitialized - Whether the first vault has been created.
  * @property {boolean} isUnlocked - Whether the vault is currently decrypted and accounts are available for selection.
@@ -174,7 +174,7 @@ async function loadStateFromPersistence () {
   // check if somehow state is empty
   // this should never happen but new error reporting suggests that it has
   // for a small number of users
-  // https://github.com/metamask/metamask-extension/issues/3919
+  // https://github.com/tronmask/tronmask-extension/issues/3919
   if (versionedData && !versionedData.data) {
     // unable to recover, clear state
     versionedData = migrator.generateInitialState(firstTimeState)
@@ -226,7 +226,7 @@ function setupController (initState, initLangCode) {
   // TronMask Controller
   //
 
-  const controller = new MetamaskController({
+  const controller = new TronmaskController({
     // User confirmation callbacks:
     showUnconfirmedMessage: triggerUi,
     showUnapprovedTx: triggerUi,
@@ -242,8 +242,8 @@ function setupController (initState, initLangCode) {
     getRequestAccountTabIds: () => {
       return requestAccountTabIds
     },
-    getOpenMetamaskTabsIds: () => {
-      return openMetamaskTabsIDs
+    getOpenTronmaskTabsIds: () => {
+      return openTronmaskTabsIDs
     },
   })
 
@@ -297,18 +297,18 @@ function setupController (initState, initLangCode) {
   extension.runtime.onConnect.addListener(connectRemote)
   extension.runtime.onConnectExternal.addListener(connectExternal)
 
-  const metamaskInternalProcessHash = {
+  const tronmaskInternalProcessHash = {
     [ENVIRONMENT_TYPE_POPUP]: true,
     [ENVIRONMENT_TYPE_NOTIFICATION]: true,
     [ENVIRONMENT_TYPE_FULLSCREEN]: true,
   }
 
-  const metamaskBlockedPorts = [
+  const tronmaskBlockedPorts = [
     'trezor-connect',
   ]
 
   const isClientOpenStatus = () => {
-    return popupIsOpen || Boolean(Object.keys(openMetamaskTabsIDs).length) || notificationIsOpen
+    return popupIsOpen || Boolean(Object.keys(openTronmaskTabsIDs).length) || notificationIsOpen
   }
 
   /**
@@ -325,9 +325,9 @@ function setupController (initState, initLangCode) {
    */
   function connectRemote (remotePort) {
     const processName = remotePort.name
-    const isTronMaskInternalProcess = metamaskInternalProcessHash[processName]
+    const isTronMaskInternalProcess = tronmaskInternalProcessHash[processName]
 
-    if (metamaskBlockedPorts.includes(remotePort.name)) {
+    if (tronmaskBlockedPorts.includes(remotePort.name)) {
       return
     }
 
@@ -357,10 +357,10 @@ function setupController (initState, initLangCode) {
 
       if (processName === ENVIRONMENT_TYPE_FULLSCREEN) {
         const tabId = remotePort.sender.tab.id
-        openMetamaskTabsIDs[tabId] = true
+        openTronmaskTabsIDs[tabId] = true
 
         endOfStream(portStream, () => {
-          delete openMetamaskTabsIDs[tabId]
+          delete openTronmaskTabsIDs[tabId]
           controller.isClientOpen = isClientOpenStatus()
         })
       }
@@ -435,8 +435,8 @@ function setupController (initState, initLangCode) {
  */
 async function triggerUi () {
   const tabs = await platform.getActiveTabs()
-  const currentlyActiveMetamaskTab = Boolean(tabs.find((tab) => openMetamaskTabsIDs[tab.id]))
-  if (!popupIsOpen && !currentlyActiveMetamaskTab) {
+  const currentlyActiveTronmaskTab = Boolean(tabs.find((tab) => openTronmaskTabsIDs[tab.id]))
+  if (!popupIsOpen && !currentlyActiveTronmaskTab) {
     await notificationManager.showPopup()
   }
 }

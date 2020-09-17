@@ -639,10 +639,10 @@
   "message": {
     "message": "Μήνυμα"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "Σύνδεση με το Ethereum και τον Αποκεντρωμένο Ιστό."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "Έκδοση TronMask "
   },
   "mobileSyncText": {

@@ -632,10 +632,10 @@
   "message": {
     "message": "Sõnum"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "Teid ühendatakse Ethereumi ja detsentraliseeritud võrguga."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "TronMaski versioon"
   },
   "mobileSyncText": {

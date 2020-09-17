@@ -78,7 +78,7 @@ export default class InfoTab extends PureComponent {
         <div className="info-tab__link-item">
           <Button
             type="link"
-            href="https://metamask.zendesk.com/hc/en-us/requests/new"
+            href="https://tronmask.zendesk.com/hc/en-us/requests/new"
             target="_blank"
             rel="noopener noreferrer"
             className="info-tab__link-text"
@@ -105,7 +105,7 @@ export default class InfoTab extends PureComponent {
             </div>
             <div className="info-tab__item">
               <div className="info-tab__version-header">
-                { t('metamaskVersion') }
+                { t('tronmaskVersion') }
               </div>
               <div className="info-tab__version-number">
                 { this.state.version }

@@ -183,7 +183,7 @@ class ConnectHardwareForm extends Component {
           {this.context.t('troubleConnectingToWallet', [this.state.device, (
             // eslint-disable-next-line react/jsx-key
             <a
-              href="https://metamask.zendesk.com/hc/en-us/articles/360020394612-How-to-connect-a-Trezor-or-Ledger-Hardware-Wallet"
+              href="https://tronmask.zendesk.com/hc/en-us/articles/360020394612-How-to-connect-a-Trezor-or-Ledger-Hardware-Wallet"
               target="_blank"
               rel="noopener noreferrer"
               className="hw-connect__link"
@@ -260,7 +260,7 @@ ConnectHardwareForm.propTypes = {
 
 const mapStateToProps = (state) => {
   const {
-    metamask: { network, selectedAddress },
+    tronmask: { network, selectedAddress },
   } = state
   const accounts = getTronMaskAccounts(state)
   const {

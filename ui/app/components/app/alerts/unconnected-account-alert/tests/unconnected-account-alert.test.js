@@ -58,7 +58,7 @@ describe('Unconnected Account Alert', function () {
   ]
 
   const mockState = {
-    metamask: {
+    tronmask: {
       network,
       selectedAddress,
       identities,

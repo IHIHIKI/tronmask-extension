@@ -1,8 +1,8 @@
 import * as actionConstants from '../../store/actionConstants'
 import { ALERT_TYPES } from '../../../../app/scripts/controllers/alert'
 
-export default function reduceMetamask (state = {}, action) {
-  const metamaskState = {
+export default function reduceTronmask (state = {}, action) {
+  const tronmaskState = {
     isInitialized: false,
     isUnlocked: false,
     isAccountMenuOpen: false,
@@ -52,17 +52,17 @@ export default function reduceMetamask (state = {}, action) {
   switch (action.type) {
 
     case actionConstants.UPDATE_METAMASK_STATE:
-      return { ...metamaskState, ...action.value }
+      return { ...tronmaskState, ...action.value }
 
     case actionConstants.LOCK_METAMASK:
       return {
-        ...metamaskState,
+        ...tronmaskState,
         isUnlocked: false,
       }
 
     case actionConstants.SET_RPC_TARGET:
       return {
-        ...metamaskState,
+        ...tronmaskState,
         provider: {
           type: 'rpc',
           rpcTarget: action.value,
@@ -71,7 +71,7 @@ export default function reduceMetamask (state = {}, action) {
 
     case actionConstants.SET_PROVIDER_TYPE:
       return {
-        ...metamaskState,
+        ...tronmaskState,
         provider: {
           type: action.value,
         },
@@ -79,7 +79,7 @@ export default function reduceMetamask (state = {}, action) {
 
     case actionConstants.SHOW_ACCOUNT_DETAIL:
       return {
-        ...metamaskState,
+        ...tronmaskState,
         isUnlocked: true,
         isInitialized: true,
         selectedAddress: action.value,
@@ -89,13 +89,13 @@ export default function reduceMetamask (state = {}, action) {
       const { account } = action.value
       const name = action.value.label
       const id = {}
-      id[account] = { ...metamaskState.identities[account], name }
-      const identities = { ...metamaskState.identities, ...id }
-      return Object.assign(metamaskState, { identities })
+      id[account] = { ...tronmaskState.identities[account], name }
+      const identities = { ...tronmaskState.identities, ...id }
+      return Object.assign(tronmaskState, { identities })
     }
 
     case actionConstants.SET_CURRENT_FIAT:
-      return Object.assign(metamaskState, {
+      return Object.assign(tronmaskState, {
         currentCurrency: action.value.currentCurrency,
         conversionRate: action.value.conversionRate,
         conversionDate: action.value.conversionDate,
@@ -103,71 +103,71 @@ export default function reduceMetamask (state = {}, action) {
 
     case actionConstants.UPDATE_TOKENS:
       return {
-        ...metamaskState,
+        ...tronmaskState,
         tokens: action.newTokens,
       }
 
-    // metamask.send
+    // tronmask.send
     case actionConstants.UPDATE_GAS_LIMIT:
       return {
-        ...metamaskState,
+        ...tronmaskState,
         send: {
-          ...metamaskState.send,
+          ...tronmaskState.send,
           gasLimit: action.value,
         },
       }
     case actionConstants.UPDATE_CUSTOM_NONCE:
       return {
-        ...metamaskState,
+        ...tronmaskState,
         customNonceValue: action.value,
       }
     case actionConstants.UPDATE_GAS_PRICE:
       return {
-        ...metamaskState,
+        ...tronmaskState,
         send: {
-          ...metamaskState.send,
+          ...tronmaskState.send,
           gasPrice: action.value,
         },
       }
 
     case actionConstants.TOGGLE_ACCOUNT_MENU:
       return {
-        ...metamaskState,
-        isAccountMenuOpen: !metamaskState.isAccountMenuOpen,
+        ...tronmaskState,
+        isAccountMenuOpen: !tronmaskState.isAccountMenuOpen,
       }
 
     case actionConstants.UPDATE_GAS_TOTAL:
       return {
-        ...metamaskState,
+        ...tronmaskState,
         send: {
-          ...metamaskState.send,
+          ...tronmaskState.send,
           gasTotal: action.value,
         },
       }
 
     case actionConstants.UPDATE_SEND_TOKEN_BALANCE:
       return {
-        ...metamaskState,
+        ...tronmaskState,
         send: {
-          ...metamaskState.send,
+          ...tronmaskState.send,
           tokenBalance: action.value,
         },
       }
 
     case actionConstants.UPDATE_SEND_HEX_DATA:
       return {
-        ...metamaskState,
+        ...tronmaskState,
         send: {
-          ...metamaskState.send,
+          ...tronmaskState.send,
           data: action.value,
         },
       }
 
     case actionConstants.UPDATE_SEND_TO:
       return {
-        ...metamaskState,
+        ...tronmaskState,
         send: {
-          ...metamaskState.send,
+          ...tronmaskState.send,
           to: action.value.to,
           toNickname: action.value.nickname,
         },
@@ -175,33 +175,33 @@ export default function reduceMetamask (state = {}, action) {
 
     case actionConstants.UPDATE_SEND_AMOUNT:
       return {
-        ...metamaskState,
+        ...tronmaskState,
         send: {
-          ...metamaskState.send,
+          ...tronmaskState.send,
           amount: action.value,
         },
       }
 
     case actionConstants.UPDATE_MAX_MODE:
       return {
-        ...metamaskState,
+        ...tronmaskState,
         send: {
-          ...metamaskState.send,
+          ...tronmaskState.send,
           maxModeOn: action.value,
         },
       }
 
     case actionConstants.UPDATE_SEND:
-      return Object.assign(metamaskState, {
+      return Object.assign(tronmaskState, {
         send: {
-          ...metamaskState.send,
+          ...tronmaskState.send,
           ...action.value,
         },
       })
 
     case actionConstants.UPDATE_SEND_TOKEN: {
       const newSend = {
-        ...metamaskState.send,
+        ...tronmaskState.send,
         token: action.value,
       }
       // erase token-related state when switching back to native currency
@@ -224,16 +224,16 @@ export default function reduceMetamask (state = {}, action) {
           },
         })
       }
-      return Object.assign(metamaskState, {
+      return Object.assign(tronmaskState, {
         send: newSend,
       })
     }
 
     case actionConstants.UPDATE_SEND_ENS_RESOLUTION:
       return {
-        ...metamaskState,
+        ...tronmaskState,
         send: {
-          ...metamaskState.send,
+          ...tronmaskState.send,
           ensResolution: action.payload,
           ensResolutionError: '',
         },
@@ -241,9 +241,9 @@ export default function reduceMetamask (state = {}, action) {
 
     case actionConstants.UPDATE_SEND_ENS_RESOLUTION_ERROR:
       return {
-        ...metamaskState,
+        ...tronmaskState,
         send: {
-          ...metamaskState.send,
+          ...tronmaskState.send,
           ensResolution: null,
           ensResolutionError: action.payload,
         },
@@ -251,7 +251,7 @@ export default function reduceMetamask (state = {}, action) {
 
     case actionConstants.CLEAR_SEND:
       return {
-        ...metamaskState,
+        ...tronmaskState,
         send: {
           gasLimit: null,
           gasPrice: null,
@@ -270,7 +270,7 @@ export default function reduceMetamask (state = {}, action) {
 
     case actionConstants.UPDATE_TRANSACTION_PARAMS: {
       const { id: txId, value } = action
-      let { currentNetworkTxList } = metamaskState
+      let { currentNetworkTxList } = tronmaskState
       currentNetworkTxList = currentNetworkTxList.map((tx) => {
         if (tx.id === txId) {
           const newTx = { ...tx }
@@ -281,65 +281,65 @@ export default function reduceMetamask (state = {}, action) {
       })
 
       return {
-        ...metamaskState,
+        ...tronmaskState,
         currentNetworkTxList,
       }
     }
 
     case actionConstants.SET_PARTICIPATE_IN_METAMETRICS:
       return {
-        ...metamaskState,
+        ...tronmaskState,
         participateInMetaMetrics: action.value,
       }
 
     case actionConstants.SET_METAMETRICS_SEND_COUNT:
       return {
-        ...metamaskState,
+        ...tronmaskState,
         metaMetricsSendCount: action.value,
       }
 
     case actionConstants.SET_USE_BLOCKIE:
       return {
-        ...metamaskState,
+        ...tronmaskState,
         useBlockie: action.value,
       }
 
     case actionConstants.UPDATE_FEATURE_FLAGS:
       return {
-        ...metamaskState,
+        ...tronmaskState,
         featureFlags: action.value,
       }
 
     case actionConstants.CLOSE_WELCOME_SCREEN:
       return {
-        ...metamaskState,
+        ...tronmaskState,
         welcomeScreenSeen: true,
       }
 
     case actionConstants.SET_CURRENT_LOCALE:
       return {
-        ...metamaskState,
+        ...tronmaskState,
         currentLocale: action.value.locale,
       }
 
     case actionConstants.SET_PENDING_TOKENS:
       return {
-        ...metamaskState,
+        ...tronmaskState,
         pendingTokens: { ...action.payload },
       }
 
     case actionConstants.CLEAR_PENDING_TOKENS: {
       return {
-        ...metamaskState,
+        ...tronmaskState,
         pendingTokens: {},
       }
     }
 
     case actionConstants.UPDATE_PREFERENCES: {
       return {
-        ...metamaskState,
+        ...tronmaskState,
         preferences: {
-          ...metamaskState.preferences,
+          ...tronmaskState.preferences,
           ...action.payload,
         },
       }
@@ -347,36 +347,36 @@ export default function reduceMetamask (state = {}, action) {
 
     case actionConstants.COMPLETE_ONBOARDING: {
       return {
-        ...metamaskState,
+        ...tronmaskState,
         completedOnboarding: true,
       }
     }
 
     case actionConstants.SET_FIRST_TIME_FLOW_TYPE: {
       return {
-        ...metamaskState,
+        ...tronmaskState,
         firstTimeFlowType: action.value,
       }
     }
 
     case actionConstants.SET_NEXT_NONCE: {
       return {
-        ...metamaskState,
+        ...tronmaskState,
         nextNonce: action.value,
       }
     }
 
     default:
-      return metamaskState
+      return tronmaskState
   }
 }
 
-export const getCurrentLocale = (state) => state.metamask.currentLocale
+export const getCurrentLocale = (state) => state.tronmask.currentLocale
 
-export const getAlertEnabledness = (state) => state.metamask.alertEnabledness
+export const getAlertEnabledness = (state) => state.tronmask.alertEnabledness
 
 export const getUnconnectedAccountAlertEnabledness = (state) => getAlertEnabledness(state)[ALERT_TYPES.unconnectedAccount]
 
-export const getUnconnectedAccountAlertShown = (state) => state.metamask.unconnectedAccountAlertShownOrigins
+export const getUnconnectedAccountAlertShown = (state) => state.tronmask.unconnectedAccountAlertShownOrigins
 
-export const getTokens = (state) => state.metamask.tokens
+export const getTokens = (state) => state.tronmask.tokens

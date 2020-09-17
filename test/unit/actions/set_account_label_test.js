@@ -4,9 +4,9 @@ import reducers from '../../../ui/app/ducks'
 import * as actionConstants from '../../../ui/app/store/actionConstants'
 
 describe('SET_ACCOUNT_LABEL', function () {
-  it('updates the state.metamask.identities[:i].name property of the state to the action.value.label', function () {
+  it('updates the state.tronmask.identities[:i].name property of the state to the action.value.label', function () {
     const initialState = {
-      metamask: {
+      tronmask: {
         identities: {
           foo: {
             name: 'bar',
@@ -26,7 +26,7 @@ describe('SET_ACCOUNT_LABEL', function () {
     freeze(action)
 
     const resultingState = reducers(initialState, action)
-    assert.equal(resultingState.metamask.identities.foo.name, action.value.label)
+    assert.equal(resultingState.tronmask.identities.foo.name, action.value.label)
   })
 })
 

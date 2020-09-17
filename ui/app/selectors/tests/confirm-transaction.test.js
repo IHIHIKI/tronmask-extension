@@ -22,10 +22,10 @@ describe('Confirm Transaction Selector', function () {
   describe('unconfirmedTransactionsCountSelector', function () {
 
     const state = {
-      metamask: {
+      tronmask: {
         unapprovedTxs: {
           1: {
-            metamaskNetworkId: 'test',
+            tronmaskNetworkId: 'test',
           },
           2: {
             metmaskNetworkId: 'other network',
@@ -119,7 +119,7 @@ describe('Confirm Transaction Selector', function () {
   describe('contractExchangeRateSelector', function () {
 
     const state = {
-      metamask: {
+      tronmask: {
         contractExchangeRates: {
           '0xTokenAddress': '10',
         },
@@ -133,7 +133,7 @@ describe('Confirm Transaction Selector', function () {
       },
     }
 
-    it('returns contract exchange rate in metamask state based on confirm transaction txParams token recipient', function () {
+    it('returns contract exchange rate in tronmask state based on confirm transaction txParams token recipient', function () {
       assert.equal(contractExchangeRateSelector(state), 10)
     })
   })
@@ -141,7 +141,7 @@ describe('Confirm Transaction Selector', function () {
   describe('conversionRateSelector', function () {
     it('returns conversionRate from state', function () {
       const state = {
-        metamask: { conversionRate: 556.12 },
+        tronmask: { conversionRate: 556.12 },
       }
       assert.equal(conversionRateSelector(state), 556.12)
     })

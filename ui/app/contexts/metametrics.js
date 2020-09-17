@@ -33,9 +33,9 @@ export function MetaMetricsProvider ({ children }) {
   const activeCurrency = useSelector(getSendToken)?.symbol
   const accountType = useSelector(getAccountType)
   const confirmTransactionOrigin = txData.origin
-  const metaMetricsId = useSelector((state) => state.metamask.metaMetricsId)
-  const participateInMetaMetrics = useSelector((state) => state.metamask.participateInMetaMetrics)
-  const metaMetricsSendCount = useSelector((state) => state.metamask.metaMetricsSendCount)
+  const metaMetricsId = useSelector((state) => state.tronmask.metaMetricsId)
+  const participateInMetaMetrics = useSelector((state) => state.tronmask.participateInMetaMetrics)
+  const metaMetricsSendCount = useSelector((state) => state.tronmask.metaMetricsSendCount)
   const numberOfTokens = useSelector(getNumberOfTokens)
   const numberOfAccounts = useSelector(getNumberOfAccounts)
   const history = useHistory()

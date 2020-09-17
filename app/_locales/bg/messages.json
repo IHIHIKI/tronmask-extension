@@ -638,10 +638,10 @@
   "message": {
     "message": "Съобщение"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "Свързва ви с Ethereum и децентрализираната мрежа."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "Версия на TronMask"
   },
   "mobileSyncText": {

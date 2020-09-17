@@ -294,7 +294,7 @@ export default class IncomingTransactionsController {
     return {
       blockNumber: `${txMeta.block}`,
       id: createId(),
-      metamaskNetworkId: currentNetworkID,
+      tronmaskNetworkId: currentNetworkID,
       // status: txMeta.contractRet === 'SUCCESS' ? 1 : 0,
       status: txMeta.revert ? 'failed' : 'confirmed',
       time: txMeta.timestamp,
@@ -333,7 +333,7 @@ export default class IncomingTransactionsController {
     return {
       blockNumber: txMeta.blockNumber,
       id: createId(),
-      metamaskNetworkId: currentNetworkID,
+      tronmaskNetworkId: currentNetworkID,
       status,
       time,
       txParams: {

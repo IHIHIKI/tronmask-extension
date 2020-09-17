@@ -611,10 +611,10 @@
   "message": {
     "message": "Zpráva"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "TronMask je bezpečný osobní trezor pro Ethereum."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "Verzia TronMask"
   },
   "mobileSyncText": {

@@ -14,7 +14,7 @@ describe('Token Cell', function () {
   let wrapper
 
   const state = {
-    metamask: {
+    tronmask: {
       currentCurrency: 'usd',
       selectedAddress: '0xAddress',
       contractExchangeRates: {

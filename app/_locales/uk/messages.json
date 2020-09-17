@@ -642,10 +642,10 @@
   "message": {
     "message": "Повідомлення"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "Під'єднуємо вас до Ethereum та децентралізованої мережі."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "Версія TronMask"
   },
   "mobileSyncText": {

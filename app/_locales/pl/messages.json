@@ -636,10 +636,10 @@
   "message": {
     "message": "Wiadomość"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "TronMask to bezpieczny portfel dla Ethereum."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "Wersja TronMask"
   },
   "mobileSyncText": {

@@ -12,7 +12,7 @@ import {
   getTokenValueParam,
 } from '../../helpers/utils/token-util'
 import { useTokenTracker } from '../../hooks/useTokenTracker'
-import { getTokens } from '../../ducks/metamask/metamask'
+import { getTokens } from '../../ducks/tronmask/tronmask'
 import {
   transactionFeeSelector,
   txDataSelector,

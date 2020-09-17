@@ -12,7 +12,7 @@ describe('tx confirmation screen', function () {
   const initialState = {
     appState: {
     },
-    metamask: {
+    tronmask: {
       unapprovedTxs: {
         [txId]: {
           id: txId,

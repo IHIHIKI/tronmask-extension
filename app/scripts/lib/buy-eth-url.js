@@ -19,8 +19,8 @@ export default function getBuyEthUrl ({ network, address, service }) {
     case 'wyre':
       return `https://pay.sendwyre.com/?dest=ethereum:${address}&destCurrency=ETH&accountId=AC-7AG3W4XH4N2&paymentMethod=debit-card`
     case 'coinswitch':
-      return `https://metamask.coinswitch.co/?address=${address}&to=eth`
-    case 'metamask-faucet':
+      return `https://tronmask.coinswitch.co/?address=${address}&to=eth`
+    case 'tronmask-faucet':
       return 'https://faucet.tronmask.org/'
     case 'rinkeby-faucet':
       return 'https://www.rinkeby.io/'
@@ -38,7 +38,7 @@ function getDefaultServiceForNetwork (network) {
     case '1':
       return 'wyre'
     case '3':
-      return 'metamask-faucet'
+      return 'tronmask-faucet'
     case '4':
       return 'rinkeby-faucet'
     case '42':

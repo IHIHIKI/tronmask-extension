@@ -97,9 +97,9 @@ describe('permissions controller', function () {
       assert.deepEqual(cAccounts, [], 'origin should have no accounts')
     })
 
-    it('does not handle "metamask" origin as special case', async function () {
-      const metamaskAccounts = await permController.getAccounts('metamask')
-      assert.deepEqual(metamaskAccounts, [], 'origin should have no accounts')
+    it('does not handle "tronmask" origin as special case', async function () {
+      const tronmaskAccounts = await permController.getAccounts('tronmask')
+      assert.deepEqual(tronmaskAccounts, [], 'origin should have no accounts')
     })
   })
 

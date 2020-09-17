@@ -275,7 +275,7 @@
   "message": {
     "message": "Сообщение"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "TronMask – безопасный кошелек для Ethereum."
   },
   "myAccounts": {
@@ -862,7 +862,7 @@
   "memo": {
     "message": "Мнемотик"
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "Версия TronMask"
   },
   "mobileSyncText": {
@@ -1320,7 +1320,7 @@
     "message": "Для $1 необходимо прочитать это сообщение, чтобы завершить Ваше действие",
     "description": "$1 is website or dapp name"
   },
-  "decryptMetamask": {
+  "decryptTronmask": {
     "message": "Расшифровать сообщение"
   },
   "decryptCopy": {

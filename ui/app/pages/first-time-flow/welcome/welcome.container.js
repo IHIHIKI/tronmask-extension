@@ -20,8 +20,8 @@ function getTronmaskV1Keystore () {
 }
 
 
-const mapStateToProps = ({ metamask }) => {
-  const { welcomeScreenSeen, participateInMetaMetrics } = metamask
+const mapStateToProps = ({ tronmask }) => {
+  const { welcomeScreenSeen, participateInMetaMetrics } = tronmask
 
   // Detect users of previous extension (hisman's version)
   const tronmaskV1Keystore = getTronmaskV1Keystore()

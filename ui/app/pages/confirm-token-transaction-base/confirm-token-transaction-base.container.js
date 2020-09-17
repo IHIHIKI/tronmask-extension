@@ -5,7 +5,7 @@ import {
   contractExchangeRateSelector,
   transactionFeeSelector,
 } from '../../selectors'
-import { getTokens } from '../../ducks/metamask/metamask'
+import { getTokens } from '../../ducks/tronmask/tronmask'
 import {
   getTokenData,
 } from '../../helpers/utils/transactions.util'
@@ -21,7 +21,7 @@ const mapStateToProps = (state, ownProps) => {
   const { id: paramsTransactionId } = params
   const {
     confirmTransaction,
-    metamask: { currentCurrency, conversionRate, currentNetworkTxList },
+    tronmask: { currentCurrency, conversionRate, currentNetworkTxList },
   } = state
 
   const {

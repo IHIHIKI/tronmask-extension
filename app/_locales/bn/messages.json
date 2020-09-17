@@ -642,10 +642,10 @@
   "message": {
     "message": "বার্তা"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "আপনার Ethereum এবং ছড়িয়ে ছিটিয়ে থাকা ওয়েবের সাথে সংযোগ করছে। "
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "TronMask সংস্করণ"
   },
   "mobileSyncText": {

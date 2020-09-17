@@ -10,7 +10,7 @@ const standardNetworkId = {
   '1': SHASTA_CHAIN_ID,
 }
 
-export default function selectChainId (metamaskState) {
-  const { network, provider: { chainId } } = metamaskState
+export default function selectChainId (tronmaskState) {
+  const { network, provider: { chainId } } = tronmaskState
   return standardNetworkId[network] || `0x${parseInt(chainId, 10).toString(16)}`
 }

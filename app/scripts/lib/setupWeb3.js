@@ -7,7 +7,7 @@ import 'web3/dist/web3.min'
 
 const shouldLogUsage = !([
   'docs.tronmask.org',
-  'metamask.github.io',
+  'tronmask.github.io',
   'tronmask.org',
 ].includes(window.location.hostname))
 
@@ -39,14 +39,14 @@ export default function setupWeb3 (log) {
 
       // show warning once on web3 access
       if (!hasBeenWarned) {
-        console.warn(`TronMask: We will stop injecting web3 in Q4 2020.\nPlease see this article for more information: https://medium.com/metamask/no-longer-injecting-web3-js-4a899ad6e59e`)
+        console.warn(`TronMask: We will stop injecting web3 in Q4 2020.\nPlease see this article for more information: https://medium.com/tronmask/no-longer-injecting-web3-js-4a899ad6e59e`)
         hasBeenWarned = true
       }
 
       if (shouldLogUsage) {
         const name = stringifyKey(key)
         window.tron.request({
-          method: 'metamask_logInjectedWeb3Usage',
+          method: 'tronmask_logInjectedWeb3Usage',
           params: [{ action: 'window.web3 get', name }],
         })
       }
@@ -58,7 +58,7 @@ export default function setupWeb3 (log) {
       const name = stringifyKey(key)
       if (shouldLogUsage) {
         window.tron.request({
-          method: 'metamask_logInjectedWeb3Usage',
+          method: 'tronmask_logInjectedWeb3Usage',
           params: [{ action: 'window.web3 set', name }],
         })
       }

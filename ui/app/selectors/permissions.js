@@ -13,7 +13,7 @@ import { getTronMaskAccountsOrdered, getOriginOfCurrentTab, getSelectedAddress }
  * @returns {Object} The permissions domains object.
  */
 export function getPermissionDomains (state) {
-  return state.metamask.domains || {}
+  return state.tronmask.domains || {}
 }
 
 /**
@@ -23,7 +23,7 @@ export function getPermissionDomains (state) {
  * @returns {Object} The permission domains metadata object.
  */
 export function getPermissionDomainsMetadata (state) {
-  return state.metamask.domainMetadata || {}
+  return state.tronmask.domainMetadata || {}
 }
 
 /**
@@ -88,7 +88,7 @@ export function getPermittedAccountsByOrigin (state) {
 export function getConnectedDomainsForSelectedAddress (state) {
   const {
     selectedAddress,
-  } = state.metamask
+  } = state.tronmask
   const domains = getPermissionDomains(state)
   const domainMetadata = getPermissionDomainsMetadata(state)
 
@@ -188,14 +188,14 @@ function getAccountsCaveatFromPermission (accountsPermission = {}) {
 }
 
 function domainSelector (state, origin) {
-  return origin && state.metamask.domains?.[origin]
+  return origin && state.tronmask.domains?.[origin]
 }
 
 export function getAccountToConnectToActiveTab (state) {
   const selectedAddress = getSelectedAddress(state)
   const connectedAccounts = getPermittedAccountsForCurrentTab(state)
 
-  const { metamask: { identities } } = state
+  const { tronmask: { identities } } = state
   const numberOfAccounts = Object.keys(identities).length
 
   if (connectedAccounts.length && connectedAccounts.length !== numberOfAccounts) {
@@ -208,7 +208,7 @@ export function getAccountToConnectToActiveTab (state) {
 }
 
 export function getOrderedConnectedAccountsForActiveTab (state) {
-  const { activeTab, metamask: { permissionsHistory } } = state
+  const { activeTab, tronmask: { permissionsHistory } } = state
 
   const permissionsHistoryByAccount = permissionsHistory[activeTab.origin]?.['eth_accounts']?.accounts
   const orderedAccounts = getTronMaskAccountsOrdered(state)
@@ -234,10 +234,10 @@ export function getOrderedConnectedAccountsForActiveTab (state) {
 }
 
 export function getPermissionsForActiveTab (state) {
-  const { activeTab, metamask } = state
+  const { activeTab, tronmask } = state
   const {
     domains = {},
-  } = metamask
+  } = tronmask
 
   return domains[activeTab.origin]?.permissions?.map(({ parentCapability }) => {
     return {
@@ -247,7 +247,7 @@ export function getPermissionsForActiveTab (state) {
 }
 
 export function getLastConnectedInfo (state) {
-  const { permissionsHistory = {} } = state.metamask
+  const { permissionsHistory = {} } = state.tronmask
   return Object.keys(permissionsHistory).reduce((acc, origin) => {
     const ethAccountsHistory = JSON.parse(JSON.stringify(permissionsHistory[origin].eth_accounts))
     return {
@@ -272,7 +272,7 @@ export function getPermissionsMetadataHostCounts (state) {
 }
 
 export function getPermissionsRequests (state) {
-  return state.metamask.permissionsRequests || []
+  return state.tronmask.permissionsRequests || []
 }
 
 export function getPermissionsRequestCount (state) {

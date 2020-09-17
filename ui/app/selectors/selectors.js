@@ -9,7 +9,7 @@ import {
 import { getPermissionsRequestCount } from './permissions'
 
 export function getNetworkIdentifier (state) {
-  const { metamask: { provider: { type, nickname, rpcTarget } } } = state
+  const { tronmask: { provider: { type, nickname, rpcTarget } } } = state
 
   return nickname || rpcTarget || type
 }
@@ -23,7 +23,7 @@ export function getCurrentKeyring (state) {
 
   const simpleAddress = stripHexPrefix(identity.address).toLowerCase()
 
-  const keyring = state.metamask.keyrings.find((kr) => {
+  const keyring = state.tronmask.keyrings.find((kr) => {
     return kr.accounts.includes(simpleAddress) ||
       kr.accounts.includes(identity.address)
   })
@@ -47,7 +47,7 @@ export function getAccountType (state) {
 }
 
 export function getCurrentNetworkId (state) {
-  return state.metamask.network
+  return state.tronmask.network
 }
 
 export const getTronMaskAccounts = createSelector(
@@ -72,41 +72,41 @@ export const getTronMaskAccounts = createSelector(
 )
 
 export function getSelectedAddress (state) {
-  return state.metamask.selectedAddress
+  return state.tronmask.selectedAddress
 }
 
 export function getSelectedIdentity (state) {
   const selectedAddress = getSelectedAddress(state)
-  const { identities } = state.metamask
+  const { identities } = state.tronmask
 
   return identities[selectedAddress]
 }
 
 export function getNumberOfAccounts (state) {
-  return Object.keys(state.metamask.accounts).length
+  return Object.keys(state.tronmask.accounts).length
 }
 
 export function getNumberOfTokens (state) {
-  const { tokens } = state.metamask
+  const { tokens } = state.tronmask
   return tokens ? tokens.length : 0
 }
 
 export function getTronMaskKeyrings (state) {
-  return state.metamask.keyrings
+  return state.tronmask.keyrings
 }
 
 export function getTronMaskIdentities (state) {
-  return state.metamask.identities
+  return state.tronmask.identities
 }
 
 export function getTronMaskAccountsRaw (state) {
-  return state.metamask.accounts
+  return state.tronmask.accounts
 }
 
 export function getTronMaskCachedBalances (state) {
   const network = getCurrentNetworkId(state)
 
-  return state.metamask.cachedBalances[network]
+  return state.tronmask.cachedBalances[network]
 }
 
 /**
@@ -123,14 +123,14 @@ export const getTronMaskAccountsOrdered = createSelector(
 )
 
 export function isBalanceCached (state) {
-  const selectedAccountBalance = state.metamask.accounts[getSelectedAddress(state)].balance
+  const selectedAccountBalance = state.tronmask.accounts[getSelectedAddress(state)].balance
   const cachedBalance = getSelectedAccountCachedBalance(state)
 
   return Boolean(!selectedAccountBalance && cachedBalance)
 }
 
 export function getSelectedAccountCachedBalance (state) {
-  const cachedBalances = state.metamask.cachedBalances[state.metamask.network]
+  const cachedBalances = state.tronmask.cachedBalances[state.tronmask.network]
   const selectedAddress = getSelectedAddress(state)
 
   return cachedBalances && cachedBalances[selectedAddress]
@@ -148,19 +148,19 @@ export function getTargetAccount (state, targetAddress) {
   return accounts[targetAddress]
 }
 
-export const getTokenExchangeRates = (state) => state.metamask.contractExchangeRates
+export const getTokenExchangeRates = (state) => state.tronmask.contractExchangeRates
 
 export function getAssetImages (state) {
-  const assetImages = state.metamask.assetImages || {}
+  const assetImages = state.tronmask.assetImages || {}
   return assetImages
 }
 
 export function getAddressBook (state) {
-  const { network } = state.metamask
-  if (!state.metamask.addressBook[network]) {
+  const { network } = state.tronmask
+  if (!state.tronmask.addressBook[network]) {
     return []
   }
-  return Object.values(state.metamask.addressBook[network])
+  return Object.values(state.tronmask.addressBook[network])
 }
 
 export function getAddressBookEntry (state, address) {
@@ -170,7 +170,7 @@ export function getAddressBookEntry (state, address) {
 }
 
 export function getAddressBookEntryName (state, address) {
-  const entry = getAddressBookEntry(state, address) || state.metamask.identities[address]
+  const entry = getAddressBookEntry(state, address) || state.tronmask.identities[address]
   return entry && entry.name !== '' ? entry.name : shortenAddress(address)
 }
 
@@ -215,7 +215,7 @@ export function getGasIsLoading (state) {
 }
 
 export function getCurrentCurrency (state) {
-  return state.metamask.currentCurrency
+  return state.tronmask.currentCurrency
 }
 
 export function getTotalUnapprovedCount (state) {
@@ -225,7 +225,7 @@ export function getTotalUnapprovedCount (state) {
     unapprovedDecryptMsgCount = 0,
     unapprovedEncryptionPublicKeyMsgCount = 0,
     unapprovedTypedMessagesCount = 0,
-  } = state.metamask
+  } = state.tronmask
 
   return unapprovedMsgCount + unapprovedPersonalMsgCount + unapprovedDecryptMsgCount +
     unapprovedEncryptionPublicKeyMsgCount + unapprovedTypedMessagesCount +
@@ -233,12 +233,12 @@ export function getTotalUnapprovedCount (state) {
 }
 
 function getUnapprovedTxCount (state) {
-  const { unapprovedTxs = {} } = state.metamask
+  const { unapprovedTxs = {} } = state.tronmask
   return Object.keys(unapprovedTxs).length
 }
 
 function getSuggestedTokenCount (state) {
-  const { suggestedTokens = {} } = state.metamask
+  const { suggestedTokens = {} } = state.tronmask
   return Object.keys(suggestedTokens).length
 }
 
@@ -258,8 +258,8 @@ export function isEthereumNetwork (state) {
   return [MAINNET, NILE, SHASTA].includes(networkType)
 }
 
-export function getPreferences ({ metamask }) {
-  return metamask.preferences
+export function getPreferences ({ tronmask }) {
+  return tronmask.preferences
 }
 
 export function getShouldShowFiat (state) {
@@ -269,34 +269,34 @@ export function getShouldShowFiat (state) {
 }
 
 export function getAdvancedInlineGasShown (state) {
-  return Boolean(state.metamask.featureFlags.advancedInlineGas)
+  return Boolean(state.tronmask.featureFlags.advancedInlineGas)
 }
 
 export function getUseNonceField (state) {
-  return Boolean(state.metamask.useNonceField)
+  return Boolean(state.tronmask.useNonceField)
 }
 
 export function getCustomNonceValue (state) {
-  return String(state.metamask.customNonceValue)
+  return String(state.tronmask.customNonceValue)
 }
 
 export function getDomainMetadata (state) {
-  return state.metamask.domainMetadata
+  return state.tronmask.domainMetadata
 }
 
 export const getBackgroundMetaMetricState = (state) => {
   return {
     network: getCurrentNetworkId(state),
     accountType: getAccountType(state),
-    metaMetricsId: state.metamask.metaMetricsId,
+    metaMetricsId: state.tronmask.metaMetricsId,
     numberOfTokens: getNumberOfTokens(state),
     numberOfAccounts: getNumberOfAccounts(state),
-    participateInMetaMetrics: state.metamask.participateInMetaMetrics,
+    participateInMetaMetrics: state.tronmask.participateInMetaMetrics,
   }
 }
 
 export function getRpcPrefsForCurrentProvider (state) {
-  const { frequentRpcListDetail, provider } = state.metamask
+  const { frequentRpcListDetail, provider } = state.tronmask
   const selectRpcInfo = frequentRpcListDetail.find((rpcInfo) => rpcInfo.rpcUrl === provider.rpcTarget)
   const { rpcPrefs = {} } = selectRpcInfo || {}
   return rpcPrefs
@@ -308,13 +308,13 @@ export function getKnownMethodData (state, data) {
   }
   const prefixedData = addHexPrefix(data)
   const fourBytePrefix = prefixedData.slice(0, 10)
-  const { knownMethodData } = state.metamask
+  const { knownMethodData } = state.tronmask
 
   return knownMethodData && knownMethodData[fourBytePrefix]
 }
 
 export function getFeatureFlags (state) {
-  return state.metamask.featureFlags
+  return state.tronmask.featureFlags
 }
 
 export function getOriginOfCurrentTab (state) {
@@ -322,5 +322,5 @@ export function getOriginOfCurrentTab (state) {
 }
 
 export function getIpfsGateway (state) {
-  return state.metamask.ipfsGateway
+  return state.tronmask.ipfsGateway
 }

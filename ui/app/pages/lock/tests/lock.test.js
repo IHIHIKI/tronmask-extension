@@ -27,19 +27,19 @@ describe('Lock', function () {
 
     const props = {
       isUnlocked: true,
-      lockMetamask: sinon.stub(),
+      lockTronmask: sinon.stub(),
       history: {
         push: sinon.spy(),
       },
     }
 
-    props.lockMetamask.resolves()
+    props.lockTronmask.resolves()
 
     mountWithRouter(
       <Lock.WrappedComponent {...props} />,
     )
 
-    assert(props.lockMetamask.calledOnce)
+    assert(props.lockTronmask.calledOnce)
     setImmediate(() => {
       assert.equal(props.history.push.getCall(0).args[0], '/')
       done()

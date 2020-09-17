@@ -7,7 +7,7 @@ import JsonRpcEngine from 'json-rpc-engine'
 import providerFromEngine from 'eth-json-rpc-middleware/providerFromEngine'
 import log from 'loglevel'
 import { createSwappableProxy, createEventEmitterProxy } from 'swappable-obj-proxy'
-import createMetamaskMiddleware from './createMetamaskMiddleware'
+import createTronmaskMiddleware from './createTronmaskMiddleware'
 import createInfuraClient from './createInfuraClient'
 import createJsonRpcClient from './createJsonRpcClient'
 import createLocalhostClient from './createLocalhostClient'
@@ -243,9 +243,9 @@ export default class NetworkController extends EventEmitter {
   }
 
   _setNetworkClient ({ networkMiddleware, blockTracker }) {
-    const metamaskMiddleware = createMetamaskMiddleware(this._baseProviderParams)
+    const tronmaskMiddleware = createTronmaskMiddleware(this._baseProviderParams)
     const engine = new JsonRpcEngine()
-    engine.push(metamaskMiddleware)
+    engine.push(tronmaskMiddleware)
     engine.push(networkMiddleware)
     const provider = providerFromEngine(engine)
     this._setProviderAndBlockTracker({ provider, blockTracker })

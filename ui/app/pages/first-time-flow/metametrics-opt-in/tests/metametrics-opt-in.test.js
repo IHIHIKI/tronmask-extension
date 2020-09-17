@@ -15,7 +15,7 @@ describe('MetaMetricsOptIn', function () {
       participateInMetaMetrics: false,
     }
     const store = configureMockStore()({
-      metamask: {},
+      tronmask: {},
     })
     const wrapper = mountWithRouter(
       <MetaMetricsOptIn.WrappedComponent {...props} />, store,

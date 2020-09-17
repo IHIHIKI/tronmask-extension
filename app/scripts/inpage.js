@@ -49,13 +49,13 @@ log.setDefaultLevel(process.env.METAMASK_DEBUG ? 'debug' : 'warn')
 //
 
 // setup background connection
-const metamaskStream = new LocalMessageDuplexStream({
+const tronmaskStream = new LocalMessageDuplexStream({
   name: 'inpage',
   target: 'contentscript',
 })
 
 const provider = initProvider({
-  connectionStream: metamaskStream,
+  connectionStream: tronmaskStream,
 })
 
 if (typeof window.tronWeb !== 'undefined') {

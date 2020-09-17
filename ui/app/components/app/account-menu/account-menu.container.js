@@ -5,7 +5,7 @@ import {
   toggleAccountMenu,
   showAccountDetail,
   hideSidebar,
-  lockMetamask,
+  lockTronmask,
   hideWarning,
 } from '../../../store/actions'
 import {
@@ -23,7 +23,7 @@ import AccountMenu from './account-menu.component'
 const SHOW_SEARCH_ACCOUNTS_MIN_COUNT = 5
 
 function mapStateToProps (state) {
-  const { metamask: { isAccountMenuOpen } } = state
+  const { tronmask: { isAccountMenuOpen } } = state
   const accounts = getTronMaskAccountsOrdered(state)
   const origin = getOriginOfCurrentTab(state)
   const selectedAddress = getSelectedAddress(state)
@@ -47,8 +47,8 @@ function mapDispatchToProps (dispatch) {
       dispatch(hideSidebar())
       dispatch(toggleAccountMenu())
     },
-    lockMetamask: () => {
-      dispatch(lockMetamask())
+    lockTronmask: () => {
+      dispatch(lockTronmask())
       dispatch(hideWarning())
       dispatch(hideSidebar())
       dispatch(toggleAccountMenu())

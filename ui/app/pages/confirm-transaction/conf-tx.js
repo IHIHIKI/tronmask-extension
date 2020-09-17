@@ -13,34 +13,34 @@ import { getMostRecentOverviewPage } from '../../ducks/history/history'
 import { MESSAGE_TYPE } from '../../../../app/scripts/lib/enums'
 
 function mapStateToProps (state) {
-  const { metamask, appState } = state
+  const { tronmask, appState } = state
   const {
     unapprovedMsgCount,
     unapprovedPersonalMsgCount,
     unapprovedTypedMessagesCount,
-  } = metamask
+  } = tronmask
   const {
     txId,
   } = appState
 
   return {
-    identities: state.metamask.identities,
+    identities: state.tronmask.identities,
     mostRecentOverviewPage: getMostRecentOverviewPage(state),
-    unapprovedTxs: state.metamask.unapprovedTxs,
-    unapprovedMsgs: state.metamask.unapprovedMsgs,
-    unapprovedPersonalMsgs: state.metamask.unapprovedPersonalMsgs,
-    unapprovedTypedMessages: state.metamask.unapprovedTypedMessages,
+    unapprovedTxs: state.tronmask.unapprovedTxs,
+    unapprovedMsgs: state.tronmask.unapprovedMsgs,
+    unapprovedPersonalMsgs: state.tronmask.unapprovedPersonalMsgs,
+    unapprovedTypedMessages: state.tronmask.unapprovedTypedMessages,
     index: txId,
     warning: state.appState.warning,
-    network: state.metamask.network,
-    provider: state.metamask.provider,
-    currentCurrency: state.metamask.currentCurrency,
-    blockGasLimit: state.metamask.currentBlockGasLimit,
+    network: state.tronmask.network,
+    provider: state.tronmask.provider,
+    currentCurrency: state.tronmask.currentCurrency,
+    blockGasLimit: state.tronmask.currentBlockGasLimit,
     unapprovedMsgCount,
     unapprovedPersonalMsgCount,
     unapprovedTypedMessagesCount,
-    send: state.metamask.send,
-    currentNetworkTxList: state.metamask.currentNetworkTxList,
+    send: state.tronmask.send,
+    currentNetworkTxList: state.tronmask.currentNetworkTxList,
   }
 }
 
@@ -121,7 +121,7 @@ class ConfirmTxScreen extends Component {
   signMessage (msgData, event) {
     log.info('conf-tx.js: signing message')
     const params = msgData.msgParams
-    params.metamaskId = msgData.id
+    params.tronmaskId = msgData.id
     this.stopPropagation(event)
     return this.props.dispatch(actions.signMsg(params))
   }
@@ -135,7 +135,7 @@ class ConfirmTxScreen extends Component {
   signPersonalMessage (msgData, event) {
     log.info('conf-tx.js: signing personal message')
     const params = msgData.msgParams
-    params.metamaskId = msgData.id
+    params.tronmaskId = msgData.id
     this.stopPropagation(event)
     return this.props.dispatch(actions.signPersonalMsg(params))
   }
@@ -143,7 +143,7 @@ class ConfirmTxScreen extends Component {
   signTypedMessage (msgData, event) {
     log.info('conf-tx.js: signing typed message')
     const params = msgData.msgParams
-    params.metamaskId = msgData.id
+    params.tronmaskId = msgData.id
     this.stopPropagation(event)
     return this.props.dispatch(actions.signTypedMsg(params))
   }

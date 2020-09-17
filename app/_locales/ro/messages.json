@@ -629,10 +629,10 @@
   "message": {
     "message": "Mesaj"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "Vă conectăm la Ethereum și la Internetul descentralizat."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "Versiune TronMask"
   },
   "mobileSyncText": {

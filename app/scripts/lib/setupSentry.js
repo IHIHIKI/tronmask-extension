@@ -12,7 +12,7 @@ const SENTRY_DSN_DEV = 'https://f59f3dd640d2429d9d0e2445a87ea8e1@sentry.io/27349
 export const SENTRY_STATE = {
   gas: true,
   history: true,
-  metamask: {
+  tronmask: {
     alertEnabledness: true,
     completedOnboarding: true,
     connectedStatusPopoverHasBeenShown: true,
@@ -148,24 +148,24 @@ function rewriteErrorMessages (report, rewriteFn) {
 
 function rewriteReportUrls (report) {
   // update request url
-  report.request.url = toMetamaskUrl(report.request.url)
+  report.request.url = toTronmaskUrl(report.request.url)
   // update exception stack trace
   if (report.exception && report.exception.values) {
     report.exception.values.forEach((item) => {
       if (item.stacktrace) {
         item.stacktrace.frames.forEach((frame) => {
-          frame.filename = toMetamaskUrl(frame.filename)
+          frame.filename = toTronmaskUrl(frame.filename)
         })
       }
     })
   }
 }
 
-function toMetamaskUrl (origUrl) {
+function toTronmaskUrl (origUrl) {
   const filePath = origUrl.split(window.location.origin)[1]
   if (!filePath) {
     return origUrl
   }
-  const metamaskUrl = `metamask${filePath}`
-  return metamaskUrl
+  const tronmaskUrl = `tronmask${filePath}`
+  return tronmaskUrl
 }

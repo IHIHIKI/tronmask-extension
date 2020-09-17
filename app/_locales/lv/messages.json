@@ -638,10 +638,10 @@
   "message": {
     "message": "Ziņojums"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "Veido savienojumu ar Ethereum un decentralizēto tīmekli."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "TronMask versija"
   },
   "mobileSyncText": {

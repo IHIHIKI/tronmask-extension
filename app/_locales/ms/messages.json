@@ -616,10 +616,10 @@
   "message": {
     "message": "Mesej"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "Menyambungkan anda kepada Ethereum dan Web Ternyahpusat."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "Versi TronMask"
   },
   "mobileSyncText": {

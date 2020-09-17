@@ -5,7 +5,7 @@ import { captureException } from '@sentry/browser'
 import { hexSUNToDecGSUN } from '../helpers/utils/conversions.util'
 import { getEstimatedGasPrices, getEstimatedGasTimes, getFeatureFlags, getIsMainnet } from '../selectors'
 import { getRawTimeEstimateData } from '../helpers/utils/gas-time-estimates.util'
-import { getCurrentLocale } from '../ducks/metamask/metamask'
+import { getCurrentLocale } from '../ducks/tronmask/tronmask'
 
 /**
  * Calculate the number of minutes remaining until the transaction completes.

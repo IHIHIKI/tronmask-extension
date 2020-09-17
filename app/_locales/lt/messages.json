@@ -642,10 +642,10 @@
   "message": {
     "message": "Pranešimas"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "Prijungiame jus prie „Ethereum“ ir decentralizuotojo žiniatinklio."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "„TronMask“ versija"
   },
   "mobileSyncText": {

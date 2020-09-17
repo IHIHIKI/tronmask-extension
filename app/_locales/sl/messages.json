@@ -627,10 +627,10 @@
   "message": {
     "message": "Sporočilo"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "TronMask je varen identitetni sklad za Ethereum."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "Različica"
   },
   "mobileSyncText": {

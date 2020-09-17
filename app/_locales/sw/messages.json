@@ -620,10 +620,10 @@
   "message": {
     "message": "Ujumbe"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "Kukuunganisha kwenye Ethereum na Wavutiu Uliotawanywa."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "Toleo la TronMask"
   },
   "mobileSyncText": {

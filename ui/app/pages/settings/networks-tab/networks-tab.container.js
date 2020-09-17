@@ -18,7 +18,7 @@ const mapStateToProps = (state) => {
   const {
     frequentRpcListDetail,
     provider,
-  } = state.metamask
+  } = state.tronmask
   const {
     networksTabSelectedRpcUrl,
     networksTabIsInAddMode,

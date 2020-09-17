@@ -623,10 +623,10 @@
   "message": {
     "message": "Pesan"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "Menghubungkan Anda ke Ethereum dan Web Terdesentralisasi."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "Versi TronMask"
   },
   "mobileSyncText": {

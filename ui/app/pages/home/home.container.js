@@ -25,7 +25,7 @@ import {
 import Home from './home.component'
 
 const mapStateToProps = (state) => {
-  const { metamask, appState } = state
+  const { tronmask, appState } = state
   const {
     suggestedTokens,
     seedPhraseBackedUp,
@@ -35,7 +35,7 @@ const mapStateToProps = (state) => {
     selectedAddress,
     connectedStatusPopoverHasBeenShown,
     defaultHomeActiveTabName,
-  } = metamask
+  } = tronmask
   const accountBalance = getCurrentEthBalance(state)
   const { forgottenPassword, threeBoxLastUpdated } = appState
   const totalUnapprovedCount = getTotalUnapprovedCount(state)

@@ -635,10 +635,10 @@
   "message": {
     "message": "Üzenet"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "Csatlakozás az Ethereumhoz és a decentralizált hálózathoz."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "TronMask verzió"
   },
   "mobileSyncText": {

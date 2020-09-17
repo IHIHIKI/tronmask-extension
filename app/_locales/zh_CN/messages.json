@@ -630,10 +630,10 @@
   "message": {
     "message": "消息"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "TronMask is a secure identity vault for Ethereum."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "TronMask 版本"
   },
   "mobileSyncText": {

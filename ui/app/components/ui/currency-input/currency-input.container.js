@@ -8,7 +8,7 @@ import {
 import CurrencyInput from './currency-input.component'
 
 const mapStateToProps = (state) => {
-  const { metamask: { nativeCurrency, currentCurrency, conversionRate } } = state
+  const { tronmask: { nativeCurrency, currentCurrency, conversionRate } } = state
   const { showFiatInTestnets } = getPreferences(state)
   const isMainnet = getIsMainnet(state)
   const maxModeOn = getSendMaxModeState(state)

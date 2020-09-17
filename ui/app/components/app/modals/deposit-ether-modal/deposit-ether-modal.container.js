@@ -4,8 +4,8 @@ import DepositEtherModal from './deposit-ether-modal.component'
 
 function mapStateToProps (state) {
   return {
-    network: state.metamask.network,
-    address: state.metamask.selectedAddress,
+    network: state.tronmask.network,
+    address: state.tronmask.selectedAddress,
   }
 }
 

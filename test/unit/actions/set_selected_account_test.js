@@ -4,9 +4,9 @@ import reducers from '../../../ui/app/ducks'
 import * as actionConstants from '../../../ui/app/store/actionConstants'
 
 describe('SHOW_ACCOUNT_DETAIL', function () {
-  it('updates metamask state', function () {
+  it('updates tronmask state', function () {
     const initialState = {
-      metamask: {
+      tronmask: {
         selectedAddress: 'foo',
       },
     }
@@ -19,6 +19,6 @@ describe('SHOW_ACCOUNT_DETAIL', function () {
     freeze(action)
 
     const resultingState = reducers(initialState, action)
-    assert.equal(resultingState.metamask.selectedAddress, action.value)
+    assert.equal(resultingState.tronmask.selectedAddress, action.value)
   })
 })

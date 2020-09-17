@@ -635,10 +635,10 @@
   "message": {
     "message": "Poruka"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "Povezujete se na Ethereum i decentralizirani internet."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "Inačica usluge TronMask"
   },
   "mobileSyncText": {

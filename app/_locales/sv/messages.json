@@ -626,10 +626,10 @@
   "message": {
     "message": "Meddelande"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "Ansluter dig mot Ethereum och den decentraliserade webben."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "TronMask-version"
   },
   "mobileSyncText": {

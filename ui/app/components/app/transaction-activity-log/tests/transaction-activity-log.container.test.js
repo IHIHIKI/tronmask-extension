@@ -16,7 +16,7 @@ describe('TransactionActivityLog container', function () {
   describe('mapStateToProps()', function () {
     it('should return the correct props', function () {
       const mockState = {
-        metamask: {
+        tronmask: {
           conversionRate: 280.45,
           nativeCurrency: 'ETH',
         },

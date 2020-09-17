@@ -618,10 +618,10 @@
   "message": {
     "message": "Nachricht"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "TronMask ist ein sicherer Identitätssafe für Ethereum."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "TronMask-Version"
   },
   "mobileSyncText": {

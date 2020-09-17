@@ -62,7 +62,7 @@ import seedPhraseVerifier from './lib/seed-phrase-verifier'
 
 import backgroundMetaMetricsEvent from './lib/background-metametrics'
 
-export default class MetamaskController extends EventEmitter {
+export default class TronmaskController extends EventEmitter {
 
   /**
    * @constructor
@@ -80,11 +80,11 @@ export default class MetamaskController extends EventEmitter {
     this.recordFirstTimeInfo(initState)
 
     // this keeps track of how many "controllerStream" connections are open
-    // the only thing that uses controller connections are open metamask UI instances
+    // the only thing that uses controller connections are open tronmask UI instances
     this.activeControllerConnections = 0
 
     this.getRequestAccountTabIds = opts.getRequestAccountTabIds
-    this.getOpenMetamaskTabsIds = opts.getOpenMetamaskTabsIds
+    this.getOpenTronmaskTabsIds = opts.getOpenTronmaskTabsIds
 
     // observable state store
     this.store = new ComposableObservableStore(initState)
@@ -339,7 +339,7 @@ export default class MetamaskController extends EventEmitter {
       version,
       // account mgmt
       getAccounts: async ({ origin }) => {
-        if (origin === 'metamask') {
+        if (origin === 'tronmask') {
           const selectedAddress = this.preferencesController.getSelectedAddress()
           return selectedAddress ? [selectedAddress] : []
         } else if (this.isUnlocked()) {
@@ -371,7 +371,7 @@ export default class MetamaskController extends EventEmitter {
    * This store is used to make some config info available to Dapps synchronously.
    */
   createPublicConfigStore () {
-    // subset of state for metamask inpage provider
+    // subset of state for tronmask inpage provider
     const publicConfigStore = new ObservableStore()
 
     // setup memStore subscription hooks
@@ -401,7 +401,7 @@ export default class MetamaskController extends EventEmitter {
   //=============================================================================
 
   /**
-   * The metamask-state of the various controllers, made available to the UI
+   * The tronmask-state of the various controllers, made available to the UI
    *
    * @returns {Object} - status
    */
@@ -450,7 +450,7 @@ export default class MetamaskController extends EventEmitter {
       unMarkPasswordForgotten: this.unMarkPasswordForgotten.bind(this),
       safelistPhishingDomain: this.safelistPhishingDomain.bind(this),
       getRequestAccountTabIds: (cb) => cb(null, this.getRequestAccountTabIds()),
-      getOpenMetamaskTabsIds: (cb) => cb(null, this.getOpenMetamaskTabsIds()),
+      getOpenTronmaskTabsIds: (cb) => cb(null, this.getOpenTronmaskTabsIds()),
 
       // primary HD keyring management
       addNewAccount: nodeify(this.addNewAccount, this),
@@ -640,7 +640,7 @@ export default class MetamaskController extends EventEmitter {
 
       const primaryKeyring = keyringController.getKeyringsByType('HD Key Tree')[0]
       if (!primaryKeyring) {
-        throw new Error('MetamaskController - No HD Key Tree found')
+        throw new Error('TronmaskController - No HD Key Tree found')
       }
 
       // seek out the first zero balance
@@ -832,7 +832,7 @@ export default class MetamaskController extends EventEmitter {
         keyringName = LedgerBridgeKeyring.type
         break
       default:
-        throw new Error('MetamaskController:getKeyringForDevice - Unknown device')
+        throw new Error('TronmaskController:getKeyringForDevice - Unknown device')
     }
     let keyring = await this.keyringController.getKeyringsByType(keyringName)[0]
     if (!keyring) {
@@ -938,7 +938,7 @@ export default class MetamaskController extends EventEmitter {
   async addNewAccount () {
     const primaryKeyring = this.keyringController.getKeyringsByType('HD Key Tree')[0]
     if (!primaryKeyring) {
-      throw new Error('MetamaskController - No HD Key Tree found')
+      throw new Error('TronmaskController - No HD Key Tree found')
     }
     const { keyringController } = this
     const oldAccounts = await keyringController.getAccounts()
@@ -971,7 +971,7 @@ export default class MetamaskController extends EventEmitter {
 
     const primaryKeyring = this.keyringController.getKeyringsByType('HD Key Tree')[0]
     if (!primaryKeyring) {
-      throw new Error('MetamaskController - No HD Key Tree found')
+      throw new Error('TronmaskController - No HD Key Tree found')
     }
 
     const serialized = await primaryKeyring.serialize()
@@ -979,7 +979,7 @@ export default class MetamaskController extends EventEmitter {
 
     const accounts = await primaryKeyring.getAccounts()
     if (accounts.length < 1) {
-      throw new Error('MetamaskController - No accounts found')
+      throw new Error('TronmaskController - No accounts found')
     }
 
     try {
@@ -1090,10 +1090,10 @@ export default class MetamaskController extends EventEmitter {
    */
   signMessage (msgParams) {
     log.info('TronMaskController - signMessage')
-    const msgId = msgParams.metamaskId
+    const msgId = msgParams.tronmaskId
 
     // sets the status op the message to 'approved'
-    // and removes the metamaskId for signing
+    // and removes the tronmaskId for signing
     return this.messageManager.approveMessage(msgParams)
       .then((cleanMsgParams) => {
       // signs the message
@@ -1150,9 +1150,9 @@ export default class MetamaskController extends EventEmitter {
    */
   signPersonalMessage (msgParams) {
     log.info('TronMaskController - signPersonalMessage')
-    const msgId = msgParams.metamaskId
+    const msgId = msgParams.tronmaskId
     // sets the status op the message to 'approved'
-    // and removes the metamaskId for signing
+    // and removes the tronmaskId for signing
     return this.personalMessageManager.approveMessage(msgParams)
       .then((cleanMsgParams) => {
       // signs the message
@@ -1205,7 +1205,7 @@ export default class MetamaskController extends EventEmitter {
   async decryptMessageInline (msgParams) {
     log.info('TronMaskController - decryptMessageInline')
     // decrypt the message inline
-    const msgId = msgParams.metamaskId
+    const msgId = msgParams.tronmaskId
     const msg = this.decryptMessageManager.getMsg(msgId)
     try {
       const stripped = ethUtil.stripHexPrefix(msgParams.data)
@@ -1230,9 +1230,9 @@ export default class MetamaskController extends EventEmitter {
   */
   async decryptMessage (msgParams) {
     log.info('TronMaskController - decryptMessage')
-    const msgId = msgParams.metamaskId
+    const msgId = msgParams.tronmaskId
     // sets the status op the message to 'approved'
-    // and removes the metamaskId for decryption
+    // and removes the tronmaskId for decryption
     try {
       const cleanMsgParams = await this.decryptMessageManager.approveMessage(msgParams)
 
@@ -1290,9 +1290,9 @@ export default class MetamaskController extends EventEmitter {
   */
   async encryptionPublicKey (msgParams) {
     log.info('TronMaskController - encryptionPublicKey')
-    const msgId = msgParams.metamaskId
+    const msgId = msgParams.tronmaskId
     // sets the status op the message to 'approved'
-    // and removes the metamaskId for decryption
+    // and removes the tronmaskId for decryption
     try {
       const params = await this.encryptionPublicKeyManager.approveMessage(msgParams)
 
@@ -1347,7 +1347,7 @@ export default class MetamaskController extends EventEmitter {
    */
   async signTypedMessage (msgParams) {
     log.info('TronMaskController - eth_signTypedData')
-    const msgId = msgParams.metamaskId
+    const msgId = msgParams.tronmaskId
     const { version } = msgParams
     try {
       const cleanMsgParams = await this.typedMessageManager.approveMessage(msgParams)
@@ -1551,7 +1551,7 @@ export default class MetamaskController extends EventEmitter {
    */
   setupProviderConnection (outStream, sender, isInternal) {
     const origin = isInternal
-      ? 'metamask'
+      ? 'tronmask'
       : (new URL(sender.url)).origin
     let extensionId
     if (sender.id !== extension.runtime.id) {
@@ -1634,7 +1634,7 @@ export default class MetamaskController extends EventEmitter {
     }
     // watch asset
     engine.push(this.preferencesController.requestWatchAsset.bind(this.preferencesController))
-    // forward to metamask primary provider
+    // forward to tronmask primary provider
     engine.push(providerAsMiddleware(provider))
     return engine
   }
@@ -1667,7 +1667,7 @@ export default class MetamaskController extends EventEmitter {
   }
 
   /**
-   * Adds a reference to a connection by origin. Ignores the 'metamask' origin.
+   * Adds a reference to a connection by origin. Ignores the 'tronmask' origin.
    * Caller must ensure that the returned id is stored such that the reference
    * can be deleted later.
    *
@@ -1678,7 +1678,7 @@ export default class MetamaskController extends EventEmitter {
    */
   addConnection (origin, { engine }) {
 
-    if (origin === 'metamask') {
+    if (origin === 'tronmask') {
       return null
     }
 
@@ -1831,10 +1831,10 @@ export default class MetamaskController extends EventEmitter {
       throw new Error('Must provide action and name.')
     }
 
-    const metamaskState = await this.getState()
+    const tronmaskState = await this.getState()
     const version = this.platform.getVersion()
     backgroundMetaMetricsEvent(
-      metamaskState,
+      tronmaskState,
       version,
       {
         customVariables,

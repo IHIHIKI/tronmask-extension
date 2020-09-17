@@ -13,7 +13,7 @@ const Ganache = require('./ganache')
 
 const ganacheServer = new Ganache()
 
-describe('MetaMask', function () {
+describe('TronMask', function () {
   let driver
 
   const testSeedPhrase = 'phrase upgrade clock rough situate wedding elder clever doctor stamp excess tent'
@@ -174,7 +174,7 @@ describe('MetaMask', function () {
     })
   })
 
-  describe('Send ETH from inside MetaMask', function () {
+  describe('Send ETH from inside TronMask', function () {
     it('starts to send a transaction', async function () {
       await driver.clickElement(By.xpath(`//button[contains(text(), 'Send')]`))
       await driver.delay(regularDelayMs)

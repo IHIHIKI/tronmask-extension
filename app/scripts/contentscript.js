@@ -113,7 +113,7 @@ function forwardTrafficBetweenMuxers (channelName, muxA, muxB) {
  * @param {Error} err - Stream connection error
  */
 function logStreamDisconnectWarning (remoteLabel, err) {
-  let warningMsg = `MetamaskContentscript - lost connection to ${remoteLabel}`
+  let warningMsg = `TronmaskContentscript - lost connection to ${remoteLabel}`
   if (err) {
     warningMsg += `\n${err.stack}`
   }

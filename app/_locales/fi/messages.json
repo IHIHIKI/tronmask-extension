@@ -639,10 +639,10 @@
   "message": {
     "message": "Viesti"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "Sinua yhdistetään Ethereumiin ja hajautettuun verkkoon."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "TronMask-versio"
   },
   "mobileSyncText": {

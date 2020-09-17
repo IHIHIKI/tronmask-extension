@@ -632,10 +632,10 @@
   "message": {
     "message": "Melding "
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "Kobler deg til Ethereum og det desentraliserte nettet."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "TronMask-versjon "
   },
   "mobileSyncText": {

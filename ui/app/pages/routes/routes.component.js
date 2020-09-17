@@ -264,7 +264,7 @@ export default class Routes extends Component {
     )
   }
 
-  toggleMetamaskActive () {
+  toggleTronmaskActive () {
     if (this.props.isUnlocked) {
       // currently active: deactivate
       this.props.lockTronMask()

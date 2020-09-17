@@ -11,7 +11,7 @@ const mapStateToProps = (state) => {
   const {
     provider,
     network,
-  } = state.metamask
+  } = state.tronmask
   const { rpcTarget, chainId, ticker, nickname, type } = provider
 
   const setProviderArgs = type === 'rpc'

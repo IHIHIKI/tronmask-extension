@@ -624,10 +624,10 @@
   "memo": {
     "message": "note"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "TronMask est un coffre sécurisé pour votre identité sur Ethereum."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "Version de TronMask"
   },
   "mobileSyncText": {

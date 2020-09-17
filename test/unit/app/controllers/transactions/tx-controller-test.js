@@ -65,9 +65,9 @@ describe('Transaction Controller', function () {
   describe('#getUnapprovedTxCount', function () {
     it('should return the number of unapproved txs', function () {
       txController.txStateManager._saveTxList([
-        { id: 1, status: 'unapproved', metamaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
-        { id: 2, status: 'unapproved', metamaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
-        { id: 3, status: 'unapproved', metamaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
+        { id: 1, status: 'unapproved', tronmaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
+        { id: 2, status: 'unapproved', tronmaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
+        { id: 3, status: 'unapproved', tronmaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
       ])
       const unapprovedTxCount = txController.getUnapprovedTxCount()
       assert.equal(unapprovedTxCount, 3, 'should be 3')
@@ -77,9 +77,9 @@ describe('Transaction Controller', function () {
   describe('#getPendingTxCount', function () {
     it('should return the number of pending txs', function () {
       txController.txStateManager._saveTxList([
-        { id: 1, status: 'submitted', metamaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
-        { id: 2, status: 'submitted', metamaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
-        { id: 3, status: 'submitted', metamaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
+        { id: 1, status: 'submitted', tronmaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
+        { id: 2, status: 'submitted', tronmaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
+        { id: 3, status: 'submitted', tronmaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
       ])
       const pendingTxCount = txController.getPendingTxCount()
       assert.equal(pendingTxCount, 3, 'should be 3')
@@ -94,15 +94,15 @@ describe('Transaction Controller', function () {
         'to': '0xc684832530fcbddae4b4230a47e991ddcec2831d',
       }
       txController.txStateManager._saveTxList([
-        { id: 0, status: 'confirmed', metamaskNetworkId: currentNetworkId, txParams, history: [{}] },
-        { id: 1, status: 'confirmed', metamaskNetworkId: currentNetworkId, txParams, history: [{}] },
-        { id: 2, status: 'confirmed', metamaskNetworkId: currentNetworkId, txParams, history: [{}] },
-        { id: 3, status: 'unapproved', metamaskNetworkId: currentNetworkId, txParams, history: [{}] },
-        { id: 4, status: 'rejected', metamaskNetworkId: currentNetworkId, txParams, history: [{}] },
-        { id: 5, status: 'approved', metamaskNetworkId: currentNetworkId, txParams, history: [{}] },
-        { id: 6, status: 'signed', metamaskNetworkId: currentNetworkId, txParams, history: [{}] },
-        { id: 7, status: 'submitted', metamaskNetworkId: currentNetworkId, txParams, history: [{}] },
-        { id: 8, status: 'failed', metamaskNetworkId: currentNetworkId, txParams, history: [{}] },
+        { id: 0, status: 'confirmed', tronmaskNetworkId: currentNetworkId, txParams, history: [{}] },
+        { id: 1, status: 'confirmed', tronmaskNetworkId: currentNetworkId, txParams, history: [{}] },
+        { id: 2, status: 'confirmed', tronmaskNetworkId: currentNetworkId, txParams, history: [{}] },
+        { id: 3, status: 'unapproved', tronmaskNetworkId: currentNetworkId, txParams, history: [{}] },
+        { id: 4, status: 'rejected', tronmaskNetworkId: currentNetworkId, txParams, history: [{}] },
+        { id: 5, status: 'approved', tronmaskNetworkId: currentNetworkId, txParams, history: [{}] },
+        { id: 6, status: 'signed', tronmaskNetworkId: currentNetworkId, txParams, history: [{}] },
+        { id: 7, status: 'submitted', tronmaskNetworkId: currentNetworkId, txParams, history: [{}] },
+        { id: 8, status: 'failed', tronmaskNetworkId: currentNetworkId, txParams, history: [{}] },
       ])
       assert.equal(txController.nonceTracker.getConfirmedTransactions(address).length, 3)
     })
@@ -118,7 +118,7 @@ describe('Transaction Controller', function () {
       txMeta = {
         status: 'unapproved',
         id: 1,
-        metamaskNetworkId: currentNetworkId,
+        tronmaskNetworkId: currentNetworkId,
         txParams,
         history: [{}],
       }
@@ -155,7 +155,7 @@ describe('Transaction Controller', function () {
 
       await assert.rejects(
         () => txController.newUnapprovedTransaction(txParams),
-        { message: 'MetaMask Tx Signature: User denied transaction signature.' },
+        { message: 'TronMask Tx Signature: User denied transaction signature.' },
       )
     })
   })
@@ -178,7 +178,7 @@ describe('Transaction Controller', function () {
       const txMeta = await txController.addUnapprovedTransaction({ from: selectedAddress })
       assert.ok('id' in txMeta, 'should have a id')
       assert.ok('time' in txMeta, 'should have a time stamp')
-      assert.ok('metamaskNetworkId' in txMeta, 'should have a metamaskNetworkId')
+      assert.ok('tronmaskNetworkId' in txMeta, 'should have a tronmaskNetworkId')
       assert.ok('txParams' in txMeta, 'should have a txParams')
       assert.ok('history' in txMeta, 'should have a history')
       assert.equal(txMeta.txParams.value, '0x0', 'should have added 0x0 as the value')
@@ -205,7 +205,7 @@ describe('Transaction Controller', function () {
       txController.networkStore = new ObservableStore('loading')
       await assert.rejects(
         () => txController.addUnapprovedTransaction({ from: selectedAddress, to: '0x0d1d4e623D10F9FBA5Db95830F7d3839406C6AF2' }),
-        { message: 'MetaMask is having trouble connecting to the network' },
+        { message: 'TronMask is having trouble connecting to the network' },
       )
     })
   })
@@ -213,7 +213,7 @@ describe('Transaction Controller', function () {
   describe('#addTxGasDefaults', function () {
     it('should add the tx defaults if their are none', async function () {
       txController.txStateManager._saveTxList([
-        { id: 1, status: 'unapproved', metamaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
+        { id: 1, status: 'unapproved', tronmaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
       ])
       const txMeta = {
         id: 1,
@@ -238,7 +238,7 @@ describe('Transaction Controller', function () {
       const txMeta = {
         id: '1',
         status: 'unapproved',
-        metamaskNetworkId: currentNetworkId,
+        tronmaskNetworkId: currentNetworkId,
         txParams: {},
       }
 
@@ -267,7 +267,7 @@ describe('Transaction Controller', function () {
       const txMeta = {
         id: '1',
         status: 'unapproved',
-        metamaskNetworkId: currentNetworkId,
+        tronmaskNetworkId: currentNetworkId,
         txParams: {
           nonce: originalValue,
           gas: originalValue,
@@ -303,7 +303,7 @@ describe('Transaction Controller', function () {
 
   describe('#sign replay-protected tx', function () {
     it('prepares a tx with the chainId set', async function () {
-      txController.addTx({ id: '1', status: 'unapproved', metamaskNetworkId: currentNetworkId, txParams: {} }, noop)
+      txController.addTx({ id: '1', status: 'unapproved', tronmaskNetworkId: currentNetworkId, txParams: {} }, noop)
       const rawTx = await txController.signTransaction('1')
       const ethTx = new EthTx(ethUtil.toBuffer(rawTx))
       assert.equal(ethTx.getChainId(), 42)
@@ -322,7 +322,7 @@ describe('Transaction Controller', function () {
           gas: '0x7b0d',
           nonce: '0x4b',
         },
-        metamaskNetworkId: currentNetworkId,
+        tronmaskNetworkId: currentNetworkId,
       }
       txController.txStateManager.addTx(txMeta)
       const approvalPromise = txController.updateAndApproveTransaction(txMeta)
@@ -342,13 +342,13 @@ describe('Transaction Controller', function () {
   describe('#cancelTransaction', function () {
     it('should emit a status change to rejected', function (done) {
       txController.txStateManager._saveTxList([
-        { id: 0, status: 'unapproved', txParams: {}, metamaskNetworkId: currentNetworkId, history: [{}] },
-        { id: 1, status: 'rejected', txParams: {}, metamaskNetworkId: currentNetworkId, history: [{}] },
-        { id: 2, status: 'approved', txParams: {}, metamaskNetworkId: currentNetworkId, history: [{}] },
-        { id: 3, status: 'signed', txParams: {}, metamaskNetworkId: currentNetworkId, history: [{}] },
-        { id: 4, status: 'submitted', txParams: {}, metamaskNetworkId: currentNetworkId, history: [{}] },
-        { id: 5, status: 'confirmed', txParams: {}, metamaskNetworkId: currentNetworkId, history: [{}] },
-        { id: 6, status: 'failed', txParams: {}, metamaskNetworkId: currentNetworkId, history: [{}] },
+        { id: 0, status: 'unapproved', txParams: {}, tronmaskNetworkId: currentNetworkId, history: [{}] },
+        { id: 1, status: 'rejected', txParams: {}, tronmaskNetworkId: currentNetworkId, history: [{}] },
+        { id: 2, status: 'approved', txParams: {}, tronmaskNetworkId: currentNetworkId, history: [{}] },
+        { id: 3, status: 'signed', txParams: {}, tronmaskNetworkId: currentNetworkId, history: [{}] },
+        { id: 4, status: 'submitted', txParams: {}, tronmaskNetworkId: currentNetworkId, history: [{}] },
+        { id: 5, status: 'confirmed', txParams: {}, tronmaskNetworkId: currentNetworkId, history: [{}] },
+        { id: 6, status: 'failed', txParams: {}, tronmaskNetworkId: currentNetworkId, history: [{}] },
       ])
 
       txController.once('tx:status-update', (txId, status) => {
@@ -383,7 +383,7 @@ describe('Transaction Controller', function () {
         gasPrice: '0xa',
       }
       txController.txStateManager._saveTxList([
-        { id: 1, status: 'submitted', metamaskNetworkId: currentNetworkId, txParams, history: [{}] },
+        { id: 1, status: 'submitted', tronmaskNetworkId: currentNetworkId, txParams, history: [{}] },
       ])
 
       expectedTxParams = { ...txParams, gasPrice: '0xb' }
@@ -437,7 +437,7 @@ describe('Transaction Controller', function () {
         id: 1,
         status: 'unapproved',
         txParams: {},
-        metamaskNetworkId: currentNetworkId,
+        tronmaskNetworkId: currentNetworkId,
       }
       providerResultStub.eth_sendRawTransaction = hash
     })
@@ -467,13 +467,13 @@ describe('Transaction Controller', function () {
   describe('#_markNonceDuplicatesDropped', function () {
     it('should mark all nonce duplicates as dropped without marking the confirmed transaction as dropped', function () {
       txController.txStateManager._saveTxList([
-        { id: 1, status: 'confirmed', metamaskNetworkId: currentNetworkId, history: [{}], txParams: { nonce: '0x01' } },
-        { id: 2, status: 'submitted', metamaskNetworkId: currentNetworkId, history: [{}], txParams: { nonce: '0x01' } },
-        { id: 3, status: 'submitted', metamaskNetworkId: currentNetworkId, history: [{}], txParams: { nonce: '0x01' } },
-        { id: 4, status: 'submitted', metamaskNetworkId: currentNetworkId, history: [{}], txParams: { nonce: '0x01' } },
-        { id: 5, status: 'submitted', metamaskNetworkId: currentNetworkId, history: [{}], txParams: { nonce: '0x01' } },
-        { id: 6, status: 'submitted', metamaskNetworkId: currentNetworkId, history: [{}], txParams: { nonce: '0x01' } },
-        { id: 7, status: 'submitted', metamaskNetworkId: currentNetworkId, history: [{}], txParams: { nonce: '0x01' } },
+        { id: 1, status: 'confirmed', tronmaskNetworkId: currentNetworkId, history: [{}], txParams: { nonce: '0x01' } },
+        { id: 2, status: 'submitted', tronmaskNetworkId: currentNetworkId, history: [{}], txParams: { nonce: '0x01' } },
+        { id: 3, status: 'submitted', tronmaskNetworkId: currentNetworkId, history: [{}], txParams: { nonce: '0x01' } },
+        { id: 4, status: 'submitted', tronmaskNetworkId: currentNetworkId, history: [{}], txParams: { nonce: '0x01' } },
+        { id: 5, status: 'submitted', tronmaskNetworkId: currentNetworkId, history: [{}], txParams: { nonce: '0x01' } },
+        { id: 6, status: 'submitted', tronmaskNetworkId: currentNetworkId, history: [{}], txParams: { nonce: '0x01' } },
+        { id: 7, status: 'submitted', tronmaskNetworkId: currentNetworkId, history: [{}], txParams: { nonce: '0x01' } },
       ])
       txController._markNonceDuplicatesDropped(1)
       const confirmedTx = txController.txStateManager.getTx(1)
@@ -600,13 +600,13 @@ describe('Transaction Controller', function () {
   describe('#getPendingTransactions', function () {
     it('should show only submitted and approved transactions as pending transaction', function () {
       txController.txStateManager._saveTxList([
-        { id: 1, status: 'unapproved', metamaskNetworkId: currentNetworkId, txParams: {} },
-        { id: 2, status: 'rejected', metamaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
-        { id: 3, status: 'approved', metamaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
-        { id: 4, status: 'signed', metamaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
-        { id: 5, status: 'submitted', metamaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
-        { id: 6, status: 'confirmed', metamaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
-        { id: 7, status: 'failed', metamaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
+        { id: 1, status: 'unapproved', tronmaskNetworkId: currentNetworkId, txParams: {} },
+        { id: 2, status: 'rejected', tronmaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
+        { id: 3, status: 'approved', tronmaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
+        { id: 4, status: 'signed', tronmaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
+        { id: 5, status: 'submitted', tronmaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
+        { id: 6, status: 'confirmed', tronmaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
+        { id: 7, status: 'failed', tronmaskNetworkId: currentNetworkId, txParams: {}, history: [{}] },
       ])
 
       assert.equal(txController.pendingTxTracker.getPendingTransactions().length, 2)

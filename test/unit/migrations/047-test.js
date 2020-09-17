@@ -16,16 +16,16 @@ describe('migration #47', function () {
     })
   })
 
-  it('should stringify transactions metamaskNetworkId values', async function () {
+  it('should stringify transactions tronmaskNetworkId values', async function () {
     const oldStorage = {
       meta: {},
       data: {
         TransactionController: {
           transactions: [
-            { foo: 'bar', metamaskNetworkId: 2 },
+            { foo: 'bar', tronmaskNetworkId: 2 },
             { foo: 'bar' },
-            { foo: 'bar', metamaskNetworkId: 0 },
-            { foo: 'bar', metamaskNetworkId: 42 },
+            { foo: 'bar', tronmaskNetworkId: 0 },
+            { foo: 'bar', tronmaskNetworkId: 42 },
           ],
         },
         foo: 'bar',
@@ -36,26 +36,26 @@ describe('migration #47', function () {
     assert.deepEqual(newStorage.data, {
       TransactionController: {
         transactions: [
-          { foo: 'bar', metamaskNetworkId: '2' },
+          { foo: 'bar', tronmaskNetworkId: '2' },
           { foo: 'bar' },
-          { foo: 'bar', metamaskNetworkId: '0' },
-          { foo: 'bar', metamaskNetworkId: '42' },
+          { foo: 'bar', tronmaskNetworkId: '0' },
+          { foo: 'bar', tronmaskNetworkId: '42' },
         ],
       },
       foo: 'bar',
     })
   })
 
-  it('should do nothing if transactions metamaskNetworkId values are already strings', async function () {
+  it('should do nothing if transactions tronmaskNetworkId values are already strings', async function () {
     const oldStorage = {
       meta: {},
       data: {
         TransactionController: {
           transactions: [
-            { foo: 'bar', metamaskNetworkId: '2' },
+            { foo: 'bar', tronmaskNetworkId: '2' },
             { foo: 'bar' },
-            { foo: 'bar', metamaskNetworkId: '0' },
-            { foo: 'bar', metamaskNetworkId: '42' },
+            { foo: 'bar', tronmaskNetworkId: '0' },
+            { foo: 'bar', tronmaskNetworkId: '42' },
           ],
         },
         foo: 'bar',

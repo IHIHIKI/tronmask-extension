@@ -3,7 +3,7 @@ const recordedWeb3Usage = {}
 
 /**
  * Returns a middleware that implements the following RPC methods:
- * - metamask_logInjectedWeb3Usage
+ * - tronmask_logInjectedWeb3Usage
  *
  * @param {Object} opts - The middleware options
  * @param {string} opts.origin - The origin for the middleware stack
@@ -14,7 +14,7 @@ export default function createMethodMiddleware ({ origin, sendMetrics }) {
   return function methodMiddleware (req, res, next, end) {
     switch (req.method) {
 
-      case 'metamask_logInjectedWeb3Usage': {
+      case 'tronmask_logInjectedWeb3Usage': {
 
         const { action, name } = req.params[0]
 

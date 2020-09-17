@@ -207,7 +207,7 @@ export function getRenderableBasicEstimateData (state, gasLimit) {
   const { showFiatInTestnets } = getPreferences(state)
   const isMainnet = getIsMainnet(state)
   const showFiat = (isMainnet || Boolean(showFiatInTestnets))
-  const { conversionRate } = state.metamask
+  const { conversionRate } = state.tronmask
   const currentCurrency = getCurrentCurrency(state)
   const {
     gas: {
@@ -261,8 +261,8 @@ export function getRenderableEstimateDataForSmallButtonsFromGSUN (state) {
   const { showFiatInTestnets } = getPreferences(state)
   const isMainnet = getIsMainnet(state)
   const showFiat = (isMainnet || Boolean(showFiatInTestnets))
-  const gasLimit = state.metamask.send.gasLimit || getCustomGasLimit(state) || '0x5208'
-  const { conversionRate } = state.metamask
+  const gasLimit = state.tronmask.send.gasLimit || getCustomGasLimit(state) || '0x5208'
+  const { conversionRate } = state.tronmask
   const currentCurrency = getCurrentCurrency(state)
   const {
     gas: {

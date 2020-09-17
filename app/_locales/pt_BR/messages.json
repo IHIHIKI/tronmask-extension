@@ -630,10 +630,10 @@
   "message": {
     "message": "Mensagem"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "Conectando você ao Ethereum e à Web Descentralizada."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "Versão do TronMask"
   },
   "mobileSyncText": {

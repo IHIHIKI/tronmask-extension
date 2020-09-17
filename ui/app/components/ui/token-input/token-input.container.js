@@ -8,7 +8,7 @@ import {
 import TokenInput from './token-input.component'
 
 const mapStateToProps = (state) => {
-  const { metamask: { currentCurrency } } = state
+  const { tronmask: { currentCurrency } } = state
   const { showFiatInTestnets } = getPreferences(state)
   const isMainnet = getIsMainnet(state)
 

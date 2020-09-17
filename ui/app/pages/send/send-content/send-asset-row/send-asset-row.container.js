@@ -5,8 +5,8 @@ import SendAssetRow from './send-asset-row.component'
 
 function mapStateToProps (state) {
   return {
-    tokens: state.metamask.tokens,
-    selectedAddress: state.metamask.selectedAddress,
+    tokens: state.tronmask.tokens,
+    selectedAddress: state.tronmask.selectedAddress,
     sendTokenAddress: getSendTokenAddress(state),
     accounts: getTronMaskAccounts(state),
   }

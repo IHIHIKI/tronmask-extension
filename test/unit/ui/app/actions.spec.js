@@ -9,12 +9,12 @@ import KeyringController from 'eth-keyring-controller'
 import { createTestProviderTools } from '../../../stub/provider'
 import enLocale from '../../../../app/_locales/en/messages.json'
 import * as actions from '../../../../ui/app/store/actions'
-import MetaMaskController from '../../../../app/scripts/metamask-controller'
+import TronMaskController from '../../../../app/scripts/tronmask-controller'
 import firstTimeState from '../../localhostState'
 
 const { provider } = createTestProviderTools({ scaffold: {} })
 const middleware = [thunk]
-const defaultState = { metamask: {} }
+const defaultState = { tronmask: {} }
 const mockStore = (state = defaultState) => configureStore(middleware)(state)
 
 describe('Actions', function () {
@@ -23,7 +23,7 @@ describe('Actions', function () {
 
   const currentNetworkId = '42'
 
-  let background, metamaskController
+  let background, tronmaskController
 
   const TEST_SEED = 'debris dizzy just program just float decrease vacant alarm reduce speak stadium'
   const password = 'a-fake-password'
@@ -31,7 +31,7 @@ describe('Actions', function () {
 
   beforeEach(async function () {
 
-    metamaskController = new MetaMaskController({
+    tronmaskController = new TronMaskController({
       platform: { getVersion: () => 'foo' },
       provider,
       keyringController: new KeyringController({}),
@@ -49,16 +49,16 @@ describe('Actions', function () {
       initState: cloneDeep(firstTimeState),
     })
 
-    metamaskController.threeBoxController = {
+    tronmaskController.threeBoxController = {
       new3Box: sinon.spy(),
       getThreeBoxSyncingState: sinon.spy(),
     }
 
-    await metamaskController.createNewVaultAndRestore(password, TEST_SEED)
+    await tronmaskController.createNewVaultAndRestore(password, TEST_SEED)
 
-    await metamaskController.importAccountWithStrategy('Private Key', [importPrivkey])
+    await tronmaskController.importAccountWithStrategy('Private Key', [importPrivkey])
 
-    background = metamaskController.getApi()
+    background = tronmaskController.getApi()
 
     actions._setBackgroundConnection(background)
 
@@ -369,7 +369,7 @@ describe('Actions', function () {
   describe('#addNewAccount', function () {
 
     it('Adds a new account', async function () {
-      const store = mockStore({ metamask: { identities: {} } })
+      const store = mockStore({ tronmask: { identities: {} } })
 
       const addNewAccountSpy = sinon.spy(background, 'addNewAccount')
 
@@ -560,7 +560,7 @@ describe('Actions', function () {
 
   describe('#signMsg', function () {
 
-    let signMessageSpy, metamaskMsgs, msgId, messages
+    let signMessageSpy, tronmaskMsgs, msgId, messages
 
     const msgParams = {
       from: '0x0dcd5d886577d5081b0c52e242ef29e70be3e7bc',
@@ -568,11 +568,11 @@ describe('Actions', function () {
     }
 
     beforeEach(function () {
-      metamaskController.newUnsignedMessage(msgParams, noop)
-      metamaskMsgs = metamaskController.messageManager.getUnapprovedMsgs()
-      messages = metamaskController.messageManager.messages
-      msgId = Object.keys(metamaskMsgs)[0]
-      messages[0].msgParams.metamaskId = parseInt(msgId, 10)
+      tronmaskController.newUnsignedMessage(msgParams, noop)
+      tronmaskMsgs = tronmaskController.messageManager.getUnapprovedMsgs()
+      messages = tronmaskController.messageManager.messages
+      msgId = Object.keys(tronmaskMsgs)[0]
+      messages[0].msgParams.tronmaskId = parseInt(msgId, 10)
     })
 
     afterEach(function () {
@@ -613,7 +613,7 @@ describe('Actions', function () {
 
   describe('#signPersonalMsg', function () {
 
-    let signPersonalMessageSpy, metamaskMsgs, msgId, personalMessages
+    let signPersonalMessageSpy, tronmaskMsgs, msgId, personalMessages
 
     const msgParams = {
       from: '0x0dcd5d886577d5081b0c52e242ef29e70be3e7bc',
@@ -621,11 +621,11 @@ describe('Actions', function () {
     }
 
     beforeEach(function () {
-      metamaskController.newUnsignedPersonalMessage(msgParams, noop)
-      metamaskMsgs = metamaskController.personalMessageManager.getUnapprovedMsgs()
-      personalMessages = metamaskController.personalMessageManager.messages
-      msgId = Object.keys(metamaskMsgs)[0]
-      personalMessages[0].msgParams.metamaskId = parseInt(msgId, 10)
+      tronmaskController.newUnsignedPersonalMessage(msgParams, noop)
+      tronmaskMsgs = tronmaskController.personalMessageManager.getUnapprovedMsgs()
+      personalMessages = tronmaskController.personalMessageManager.messages
+      msgId = Object.keys(tronmaskMsgs)[0]
+      personalMessages[0].msgParams.tronmaskId = parseInt(msgId, 10)
     })
 
     afterEach(function () {
@@ -709,11 +709,11 @@ describe('Actions', function () {
     }
 
     beforeEach(function () {
-      metamaskController.newUnsignedTypedMessage(msgParamsV3, null, 'V3')
-      messages = metamaskController.typedMessageManager.getUnapprovedMsgs()
-      typedMessages = metamaskController.typedMessageManager.messages
+      tronmaskController.newUnsignedTypedMessage(msgParamsV3, null, 'V3')
+      messages = tronmaskController.typedMessageManager.getUnapprovedMsgs()
+      typedMessages = tronmaskController.typedMessageManager.messages
       msgId = Object.keys(messages)[0]
-      typedMessages[0].msgParams.metamaskId = parseInt(msgId, 10)
+      typedMessages[0].msgParams.tronmaskId = parseInt(msgId, 10)
     })
 
     afterEach(function () {
@@ -826,7 +826,7 @@ describe('Actions', function () {
       const expectedActions = [
         { type: 'GAS_LOADING_STARTED' },
         { type: 'UPDATE_GAS_LIMIT', value: '0x5208' },
-        { type: 'metamask/gas/SET_CUSTOM_GAS_LIMIT', value: '0x5208' },
+        { type: 'tronmask/gas/SET_CUSTOM_GAS_LIMIT', value: '0x5208' },
         { type: 'UPDATE_SEND_ERRORS', value: { gasLoadingError: null } },
         { type: 'GAS_LOADING_FINISHED' },
       ]
@@ -860,10 +860,10 @@ describe('Actions', function () {
       'value': '0x0',
     }
 
-    const txData = { id: '1', status: 'unapproved', metamaskNetworkId: currentNetworkId, txParams }
+    const txData = { id: '1', status: 'unapproved', tronmaskNetworkId: currentNetworkId, txParams }
 
     beforeEach(async function () {
-      await metamaskController.txController.txStateManager.addTx(txData)
+      await tronmaskController.txController.txStateManager.addTx(txData)
     })
 
     afterEach(function () {
@@ -981,7 +981,7 @@ describe('Actions', function () {
     it('#showAccountDetail', async function () {
       setSelectedAddressSpy = sinon.stub(background, 'setSelectedAddress')
         .callsArgWith(1, null)
-      const store = mockStore({ activeTab: {}, metamask: { alertEnabledness: {}, selectedAddress: '0x123' } })
+      const store = mockStore({ activeTab: {}, tronmask: { alertEnabledness: {}, selectedAddress: '0x123' } })
 
       await store.dispatch(actions.showAccountDetail())
       assert(setSelectedAddressSpy.calledOnce)
@@ -990,7 +990,7 @@ describe('Actions', function () {
     it('displays warning if setSelectedAddress throws', async function () {
       setSelectedAddressSpy = sinon.stub(background, 'setSelectedAddress')
         .callsArgWith(1, new Error('error'))
-      const store = mockStore({ activeTab: {}, metamask: { alertEnabledness: {}, selectedAddress: '0x123' } })
+      const store = mockStore({ activeTab: {}, tronmask: { alertEnabledness: {}, selectedAddress: '0x123' } })
       const expectedActions = [
         { type: 'SHOW_LOADING_INDICATION', value: undefined },
         { type: 'HIDE_LOADING_INDICATION' },
@@ -1077,7 +1077,7 @@ describe('Actions', function () {
     let store
 
     beforeEach(function () {
-      store = mockStore({ metamask: { provider: {} } })
+      store = mockStore({ tronmask: { provider: {} } })
     })
 
     afterEach(function () {

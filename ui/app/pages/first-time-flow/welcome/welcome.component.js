@@ -209,7 +209,7 @@ export default class Welcome extends Component {
             { t('welcome') }
           </div>
           <div className="welcome-page__description">
-            <div>{ t('metamaskDescription') }</div>
+            <div>{ t('tronmaskDescription') }</div>
             <div>{ t('happyToSeeYou') }</div>
           </div>
           <Button

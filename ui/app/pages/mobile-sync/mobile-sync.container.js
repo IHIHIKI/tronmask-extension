@@ -15,7 +15,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
   const {
-    metamask: {
+    tronmask: {
       selectedAddress,
     },
   } = state

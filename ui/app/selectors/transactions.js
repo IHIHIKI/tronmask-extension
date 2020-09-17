@@ -16,25 +16,25 @@ import {
 } from '.'
 
 export const incomingTxListSelector = (state) => {
-  const { showIncomingTransactions } = state.metamask.featureFlags
+  const { showIncomingTransactions } = state.tronmask.featureFlags
   if (!showIncomingTransactions) {
     return []
   }
 
-  const { network } = state.metamask
+  const { network } = state.tronmask
   const selectedAddress = getSelectedAddress(state)
-  return Object.values(state.metamask.incomingTransactions)
-    .filter(({ metamaskNetworkId, txParams }) => (
-      txParams.to === selectedAddress && metamaskNetworkId === network
+  return Object.values(state.tronmask.incomingTransactions)
+    .filter(({ tronmaskNetworkId, txParams }) => (
+      txParams.to === selectedAddress && tronmaskNetworkId === network
     ))
 }
-export const unapprovedMsgsSelector = (state) => state.metamask.unapprovedMsgs
-export const currentNetworkTxListSelector = (state) => state.metamask.currentNetworkTxList
-export const unapprovedPersonalMsgsSelector = (state) => state.metamask.unapprovedPersonalMsgs
-export const unapprovedDecryptMsgsSelector = (state) => state.metamask.unapprovedDecryptMsgs
-export const unapprovedEncryptionPublicKeyMsgsSelector = (state) => state.metamask.unapprovedEncryptionPublicKeyMsgs
-export const unapprovedTypedMessagesSelector = (state) => state.metamask.unapprovedTypedMessages
-export const networkSelector = (state) => state.metamask.network
+export const unapprovedMsgsSelector = (state) => state.tronmask.unapprovedMsgs
+export const currentNetworkTxListSelector = (state) => state.tronmask.currentNetworkTxList
+export const unapprovedPersonalMsgsSelector = (state) => state.tronmask.unapprovedPersonalMsgs
+export const unapprovedDecryptMsgsSelector = (state) => state.tronmask.unapprovedDecryptMsgs
+export const unapprovedEncryptionPublicKeyMsgsSelector = (state) => state.tronmask.unapprovedEncryptionPublicKeyMsgs
+export const unapprovedTypedMessagesSelector = (state) => state.tronmask.unapprovedTypedMessages
+export const networkSelector = (state) => state.tronmask.network
 
 export const selectedAddressTxListSelector = createSelector(
   getSelectedAddress,

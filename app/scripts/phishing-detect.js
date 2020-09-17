@@ -20,14 +20,14 @@ function start () {
   const extensionPort = extension.runtime.connect({ name: getEnvironmentType() })
   const connectionStream = new PortStream(extensionPort)
   const mx = setupMultiplex(connectionStream)
-  setupControllerConnection(mx.createStream('controller'), (err, metaMaskController) => {
+  setupControllerConnection(mx.createStream('controller'), (err, tronMaskController) => {
     if (err) {
       return
     }
 
     const continueLink = document.getElementById('unsafe-continue')
     continueLink.addEventListener('click', () => {
-      metaMaskController.safelistPhishingDomain(suspect.hostname)
+      tronMaskController.safelistPhishingDomain(suspect.hostname)
       window.location.href = suspect.href
     })
   })
@@ -35,11 +35,11 @@ function start () {
 
 function setupControllerConnection (connectionStream, cb) {
   const eventEmitter = new EventEmitter()
-  const metaMaskControllerDnode = dnode({
+  const tronMaskControllerDnode = dnode({
     sendUpdate (state) {
       eventEmitter.emit('update', state)
     },
   })
-  connectionStream.pipe(metaMaskControllerDnode).pipe(connectionStream)
-  metaMaskControllerDnode.once('remote', (backgroundConnection) => cb(null, backgroundConnection))
+  connectionStream.pipe(tronMaskControllerDnode).pipe(connectionStream)
+  tronMaskControllerDnode.once('remote', (backgroundConnection) => cb(null, backgroundConnection))
 }

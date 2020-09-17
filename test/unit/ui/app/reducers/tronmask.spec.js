@@ -1,24 +1,24 @@
 import assert from 'assert'
-import reduceMetamask from '../../../../../ui/app/ducks/metamask/metamask'
+import reduceMetamask from '../../../../../ui/app/ducks/tronmask/tronmask'
 import * as actionConstants from '../../../../../ui/app/store/actionConstants'
 
-describe('MetaMask Reducers', function () {
+describe('TronMask Reducers', function () {
 
   it('init state', function () {
     const initState = reduceMetamask(undefined, {})
     assert(initState)
   })
 
-  it('locks MetaMask', function () {
-    const unlockMetaMaskState = {
+  it('locks TronMask', function () {
+    const unlockTronMaskState = {
       isUnlocked: true,
       selectedAddress: 'test address',
     }
-    const lockMetaMask = reduceMetamask(unlockMetaMaskState, {
+    const lockTronMask = reduceMetamask(unlockTronMaskState, {
       type: actionConstants.LOCK_METAMASK,
     })
 
-    assert.equal(lockMetaMask.isUnlocked, false)
+    assert.equal(lockTronMask.isUnlocked, false)
   })
 
   it('sets rpc target', function () {

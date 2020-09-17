@@ -633,10 +633,10 @@
   "message": {
     "message": "Poruka"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "Povezivanje na Ethereum i decentralizovani veb."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "TronMask verzija"
   },
   "mobileSyncText": {

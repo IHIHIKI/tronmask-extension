@@ -642,10 +642,10 @@
   "message": {
     "message": "پیام"
   },
-  "metamaskDescription": {
+  "tronmaskDescription": {
     "message": "در حال اتصال شما با ایترم و وب غیر متمرکز شده."
   },
-  "metamaskVersion": {
+  "tronmaskVersion": {
     "message": "نسخه TronMask"
   },
   "mobileSyncText": {

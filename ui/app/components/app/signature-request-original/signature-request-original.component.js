@@ -233,7 +233,7 @@ export default class SignatureRequestOriginal extends Component {
                   className="request-signature__help-link"
                   onClick={() => {
                     global.platform.openTab({
-                      url: 'https://metamask.zendesk.com/hc/en-us/articles/360015488751',
+                      url: 'https://tronmask.zendesk.com/hc/en-us/articles/360015488751',
                     })
                   }}
                 >

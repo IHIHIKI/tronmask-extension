@@ -1,13 +1,13 @@
 import { connect } from 'react-redux'
 import FirstTimeFlowSwitch from './first-time-flow-switch.component'
 
-const mapStateToProps = ({ metamask }) => {
+const mapStateToProps = ({ tronmask }) => {
   const {
     completedOnboarding,
     isInitialized,
     isUnlocked,
     participateInMetaMetrics: optInMetaMetrics,
-  } = metamask
+  } = tronmask
 
   return {
     completedOnboarding,
