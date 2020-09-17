@@ -312,7 +312,7 @@
     "message": "רמת דיוק עשרוני"
   },
   "defaultNetwork": {
-    "message": "רשת ברירת המחדל לעסקאות Ether היא Main Net."
+    "message": "רשת ברירת המחדל לעסקאות Tron היא Main Net."
   },
   "delete": {
     "message": "מחיקה"
@@ -323,17 +323,17 @@
   "deposit": {
     "message": "הפקדה"
   },
-  "depositEther": {
+  "depositTron": {
     "message": "הפקדת את'ר"
   },
   "details": {
     "message": "פרטים"
   },
-  "directDepositEther": {
+  "directDepositTron": {
     "message": "הפקד את'ר ישירות"
   },
-  "directDepositEtherExplainer": {
-    "message": "אם כבר יש ברשותך את'ר (Ether) , הדרך המהירה ביותר להכניס את'ר לארנק החדש שלך היא באמצעות הפקדה ישירה."
+  "directDepositTronExplainer": {
+    "message": "אם כבר יש ברשותך את'ר (Tron) , הדרך המהירה ביותר להכניס את'ר לארנק החדש שלך היא באמצעות הפקדה ישירה."
   },
   "done": {
     "message": "סיום"
@@ -475,12 +475,12 @@
   "generalSettingsDescription": {
     "message": "המרת מטבע, מטבע עיקרי, שפה, blockies identicon"
   },
-  "getEther": {
+  "getTron": {
     "message": "השג/י את'ר"
   },
-  "getEtherFromFaucet": {
+  "getTronFromFaucet": {
     "message": "השג/י את'ר מברז (faucet) עבור ה-$1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "בקש/י עזרה."
@@ -660,7 +660,7 @@
   "mustSelectOne": {
     "message": "חובה לבחור לפחות אסימון אחד."
   },
-  "needEtherInWallet": {
+  "needTronInWallet": {
     "message": "כדי לתקשר עם אפליקציות מבוזרות באמצעות TronMask, צריך להיות לך את'ר בארנק."
   },
   "needImportFile": {
@@ -979,7 +979,7 @@
   "sendTokens": {
     "message": "שלח טוקנים"
   },
-  "sentEther": {
+  "sentTron": {
     "message": "את'ר שנשלח"
   },
   "sentTokens": {

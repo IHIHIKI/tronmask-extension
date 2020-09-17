@@ -493,16 +493,16 @@
   "deposit": {
     "message": "Deposit"
   },
-  "depositEther": {
+  "depositTron": {
     "message": "Deposit Tron"
   },
   "details": {
     "message": "Details"
   },
-  "directDepositEther": {
+  "directDepositTron": {
     "message": "Directly Deposit Tron"
   },
-  "directDepositEtherExplainer": {
+  "directDepositTronExplainer": {
     "message": "If you already have some Tron, the quickest way to get Tron in your new wallet by direct deposit."
   },
   "done": {
@@ -714,10 +714,10 @@
   "generalSettingsDescription": {
     "message": "Currency conversion, primary currency, language, blockies identicon"
   },
-  "getEther": {
+  "getTron": {
     "message": "Get TRX"
   },
-  "getEtherFromFaucet": {
+  "getTronFromFaucet": {
     "message": "Get TRX from a faucet for the $1",
     "description": "Displays network name for TRX faucet"
   },
@@ -942,7 +942,7 @@
   "mustSelectOne": {
     "message": "Must select at least 1 token."
   },
-  "needEtherInWallet": {
+  "needTronInWallet": {
     "message": "To interact with decentralized applications using TronMask, you’ll need TRX in your wallet."
   },
   "needImportFile": {
@@ -1318,7 +1318,7 @@
   "sendTokens": {
     "message": "Send Tokens"
   },
-  "sentEther": {
+  "sentTron": {
     "message": "sent trx"
   },
   "sentTokens": {

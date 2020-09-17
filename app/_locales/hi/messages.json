@@ -312,7 +312,7 @@
     "message": "डेसीमल ऑफ़ प्रिसिशन"
   },
   "defaultNetwork": {
-    "message": "Ether ट्रांज़ैक्शन के लिए डिफ़ॉल्ट नेटवर्क Main Net है।"
+    "message": "Tron ट्रांज़ैक्शन के लिए डिफ़ॉल्ट नेटवर्क Main Net है।"
   },
   "delete": {
     "message": "हटाएं"
@@ -323,17 +323,17 @@
   "deposit": {
     "message": "जमा "
   },
-  "depositEther": {
-    "message": "Ether जमा करें"
+  "depositTron": {
+    "message": "Tron जमा करें"
   },
   "details": {
     "message": "विवरण"
   },
-  "directDepositEther": {
-    "message": "Ether को सीधे जमा करें"
+  "directDepositTron": {
+    "message": "Tron को सीधे जमा करें"
   },
-  "directDepositEtherExplainer": {
-    "message": "यदि आपके पास पहले से ही कुछ Ether हैं, तो अपने नए वॉलेट में Ether पाने का सबसे तेज़ तरीका सीधे जमा करना है।"
+  "directDepositTronExplainer": {
+    "message": "यदि आपके पास पहले से ही कुछ Tron हैं, तो अपने नए वॉलेट में Tron पाने का सबसे तेज़ तरीका सीधे जमा करना है।"
   },
   "done": {
     "message": "पूर्ण"
@@ -475,12 +475,12 @@
   "generalSettingsDescription": {
     "message": "मुद्रा रूपांतरण, प्राथमिक मुद्रा, भाषा, ब्लॉकीज़ पहचान"
   },
-  "getEther": {
-    "message": "Ether पाएँ"
+  "getTron": {
+    "message": "Tron पाएँ"
   },
-  "getEtherFromFaucet": {
-    "message": "$1 में फॉसेट से Ether प्राप्त करें",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "$1 में फॉसेट से Tron प्राप्त करें",
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "सहायता प्राप्त करें।"
@@ -660,7 +660,7 @@
   "mustSelectOne": {
     "message": "कम से कम 1 टोकन का चयन करना होगा।"
   },
-  "needEtherInWallet": {
+  "needTronInWallet": {
     "message": "मेटामास्क का उपयोग करके विकेंद्रीकृत अनुप्रयोगों के साथ संवाद करने के लिए, आपको अपने वॉयलेट में ईथर की आवश्यकता होगी।"
   },
   "needImportFile": {
@@ -941,7 +941,7 @@
     "message": "आपका सीक्रेट बैकअप फ़्रेज़ आपके खाते का बैकअप लेना और उसे पुनर्स्थापित करना आसान बनाता है।"
   },
   "secretBackupPhraseWarning": {
-    "message": "चेतावनी: अपने बैकअप फ़्रेज़ को कभी भी ज़ाहिर न करें। इस फ़्रेज़ से कोई भी आपका Ether हमेशा के लिए ले सकता है।"
+    "message": "चेतावनी: अपने बैकअप फ़्रेज़ को कभी भी ज़ाहिर न करें। इस फ़्रेज़ से कोई भी आपका Tron हमेशा के लिए ले सकता है।"
   },
   "secretPhrase": {
     "message": "अपने वॉल्ट को रिस्टोर करने के लिए अपने बारह शब्दों के सीक्रेट फ़्रेज़ को यहाँ दर्ज करें।"
@@ -982,8 +982,8 @@
   "sendTokens": {
     "message": "टोकन भेजें"
   },
-  "sentEther": {
-    "message": "भेजे गए ether"
+  "sentTron": {
+    "message": "भेजे गए trx"
   },
   "sentTokens": {
     "message": "भेजे गए टोकन"

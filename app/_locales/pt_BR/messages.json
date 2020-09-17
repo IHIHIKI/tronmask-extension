@@ -228,7 +228,7 @@
     "message": "Conectando-se à Rede de Testes Kovan"
   },
   "connectingToMainnet": {
-    "message": "Conectando à rede principal Etherum"
+    "message": "Conectando à rede principal Tronum"
   },
   "connectingToRopsten": {
     "message": "Conectando à Rede de Testes Ropsten"
@@ -306,7 +306,7 @@
     "message": "Decimais de precisão"
   },
   "defaultNetwork": {
-    "message": "A rede-padrão para transações de Ether é a Rede Principal."
+    "message": "A rede-padrão para transações de Tron é a Rede Principal."
   },
   "delete": {
     "message": "Excluir"
@@ -317,17 +317,17 @@
   "deposit": {
     "message": "Depósito"
   },
-  "depositEther": {
-    "message": "Depositar Ether"
+  "depositTron": {
+    "message": "Depositar Tron"
   },
   "details": {
     "message": "Detalhes"
   },
-  "directDepositEther": {
-    "message": "Depositar Ether Diretamente"
+  "directDepositTron": {
+    "message": "Depositar Tron Diretamente"
   },
-  "directDepositEtherExplainer": {
-    "message": "Se você já tem Ether, a forma mais rápida de colocá-lo em sua nova carteira é o depósito direto."
+  "directDepositTronExplainer": {
+    "message": "Se você já tem Tron, a forma mais rápida de colocá-lo em sua nova carteira é o depósito direto."
   },
   "done": {
     "message": "Concluído"
@@ -458,7 +458,7 @@
     "message": "Preço de Gas extremamente baixo"
   },
   "gasPriceInfoModalContent": {
-    "message": "O preço do gás especifica a quantidade de Ether que você está disposto a pagar por cada unidade de gás."
+    "message": "O preço do gás especifica a quantidade de Tron que você está disposto a pagar por cada unidade de gás."
   },
   "gasPriceNoDenom": {
     "message": "Preço do Gás"
@@ -469,12 +469,12 @@
   "generalSettingsDescription": {
     "message": "Conversão de moeda, moeda primária, idioma, identicon de blocos"
   },
-  "getEther": {
-    "message": "Obter Ether"
+  "getTron": {
+    "message": "Obter Tron"
   },
-  "getEtherFromFaucet": {
-    "message": "Obtenha Ether em uma torneira para $1",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Obtenha Tron em uma torneira para $1",
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "Obtenha Ajuda."
@@ -651,8 +651,8 @@
   "mustSelectOne": {
     "message": "É preciso selecionar pelo menos 1 token."
   },
-  "needEtherInWallet": {
-    "message": "Para interagir com aplicações descentralizadas usando o TronMask, você precisará de Ether na sua carteira."
+  "needTronInWallet": {
+    "message": "Para interagir com aplicações descentralizadas usando o TronMask, você precisará de Tron na sua carteira."
   },
   "needImportFile": {
     "message": "Você deve selecionar um arquivo para importar.",
@@ -932,7 +932,7 @@
     "message": "Sua frase de backup secreta facilita o backup e a restauração de sua conta."
   },
   "secretBackupPhraseWarning": {
-    "message": "ATENÇÃO: Nunca revele sua frase de backup a ninguém. Qualquer pessoa com essa frase pode obter seu Ether para sempre."
+    "message": "ATENÇÃO: Nunca revele sua frase de backup a ninguém. Qualquer pessoa com essa frase pode obter seu Tron para sempre."
   },
   "secretPhrase": {
     "message": "Digite sua frase secreta de doze palavras aqui para restaurar seu cofre."
@@ -973,8 +973,8 @@
   "sendTokens": {
     "message": "Enviar Tokens"
   },
-  "sentEther": {
-    "message": "ether enviado"
+  "sentTron": {
+    "message": "trx enviado"
   },
   "sentTokens": {
     "message": "tokens enviados"

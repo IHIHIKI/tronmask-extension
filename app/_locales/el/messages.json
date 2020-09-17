@@ -309,7 +309,7 @@
     "message": "Δεκαδικά Ψηφία Ακριβείας"
   },
   "defaultNetwork": {
-    "message": "Το προεπιλεγμένο δίκτυο για συναλλαγές Ether είναι το Main Net."
+    "message": "Το προεπιλεγμένο δίκτυο για συναλλαγές Tron είναι το Main Net."
   },
   "delete": {
     "message": "Διαγραφή"
@@ -320,17 +320,17 @@
   "deposit": {
     "message": "Κατάθεση"
   },
-  "depositEther": {
-    "message": "Κατάθεση Ether"
+  "depositTron": {
+    "message": "Κατάθεση Tron"
   },
   "details": {
     "message": "Λεπτομέρειες"
   },
-  "directDepositEther": {
-    "message": "Απευθείας Κατάθεση Ether"
+  "directDepositTron": {
+    "message": "Απευθείας Κατάθεση Tron"
   },
-  "directDepositEtherExplainer": {
-    "message": "Αν έχετε ήδη κάποια Ether, ο πιο γρήγορος τρόπος για να πάρετε τα Ether στο νέο σας πορτοφόλι με άμεση κατάθεση."
+  "directDepositTronExplainer": {
+    "message": "Αν έχετε ήδη κάποια Tron, ο πιο γρήγορος τρόπος για να πάρετε τα Tron στο νέο σας πορτοφόλι με άμεση κατάθεση."
   },
   "done": {
     "message": "Τέλος"
@@ -461,7 +461,7 @@
     "message": "Τιμή Καυσίμου Εξαιρετικά Χαμηλή"
   },
   "gasPriceInfoModalContent": {
-    "message": "Η τιμή καυσίμου καθορίζει το ποσό των Ether που είστε διατεθειμένοι να πληρώσετε για κάθε μονάδα καυσίμου."
+    "message": "Η τιμή καυσίμου καθορίζει το ποσό των Tron που είστε διατεθειμένοι να πληρώσετε για κάθε μονάδα καυσίμου."
   },
   "gasPriceNoDenom": {
     "message": "Τιμή Gas"
@@ -472,12 +472,12 @@
   "generalSettingsDescription": {
     "message": "Μετατροπή νομίσματος, πρωτογενές νόμισμα, γλώσσα, αναπαράσταση μπλοκ"
   },
-  "getEther": {
-    "message": "Λάβετε Ether"
+  "getTron": {
+    "message": "Λάβετε Tron"
   },
-  "getEtherFromFaucet": {
-    "message": "Πάρτε Ether από μια πηγή για το $1",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Πάρτε Tron από μια πηγή για το $1",
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "Πάρτε Βοήθεια."
@@ -660,8 +660,8 @@
   "mustSelectOne": {
     "message": "Πρέπει να επιλέξετε 1 τουλάχιστον διακριτικό."
   },
-  "needEtherInWallet": {
-    "message": "Για να αλληλεπιδράσετε με αποκεντρωμένες εφαρμογές χρησιμοποιώντας το TronMask, θα χρειαστείτε Ether στο πορτοφόλι σας."
+  "needTronInWallet": {
+    "message": "Για να αλληλεπιδράσετε με αποκεντρωμένες εφαρμογές χρησιμοποιώντας το TronMask, θα χρειαστείτε Tron στο πορτοφόλι σας."
   },
   "needImportFile": {
     "message": "Πρέπει να επιλέξετε ένα αρχείο για εισαγωγή.",
@@ -941,7 +941,7 @@
     "message": "Η μυστική φράση δημιουργίας αντιγράφων ασφαλείας σας διευκολύνει να δημιουργήσετε αντίγραφα ασφαλείας και να επαναφέρετε τον λογαριασμού σας."
   },
   "secretBackupPhraseWarning": {
-    "message": "ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Ποτέ μην αποκαλύπτετε την εφεδρική φράση. Όποιος έχει αυτή τη φράση μπορεί να πάρει τα Ether σας για πάντα."
+    "message": "ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Ποτέ μην αποκαλύπτετε την εφεδρική φράση. Όποιος έχει αυτή τη φράση μπορεί να πάρει τα Tron σας για πάντα."
   },
   "secretPhrase": {
     "message": "Εισαγάγετε εδώ τη μυστική φράση δώδεκα λέξεων για να επαναφέρετε το χρηματοκιβώτιό σας."
@@ -982,8 +982,8 @@
   "sendTokens": {
     "message": "Στείλτε Tokens"
   },
-  "sentEther": {
-    "message": "απεσταλμένα ether"
+  "sentTron": {
+    "message": "απεσταλμένα trx"
   },
   "sentTokens": {
     "message": "αποστολή token"

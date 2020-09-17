@@ -309,7 +309,7 @@
     "message": "Decimales de precisión"
   },
   "defaultNetwork": {
-    "message": "La red predeterminada para las transacciones de Ethers es Main Net."
+    "message": "La red predeterminada para las transacciones de Trons es Main Net."
   },
   "delete": {
     "message": "Borrar"
@@ -320,17 +320,17 @@
   "deposit": {
     "message": "Depósito"
   },
-  "depositEther": {
-    "message": "Depositar Ethers"
+  "depositTron": {
+    "message": "Depositar Trons"
   },
   "details": {
     "message": "Detalles"
   },
-  "directDepositEther": {
-    "message": "Depósito directo de Ethers"
+  "directDepositTron": {
+    "message": "Depósito directo de Trons"
   },
-  "directDepositEtherExplainer": {
-    "message": "Si ya tienes algunos Ethers, la forma más rápida de ingresarlos en tu nueva billetera es a través de un depósito directo."
+  "directDepositTronExplainer": {
+    "message": "Si ya tienes algunos Trons, la forma más rápida de ingresarlos en tu nueva billetera es a través de un depósito directo."
   },
   "done": {
     "message": "Listo"
@@ -461,7 +461,7 @@
     "message": "El precio del gas es extremadamente bajo"
   },
   "gasPriceInfoModalContent": {
-    "message": "El precio del gas especifica la cantidad de Ethers que estás dispuesto a pagar por cada unidad de gas."
+    "message": "El precio del gas especifica la cantidad de Trons que estás dispuesto a pagar por cada unidad de gas."
   },
   "gasPriceNoDenom": {
     "message": "Precio del gas"
@@ -469,12 +469,12 @@
   "generalSettingsDescription": {
     "message": "Conversión de moneda, moneda principal, idioma, blockies identicon"
   },
-  "getEther": {
-    "message": "Obtener Ethers"
+  "getTron": {
+    "message": "Obtener Trons"
   },
-  "getEtherFromFaucet": {
-    "message": "Obtener Ethers a partir de un grifo para $1",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Obtener Trons a partir de un grifo para $1",
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "Obtén ayuda."
@@ -648,8 +648,8 @@
   "mustSelectOne": {
     "message": "Se debe seleccionar al menos 1 token."
   },
-  "needEtherInWallet": {
-    "message": "Necesitarás tener Ethers en tu billetera para poder interactuar con aplicaciones descentralizadas a través de TronMask."
+  "needTronInWallet": {
+    "message": "Necesitarás tener Trons en tu billetera para poder interactuar con aplicaciones descentralizadas a través de TronMask."
   },
   "needImportFile": {
     "message": "Selecciona un archivo para importar.",
@@ -929,7 +929,7 @@
     "message": "Tu frase de copia de seguridad secreta facilita que se pueda respaldar y restaurar tu cuenta."
   },
   "secretBackupPhraseWarning": {
-    "message": "ADVERTENCIA: Nunca reveles tu frase de copia de seguridad. Cualquier persona que tenga acceso a esta frase puede llevarse tus Ethers permanentemente."
+    "message": "ADVERTENCIA: Nunca reveles tu frase de copia de seguridad. Cualquier persona que tenga acceso a esta frase puede llevarse tus Trons permanentemente."
   },
   "secretPhrase": {
     "message": "Ingresa tu frase secreta de doce palabras para restaurar tu almacén."
@@ -970,8 +970,8 @@
   "sendTokens": {
     "message": "Enviar tokens"
   },
-  "sentEther": {
-    "message": "Ethers enviados"
+  "sentTron": {
+    "message": "Trons enviados"
   },
   "sentTokens": {
     "message": "tokens enviados"

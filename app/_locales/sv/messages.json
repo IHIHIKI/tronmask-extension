@@ -306,7 +306,7 @@
     "message": "Decimalprecision"
   },
   "defaultNetwork": {
-    "message": "Standardnätverket för Ether-transaktioner är Main Net."
+    "message": "Standardnätverket för Tron-transaktioner är Main Net."
   },
   "delete": {
     "message": "Radera"
@@ -317,17 +317,17 @@
   "deposit": {
     "message": "Deposition"
   },
-  "depositEther": {
-    "message": "Sätt in Ether"
+  "depositTron": {
+    "message": "Sätt in Tron"
   },
   "details": {
     "message": "Info"
   },
-  "directDepositEther": {
-    "message": "Sätt in Ether direkt"
+  "directDepositTron": {
+    "message": "Sätt in Tron direkt"
   },
-  "directDepositEtherExplainer": {
-    "message": "Om du redan har Ether är det snabbaste sättet att få Ether i din nya plånbok att göra en direktinsättning."
+  "directDepositTronExplainer": {
+    "message": "Om du redan har Tron är det snabbaste sättet att få Tron i din nya plånbok att göra en direktinsättning."
   },
   "done": {
     "message": "Klart"
@@ -454,7 +454,7 @@
     "message": "Gaspris extremt lågt"
   },
   "gasPriceInfoModalContent": {
-    "message": "Gaspriset anger den summa Ether som du är villig att betala för varje gasenhet."
+    "message": "Gaspriset anger den summa Tron som du är villig att betala för varje gasenhet."
   },
   "gasPriceNoDenom": {
     "message": "Gaspris"
@@ -465,12 +465,12 @@
   "generalSettingsDescription": {
     "message": "Valutaomvandling, primär valuta, språk"
   },
-  "getEther": {
-    "message": "Skaffa Ether"
+  "getTron": {
+    "message": "Skaffa Tron"
   },
-  "getEtherFromFaucet": {
-    "message": "Få Ether från en kran för $1",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Få Tron från en kran för $1",
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "Få hjälp."
@@ -647,8 +647,8 @@
   "mustSelectOne": {
     "message": "Minst 1 token måste väljas."
   },
-  "needEtherInWallet": {
-    "message": "För att interagera med decentraliserade applikationer med TronMask behöver du Ether i din plånbok."
+  "needTronInWallet": {
+    "message": "För att interagera med decentraliserade applikationer med TronMask behöver du Tron i din plånbok."
   },
   "needImportFile": {
     "message": "Du måste välja en fil att importera.",
@@ -928,7 +928,7 @@
     "message": "Din hemliga backup-fras gör det enkelt att säkerhetskopiera och återställa ditt konto."
   },
   "secretBackupPhraseWarning": {
-    "message": "VARNING: avslöja aldrig din backup-fras. Någon som känner till denna fras kan ta dina Ether för alltid."
+    "message": "VARNING: avslöja aldrig din backup-fras. Någon som känner till denna fras kan ta dina Tron för alltid."
   },
   "secretPhrase": {
     "message": "Ange din tolv ord långa hemliga fras här för att återställa ditt valv."
@@ -969,8 +969,8 @@
   "sendTokens": {
     "message": "Skicka tokens"
   },
-  "sentEther": {
-    "message": "skickat ether"
+  "sentTron": {
+    "message": "skickat trx"
   },
   "sentTokens": {
     "message": "skickade tokens"

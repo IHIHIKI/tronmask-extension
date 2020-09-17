@@ -312,7 +312,7 @@
     "message": "Точност до десетични знаци"
   },
   "defaultNetwork": {
-    "message": "Мрежата по подразбиране за Ether транзакции е Main Net."
+    "message": "Мрежата по подразбиране за Tron транзакции е Main Net."
   },
   "delete": {
     "message": "Изтриване"
@@ -323,16 +323,16 @@
   "deposit": {
     "message": "Депозит"
   },
-  "depositEther": {
+  "depositTron": {
     "message": "Депозирайте етер"
   },
   "details": {
     "message": "Подробности"
   },
-  "directDepositEther": {
+  "directDepositTron": {
     "message": "Директно депозиране на етер"
   },
-  "directDepositEtherExplainer": {
+  "directDepositTronExplainer": {
     "message": "Ако вече имате някакъв етер, най-бързият начин да получите етер в новия си портфейл е чрез директен депозит."
   },
   "done": {
@@ -471,12 +471,12 @@
   "generalSettingsDescription": {
     "message": "Конвертиране на валута, първична валута, език, блокчейн идентичност"
   },
-  "getEther": {
+  "getTron": {
     "message": "Вземете етер"
   },
-  "getEtherFromFaucet": {
-    "message": "Вземете Ether от фосет за $1",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Вземете Tron от фосет за $1",
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "Получете помощ."
@@ -659,7 +659,7 @@
   "mustSelectOne": {
     "message": "Трябва да изберете поне 1 жетон."
   },
-  "needEtherInWallet": {
+  "needTronInWallet": {
     "message": "За да взаимодействате с децентрализираните приложения, използвайки TronMask, ще ви е необходим етер в портфейла ви."
   },
   "needImportFile": {
@@ -981,7 +981,7 @@
   "sendTokens": {
     "message": "Изпращане на жетони"
   },
-  "sentEther": {
+  "sentTron": {
     "message": "изпратен етер"
   },
   "sentTokens": {

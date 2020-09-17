@@ -312,7 +312,7 @@
     "message": "Знаків після коми"
   },
   "defaultNetwork": {
-    "message": "Мережа для транзакцій з Ether за замовчуванням - Main Net."
+    "message": "Мережа для транзакцій з Tron за замовчуванням - Main Net."
   },
   "delete": {
     "message": "Видалити"
@@ -323,16 +323,16 @@
   "deposit": {
     "message": "Депозит"
   },
-  "depositEther": {
-    "message": "Депонувати Ether"
+  "depositTron": {
+    "message": "Депонувати Tron"
   },
   "details": {
     "message": "Деталі"
   },
-  "directDepositEther": {
+  "directDepositTron": {
     "message": "Внести безпосередньо Ефір"
   },
-  "directDepositEtherExplainer": {
+  "directDepositTronExplainer": {
     "message": "Якщо ви вже маєте ефір, пряме переведення – найшвидший спосіб передати ефір у свій гаманець."
   },
   "done": {
@@ -464,7 +464,7 @@
     "message": "Ціна газу дуже низька"
   },
   "gasPriceInfoModalContent": {
-    "message": "Ціна на пальне визначає кількість Ether, яку ви готові заплатити за кожну одиницю пального."
+    "message": "Ціна на пальне визначає кількість Tron, яку ви готові заплатити за кожну одиницю пального."
   },
   "gasPriceNoDenom": {
     "message": "Ціна Газу"
@@ -475,12 +475,12 @@
   "generalSettingsDescription": {
     "message": "Конверсія валют, первісна валюта, мова, ідентикон блокіз"
   },
-  "getEther": {
+  "getTron": {
     "message": "Отримати Ефір"
   },
-  "getEtherFromFaucet": {
-    "message": "Отримайте Ether з крану за $1",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Отримайте Tron з крану за $1",
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "Отримати допомогу."
@@ -663,8 +663,8 @@
   "mustSelectOne": {
     "message": "Слід вибрати хоча б 1 токен."
   },
-  "needEtherInWallet": {
-    "message": "Щоб взаємодіяти з децентралізованими застосунками використовуючи TronMask, вам буде потрібен Ether у вашому гаманці."
+  "needTronInWallet": {
+    "message": "Щоб взаємодіяти з децентралізованими застосунками використовуючи TronMask, вам буде потрібен Tron у вашому гаманці."
   },
   "needImportFile": {
     "message": "Потрібно вибрати файл для імпорту.",
@@ -944,7 +944,7 @@
     "message": "Ваша секретна резервна фраза дозволяє легко створити резервну копію та відновити обліковий запис."
   },
   "secretBackupPhraseWarning": {
-    "message": "ЗАСТЕРЕЖЕННЯ: Ніколи не розголошуйте вашу резервну фразу. Будь-хто з цією фразою зможе забрати ваш Ether назавжди."
+    "message": "ЗАСТЕРЕЖЕННЯ: Ніколи не розголошуйте вашу резервну фразу. Будь-хто з цією фразою зможе забрати ваш Tron назавжди."
   },
   "secretPhrase": {
     "message": "Введіть секретну фразу з дванадцяти слів, щоб відновити своє сховище."
@@ -985,7 +985,7 @@
   "sendTokens": {
     "message": "Надіслати токени"
   },
-  "sentEther": {
+  "sentTron": {
     "message": "надісланий ефір"
   },
   "sentTokens": {

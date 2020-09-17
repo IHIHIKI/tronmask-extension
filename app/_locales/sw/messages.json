@@ -306,7 +306,7 @@
     "message": "Desimali za Usahihi"
   },
   "defaultNetwork": {
-    "message": "Mtandao chaguomsingi wa miamala ya Ether ni Main Net."
+    "message": "Mtandao chaguomsingi wa miamala ya Tron ni Main Net."
   },
   "delete": {
     "message": "Futa"
@@ -317,17 +317,17 @@
   "deposit": {
     "message": "Fedha zilizopo kwenye akaunti"
   },
-  "depositEther": {
-    "message": "Weka Ether"
+  "depositTron": {
+    "message": "Weka Tron"
   },
   "details": {
     "message": "Maelezo"
   },
-  "directDepositEther": {
-    "message": "Weka Ether Moja kwa Moja"
+  "directDepositTron": {
+    "message": "Weka Tron Moja kwa Moja"
   },
-  "directDepositEtherExplainer": {
-    "message": "Ikiwa tayari una sarafu kadhaa za Ether, njia rahisi ya kupata Ether kwenye waleti yako mpya kupitia kuweka moja kwa moja."
+  "directDepositTronExplainer": {
+    "message": "Ikiwa tayari una sarafu kadhaa za Tron, njia rahisi ya kupata Tron kwenye waleti yako mpya kupitia kuweka moja kwa moja."
   },
   "done": {
     "message": "Imekamilika"
@@ -454,7 +454,7 @@
     "message": "Bei ya Gesi Ipo Chini Kupita Kiasi"
   },
   "gasPriceInfoModalContent": {
-    "message": "Bei ya gesi hubainisha kiwango cha Ether ambacho upo radhi kulipia kila kizio cha gesi."
+    "message": "Bei ya gesi hubainisha kiwango cha Tron ambacho upo radhi kulipia kila kizio cha gesi."
   },
   "gasPriceNoDenom": {
     "message": "Bei ya Gesi"
@@ -465,12 +465,12 @@
   "generalSettingsDescription": {
     "message": "Ubadilishaji wa fedha, sarafu ya msingi, lugha, blockies identicon"
   },
-  "getEther": {
-    "message": "Pata Ether"
+  "getTron": {
+    "message": "Pata Tron"
   },
-  "getEtherFromFaucet": {
-    "message": "Pata Ether kutoka kwenye mfereji $1",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Pata Tron kutoka kwenye mfereji $1",
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "Pata Msaada"
@@ -641,8 +641,8 @@
   "mustSelectOne": {
     "message": "Lazima uchague angalau kianzio 1."
   },
-  "needEtherInWallet": {
-    "message": "Ili kuingiliana na programu zilizosambazwa kwa kutumia TronMask, utahitaji kuwa na Ether kwenye waleti yako."
+  "needTronInWallet": {
+    "message": "Ili kuingiliana na programu zilizosambazwa kwa kutumia TronMask, utahitaji kuwa na Tron kwenye waleti yako."
   },
   "needImportFile": {
     "message": "Unapaswa kuchagua faili la kuhamisha.",
@@ -922,7 +922,7 @@
     "message": "Kirai chako cha siri cha hifadhi mbadala kinafanya iwe rahisi kuhifadhi kwa njia mbadala na kurejesha akaunti yako."
   },
   "secretBackupPhraseWarning": {
-    "message": "ONYO: Kamwe usiweke wazi kirai chako cha hifadhi mbadala. Mtu yeyote mwenye kirai hiki anaweza kuchukua Ether yako daima."
+    "message": "ONYO: Kamwe usiweke wazi kirai chako cha hifadhi mbadala. Mtu yeyote mwenye kirai hiki anaweza kuchukua Tron yako daima."
   },
   "secretPhrase": {
     "message": "Ingiza hapa kirai chako cha siri cha maneno kumi na mawili ili urejeshe vault yako."
@@ -963,8 +963,8 @@
   "sendTokens": {
     "message": "Tuma Vianzio"
   },
-  "sentEther": {
-    "message": "ether iliyotumwa"
+  "sentTron": {
+    "message": "trx iliyotumwa"
   },
   "sentTokens": {
     "message": "vianzio vilivyotumwa"

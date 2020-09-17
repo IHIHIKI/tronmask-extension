@@ -312,7 +312,7 @@
     "message": "Decimāldaļu precizitāte"
   },
   "defaultNetwork": {
-    "message": "Galvenais Ether darījumu tīkls ir Main Net."
+    "message": "Galvenais Tron darījumu tīkls ir Main Net."
   },
   "delete": {
     "message": "Dzēst"
@@ -323,17 +323,17 @@
   "deposit": {
     "message": "Iemaksa"
   },
-  "depositEther": {
-    "message": "Noguldīt Ether"
+  "depositTron": {
+    "message": "Noguldīt Tron"
   },
   "details": {
     "message": "Informācija"
   },
-  "directDepositEther": {
-    "message": "Tiešā Ether iemaksa"
+  "directDepositTron": {
+    "message": "Tiešā Tron iemaksa"
   },
-  "directDepositEtherExplainer": {
-    "message": "Ja jums jau ir Ether, tad visātrāk Ether savā makā varat saņemt ar tiešo iemaksu."
+  "directDepositTronExplainer": {
+    "message": "Ja jums jau ir Tron, tad visātrāk Tron savā makā varat saņemt ar tiešo iemaksu."
   },
   "done": {
     "message": "Pabeigts"
@@ -460,7 +460,7 @@
     "message": "Ārkārtīgi zema Gas cena"
   },
   "gasPriceInfoModalContent": {
-    "message": "Gas cena norāda Ether summu, ko vēlaties maksāt par katru Gas vienību."
+    "message": "Gas cena norāda Tron summu, ko vēlaties maksāt par katru Gas vienību."
   },
   "gasPriceNoDenom": {
     "message": "Gas cena"
@@ -471,12 +471,12 @@
   "generalSettingsDescription": {
     "message": "Valūtas konvertēšana, galvenā valūta, valoda, bloku identifikators"
   },
-  "getEther": {
-    "message": "Saņemt Ether"
+  "getTron": {
+    "message": "Saņemt Tron"
   },
-  "getEtherFromFaucet": {
-    "message": "Vai vēlaties $1 iegūt Ether no krāna?",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Vai vēlaties $1 iegūt Tron no krāna?",
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "Saņemt palīdzību."
@@ -659,8 +659,8 @@
   "mustSelectOne": {
     "message": "Jāatlasa vismaz 1 marķieris."
   },
-  "needEtherInWallet": {
-    "message": "Lai izmantotu decentralizētas lietotnes ar TronMask, jūsu makā jābūt Ether."
+  "needTronInWallet": {
+    "message": "Lai izmantotu decentralizētas lietotnes ar TronMask, jūsu makā jābūt Tron."
   },
   "needImportFile": {
     "message": "Jums jāatlasa fails, ko importēt",
@@ -940,7 +940,7 @@
     "message": "Ar slepeno atgūšanas frāzi ir vieglāk dublēt un atjaunot kontu."
   },
   "secretBackupPhraseWarning": {
-    "message": "BRĪDINĀJUMS! Nekādā gadījumā neizpaudiet savu rezerves frāzi. Ikviens, kam pieejama šī frāze, var uz visiem laikiem pārņemt jūsu Ether."
+    "message": "BRĪDINĀJUMS! Nekādā gadījumā neizpaudiet savu rezerves frāzi. Ikviens, kam pieejama šī frāze, var uz visiem laikiem pārņemt jūsu Tron."
   },
   "secretPhrase": {
     "message": "Ievadiet šeit slepeno divpadsmit vārdu frāzi, lai atjaunotu savu seifu."
@@ -981,8 +981,8 @@
   "sendTokens": {
     "message": "Nosūtīt marķierus"
   },
-  "sentEther": {
-    "message": "nosūtītie ether"
+  "sentTron": {
+    "message": "nosūtītie trx"
   },
   "sentTokens": {
     "message": "nosūtītie marķieri"

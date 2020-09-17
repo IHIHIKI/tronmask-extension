@@ -312,7 +312,7 @@
     "message": "Skaičiai po kablelio"
   },
   "defaultNetwork": {
-    "message": "Numatytasis „Ether“ operacijų tinklas yra pagrindinis tinklas."
+    "message": "Numatytasis „Tron“ operacijų tinklas yra pagrindinis tinklas."
   },
   "delete": {
     "message": "Ištrinti"
@@ -323,16 +323,16 @@
   "deposit": {
     "message": "Indėlis"
   },
-  "depositEther": {
+  "depositTron": {
     "message": "Įnešti eterių"
   },
   "details": {
     "message": "Išsami informacija"
   },
-  "directDepositEther": {
+  "directDepositTron": {
     "message": "Tiesiogiai įnešti eteriai"
   },
-  "directDepositEtherExplainer": {
+  "directDepositTronExplainer": {
     "message": "Jeigu jau turite šiek tiek eterių, sparčiausias būdas gauti eterių į naują piniginę yra tiesioginis įnašas."
   },
   "done": {
@@ -475,12 +475,12 @@
   "generalSettingsDescription": {
     "message": "Valiutos keitimas, pagrindinė valiuta, kalba, „blockies identicon“"
   },
-  "getEther": {
+  "getTron": {
     "message": "Gauti eterių"
   },
-  "getEtherFromFaucet": {
+  "getTronFromFaucet": {
     "message": "Gaukite eterių iš čiaupo $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "Gaukite pagalbos."
@@ -663,7 +663,7 @@
   "mustSelectOne": {
     "message": "Turite pasirinkti bent 1 žetoną."
   },
-  "needEtherInWallet": {
+  "needTronInWallet": {
     "message": "Norėdami dirbti su decentralizuotomis programomis „TronMask“, savo piniginėje turite turėti eterių."
   },
   "needImportFile": {
@@ -985,7 +985,7 @@
   "sendTokens": {
     "message": "Siųsti žetonus"
   },
-  "sentEther": {
+  "sentTron": {
     "message": "siųsti eterių"
   },
   "sentTokens": {

@@ -312,7 +312,7 @@
     "message": "Decimalpræcision"
   },
   "defaultNetwork": {
-    "message": "Standardnetværket for Ether-transaktioner er Main Net."
+    "message": "Standardnetværket for Tron-transaktioner er Main Net."
   },
   "delete": {
     "message": "Slet"
@@ -323,17 +323,17 @@
   "deposit": {
     "message": "Indbetal"
   },
-  "depositEther": {
-    "message": "Indbetal Ether"
+  "depositTron": {
+    "message": "Indbetal Tron"
   },
   "details": {
     "message": "Detaljer"
   },
-  "directDepositEther": {
-    "message": "Indskyd Ether direkte"
+  "directDepositTron": {
+    "message": "Indskyd Tron direkte"
   },
-  "directDepositEtherExplainer": {
-    "message": "Hvis du allerede har Ether, er den hurtigste måde at få Ether i din nye tegnebog ved direkte indbetaling."
+  "directDepositTronExplainer": {
+    "message": "Hvis du allerede har Tron, er den hurtigste måde at få Tron i din nye tegnebog ved direkte indbetaling."
   },
   "done": {
     "message": "Færdig"
@@ -460,7 +460,7 @@
     "message": "Ekstremt Lav Brændstofspris"
   },
   "gasPriceInfoModalContent": {
-    "message": "Brændstofpris specificerer den mængde Ether, du er villig til at betale for hver brændstofenhed."
+    "message": "Brændstofpris specificerer den mængde Tron, du er villig til at betale for hver brændstofenhed."
   },
   "gasPriceNoDenom": {
     "message": "Brændstofpris"
@@ -471,12 +471,12 @@
   "generalSettingsDescription": {
     "message": "Valutakonvertering, primær valuta, sprog, blockies-identicon"
   },
-  "getEther": {
-    "message": "Hent Ether"
+  "getTron": {
+    "message": "Hent Tron"
   },
-  "getEtherFromFaucet": {
-    "message": "Hent Ether fra en hane til $1",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Hent Tron fra en hane til $1",
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "Få hjælp"
@@ -647,8 +647,8 @@
   "mustSelectOne": {
     "message": "Skal vælge mindst 1 token."
   },
-  "needEtherInWallet": {
-    "message": "Du skal have Ether i din tegnebog for at interagere med decentraliserede applikationer, der bruger TronMask."
+  "needTronInWallet": {
+    "message": "Du skal have Tron i din tegnebog for at interagere med decentraliserede applikationer, der bruger TronMask."
   },
   "needImportFile": {
     "message": "Du skal vælge en fil, der skal importeres.",
@@ -925,7 +925,7 @@
     "message": "Din hemmelige backup-sætning gør det nemt at lave backup og gendanne din konto."
   },
   "secretBackupPhraseWarning": {
-    "message": "ADVARSEL: Afslør aldrig din backup-frase. Enhver med denne frase kan tage din Ether for altid."
+    "message": "ADVARSEL: Afslør aldrig din backup-frase. Enhver med denne frase kan tage din Tron for altid."
   },
   "secretPhrase": {
     "message": "Indtast din hemmelige tolv ord lange sætning for at gendanne din vault."
@@ -963,8 +963,8 @@
   "sendTokens": {
     "message": "Send tokens"
   },
-  "sentEther": {
-    "message": "sendte ether"
+  "sentTron": {
+    "message": "sendte trx"
   },
   "sentTokens": {
     "message": "afsendte tokens"

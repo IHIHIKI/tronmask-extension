@@ -80,22 +80,22 @@
     "message": "Tùy chỉnh RPC"
   },
   "defaultNetwork": {
-    "message": "Mạng lưới mặc định dùng cho các giao dịch Ether là Main Net (tiền ETH thật)."
+    "message": "Mạng lưới mặc định dùng cho các giao dịch Tron là Main Net (tiền ETH thật)."
   },
   "deposit": {
     "message": "Ký gửi/nạp tiền"
   },
-  "depositEther": {
-    "message": "Ký gửi Ether"
+  "depositTron": {
+    "message": "Ký gửi Tron"
   },
   "details": {
     "message": "Chi tiết"
   },
-  "directDepositEther": {
-    "message": "Ký gửi Ether trực tiếp"
+  "directDepositTron": {
+    "message": "Ký gửi Tron trực tiếp"
   },
-  "directDepositEtherExplainer": {
-    "message": "Nếu bạn đã có sẵn vài Ether, cách nhanh nhất để thêm Ether vào ví tiền mới của bạn là bằng ký gửi trực tiếp."
+  "directDepositTronExplainer": {
+    "message": "Nếu bạn đã có sẵn vài Tron, cách nhanh nhất để thêm Tron vào ví tiền mới của bạn là bằng ký gửi trực tiếp."
   },
   "done": {
     "message": "Hoàn tất"
@@ -135,12 +135,12 @@
   "gasPrice": {
     "message": "Giá ga (GSUN)"
   },
-  "getEther": {
-    "message": "Lấy Ether"
+  "getTron": {
+    "message": "Lấy Tron"
   },
-  "getEtherFromFaucet": {
-    "message": "Lấy Ether từ vòi với giá $1",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Lấy Tron từ vòi với giá $1",
+    "description": "Displays network name for Tron faucet"
   },
   "here": {
     "message": "tại đây",
@@ -197,8 +197,8 @@
   "myAccounts": {
     "message": "Tài khoản của tôi"
   },
-  "needEtherInWallet": {
-    "message": "Để tương tác với các ứng dụng phân tán bằng TronMask, bạn sẽ phải cần có Ether trong ví của bạn."
+  "needTronInWallet": {
+    "message": "Để tương tác với các ứng dụng phân tán bằng TronMask, bạn sẽ phải cần có Tron trong ví của bạn."
   },
   "needImportFile": {
     "message": "Bạn phải chọn một tập tin để nhập.",

@@ -312,7 +312,7 @@
     "message": "اعشاریه های دقت"
   },
   "defaultNetwork": {
-    "message": "شبکه خودکار برای معاملات Ether عبارت است از Main Net."
+    "message": "شبکه خودکار برای معاملات Tron عبارت است از Main Net."
   },
   "delete": {
     "message": "حذف"
@@ -323,16 +323,16 @@
   "deposit": {
     "message": "سپرده"
   },
-  "depositEther": {
+  "depositTron": {
     "message": "پرداخت ایتر"
   },
   "details": {
     "message": "جزئیات"
   },
-  "directDepositEther": {
+  "directDepositTron": {
     "message": "پرداخت مستقیم ایتر"
   },
-  "directDepositEtherExplainer": {
+  "directDepositTronExplainer": {
     "message": "در صورتیکه شما کدام ایتر داشته باشید، سریعترین روش برای گرفتن ایتر در کیف جدید تان توسط پرداخت مستقیم."
   },
   "done": {
@@ -475,12 +475,12 @@
   "generalSettingsDescription": {
     "message": "تبادل واحد پول، واحد پول اصلی، زبان، شناسا های بلوکی"
   },
-  "getEther": {
+  "getTron": {
     "message": "اتر را بگیرید"
   },
-  "getEtherFromFaucet": {
+  "getTronFromFaucet": {
     "message": "اخذ ایتر از یک فاست برای 1$1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "دریافت کمک"
@@ -663,7 +663,7 @@
   "mustSelectOne": {
     "message": "باید حداقل 1 رمزیاب را انتخاب کنید."
   },
-  "needEtherInWallet": {
+  "needTronInWallet": {
     "message": "برای تعامل با اپلیکیشن های غیر متمرکز شده با استفاده از TronMask، شما نیاز به ایتر در کیف تان خواهید داشت."
   },
   "needImportFile": {
@@ -985,7 +985,7 @@
   "sendTokens": {
     "message": "رمزیاب ها را ارسال کنید"
   },
-  "sentEther": {
+  "sentTron": {
     "message": "ایتر ارسال شد"
   },
   "sentTokens": {

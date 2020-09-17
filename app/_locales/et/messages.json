@@ -234,7 +234,7 @@
     "message": "Ühendamine Kovani testvõrguga"
   },
   "connectingToMainnet": {
-    "message": "Ühenduse loomine peamise Etherumi võrguga"
+    "message": "Ühenduse loomine peamise Tronumi võrguga"
   },
   "connectingToRopsten": {
     "message": "Ühendamine Ropsteni testvõrguga"
@@ -312,7 +312,7 @@
     "message": "Täpsuse kümnendkohad"
   },
   "defaultNetwork": {
-    "message": "Etheri tehingute vaikevõrk on peavõrk."
+    "message": "Troni tehingute vaikevõrk on peavõrk."
   },
   "delete": {
     "message": "Kustuta"
@@ -323,16 +323,16 @@
   "deposit": {
     "message": "Sissemakse"
   },
-  "depositEther": {
+  "depositTron": {
     "message": "Eetri sissemakse"
   },
   "details": {
     "message": "Üksikasjad"
   },
-  "directDepositEther": {
+  "directDepositTron": {
     "message": "Eetri otsene sissemakse"
   },
-  "directDepositEtherExplainer": {
+  "directDepositTronExplainer": {
     "message": "Kui teil on juba veidi eetrit, on kiirem viis eetri rahakotti saamiseks otsene sissemakse."
   },
   "done": {
@@ -471,12 +471,12 @@
   "generalSettingsDescription": {
     "message": "Valuutavahetus, põhivaluuta, keel, plokkidest identicon"
   },
-  "getEther": {
+  "getTron": {
     "message": "Hankige eetrit"
   },
-  "getEtherFromFaucet": {
+  "getTronFromFaucet": {
     "message": "Hankige kraanist eetrit $1eest",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "Küsige abi."
@@ -653,7 +653,7 @@
   "mustSelectOne": {
     "message": "Peate valima vähemalt 1 loa."
   },
-  "needEtherInWallet": {
+  "needTronInWallet": {
     "message": "Selleks, et suhelda TronMaski abil detsentraliseeritud rakendustega, peab teil rahakotis eetrit olema."
   },
   "needImportFile": {
@@ -975,7 +975,7 @@
   "sendTokens": {
     "message": "Saada lube"
   },
-  "sentEther": {
+  "sentTron": {
     "message": "saadetud eeter"
   },
   "sentTokens": {

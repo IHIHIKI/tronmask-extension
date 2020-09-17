@@ -309,7 +309,7 @@
     "message": "Decimals de precisió"
   },
   "defaultNetwork": {
-    "message": "La xarxa per defecte per a les transaccions Ether és Main Net."
+    "message": "La xarxa per defecte per a les transaccions Tron és Main Net."
   },
   "delete": {
     "message": "Suprimeix"
@@ -320,17 +320,17 @@
   "deposit": {
     "message": "Depòsit"
   },
-  "depositEther": {
-    "message": "Diposita Ether"
+  "depositTron": {
+    "message": "Diposita Tron"
   },
   "details": {
     "message": "Detalls"
   },
-  "directDepositEther": {
-    "message": "Diposita Ether directament"
+  "directDepositTron": {
+    "message": "Diposita Tron directament"
   },
-  "directDepositEtherExplainer": {
-    "message": "Si ja tens una mica d'Ether, la manera més ràpida de posar Ether al teu nou moneder és per dipòsit directe."
+  "directDepositTronExplainer": {
+    "message": "Si ja tens una mica d'Tron, la manera més ràpida de posar Tron al teu nou moneder és per dipòsit directe."
   },
   "done": {
     "message": "Fet"
@@ -457,7 +457,7 @@
     "message": "Preu del Gas Extremadament Baix"
   },
   "gasPriceInfoModalContent": {
-    "message": "El preu del gas especifica la quantitat d'Ether que estàs disposat a pagar per cada unitat de gas."
+    "message": "El preu del gas especifica la quantitat d'Tron que estàs disposat a pagar per cada unitat de gas."
   },
   "gasPriceNoDenom": {
     "message": "Preu del Gas"
@@ -465,12 +465,12 @@
   "generalSettingsDescription": {
     "message": "Conversió de divises, divisa principal, idioma, icones d'identificació única"
   },
-  "getEther": {
-    "message": "Aconsegueix Ether"
+  "getTron": {
+    "message": "Aconsegueix Tron"
   },
-  "getEtherFromFaucet": {
-    "message": "Aconsegueix Ether d'una aixeta per $1",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Aconsegueix Tron d'una aixeta per $1",
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "Aconsegueix ajuda."
@@ -647,8 +647,8 @@
   "mustSelectOne": {
     "message": "Has de seleccionar "
   },
-  "needEtherInWallet": {
-    "message": "Per a interactuar amb aplicacions descentralitzades fent servir TronMask, necessitaràs Ether al teu moneder."
+  "needTronInWallet": {
+    "message": "Per a interactuar amb aplicacions descentralitzades fent servir TronMask, necessitaràs Tron al teu moneder."
   },
   "needImportFile": {
     "message": "Has de seleccionar un arxiu per a importar.",
@@ -922,7 +922,7 @@
     "message": "La teva frase de recuperació secreta facilita la còpia de seguretat i la recuperació del teu compte."
   },
   "secretBackupPhraseWarning": {
-    "message": "ATENCIÓ: No divulguis mai la teva frase de recuperació. Qualsevol amb aquesta frase pot utilitzar el teu Ether per sempre."
+    "message": "ATENCIÓ: No divulguis mai la teva frase de recuperació. Qualsevol amb aquesta frase pot utilitzar el teu Tron per sempre."
   },
   "secretPhrase": {
     "message": "Introdueix aquí la teva frase secreta de dotze paraules per a recuperar la teva caixa forta."
@@ -963,8 +963,8 @@
   "sendTokens": {
     "message": "Enviar Fitxes"
   },
-  "sentEther": {
-    "message": "envia ether"
+  "sentTron": {
+    "message": "envia trx"
   },
   "sentTokens": {
     "message": "fitxes enviades"

@@ -170,22 +170,22 @@
     "message": "Presizyon desimal la"
   },
   "defaultNetwork": {
-    "message": "Dfo rezo a pou tranzaksyon Ether se Mainnet."
+    "message": "Dfo rezo a pou tranzaksyon Tron se Mainnet."
   },
   "deposit": {
     "message": "Depo"
   },
-  "depositEther": {
-    "message": "Depo Ether"
+  "depositTron": {
+    "message": "Depo Tron"
   },
   "details": {
     "message": "Detay yo"
   },
-  "directDepositEther": {
-    "message": "Dirèkteman Depo Ether"
+  "directDepositTron": {
+    "message": "Dirèkteman Depo Tron"
   },
-  "directDepositEtherExplainer": {
-    "message": "Si ou deja gen kèk Ether, fason ki pi rapid yo ka resevwa Ether nan nouvo Wallet ou pa depo dirèk."
+  "directDepositTronExplainer": {
+    "message": "Si ou deja gen kèk Tron, fason ki pi rapid yo ka resevwa Tron nan nouvo Wallet ou pa depo dirèk."
   },
   "done": {
     "message": "Fini"
@@ -252,12 +252,12 @@
   "gasPrice": {
     "message": "Pri gaz (GSUN)"
   },
-  "getEther": {
-    "message": "Jwenn Ether"
+  "getTron": {
+    "message": "Jwenn Tron"
   },
-  "getEtherFromFaucet": {
-    "message": "Jwenn Ether nan yon tiyo pou $1 la",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Jwenn Tron nan yon tiyo pou $1 la",
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "Jwenn èd."
@@ -386,8 +386,8 @@
   "mustSelectOne": {
     "message": "Ou dwe chwazi omwen 1 token."
   },
-  "needEtherInWallet": {
-    "message": "Pou kominike avèk aplikasyon desantralize ou dwe itilize TronMask, ou pral bezwen Ether nan Wallet ou."
+  "needTronInWallet": {
+    "message": "Pou kominike avèk aplikasyon desantralize ou dwe itilize TronMask, ou pral bezwen Tron nan Wallet ou."
   },
   "needImportFile": {
     "message": "Ou dwe chwazi yon dosye pou enpòte.",
@@ -600,8 +600,8 @@
   "sendTokens": {
     "message": "Voye Tokens"
   },
-  "sentEther": {
-    "message": "Voye ether"
+  "sentTron": {
+    "message": "Voye trx"
   },
   "sentTokens": {
     "message": "tokens deja voye"
@@ -676,7 +676,7 @@
     "message": "3. Kòmanse itilize dApps ak plis ankò!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Sèvi ak kont materyèl ou menm jan ou t ap fè pou kont Etherum. Ouvri sesyon an nan dApps, voye Eth, achte ak stòke ERC20 tokens ak e ki pake chanje tokens tankou CryptoKitties."
+    "message": "Sèvi ak kont materyèl ou menm jan ou t ap fè pou kont Tronum. Ouvri sesyon an nan dApps, voye Eth, achte ak stòke ERC20 tokens ak e ki pake chanje tokens tankou CryptoKitties."
   },
   "submitted": {
     "message": "Te Soumèt"

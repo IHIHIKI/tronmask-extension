@@ -115,16 +115,16 @@
   "deposit": {
     "message": "வைப்புத்தொகை"
   },
-  "depositEther": {
+  "depositTron": {
     "message": "வைப்புத்தொகை எதிர் "
   },
   "details": {
     "message": "விவரங்கள்"
   },
-  "directDepositEther": {
+  "directDepositTron": {
     "message": "நேரடியாக வைப்புத்தொகை"
   },
-  "directDepositEtherExplainer": {
+  "directDepositTronExplainer": {
     "message": "நீங்கள் ஏற்கனவே ஏதெர் இருந்தால், நேரடி வைப்பு மூலம் உங்கள் புதிய பணப்பையில் ஈத்தர் பெற விரைவான வழி."
   },
   "done": {
@@ -177,10 +177,10 @@
   "gasPrice": {
     "message": "எரிவாயு விலை (GSUN)"
   },
-  "getEther": {
+  "getTron": {
     "message": "ஈத்தர் கிடைக்கும்"
   },
-  "getEtherFromFaucet": {
+  "getTronFromFaucet": {
     "message": "$ 1 க்கு ஒரு குழாய் இருந்து ஈதர் கிடைக்கும்$1",
     "description": "ஈத்தர் குழாய் ஐந்து பிணைய பெயர் காட்டுகிறது"
   },
@@ -278,7 +278,7 @@
   "mustSelectOne": {
     "message": "குறைந்தது 1 டோக்கனை தேர்ந்தெடுக்க வேண்டும்."
   },
-  "needEtherInWallet": {
+  "needTronInWallet": {
     "message": "மேடமஸ்க் ஐ பயன்படுத்தி பரவலாக்கப்பட்ட பயன்பாடுகளுடன் தொடர்பு கொள்ள, உங்கள் பணப்பரிமாற்றத்தில் ஈதர் தேவை."
   },
   "needImportFile": {

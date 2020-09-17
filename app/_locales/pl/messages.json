@@ -320,16 +320,16 @@
   "deposit": {
     "message": "Zdeponuj"
   },
-  "depositEther": {
+  "depositTron": {
     "message": "Zdeponuj Eter"
   },
   "details": {
     "message": "Szczegóły"
   },
-  "directDepositEther": {
+  "directDepositTron": {
     "message": "Zdeponuj Eter bezpośrednio"
   },
-  "directDepositEtherExplainer": {
+  "directDepositTronExplainer": {
     "message": "Jeśli już masz Eter, najszybciej umieścisz go w swoim nowym portfelu przy pomocy bezpośredniego depozytu."
   },
   "done": {
@@ -461,7 +461,7 @@
     "message": "Bardzo niska cena gazu"
   },
   "gasPriceInfoModalContent": {
-    "message": "Cena gazu to ilość kryptowaluty Ether, którą jesteś gotów zapłacić za każdą jednostkę gazu."
+    "message": "Cena gazu to ilość kryptowaluty Tron, którą jesteś gotów zapłacić za każdą jednostkę gazu."
   },
   "gasPriceNoDenom": {
     "message": "Cena gazu"
@@ -472,12 +472,12 @@
   "generalSettingsDescription": {
     "message": "Przeliczanie walut, waluta podstawowa, język, ikona (identicon) Blockies"
   },
-  "getEther": {
+  "getTron": {
     "message": "Zdobądź Eter"
   },
-  "getEtherFromFaucet": {
+  "getTronFromFaucet": {
     "message": "Zdobądź Eter ze źródła za $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "Po pomoc."
@@ -657,7 +657,7 @@
   "mustSelectOne": {
     "message": "Należy wybrać co najmniej 1 token."
   },
-  "needEtherInWallet": {
+  "needTronInWallet": {
     "message": "Żeby skorzystać ze zdecentraliowanych aplikacji (dApps) przy pomocy TronMask, potrzebujesz Eteru w swoim portfelu."
   },
   "needImportFile": {
@@ -938,7 +938,7 @@
     "message": "Twoja tajna fraza zapasowa ułatwia tworzenie kopii zapasowych i przywracanie konta."
   },
   "secretBackupPhraseWarning": {
-    "message": "OSTRZEŻENIE: Nigdy nie ujawniaj swojej frazy zapasowej. Każdy, kto pozna tę frazę, może bezpowrotnie odebrać Ci kryptowalutę Ether."
+    "message": "OSTRZEŻENIE: Nigdy nie ujawniaj swojej frazy zapasowej. Każdy, kto pozna tę frazę, może bezpowrotnie odebrać Ci kryptowalutę Tron."
   },
   "secretPhrase": {
     "message": "Żeby otworzyć schowek, wpisz tutaj swoją frazę dwunastu słów."
@@ -979,7 +979,7 @@
   "sendTokens": {
     "message": "Wyślij tokeny"
   },
-  "sentEther": {
+  "sentTron": {
     "message": "wyślij eter"
   },
   "sentTokens": {

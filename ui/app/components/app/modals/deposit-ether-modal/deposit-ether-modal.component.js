@@ -21,7 +21,7 @@ export default class DepositEtherModal extends Component {
   }
 
   faucetRowText = (networkName) => {
-    return this.context.t('getEtherFromFaucet', [networkName])
+    return this.context.t('getTronFromFaucet', [networkName])
   }
 
   goToAccountDetailsModal = () => {
@@ -89,10 +89,10 @@ export default class DepositEtherModal extends Component {
       >
         <div className="page-container__header">
           <div className="page-container__title">
-            {this.context.t('depositEther')}
+            {this.context.t('depositTron')}
           </div>
           <div className="page-container__subtitle">
-            {this.context.t('needEtherInWallet')}
+            {this.context.t('needTronInWallet')}
           </div>
           <div
             className="page-container__header-close"
@@ -116,8 +116,8 @@ export default class DepositEtherModal extends Component {
                   }}
                 />
               ),
-              title: this.context.t('directDepositEther'),
-              text: this.context.t('directDepositEtherExplainer'),
+              title: this.context.t('directDepositTron'),
+              text: this.context.t('directDepositTronExplainer'),
               buttonLabel: this.context.t('viewAccount'),
               onButtonClick: () => this.goToAccountDetailsModal(),
             })}
@@ -125,7 +125,7 @@ export default class DepositEtherModal extends Component {
               logo: <i className="fa fa-tint fa-2x" />,
               title: this.context.t('testFaucet'),
               text: this.faucetRowText(networkName),
-              buttonLabel: this.context.t('getEther'),
+              buttonLabel: this.context.t('getTron'),
               onButtonClick: () => toFaucet(network),
               hide: !isTestNetwork,
             })}

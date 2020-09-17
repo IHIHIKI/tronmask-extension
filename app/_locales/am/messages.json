@@ -312,7 +312,7 @@
     "message": "የትክክለኛነት አስርዮሽ"
   },
   "defaultNetwork": {
-    "message": "የ Ether ግብይቶች ንቡር አውታረ መረብ Main Net ነው።"
+    "message": "የ Tron ግብይቶች ንቡር አውታረ መረብ Main Net ነው።"
   },
   "delete": {
     "message": "ሰርዝ"
@@ -323,17 +323,17 @@
   "deposit": {
     "message": "ማጠራቀም"
   },
-  "depositEther": {
-    "message": "Ether አስቀምጥ"
+  "depositTron": {
+    "message": "Tron አስቀምጥ"
   },
   "details": {
     "message": "ዝርዝሮች"
   },
-  "directDepositEther": {
-    "message": "Ether በቀጥታ ያስቀምጡ"
+  "directDepositTron": {
+    "message": "Tron በቀጥታ ያስቀምጡ"
   },
-  "directDepositEtherExplainer": {
-    "message": "ቀደም ሲል የተወሰነ Ether ካለዎት፣ በአዲሱ ቋትዎ Ether ለማግኘት ፈጣኑ መንገድ ቀጥተኛ ተቀማጭ ነው።"
+  "directDepositTronExplainer": {
+    "message": "ቀደም ሲል የተወሰነ Tron ካለዎት፣ በአዲሱ ቋትዎ Tron ለማግኘት ፈጣኑ መንገድ ቀጥተኛ ተቀማጭ ነው።"
   },
   "done": {
     "message": "ተጠናቅቋል"
@@ -464,7 +464,7 @@
     "message": "የነዳጅ ዋጋ እጅግ በጣም ዝቅ ያለ ነው"
   },
   "gasPriceInfoModalContent": {
-    "message": "የነዳጅ ዋጋ እርስዎ ለእያንዳንዱ የነዳጅ መጠን መክፈል የሚፈልጉትን የ Ether መጠን ይገልጻል።"
+    "message": "የነዳጅ ዋጋ እርስዎ ለእያንዳንዱ የነዳጅ መጠን መክፈል የሚፈልጉትን የ Tron መጠን ይገልጻል።"
   },
   "gasPriceNoDenom": {
     "message": "የነዳጅ ዋጋ"
@@ -475,12 +475,12 @@
   "generalSettingsDescription": {
     "message": "የገንዘብ ልወጣ፣ ተቀዳሚ የገንዘብ ዓይነት፣ ቋንቋ፣ blockies identicon"
   },
-  "getEther": {
-    "message": "Ether ያግኙ"
+  "getTron": {
+    "message": "Tron ያግኙ"
   },
-  "getEtherFromFaucet": {
-    "message": "Ether ከቧንቧ በ$1ያግኙ",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Tron ከቧንቧ በ$1ያግኙ",
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "እገዛ ያግኙ።"
@@ -660,8 +660,8 @@
   "mustSelectOne": {
     "message": "ቢያንስ 1 ተለዋጭ ስም መምረጥ አለብዎ።"
   },
-  "needEtherInWallet": {
-    "message": "TronMask በመጠቀም ያልተማከሉ መተግበሪያዎች ጋር ግንኙነት ለማድረግ፣ በቋትዎ ውስጥ Ether ያስፈልግዎታል።"
+  "needTronInWallet": {
+    "message": "TronMask በመጠቀም ያልተማከሉ መተግበሪያዎች ጋር ግንኙነት ለማድረግ፣ በቋትዎ ውስጥ Tron ያስፈልግዎታል።"
   },
   "needImportFile": {
     "message": "የሚያስመጡትን ፋይል መምረጥ አለብዎት።",
@@ -941,7 +941,7 @@
     "message": "ሚስጥራዊ የመጠባበቂያ ሐረግዎ መለያዎን መጠባበቂያ ለመያዝና ወደነበረበት ለመመለስ ቀላል ያደርገዋል።"
   },
   "secretBackupPhraseWarning": {
-    "message": "ማስጠንቀቂያ፡ የመጠባበቂያ ምዕራፍዎን በጭራሽ አይግለጹ። ይህን ሐረገ የያዘ ማንኛውም ሰው የእርስዎን Ether እስከወዲያኛው ሊወስደው ይችላል።"
+    "message": "ማስጠንቀቂያ፡ የመጠባበቂያ ምዕራፍዎን በጭራሽ አይግለጹ። ይህን ሐረገ የያዘ ማንኛውም ሰው የእርስዎን Tron እስከወዲያኛው ሊወስደው ይችላል።"
   },
   "secretPhrase": {
     "message": "ካዝናዎን ወደነበረበት ለመመለስ ሚስጥራዊ ባለ አስራ ሁለት ቃል ሐረግዎን ያስገቡ።"
@@ -982,8 +982,8 @@
   "sendTokens": {
     "message": "ተለዋጭ ስሞችን ላክ"
   },
-  "sentEther": {
-    "message": "የተላከ ether"
+  "sentTron": {
+    "message": "የተላከ trx"
   },
   "sentTokens": {
     "message": "የተላኩ ተለዋጭ ስሞች"

@@ -29,7 +29,7 @@ describe('TransactionAction Component', function () {
           gas: '0x5208',
           gasPrice: '0x3b9aca00',
           nonce: '0x96',
-          to: 'sentEtherAddress',
+          to: 'sentTronAddress',
           value: '0x2386f26fc10000',
         },
       }
@@ -43,9 +43,9 @@ describe('TransactionAction Component', function () {
       ), { context: { t } })
 
       assert.equal(wrapper.find('.transaction-action').length, 1)
-      wrapper.setState({ transactionAction: 'sentEther' })
-      assert.equal(wrapper.text(), 'sentEther')
-      assert.equal(wrapper.find('.transaction-action').props().title.trim(), 'sentEther')
+      wrapper.setState({ transactionAction: 'sentTron' })
+      assert.equal(wrapper.text(), 'sentTron')
+      assert.equal(wrapper.find('.transaction-action').props().title.trim(), 'sentTron')
     })
 
     it('should render Approved', async function () {

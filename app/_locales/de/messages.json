@@ -300,7 +300,7 @@
     "message": "Dezimalangabe der Präzision"
   },
   "defaultNetwork": {
-    "message": "Das Standardnetzwerk für Ether Transaktionen ist das Main Net."
+    "message": "Das Standardnetzwerk für Tron Transaktionen ist das Main Net."
   },
   "delete": {
     "message": "Löschen"
@@ -311,14 +311,14 @@
   "deposit": {
     "message": "Einzahlen"
   },
-  "depositEther": {
-    "message": "Ether einzahlen"
+  "depositTron": {
+    "message": "Tron einzahlen"
   },
-  "directDepositEther": {
-    "message": "Sofort Ether einzahlen"
+  "directDepositTron": {
+    "message": "Sofort Tron einzahlen"
   },
-  "directDepositEtherExplainer": {
-    "message": "Wenn du bereits Ether besitzt, ist die sofortige Einzahlung die schnellste Methode Ether in deine neue Wallet zu bekommen."
+  "directDepositTronExplainer": {
+    "message": "Wenn du bereits Tron besitzt, ist die sofortige Einzahlung die schnellste Methode Tron in deine neue Wallet zu bekommen."
   },
   "done": {
     "message": "Fertig"
@@ -449,7 +449,7 @@
     "message": "Gaspreis extrem niedrig"
   },
   "gasPriceInfoModalContent": {
-    "message": "Der Gaspreis gibt die Menge Ether an, die Sie für jede Einheit Gas zu zahlen bereit sind."
+    "message": "Der Gaspreis gibt die Menge Tron an, die Sie für jede Einheit Gas zu zahlen bereit sind."
   },
   "gasPriceNoDenom": {
     "message": "Gaspreis"
@@ -460,12 +460,12 @@
   "generalSettingsDescription": {
     "message": "Währungsumrechnung, Primärwährung, Sprache, Blockies-Identicon"
   },
-  "getEther": {
-    "message": "Ether holen"
+  "getTron": {
+    "message": "Tron holen"
   },
-  "getEtherFromFaucet": {
-    "message": "Ether für $1 vom Faucet holen",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Tron für $1 vom Faucet holen",
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "Erhalten Sie Hilfe."
@@ -639,8 +639,8 @@
   "mustSelectOne": {
     "message": "Du musst mindestens 1 Token auswählen."
   },
-  "needEtherInWallet": {
-    "message": "Um dezentralisierte Applikationen mit TronMask verwenden zu können, benötigst du Ether in deiner Wallet."
+  "needTronInWallet": {
+    "message": "Um dezentralisierte Applikationen mit TronMask verwenden zu können, benötigst du Tron in deiner Wallet."
   },
   "needImportFile": {
     "message": "Für den Import musst du eine Datei auswählen.",
@@ -910,7 +910,7 @@
     "message": "Mit Ihrem geheimen Backup-Schlüssel können Sie Ihr Konto ganz einfach sichern und wiederherstellen."
   },
   "secretBackupPhraseWarning": {
-    "message": "WARNUNG: Legen Sie niemals Ihre Sicherungsphrase offen. Mit dieser Phrase kann sich jeder Ihr Ether für immer aneignen."
+    "message": "WARNUNG: Legen Sie niemals Ihre Sicherungsphrase offen. Mit dieser Phrase kann sich jeder Ihr Tron für immer aneignen."
   },
   "secretPhrase": {
     "message": "Gib die 12 Wörter deiner geheimem Wörterfolge ein um deinen Vault wiederherzustellen."
@@ -951,8 +951,8 @@
   "sendTokens": {
     "message": "Token senden"
   },
-  "sentEther": {
-    "message": "Ether senden"
+  "sentTron": {
+    "message": "Tron senden"
   },
   "sentTokens": {
     "message": "gesendete Token"

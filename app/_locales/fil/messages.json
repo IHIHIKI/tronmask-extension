@@ -285,7 +285,7 @@
     "message": "Bilang ng Decimal"
   },
   "defaultNetwork": {
-    "message": "Ang default na network para sa mga transaksyon ng Ether ay Main Net."
+    "message": "Ang default na network para sa mga transaksyon ng Tron ay Main Net."
   },
   "delete": {
     "message": "I-delete"
@@ -296,17 +296,17 @@
   "deposit": {
     "message": "Deposito"
   },
-  "depositEther": {
-    "message": "Magdeposito ng Ether"
+  "depositTron": {
+    "message": "Magdeposito ng Tron"
   },
   "details": {
     "message": "Mga Detalye"
   },
-  "directDepositEther": {
-    "message": "Direktang Magdeposito ng Ether"
+  "directDepositTron": {
+    "message": "Direktang Magdeposito ng Tron"
   },
-  "directDepositEtherExplainer": {
-    "message": "Kung mayroon ka nang Ether, ang pinakamabilis na paraan para magkaroon ng Ether sa iyong bagong wallet ay sa pamamagitan ng direkang deposito."
+  "directDepositTronExplainer": {
+    "message": "Kung mayroon ka nang Tron, ang pinakamabilis na paraan para magkaroon ng Tron sa iyong bagong wallet ay sa pamamagitan ng direkang deposito."
   },
   "done": {
     "message": "Tapos na"
@@ -430,7 +430,7 @@
     "message": "Napakababa ng Presyo ng Gas"
   },
   "gasPriceInfoModalContent": {
-    "message": "Tinutukoy ng presyo ng gas ang halaga ng Ether na handa kang ibayad para sa bawat unit ng gas."
+    "message": "Tinutukoy ng presyo ng gas ang halaga ng Tron na handa kang ibayad para sa bawat unit ng gas."
   },
   "gasPriceNoDenom": {
     "message": "Presyo ng Gas"
@@ -441,12 +441,12 @@
   "generalSettingsDescription": {
     "message": "Pagpapapalit ng currency, pangunahing currency, wika, blockies identicon"
   },
-  "getEther": {
-    "message": "Kumuha ng Ether"
+  "getTron": {
+    "message": "Kumuha ng Tron"
   },
-  "getEtherFromFaucet": {
-    "message": "Kumuha ng Ether mula sa isang faucet para sa $1",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Kumuha ng Tron mula sa isang faucet para sa $1",
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "Humingi ng Tulong."
@@ -601,8 +601,8 @@
   "mustSelectOne": {
     "message": "Dapat pumili ng kahit 1 token."
   },
-  "needEtherInWallet": {
-    "message": "Para gumamit ng mga decentralized na application gamit ang TronMask, mangangailangan ka ng Ether sa iyong wallet."
+  "needTronInWallet": {
+    "message": "Para gumamit ng mga decentralized na application gamit ang TronMask, mangangailangan ka ng Tron sa iyong wallet."
   },
   "needImportFile": {
     "message": "Dapat kang pumili ng file na ii-import.",
@@ -856,7 +856,7 @@
     "message": "Pinapadali ng iyong secret backup phrase na i-back up at i-restore ang iyong account."
   },
   "secretBackupPhraseWarning": {
-    "message": "BABALA: Huwag ibunyag ang iyong backup phrase. Mananakaw ng kahit sinong may ganitong parirala ang iyong Ether at hindi na ito maibabalik."
+    "message": "BABALA: Huwag ibunyag ang iyong backup phrase. Mananakaw ng kahit sinong may ganitong parirala ang iyong Tron at hindi na ito maibabalik."
   },
   "secretPhrase": {
     "message": "Ilagay ang iyong lihim na pariralang may labindalawang salita para ma-restore ang iyong vault."
@@ -897,8 +897,8 @@
   "sendTokens": {
     "message": "Magpadala ng Mga Token"
   },
-  "sentEther": {
-    "message": "nagpadala ng ether"
+  "sentTron": {
+    "message": "nagpadala ng trx"
   },
   "sentTokens": {
     "message": "mga ipinadalang token"

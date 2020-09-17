@@ -323,17 +323,17 @@
   "deposit": {
     "message": "Vplačaj"
   },
-  "depositEther": {
+  "depositTron": {
     "message": "Vplačilo ethra"
   },
   "details": {
     "message": "Podrobnosti"
   },
-  "directDepositEther": {
+  "directDepositTron": {
     "message": "Neposredno vplačilo ehera"
   },
-  "directDepositEtherExplainer": {
-    "message": "Če že imate Ether, ga lahko najhitreje dobite v TronMask z neposrednim vplačilom."
+  "directDepositTronExplainer": {
+    "message": "Če že imate Tron, ga lahko najhitreje dobite v TronMask z neposrednim vplačilom."
   },
   "done": {
     "message": "Končano"
@@ -472,12 +472,12 @@
   "generalSettingsDescription": {
     "message": "Pretvorba valut, primarna valuta, jezik, identifikacija Blockies"
   },
-  "getEther": {
-    "message": "Pridobi Ether"
+  "getTron": {
+    "message": "Pridobi Tron"
   },
-  "getEtherFromFaucet": {
-    "message": "Pridobite Ether iz fauceta za $1",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Pridobite Tron iz fauceta za $1",
+    "description": "Displays network name for Tron faucet"
   },
   "getStarted": {
     "message": "Začnite"
@@ -648,7 +648,7 @@
   "mustSelectOne": {
     "message": "Izbran mora biti vsaj 1 žeton."
   },
-  "needEtherInWallet": {
+  "needTronInWallet": {
     "message": "Za interakcijo z decentraliziranimi aplikacijami boste v svoji denarnici potrebovali Eter."
   },
   "needImportFile": {
@@ -926,7 +926,7 @@
     "message": "Vaše skrivno geslo za varnostno kopiranje olajša varnostno kopiranje in obnovitev računa."
   },
   "secretBackupPhraseWarning": {
-    "message": "OPOZORILO: Nikoli nikomur ne razkrijte varnostne kopije. Kdorkoli lahko tem geslom vedno prevzame vaš Ether."
+    "message": "OPOZORILO: Nikoli nikomur ne razkrijte varnostne kopije. Kdorkoli lahko tem geslom vedno prevzame vaš Tron."
   },
   "secretPhrase": {
     "message": "Vnesite vaših dvanajst besed za obnovitev vaših računov."
@@ -967,8 +967,8 @@
   "sendTokens": {
     "message": "Pošlji žetone"
   },
-  "sentEther": {
-    "message": "poslani ether"
+  "sentTron": {
+    "message": "poslani trx"
   },
   "sentTokens": {
     "message": "poslani žetoni"
@@ -1073,7 +1073,7 @@
     "message": "3. Začnite uporabljati dApps in več!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Uporabite strojno denarnico kot katerikoli drug Tron račun. Prijavite se v dApps, pošljite Ether in ERC20 žetone in žetone kot CryptoKitties."
+    "message": "Uporabite strojno denarnico kot katerikoli drug Tron račun. Prijavite se v dApps, pošljite Tron in ERC20 žetone in žetone kot CryptoKitties."
   },
   "storePhrase": {
     "message": "To geslo shranite v upravitelja gesel, kot je 1Password."

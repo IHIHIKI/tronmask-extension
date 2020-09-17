@@ -303,7 +303,7 @@
     "message": "Počet desetinných míst přesnosti"
   },
   "defaultNetwork": {
-    "message": "Výchozí síť pro Etherové transakce je Main Net."
+    "message": "Výchozí síť pro Tronové transakce je Main Net."
   },
   "delete": {
     "message": "Odstrániť"
@@ -314,17 +314,17 @@
   "deposit": {
     "message": "Vklad"
   },
-  "depositEther": {
-    "message": "Vložit Ether"
+  "depositTron": {
+    "message": "Vložit Tron"
   },
   "details": {
     "message": "Podrobnosti"
   },
-  "directDepositEther": {
-    "message": "Vložit Ether přímo"
+  "directDepositTron": {
+    "message": "Vložit Tron přímo"
   },
-  "directDepositEtherExplainer": {
-    "message": "Pokud už vlastníte nějaký Ether, nejrychleji ho dostanete do peněženky přímým vkladem."
+  "directDepositTronExplainer": {
+    "message": "Pokud už vlastníte nějaký Tron, nejrychleji ho dostanete do peněženky přímým vkladem."
   },
   "done": {
     "message": "Hotovo"
@@ -455,7 +455,7 @@
     "message": "Cena za GAS je mimoriadne nízka"
   },
   "gasPriceInfoModalContent": {
-    "message": "Cena za GAS určuje množstvo Ether, ktoré ste ochotní zaplatiť za každú jednotku GAS."
+    "message": "Cena za GAS určuje množstvo Tron, ktoré ste ochotní zaplatiť za každú jednotku GAS."
   },
   "gasPriceNoDenom": {
     "message": "Cena GAS"
@@ -466,12 +466,12 @@
   "generalSettingsDescription": {
     "message": "Prevod mien, primárna mena, jazyk, identifikácia blokov"
   },
-  "getEther": {
-    "message": "Získejte Ether"
+  "getTron": {
+    "message": "Získejte Tron"
   },
-  "getEtherFromFaucet": {
-    "message": "Získejte Ether z faucetu za $1.",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Získejte Tron z faucetu za $1.",
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "Získajte pomoc."
@@ -632,8 +632,8 @@
   "mustSelectOne": {
     "message": "Musíte zvolit aspoň 1 token."
   },
-  "needEtherInWallet": {
-    "message": "Potřebujete Ether v peněžence, abyste mohli pomocí TronMasku interagovat s decentralizovanými aplikacemi."
+  "needTronInWallet": {
+    "message": "Potřebujete Tron v peněžence, abyste mohli pomocí TronMasku interagovat s decentralizovanými aplikacemi."
   },
   "needImportFile": {
     "message": "Musíte zvolit soubor k importu.",
@@ -907,7 +907,7 @@
     "message": "Vaša tajná backup fráza uľahčuje zálohovanie a obnovenie vášho účtu."
   },
   "secretBackupPhraseWarning": {
-    "message": "UPOZORNENIE: Nikdy nezverejňujte svoju backup frázu. Každý, kto má túto frázu, môže navždy vziať váš Ether."
+    "message": "UPOZORNENIE: Nikdy nezverejňujte svoju backup frázu. Každý, kto má túto frázu, môže navždy vziať váš Tron."
   },
   "secretPhrase": {
     "message": "Zadejte svých 12 slov tajné fráze k obnovení trezoru."
@@ -948,8 +948,8 @@
   "sendTokens": {
     "message": "Odeslat tokeny"
   },
-  "sentEther": {
-    "message": "poslaný ether"
+  "sentTron": {
+    "message": "poslaný trx"
   },
   "sentTokens": {
     "message": "poslané tokeny"

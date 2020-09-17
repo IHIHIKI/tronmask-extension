@@ -170,22 +170,22 @@
     "message": "小数点桁数"
   },
   "defaultNetwork": {
-    "message": "デフォルトのEther送受信ネットワークはメインネットです。"
+    "message": "デフォルトのTron送受信ネットワークはメインネットです。"
   },
   "deposit": {
     "message": "振込"
   },
-  "depositEther": {
-    "message": "Etherを振込"
+  "depositTron": {
+    "message": "Tronを振込"
   },
   "details": {
     "message": "詳細"
   },
-  "directDepositEther": {
-    "message": "Etherを直接入金"
+  "directDepositTron": {
+    "message": "Tronを直接入金"
   },
-  "directDepositEtherExplainer": {
-    "message": "既にEtherをお持ちなら、TronMaskの新しいウォレットにEtherを送信することができます。"
+  "directDepositTronExplainer": {
+    "message": "既にTronをお持ちなら、TronMaskの新しいウォレットにTronを送信することができます。"
   },
   "done": {
     "message": "完了"
@@ -228,12 +228,12 @@
   "gasPrice": {
     "message": "ガスプライス (GSUN)"
   },
-  "getEther": {
-    "message": "Etherを取得する"
+  "getTron": {
+    "message": "Tronを取得する"
   },
-  "getEtherFromFaucet": {
-    "message": "フォーセットで $1のEtherを得ることができます。",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "フォーセットで $1のTronを得ることができます。",
+    "description": "Displays network name for Tron faucet"
   },
   "here": {
     "message": "ここ",
@@ -314,8 +314,8 @@
   "mustSelectOne": {
     "message": "一つ以上のトークンを選択してください。"
   },
-  "needEtherInWallet": {
-    "message": "TronMaskで分散型アプリケーションを使用するためには、このウォレットにEtherが必要です。"
+  "needTronInWallet": {
+    "message": "TronMaskで分散型アプリケーションを使用するためには、このウォレットにTronが必要です。"
   },
   "needImportFile": {
     "message": "インポートするファイルを選択してください。",

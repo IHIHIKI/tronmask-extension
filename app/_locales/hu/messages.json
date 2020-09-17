@@ -312,7 +312,7 @@
     "message": "A pontosság tizedesjegyei"
   },
   "defaultNetwork": {
-    "message": "Az Ether tranzakciók alapértelmezett hálózata a Main Net."
+    "message": "Az Tron tranzakciók alapértelmezett hálózata a Main Net."
   },
   "delete": {
     "message": "Törlés"
@@ -323,17 +323,17 @@
   "deposit": {
     "message": "Befizetés"
   },
-  "depositEther": {
-    "message": "Ether befizetése"
+  "depositTron": {
+    "message": "Tron befizetése"
   },
   "details": {
     "message": "Részletek"
   },
-  "directDepositEther": {
-    "message": "Fizess be ethert közvetlenül"
+  "directDepositTron": {
+    "message": "Fizess be trxt közvetlenül"
   },
-  "directDepositEtherExplainer": {
-    "message": "Amennyiben már rendelkezik némi Ether-rel, a közvetlen letéttel gyorsan elhelyezheti azt új pénztárcájában."
+  "directDepositTronExplainer": {
+    "message": "Amennyiben már rendelkezik némi Tron-rel, a közvetlen letéttel gyorsan elhelyezheti azt új pénztárcájában."
   },
   "done": {
     "message": "Kész"
@@ -460,7 +460,7 @@
     "message": "Üzemanyag ár Különösen alacsony"
   },
   "gasPriceInfoModalContent": {
-    "message": "A gáz ára meghatározza, hogy ön mennyi Ethert hajlandó fizetni minden egyes gázegységért."
+    "message": "A gáz ára meghatározza, hogy ön mennyi Tront hajlandó fizetni minden egyes gázegységért."
   },
   "gasPriceNoDenom": {
     "message": "Gázár"
@@ -471,12 +471,12 @@
   "generalSettingsDescription": {
     "message": "Pénznem átváltása, elsődleges pénznem, nyelv, blockies identikonok"
   },
-  "getEther": {
-    "message": "Ether beszerzése"
+  "getTron": {
+    "message": "Tron beszerzése"
   },
-  "getEtherFromFaucet": {
-    "message": "Szerezzen Ethert pénzcsapból a(z) $1-ért",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Szerezzen Tront pénzcsapból a(z) $1-ért",
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "Segítség kérése"
@@ -656,8 +656,8 @@
   "mustSelectOne": {
     "message": "Legalább 1 tokent ki kell választania."
   },
-  "needEtherInWallet": {
-    "message": "Ha a TronMaskon keresztül szeretne interakcióba lépni decentralizált alkalmazással, ahhoz a tárcájában Ethernek kell lennie."
+  "needTronInWallet": {
+    "message": "Ha a TronMaskon keresztül szeretne interakcióba lépni decentralizált alkalmazással, ahhoz a tárcájában Tronnek kell lennie."
   },
   "needImportFile": {
     "message": "Ki kell választania az importálni kívánt fájlt.",
@@ -937,7 +937,7 @@
     "message": "Titkos biztonsági szókapcsolatoddal könnyedén készíthetsz biztonsági mentést és helyreállíthatod fiókodat."
   },
   "secretBackupPhraseWarning": {
-    "message": "FIGYELEM: Senkise se adja meg a biztonsági szakaszát. Ennek tulajdonosa örökre elviheti Ether-jeit."
+    "message": "FIGYELEM: Senkise se adja meg a biztonsági szakaszát. Ennek tulajdonosa örökre elviheti Tron-jeit."
   },
   "secretPhrase": {
     "message": "Tárolód helyreállításához írd be titkos tizenkét szavas szókapcsolatodat ide."
@@ -978,8 +978,8 @@
   "sendTokens": {
     "message": "Token küldése"
   },
-  "sentEther": {
-    "message": "elküldött ether"
+  "sentTron": {
+    "message": "elküldött trx"
   },
   "sentTokens": {
     "message": "elküldött érmék"

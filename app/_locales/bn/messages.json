@@ -323,16 +323,16 @@
   "deposit": {
     "message": "জমা "
   },
-  "depositEther": {
+  "depositTron": {
     "message": "ইথার জমা করুন"
   },
   "details": {
     "message": "বিশদ বিবরণ"
   },
-  "directDepositEther": {
+  "directDepositTron": {
     "message": "সরাসরি ইথার জমা করুন"
   },
-  "directDepositEtherExplainer": {
+  "directDepositTronExplainer": {
     "message": "আপনার ইতিমধ্যে কিছু ইথার থেকে থাকলে আপনার নতুন ওয়ালেটে ইথার পাওয়ার দ্রুততম উপায় হল সরাসরি জমা করা।"
   },
   "done": {
@@ -475,12 +475,12 @@
   "generalSettingsDescription": {
     "message": "মুদ্রা বিনিময়, প্রাথমিক মুদ্রা, ভাষা, ব্লকিস আইডেন্টিকন"
   },
-  "getEther": {
+  "getTron": {
     "message": "ইথার পান"
   },
-  "getEtherFromFaucet": {
+  "getTronFromFaucet": {
     "message": "$1 এর জন্য একটি ফসেট থেকে ইথার পান",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "সহায়তা পান।"
@@ -663,7 +663,7 @@
   "mustSelectOne": {
     "message": "অবশ্যই অন্তত 1টি টোকেন নির্বাচন করতে হবে।"
   },
-  "needEtherInWallet": {
+  "needTronInWallet": {
     "message": "TronMask ব্যবহার করে ছড়িয়ে ছিটিয়ে থাকা অ্যাপ্লিকেশনগুলির সাথে যোগাযোগ করতে, আপনার ওয়ালেটে ইথার লাগবে।"
   },
   "needImportFile": {
@@ -985,7 +985,7 @@
   "sendTokens": {
     "message": "টোকেনগুলি পাঠান"
   },
-  "sentEther": {
+  "sentTron": {
     "message": "পাঠানো ইথার "
   },
   "sentTokens": {

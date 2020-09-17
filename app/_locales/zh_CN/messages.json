@@ -323,17 +323,17 @@
   "deposit": {
     "message": "存入"
   },
-  "depositEther": {
-    "message": "存入 Ether"
+  "depositTron": {
+    "message": "存入 Tron"
   },
   "details": {
     "message": "详情"
   },
-  "directDepositEther": {
-    "message": "直接存入 Ether"
+  "directDepositTron": {
+    "message": "直接存入 Tron"
   },
-  "directDepositEtherExplainer": {
-    "message": "如果你已经有了一些 Ether，通过直接转入是你的新钱包获取 Ether 的最快捷方式。"
+  "directDepositTronExplainer": {
+    "message": "如果你已经有了一些 Tron，通过直接转入是你的新钱包获取 Tron 的最快捷方式。"
   },
   "done": {
     "message": "完成"
@@ -469,12 +469,12 @@
   "generalSettingsDescription": {
     "message": "货币兑换、主要货币、语言和块状身份头像"
   },
-  "getEther": {
-    "message": "获取 Ether"
+  "getTron": {
+    "message": "获取 Tron"
   },
-  "getEtherFromFaucet": {
-    "message": "从水管获取$1网络的 Ether",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "从水管获取$1网络的 Tron",
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "获取帮助。"
@@ -648,8 +648,8 @@
   "mustSelectOne": {
     "message": "至少选择一种代币."
   },
-  "needEtherInWallet": {
-    "message": "使用 TronMask 与 DAPP 交互，需要你的钱包里有 Ether。"
+  "needTronInWallet": {
+    "message": "使用 TronMask 与 DAPP 交互，需要你的钱包里有 Tron。"
   },
   "needImportFile": {
     "message": "必须选择导入一个文件。",
@@ -967,7 +967,7 @@
   "sendTokens": {
     "message": "发送 代币"
   },
-  "sentEther": {
+  "sentTron": {
     "message": "以太币已发送"
   },
   "sentTokens": {

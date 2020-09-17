@@ -125,22 +125,22 @@
     "message": "Количество десятичных разрядов"
   },
   "defaultNetwork": {
-    "message": "Основная сеть Tron – это сеть по умолчанию для Ether транзакций."
+    "message": "Основная сеть Tron – это сеть по умолчанию для Tron транзакций."
   },
   "deposit": {
     "message": "Пополнить"
   },
-  "depositEther": {
-    "message": "Пополнить Ether"
+  "depositTron": {
+    "message": "Пополнить Tron"
   },
   "details": {
     "message": "Детали"
   },
-  "directDepositEther": {
-    "message": "Прямое пополнение Ether"
+  "directDepositTron": {
+    "message": "Прямое пополнение Tron"
   },
-  "directDepositEtherExplainer": {
-    "message": "Если у вас уже есть Ether, то самый быстрый способ получить Ether в ваш новый кошелек – это прямое пополнение."
+  "directDepositTronExplainer": {
+    "message": "Если у вас уже есть Tron, то самый быстрый способ получить Tron в ваш новый кошелек – это прямое пополнение."
   },
   "done": {
     "message": "Готово"
@@ -186,12 +186,12 @@
   "gasPrice": {
     "message": "Цена за газ (GSUN)"
   },
-  "getEther": {
-    "message": "Получить Ether"
+  "getTron": {
+    "message": "Получить Tron"
   },
-  "getEtherFromFaucet": {
-    "message": "Получить Ether из крана для $1",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Получить Tron из крана для $1",
+    "description": "Displays network name for Tron faucet"
   },
   "here": {
     "message": "тут",
@@ -284,8 +284,8 @@
   "mustSelectOne": {
     "message": "Необходимо выбрать как минимум 1 токен."
   },
-  "needEtherInWallet": {
-    "message": "Для взаимодействия с децентрализованными приложениями с помощью TronMask нужен Ether в вашем кошельке."
+  "needTronInWallet": {
+    "message": "Для взаимодействия с децентрализованными приложениями с помощью TronMask нужен Tron в вашем кошельке."
   },
   "needImportFile": {
     "message": "Вы должны выбрать файл для импорта.",
@@ -1091,8 +1091,8 @@
   "sendAmount": {
     "message": "Отправить сумму"
   },
-  "sentEther": {
-    "message": "Отправить Ether"
+  "sentTron": {
+    "message": "Отправить Tron"
   },
   "sentTokens": {
     "message": "Отправленные токены"

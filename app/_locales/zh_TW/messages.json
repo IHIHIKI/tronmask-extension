@@ -320,16 +320,16 @@
   "deposit": {
     "message": "存入"
   },
-  "depositEther": {
+  "depositTron": {
     "message": "存入乙太幣"
   },
   "details": {
     "message": "詳情"
   },
-  "directDepositEther": {
+  "directDepositTron": {
     "message": "直接存入乙太幣"
   },
-  "directDepositEtherExplainer": {
+  "directDepositTronExplainer": {
     "message": "如果您已經擁有乙太幣，直接存入功能是讓新錢包最快取得乙太幣的方式。"
   },
   "done": {
@@ -472,12 +472,12 @@
   "generalSettingsDescription": {
     "message": "貨幣轉換，主要貨幣，語言，區塊鏈哈希頭像"
   },
-  "getEther": {
+  "getTron": {
     "message": "取得乙太幣"
   },
-  "getEtherFromFaucet": {
+  "getTronFromFaucet": {
     "message": "從水管取得 $1 乙太幣。",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "取得協助"
@@ -657,7 +657,7 @@
   "mustSelectOne": {
     "message": "必須選擇至少 1 代幣"
   },
-  "needEtherInWallet": {
+  "needTronInWallet": {
     "message": "要使用 TronMask 存取去中心化應用服務時，您的錢包中需要有乙太幣。"
   },
   "needImportFile": {
@@ -970,7 +970,7 @@
   "sendTokens": {
     "message": "發送代幣"
   },
-  "sentEther": {
+  "sentTron": {
     "message": "發送乙太幣"
   },
   "sentTokens": {

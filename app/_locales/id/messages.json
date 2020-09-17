@@ -312,7 +312,7 @@
     "message": "Ketelitian Desimal"
   },
   "defaultNetwork": {
-    "message": "Jaringan default untuk transaksi Ether adalah Main Net."
+    "message": "Jaringan default untuk transaksi Tron adalah Main Net."
   },
   "delete": {
     "message": "Hapus"
@@ -323,11 +323,11 @@
   "details": {
     "message": "Detail"
   },
-  "directDepositEther": {
-    "message": "Deposit Ether Langsung"
+  "directDepositTron": {
+    "message": "Deposit Tron Langsung"
   },
-  "directDepositEtherExplainer": {
-    "message": "Jika Anda sudah memiliki Ether, cara tercepat mendapatkan Ether di dompet baru lewat deposit langsung."
+  "directDepositTronExplainer": {
+    "message": "Jika Anda sudah memiliki Tron, cara tercepat mendapatkan Tron di dompet baru lewat deposit langsung."
   },
   "done": {
     "message": "Selesai"
@@ -451,7 +451,7 @@
     "message": "Harga Bensin Amat Rendah"
   },
   "gasPriceInfoModalContent": {
-    "message": "Harga gas menentukan jumlah Ether yang bersedia Anda bayarkan untuk setiap unit gas."
+    "message": "Harga gas menentukan jumlah Tron yang bersedia Anda bayarkan untuk setiap unit gas."
   },
   "gasPriceNoDenom": {
     "message": "Harga Bensin"
@@ -462,12 +462,12 @@
   "generalSettingsDescription": {
     "message": "Konversi mata uang, mata uang utama, bahasa, blockies identicon"
   },
-  "getEther": {
-    "message": "Dapatkan Ether"
+  "getTron": {
+    "message": "Dapatkan Tron"
   },
-  "getEtherFromFaucet": {
-    "message": "Dapatkan Ether dari keran untuk $1",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Dapatkan Tron dari keran untuk $1",
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "Dapatkan Bantuan."
@@ -644,8 +644,8 @@
   "mustSelectOne": {
     "message": "Harus memilih setidaknya 1 token."
   },
-  "needEtherInWallet": {
-    "message": "Untuk berinteraksi dengan aplikasi terdesentralisasi menggunakan TronMask, Anda memerlukan adanya Ether di dompet Anda."
+  "needTronInWallet": {
+    "message": "Untuk berinteraksi dengan aplikasi terdesentralisasi menggunakan TronMask, Anda memerlukan adanya Tron di dompet Anda."
   },
   "needImportFile": {
     "message": "Anda harus memilih berkas untuk diimpor.",
@@ -925,7 +925,7 @@
     "message": "Frasa cadangan rahasia Anda akan memudahkan untuk membuat cadangan dan memulihkan akun Anda."
   },
   "secretBackupPhraseWarning": {
-    "message": "PERINGATAN: Jangan pernah mengungkap frasa cadangan Anda. Siapa saja dapat mengambil Ether Anda selamanya dengan frasa ini."
+    "message": "PERINGATAN: Jangan pernah mengungkap frasa cadangan Anda. Siapa saja dapat mengambil Tron Anda selamanya dengan frasa ini."
   },
   "secretPhrase": {
     "message": "Masukkan frasa dua belas kata rahasia Anda di sini untuk memulihkan lemari besi Anda."
@@ -966,8 +966,8 @@
   "sendTokens": {
     "message": "Kirim Token"
   },
-  "sentEther": {
-    "message": "kirim ether"
+  "sentTron": {
+    "message": "kirim trx"
   },
   "sentTokens": {
     "message": "token terkirim"

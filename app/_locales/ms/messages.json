@@ -309,7 +309,7 @@
     "message": "Bilangan Perpuluhan Kejituan"
   },
   "defaultNetwork": {
-    "message": "Rangkaian lalai untuk transaksi Ether ialah Net Utama."
+    "message": "Rangkaian lalai untuk transaksi Tron ialah Net Utama."
   },
   "delete": {
     "message": "Padam"
@@ -320,11 +320,11 @@
   "details": {
     "message": "Butiran"
   },
-  "directDepositEther": {
-    "message": "Deposit Ether Secara Terus"
+  "directDepositTron": {
+    "message": "Deposit Tron Secara Terus"
   },
-  "directDepositEtherExplainer": {
-    "message": "Jika anda sudah mempunyai Ether, cara paling cepat untuk mendapatkan Ether di dompet baru anda ialah dengan deposit langsung."
+  "directDepositTronExplainer": {
+    "message": "Jika anda sudah mempunyai Tron, cara paling cepat untuk mendapatkan Tron di dompet baru anda ialah dengan deposit langsung."
   },
   "done": {
     "message": "Selesai"
@@ -448,7 +448,7 @@
     "message": "Harga Gas Teramat Rendah"
   },
   "gasPriceInfoModalContent": {
-    "message": "Harga gas menentukan jumlah Ether yang anda sedia bayar untuk setiap unit gas."
+    "message": "Harga gas menentukan jumlah Tron yang anda sedia bayar untuk setiap unit gas."
   },
   "gasPriceNoDenom": {
     "message": "Harga Gas"
@@ -459,12 +459,12 @@
   "generalSettingsDescription": {
     "message": "Penukaran mata wang, mata wang utama, bahasa, blockies identicon"
   },
-  "getEther": {
-    "message": "Dapatkan Ether"
+  "getTron": {
+    "message": "Dapatkan Tron"
   },
-  "getEtherFromFaucet": {
-    "message": "Dapatkan Ether daripada pili untuk $1",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Dapatkan Tron daripada pili untuk $1",
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "Dapatkan Bantuan."
@@ -637,8 +637,8 @@
   "mustSelectOne": {
     "message": "Mesti memilih sekurang-kurangnya 1 token."
   },
-  "needEtherInWallet": {
-    "message": "Untuk berinteraksi dengan aplikasi ternyahpusat menggunakan TronMask, anda memerlukan Ether di dalam dompet anda."
+  "needTronInWallet": {
+    "message": "Untuk berinteraksi dengan aplikasi ternyahpusat menggunakan TronMask, anda memerlukan Tron di dalam dompet anda."
   },
   "needImportFile": {
     "message": "Anda mesti pilih fail untuk diimport.",
@@ -918,7 +918,7 @@
     "message": "Ungkapan rahsia sandaran anda memudahkan membuat sandaran dan memulihkan akaun anda."
   },
   "secretBackupPhraseWarning": {
-    "message": "AMARAN: Jangan sesekali dedahkan frasa sandaran anda. Sesiapa yang memperoleh frasa ini boleh mengambil Ether anda selama-lamanya."
+    "message": "AMARAN: Jangan sesekali dedahkan frasa sandaran anda. Sesiapa yang memperoleh frasa ini boleh mengambil Tron anda selama-lamanya."
   },
   "secretPhrase": {
     "message": "Masukkan ungkapan rahsia dua belas perkataan di sini untuk memulihkan kekubah anda."
@@ -959,8 +959,8 @@
   "sendTokens": {
     "message": "Hantar Token"
   },
-  "sentEther": {
-    "message": "menghantar ether"
+  "sentTron": {
+    "message": "menghantar trx"
   },
   "sentTokens": {
     "message": "token dihantar"

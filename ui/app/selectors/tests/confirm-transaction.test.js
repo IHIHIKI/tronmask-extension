@@ -8,7 +8,7 @@ import {
   conversionRateSelector,
 } from '../confirm-transaction'
 
-const getEthersArrayLikeFromObj = (obj) => {
+const getTronsArrayLikeFromObj = (obj) => {
   const arr = []
   Object.keys(obj).forEach((key) => {
     arr.push([obj[key]])
@@ -49,7 +49,7 @@ describe('Confirm Transaction Selector', function () {
       confirmTransaction: {
         tokenData: {
           name: 'transfer',
-          args: getEthersArrayLikeFromObj({
+          args: getTronsArrayLikeFromObj({
             '_to': '0x0dcd5d886577d5081b0c52e242ef29e70be3e7bc',
             '_value': { toNumber: () => '1' },
           }),
@@ -73,7 +73,7 @@ describe('Confirm Transaction Selector', function () {
       confirmTransaction: {
         tokenData: {
           name: 'approve',
-          args: getEthersArrayLikeFromObj({
+          args: getTronsArrayLikeFromObj({
             '_spender': '0x0dcd5d886577d5081b0c52e242ef29e70be3e7bc',
             '_value': { toNumber: () => '1' },
           }),
@@ -97,7 +97,7 @@ describe('Confirm Transaction Selector', function () {
       confirmTransaction: {
         tokenData: {
           name: 'transfer',
-          args: getEthersArrayLikeFromObj({
+          args: getTronsArrayLikeFromObj({
             '_to': '0x0dcd5d886577d5081b0c52e242ef29e70be3e7bc',
             '_value': { toNumber: () => '1' },
           }),

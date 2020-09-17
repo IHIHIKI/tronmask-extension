@@ -309,7 +309,7 @@
     "message": "Presisjonsdesimaler"
   },
   "defaultNetwork": {
-    "message": "Standardnettverket for Ether-transaksjoner er Main Net."
+    "message": "Standardnettverket for Tron-transaksjoner er Main Net."
   },
   "delete": {
     "message": "Slett"
@@ -320,17 +320,17 @@
   "deposit": {
     "message": "Innskudd"
   },
-  "depositEther": {
-    "message": "Sett inn Ether "
+  "depositTron": {
+    "message": "Sett inn Tron "
   },
   "details": {
     "message": "Detaljer"
   },
-  "directDepositEther": {
-    "message": "Sett Ether direkte inn"
+  "directDepositTron": {
+    "message": "Sett Tron direkte inn"
   },
-  "directDepositEtherExplainer": {
-    "message": "Hvis du allerede har noe Ether, er den raskeste måten å få Ether i den nye lommeboken din på ved hjelp av direkte innskudd."
+  "directDepositTronExplainer": {
+    "message": "Hvis du allerede har noe Tron, er den raskeste måten å få Tron i den nye lommeboken din på ved hjelp av direkte innskudd."
   },
   "done": {
     "message": "Ferdig"
@@ -457,7 +457,7 @@
     "message": "Datakraftspris ekstremt lav "
   },
   "gasPriceInfoModalContent": {
-    "message": "Datakraftpris angir mengden Ether du er villig til å betale for hver datakraftenhet."
+    "message": "Datakraftpris angir mengden Tron du er villig til å betale for hver datakraftenhet."
   },
   "gasPriceNoDenom": {
     "message": "Datakraft"
@@ -468,12 +468,12 @@
   "generalSettingsDescription": {
     "message": "Valutakonvertering, primærvaluta, språk, identifikasjonsblokkering"
   },
-  "getEther": {
-    "message": "Skaff Ether "
+  "getTron": {
+    "message": "Skaff Tron "
   },
-  "getEtherFromFaucet": {
-    "message": "Få Ether fra en kran for $1",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Få Tron fra en kran for $1",
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "Få hjelp."
@@ -653,8 +653,8 @@
   "mustSelectOne": {
     "message": "Må velge minst 1 token. "
   },
-  "needEtherInWallet": {
-    "message": "Du må ha Ether i lommeboken din for å samhandle med desentraliserte applikasjoner gjennom MateMask."
+  "needTronInWallet": {
+    "message": "Du må ha Tron i lommeboken din for å samhandle med desentraliserte applikasjoner gjennom MateMask."
   },
   "needImportFile": {
     "message": "Du må velge en fil å importere.",
@@ -928,7 +928,7 @@
     "message": "Den hemmelige gjenopprettingsfrasen din gjør det enkelt å sikkerhetskopiere og gjenopprette kontoen din."
   },
   "secretBackupPhraseWarning": {
-    "message": "ADVARSEL: Du må aldri avsløre gjenopprettingsfrasen din. Alle som har denne frasen kan ta fra deg Etheren din for alltid."
+    "message": "ADVARSEL: Du må aldri avsløre gjenopprettingsfrasen din. Alle som har denne frasen kan ta fra deg Tronen din for alltid."
   },
   "secretPhrase": {
     "message": "Skriv inn den tolv ord lange frasen her for å gjenopprette hvelvet ditt. "
@@ -963,8 +963,8 @@
   "sendTokens": {
     "message": "Send tokener"
   },
-  "sentEther": {
-    "message": "sendt ether"
+  "sentTron": {
+    "message": "sendt trx"
   },
   "sentTokens": {
     "message": "sendte tokener "

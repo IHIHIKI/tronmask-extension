@@ -122,22 +122,22 @@
     "message": "Ondalık hassasiyeti"
   },
   "defaultNetwork": {
-    "message": "Ether işlemleri için varsayılan ağ Main Net."
+    "message": "Tron işlemleri için varsayılan ağ Main Net."
   },
   "deposit": {
     "message": "Yatır"
   },
-  "depositEther": {
-    "message": "Ether yatır"
+  "depositTron": {
+    "message": "Tron yatır"
   },
   "details": {
     "message": "Ayrıntılar"
   },
-  "directDepositEther": {
-    "message": "Direk Ether Yatırma"
+  "directDepositTron": {
+    "message": "Direk Tron Yatırma"
   },
-  "directDepositEtherExplainer": {
-    "message": "Eğer çoktan Etheriniz varsa, yeni hesabınıza Ether aktarmanın en kolay yolu direk yatırmadır."
+  "directDepositTronExplainer": {
+    "message": "Eğer çoktan Troniniz varsa, yeni hesabınıza Tron aktarmanın en kolay yolu direk yatırmadır."
   },
   "done": {
     "message": "Bitti"
@@ -183,12 +183,12 @@
   "gasPrice": {
     "message": "Gas Fiyatı (GSUN)"
   },
-  "getEther": {
-    "message": "Ether Al"
+  "getTron": {
+    "message": "Tron Al"
   },
-  "getEtherFromFaucet": {
-    "message": "Musluktan $1 karşılığı Ether alın",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Musluktan $1 karşılığı Tron alın",
+    "description": "Displays network name for Tron faucet"
   },
   "here": {
     "message": "burada",
@@ -284,8 +284,8 @@
   "mustSelectOne": {
     "message": "En az bir jeton seçilmeli"
   },
-  "needEtherInWallet": {
-    "message": "TronMask kullanarak merkezi olamayan uygulamalarla etkileşmek için cüzdanınızda Ether bulunmalıdır."
+  "needTronInWallet": {
+    "message": "TronMask kullanarak merkezi olamayan uygulamalarla etkileşmek için cüzdanınızda Tron bulunmalıdır."
   },
   "needImportFile": {
     "message": "Almak için bir dosya seçmelisiniz.",

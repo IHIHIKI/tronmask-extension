@@ -323,16 +323,16 @@
   "deposit": {
     "message": "ಠೇವಣಿ"
   },
-  "depositEther": {
+  "depositTron": {
     "message": "ಎಥರ್ ಠೇವಣಿ ಮಾಡಿ"
   },
   "details": {
     "message": "ವಿವರಗಳು"
   },
-  "directDepositEther": {
+  "directDepositTron": {
     "message": "ಎಥರ್ ನೇರವಾಗಿ ಠೇವಣಿ ಮಾಡಿ"
   },
-  "directDepositEtherExplainer": {
+  "directDepositTronExplainer": {
     "message": "ನೀವು ಈಗಾಗಲೇ ಕೆಲವು ಎಥರ್ ಹೊಂದಿದ್ದರೆ, ನೇರ ಠೇವಣಿ ಮೂಲಕ ನಿಮ್ಮ ಹೊಸ ವ್ಯಾಲೆಟ್‌ನಲ್ಲಿ ಎಥರ್ ಅನ್ನು ಪಡೆಯುವ ತ್ವರಿತ ಮಾರ್ಗ."
   },
   "done": {
@@ -475,12 +475,12 @@
   "generalSettingsDescription": {
     "message": "ಕರೆನ್ಸಿ ಪರಿವರ್ತನೆ, ಪ್ರಾಥಮಿಕ ಕರೆನ್ಸಿ, ಭಾಷೆ, ನಿರ್ಬಂಧಗಳ ಗುರುತಿಸುವಿಕೆ"
   },
-  "getEther": {
+  "getTron": {
     "message": "ಎಥರ್ ಪಡೆಯಿರಿ"
   },
-  "getEtherFromFaucet": {
+  "getTronFromFaucet": {
     "message": "$1 ಗಾಗಿ ಫಾಸೆಟ್‌ನಿಂದ ಎಥರ್ ಅನ್ನು ಪಡೆಯಿರಿ",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "ಸಹಾಯವನ್ನು ಪಡೆಯಿರಿ."
@@ -663,7 +663,7 @@
   "mustSelectOne": {
     "message": "ಕನಿಷ್ಟ 1 ಟೋಕನ್ ಅನ್ನು ಆಯ್ಕೆಮಾಡಬೇಕು."
   },
-  "needEtherInWallet": {
+  "needTronInWallet": {
     "message": "TronMask ಬಳಸಿಕೊಂಡು ವಿಕೇಂದ್ರೀಕೃತ ಖಾತೆಗಳೊಂದಿಗೆ ಸಂವಹನ ನಡೆಸಲು, ನಿಮ್ಮ ವ್ಯಾಲೆಟ್‌ನಲ್ಲಿ ನಿಮಗೆ ಎಥರ್ ಅಗತ್ಯವಿದೆ."
   },
   "needImportFile": {
@@ -985,7 +985,7 @@
   "sendTokens": {
     "message": "ಟೋಕನ್‌ಗಳನ್ನು ಕಳುಹಿಸಿ"
   },
-  "sentEther": {
+  "sentTron": {
     "message": "ಕಳುಹಿಸಲಾದ ಎಥರ್"
   },
   "sentTokens": {

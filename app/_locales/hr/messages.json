@@ -312,7 +312,7 @@
     "message": "Precizni decimalni brojevi"
   },
   "defaultNetwork": {
-    "message": "Zadana je mreža za transakcije Ether glavna mreža."
+    "message": "Zadana je mreža za transakcije Tron glavna mreža."
   },
   "delete": {
     "message": "Izbriši"
@@ -323,17 +323,17 @@
   "deposit": {
     "message": "Polog"
   },
-  "depositEther": {
-    "message": "Položi Ether"
+  "depositTron": {
+    "message": "Položi Tron"
   },
   "details": {
     "message": "Detalji"
   },
-  "directDepositEther": {
-    "message": "Izravan polog Ether"
+  "directDepositTron": {
+    "message": "Izravan polog Tron"
   },
-  "directDepositEtherExplainer": {
-    "message": "Ako imate nešto Ethera, najbrži je način prebacivanja Ethera u vaš novi novčanik izravan polog."
+  "directDepositTronExplainer": {
+    "message": "Ako imate nešto Trona, najbrži je način prebacivanja Trona u vaš novi novčanik izravan polog."
   },
   "done": {
     "message": "Gotovo"
@@ -460,7 +460,7 @@
     "message": "Iznimno niska cijena goriva"
   },
   "gasPriceInfoModalContent": {
-    "message": "Cijena goriva odnosi se na vrijednost Ether koju ste spremni platiti za svaku jedinicu goriva."
+    "message": "Cijena goriva odnosi se na vrijednost Tron koju ste spremni platiti za svaku jedinicu goriva."
   },
   "gasPriceNoDenom": {
     "message": "Cijena goriva"
@@ -471,12 +471,12 @@
   "generalSettingsDescription": {
     "message": "Konverzija valuta, glavna valuta, jezik, blockies identicon"
   },
-  "getEther": {
-    "message": "Dohvati Ether"
+  "getTron": {
+    "message": "Dohvati Tron"
   },
-  "getEtherFromFaucet": {
-    "message": "Dohvati Ether iz svežnja za $1",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Dohvati Tron iz svežnja za $1",
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "Potražite pomoć."
@@ -656,8 +656,8 @@
   "mustSelectOne": {
     "message": "Mora se odabrati barem jedan token."
   },
-  "needEtherInWallet": {
-    "message": "Trebate Ether u svojem novčaniku kako biste ostvarili interakciju s decentraliziranim aplikacijama uporabom usluge TronMask. "
+  "needTronInWallet": {
+    "message": "Trebate Tron u svojem novčaniku kako biste ostvarili interakciju s decentraliziranim aplikacijama uporabom usluge TronMask. "
   },
   "needImportFile": {
     "message": "Morate odabrati datoteku za uvoz.",
@@ -937,7 +937,7 @@
     "message": "Vašom se alternativnom tajnom rečenicom jednostavno sigurnosno kopira i obnavlja vaš račun."
   },
   "secretBackupPhraseWarning": {
-    "message": "UPOZORENJE: nikada ne otkrivajte svoju alternativnu rečenicu. Bilo tko ovom rečenicom može zauvijek preuzeti vaš Ether."
+    "message": "UPOZORENJE: nikada ne otkrivajte svoju alternativnu rečenicu. Bilo tko ovom rečenicom može zauvijek preuzeti vaš Tron."
   },
   "secretPhrase": {
     "message": "Ovdje upišite svoju tajnu rečenicu od 12 riječi kako biste obnovili svoj sef."
@@ -978,8 +978,8 @@
   "sendTokens": {
     "message": "Pošalji tokene"
   },
-  "sentEther": {
-    "message": "pošalji ether"
+  "sentTron": {
+    "message": "pošalji trx"
   },
   "sentTokens": {
     "message": "pošalji tokene"

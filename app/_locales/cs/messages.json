@@ -119,22 +119,22 @@
     "message": "Počet desetinných míst přesnosti"
   },
   "defaultNetwork": {
-    "message": "Výchozí síť pro Etherové transakce je Main Net."
+    "message": "Výchozí síť pro Tronové transakce je Main Net."
   },
   "deposit": {
     "message": "Vklad"
   },
-  "depositEther": {
-    "message": "Vložit Ether"
+  "depositTron": {
+    "message": "Vložit Tron"
   },
   "details": {
     "message": "Podrobnosti"
   },
-  "directDepositEther": {
-    "message": "Vložit Ether přímo"
+  "directDepositTron": {
+    "message": "Vložit Tron přímo"
   },
-  "directDepositEtherExplainer": {
-    "message": "Pokud už vlastníte nějaký Ether, nejrychleji ho dostanete do peněženky přímým vkladem."
+  "directDepositTronExplainer": {
+    "message": "Pokud už vlastníte nějaký Tron, nejrychleji ho dostanete do peněženky přímým vkladem."
   },
   "done": {
     "message": "Hotovo"
@@ -180,12 +180,12 @@
   "gasPrice": {
     "message": "Cena paliva (GSUN)"
   },
-  "getEther": {
-    "message": "Získejte Ether"
+  "getTron": {
+    "message": "Získejte Tron"
   },
-  "getEtherFromFaucet": {
-    "message": "Získejte Ether z faucetu za $1.",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Získejte Tron z faucetu za $1.",
+    "description": "Displays network name for Tron faucet"
   },
   "here": {
     "message": "zde",
@@ -268,8 +268,8 @@
   "mustSelectOne": {
     "message": "Musíte zvolit aspoň 1 token."
   },
-  "needEtherInWallet": {
-    "message": "Potřebujete Ether v peněžence, abyste mohli pomocí TronMasku interagovat s decentralizovanými aplikacemi."
+  "needTronInWallet": {
+    "message": "Potřebujete Tron v peněžence, abyste mohli pomocí TronMasku interagovat s decentralizovanými aplikacemi."
   },
   "needImportFile": {
     "message": "Musíte zvolit soubor k importu.",

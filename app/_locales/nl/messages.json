@@ -95,19 +95,19 @@
     "message": "Decimalen van precisie"
   },
   "defaultNetwork": {
-    "message": "Het standaardnetwerk voor Ether-transacties is Main Net."
+    "message": "Het standaardnetwerk voor Tron-transacties is Main Net."
   },
   "deposit": {
     "message": "Storting"
   },
-  "depositEther": {
-    "message": "Stort Ether"
+  "depositTron": {
+    "message": "Stort Tron"
   },
-  "directDepositEther": {
-    "message": "Directe Ether storten"
+  "directDepositTron": {
+    "message": "Directe Tron storten"
   },
-  "directDepositEtherExplainer": {
-    "message": "Als je al wat Ether hebt, de snelste manier om Ether in je nieuwe portemonnee te krijgen door een directe storting."
+  "directDepositTronExplainer": {
+    "message": "Als je al wat Tron hebt, de snelste manier om Tron in je nieuwe portemonnee te krijgen door een directe storting."
   },
   "done": {
     "message": "Gedaan"
@@ -150,12 +150,12 @@
   "gasPrice": {
     "message": "Gasprijs (GSUN)"
   },
-  "getEther": {
-    "message": "Krijg Ether"
+  "getTron": {
+    "message": "Krijg Tron"
   },
-  "getEtherFromFaucet": {
-    "message": "Haal Ether uit een kraan voor de $1",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Haal Tron uit een kraan voor de $1",
+    "description": "Displays network name for Tron faucet"
   },
   "here": {
     "message": "hier",
@@ -242,8 +242,8 @@
   "mustSelectOne": {
     "message": "Moet ten minste één token selecteren."
   },
-  "needEtherInWallet": {
-    "message": "Om te communiceren met gedecentraliseerde applicaties met TronMask, heb je Ether nodig in je portemonnee."
+  "needTronInWallet": {
+    "message": "Om te communiceren met gedecentraliseerde applicaties met TronMask, heb je Tron nodig in je portemonnee."
   },
   "needImportFile": {
     "message": "U moet een bestand selecteren om te importeren.",

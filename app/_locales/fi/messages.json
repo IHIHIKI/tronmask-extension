@@ -309,7 +309,7 @@
     "message": "Tarkkuusdesimaalit"
   },
   "defaultNetwork": {
-    "message": "Oletusverkko Ether-tapahtumille on Main Net."
+    "message": "Oletusverkko Tron-tapahtumille on Main Net."
   },
   "delete": {
     "message": "Poista"
@@ -320,17 +320,17 @@
   "deposit": {
     "message": "Talleta"
   },
-  "depositEther": {
-    "message": "Talleta Etheriä"
+  "depositTron": {
+    "message": "Talleta Troniä"
   },
   "details": {
     "message": "Tiedot"
   },
-  "directDepositEther": {
-    "message": "Talleta etheriä suoraan"
+  "directDepositTron": {
+    "message": "Talleta trxiä suoraan"
   },
-  "directDepositEtherExplainer": {
-    "message": "Jos sinulla on jo etheriä, nopein tapa hankkia etheriä uuteen lompakkoosi on suoratalletus."
+  "directDepositTronExplainer": {
+    "message": "Jos sinulla on jo trxiä, nopein tapa hankkia trxiä uuteen lompakkoosi on suoratalletus."
   },
   "done": {
     "message": "Valmis"
@@ -461,7 +461,7 @@
     "message": "Gas-hinta erittäin alhainen"
   },
   "gasPriceInfoModalContent": {
-    "message": "Polttoaineen hinta määrittää Ether-määrän, jonka olet valmis maksamaan jokaisesta polttoaineyksiköstä."
+    "message": "Polttoaineen hinta määrittää Tron-määrän, jonka olet valmis maksamaan jokaisesta polttoaineyksiköstä."
   },
   "gasPriceNoDenom": {
     "message": "Bensan hinta"
@@ -472,12 +472,12 @@
   "generalSettingsDescription": {
     "message": "Valuuttamuunnin, päävaluutta, kieli, blockies identicon"
   },
-  "getEther": {
-    "message": "Hanki Etheriä"
+  "getTron": {
+    "message": "Hanki Troniä"
   },
-  "getEtherFromFaucet": {
-    "message": "Hanki etheriä faucetista kohteelle $1",
-    "description": "Displays network name for Ether faucet"
+  "getTronFromFaucet": {
+    "message": "Hanki trxiä faucetista kohteelle $1",
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "Pyydä apua."
@@ -660,8 +660,8 @@
   "mustSelectOne": {
     "message": "Valittava vähintään 1 poletti."
   },
-  "needEtherInWallet": {
-    "message": "Ollaksesi vuorovaikutuksessa hajautettujen sovellusten kanssa sinulla on oltava lompakossasi Ether."
+  "needTronInWallet": {
+    "message": "Ollaksesi vuorovaikutuksessa hajautettujen sovellusten kanssa sinulla on oltava lompakossasi Tron."
   },
   "needImportFile": {
     "message": "Sinun tarvitsee valita tuotava tiedosto.",
@@ -941,7 +941,7 @@
     "message": "Salainen varmistuslauseesi tekee varmuuskopioinnista ja tilisi palauttamisesta helppoa."
   },
   "secretBackupPhraseWarning": {
-    "message": "VAROITUS: älä koskaan kerro varmuuskopiolausettasi kenellekään. Kuka tahansa tämän lauseen omaava voi napata Etherisi pysyvästi."
+    "message": "VAROITUS: älä koskaan kerro varmuuskopiolausettasi kenellekään. Kuka tahansa tämän lauseen omaava voi napata Tronisi pysyvästi."
   },
   "secretPhrase": {
     "message": "Palauta holvisi syöttämällä tähän salainen kahdentoista sanan tekstisi."
@@ -982,8 +982,8 @@
   "sendTokens": {
     "message": "Lähetä tietueita"
   },
-  "sentEther": {
-    "message": "lähetä etheriä"
+  "sentTron": {
+    "message": "lähetä trxiä"
   },
   "sentTokens": {
     "message": "lähetetyt poletit"

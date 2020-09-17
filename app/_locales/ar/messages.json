@@ -323,16 +323,16 @@
   "deposit": {
     "message": "إيداع"
   },
-  "depositEther": {
+  "depositTron": {
     "message": "إيداع عملة إيثير"
   },
   "details": {
     "message": "التفاصيل"
   },
-  "directDepositEther": {
+  "directDepositTron": {
     "message": "إيداع مباشرة لعملة الأثير"
   },
-  "directDepositEtherExplainer": {
+  "directDepositTronExplainer": {
     "message": "إذا كان لديك بالفعل بعض الأثير، فإن أسرع طريقة للحصول على الأثير في محفظتك الجديدة عن طريق الإيداع المباشر."
   },
   "done": {
@@ -471,12 +471,12 @@
   "generalSettingsDescription": {
     "message": "تحويل العملات، العملة الأساسية، اللغة ، تكتلات blockies identicon"
   },
-  "getEther": {
+  "getTron": {
     "message": "احصل على إيثر"
   },
-  "getEtherFromFaucet": {
+  "getTronFromFaucet": {
     "message": "احصل على الأثير من صنبور مقابل $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for Tron faucet"
   },
   "getHelp": {
     "message": "احصل على الدعم."
@@ -656,7 +656,7 @@
   "mustSelectOne": {
     "message": "يجب تحديد عملة رمزية واحدة على الأقل."
   },
-  "needEtherInWallet": {
+  "needTronInWallet": {
     "message": "للتفاعل مع التطبيقات اللامركزية باستخدام TronMask، ستحتاج إلى الإيثير في محفظتك."
   },
   "needImportFile": {
@@ -978,7 +978,7 @@
   "sendTokens": {
     "message": "إرسال عملات رمزية"
   },
-  "sentEther": {
+  "sentTron": {
     "message": "أرسل عملة إيثير"
   },
   "sentTokens": {

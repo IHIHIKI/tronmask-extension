@@ -148,16 +148,16 @@
   "deposit": {
     "message": "ฝาก"
   },
-  "depositEther": {
+  "depositTron": {
     "message": "การฝากอีเธอร์"
   },
   "details": {
     "message": "รายละเอียด"
   },
-  "directDepositEther": {
+  "directDepositTron": {
     "message": "ฝากอีเธอร์โดยตรง"
   },
-  "directDepositEtherExplainer": {
+  "directDepositTronExplainer": {
     "message": "ถ้าคุณมีอีเธอร์อยู่แล้ววิธีการที่เร็วที่สุดในการเอาเงินเข้ากระเป๋าใหม่ก็คือการโอนตรงๆ"
   },
   "done": {
@@ -231,12 +231,12 @@
   "general": {
     "message": "ทั่วไป"
   },
-  "getEther": {
+  "getTron": {
     "message": "รับอีเธอร์"
   },
-  "getEtherFromFaucet": {
+  "getTronFromFaucet": {
     "message": "รับอีเธอร์ที่ปล่อยจาก $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for Tron faucet"
   },
   "here": {
     "message": "ที่นี่",
@@ -326,7 +326,7 @@
   "mustSelectOne": {
     "message": "ต้องเลือกอย่างน้อย 1 โทเค็น"
   },
-  "needEtherInWallet": {
+  "needTronInWallet": {
     "message": "คุณจะต้องมีอีเธอร์ในกระเป๋าเงินของคุณในการใช้งานกับแอพพลิเคชันแบบกระจายด้วย TronMask"
   },
   "needImportFile": {
