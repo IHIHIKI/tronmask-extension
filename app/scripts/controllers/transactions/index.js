@@ -77,6 +77,7 @@ export default class TransactionController extends EventEmitter {
     this.getPermittedAccounts = opts.getPermittedAccounts
     this.blockTracker = opts.blockTracker
     this.signEthTx = opts.signTransaction
+    this.signTronTransaction = opts.signTronTransaction
     this.inProcessOfSigning = new Set()
 
     this.memStore = new ObservableStore({})
@@ -201,9 +202,7 @@ export default class TransactionController extends EventEmitter {
       this.txStateManager.once(`${initialTxMeta.id}:finished`, (finishedTxMeta) => {
         switch (finishedTxMeta.status) {
           case 'signed':
-          // case 'submitted':
-            // return resolve(finishedTxMeta.hash)
-            return resolve(finishedTxMeta)
+            return resolve(finishedTxMeta.tronTx)
           case 'rejected':
             return reject(cleanErrorStack(ethErrors.provider.userRejectedRequest('TronMask Tx Signature: User denied transaction signature.')))
           case 'failed':
@@ -291,7 +290,7 @@ export default class TransactionController extends EventEmitter {
   }
 
   async addUnapprovedSignTronTransaction (unsignedTransaction, origin) {
-
+    // TODO: ensure this will work for any kind of contract... (e.g. use tron util pkg)
     const from = ethAddress.fromTronHex(unsignedTransaction.raw_data.contract[0].parameter.value.owner_address)
 
     const normalizedTxParams = txUtils.normalizeTxParams({ from })
@@ -306,13 +305,12 @@ export default class TransactionController extends EventEmitter {
     txes in the tx-state-manager, it is necessary to call the asynchronous
     method `this._determineTransactionCategory` after `generateTxMeta`.
     */
-    console.log(normalizedTxParams)
     const txMeta = this.txStateManager.generateTxMeta({
       txParams: normalizedTxParams,
       type: TRANSACTION_TYPE_TRON,
+      onlySign: true,
+      tronTx: unsignedTransaction,
     })
-
-    console.log(txMeta)
 
     if (origin === 'metamask') {
       // Assert the from address is the selected address
@@ -330,7 +328,6 @@ export default class TransactionController extends EventEmitter {
       // Assert that the origin has permissions to initiate transactions from
       // the specified address
       const permittedAddresses = await this.getPermittedAccounts(origin)
-      console.log({ permittedAddresses, origin, normalizedTxParams })
       if (!permittedAddresses.includes(normalizedTxParams.from)) {
         throw ethErrors.provider.unauthorized({ data: { origin } })
       }
@@ -565,7 +562,11 @@ export default class TransactionController extends EventEmitter {
       this.txStateManager.updateTx(txMeta, 'transactions#approveTransaction')
       // sign transaction
       const rawTx = await this.signTransaction(txId)
-      await this.publishTransaction(txId, rawTx)
+      if (txMeta.onlySign) {
+        // skip publish for transactions that we just sign
+      } else {
+        await this.publishTransaction(txId, rawTx)
+      }
       nonceLock.releaseLock()
     } catch (err) {
       // this is try-catch wrapped so that we can guarantee that the nonceLock is released
@@ -592,23 +593,34 @@ export default class TransactionController extends EventEmitter {
   */
   async signTransaction (txId) {
     const txMeta = this.txStateManager.getTx(txId)
-    // add network/chain id
+    let tronTx
     const chainId = this.getChainId()
-    const txParams = { ...txMeta.txParams, chainId }
-    // sign tx
-    const fromAddress = txParams.from
-    const ethTx = new Transaction(txParams)
-    await this.signEthTx(ethTx, fromAddress, { chainId })
-    const { tronTx } = ethTx
-    txMeta.tronTx = tronTx
+    // add network/chain id
+    if (txMeta.type === TRANSACTION_TYPE_TRON) {
+      console.log('TRANSACTION_TYPE_TRON')
+      // TODO...
+      const unsignedTronTx = txMeta.tronTx
+      const fromAddress = txMeta.txParams.from
+      tronTx = await this.signTronTransaction(unsignedTronTx, fromAddress, { chainId })
+      txMeta.tronTx = tronTx
+      this.txStateManager.updateTx(txMeta, 'transactions#signTronTransaction')
+    } else {
+      const txParams = { ...txMeta.txParams, chainId }
+      // sign tx
+      const fromAddress = txParams.from
+      const ethTx = new Transaction(txParams)
+      await this.signEthTx(ethTx, fromAddress, { chainId })
+      tronTx = ethTx.tronTx
+      txMeta.tronTx = tronTx
 
-    // add r,s,v values for provider request purposes see createMetamaskMiddleware
-    // and JSON rpc standard for further explanation
-    txMeta.r = ethUtil.bufferToHex(ethTx.r)
-    txMeta.s = ethUtil.bufferToHex(ethTx.s)
-    txMeta.v = ethUtil.bufferToHex(ethTx.v)
+      // add r,s,v values for provider request purposes see createMetamaskMiddleware
+      // and JSON rpc standard for further explanation
+      txMeta.r = ethUtil.bufferToHex(ethTx.r)
+      txMeta.s = ethUtil.bufferToHex(ethTx.s)
+      txMeta.v = ethUtil.bufferToHex(ethTx.v)
 
-    this.txStateManager.updateTx(txMeta, 'transactions#signTransaction: add r, s, v values')
+      this.txStateManager.updateTx(txMeta, 'transactions#signTransaction: add r, s, v values')
+    }
 
     // set state to signed
     this.txStateManager.setTxStatusSigned(txMeta.id)

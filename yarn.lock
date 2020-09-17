@@ -2360,12 +2360,12 @@
     web3 "^1.2.11"
     web3-provider-engine "^15.0.12"
 
-"@opentron/keyring-controller@^0.4.17":
-  version "0.4.17"
-  resolved "https://registry.yarnpkg.com/@opentron/keyring-controller/-/keyring-controller-0.4.17.tgz#3cc2361358c470ab26af92aabee34a04c5c14f5f"
-  integrity sha512-BlKt4hYiIfK56ViptdBELJDLW54jQEYsEhY4E/KzrM61E3gZw/37ooasIy+0lm0XDgpOGlZSisvUfFVqceP/cA==
+"@opentron/keyring-controller@^0.4.18":
+  version "0.4.18"
+  resolved "https://registry.yarnpkg.com/@opentron/keyring-controller/-/keyring-controller-0.4.18.tgz#aa546d686ab61856398d95c47b696cf8528c4c27"
+  integrity sha512-zGKTTOp0sBNnIbvOahlLEQAmoXnDLwr7niIJUZK6dZ2tbvXf7MN0x6zjup40ULWqivp2B3oz2odvjYFDxA1VDQ==
   dependencies:
-    "@opentron/tron-sig-util" "^0.4.17"
+    "@opentron/tron-sig-util" "^0.4.18"
     bip39 "^2.4.0"
     bluebird "^3.5.0"
     browser-passworder "^2.0.3"
@@ -2403,6 +2403,17 @@
   version "0.4.17"
   resolved "https://registry.yarnpkg.com/@opentron/tron-sig-util/-/tron-sig-util-0.4.17.tgz#abe0971d3f8c7430a389666cfeb5436483103f2d"
   integrity sha512-2b7KMaiyvJJJrG6ZMDc3azj4w55pkDvQsdd2gqTDX/ZBi4li5u1F1D2HU0L5OV4F++22cfz66AH7Je6NrH0M2w==
+  dependencies:
+    "@opentron/tron-eth-conversions" "^0.4.9"
+    "@opentron/tron-networks" "^0.4.10"
+    axios "^0.20.0"
+    elliptic "^6.5.3"
+    web3 "^1.2.11"
+
+"@opentron/tron-sig-util@^0.4.18":
+  version "0.4.18"
+  resolved "https://registry.yarnpkg.com/@opentron/tron-sig-util/-/tron-sig-util-0.4.18.tgz#f68ce4539213b98f83e840de2d179f61e9a26e03"
+  integrity sha512-le+4Yupu5YViIe7JTG4U6WEQcvCzOxuXiK/+FQhWYvf8sQOiQQnHJU/3pXdLjDxSZAOzS7RcWeUgTynZvPxjjg==
   dependencies:
     "@opentron/tron-eth-conversions" "^0.4.9"
     "@opentron/tron-networks" "^0.4.10"
@@ -3202,10 +3213,10 @@
   resolved "https://registry.yarnpkg.com/@tronmask/trx-contract-metadata/-/trx-contract-metadata-1.15.1.tgz#2a127f6553538b3a310c1d3d4bfb77a3cf616b28"
   integrity sha512-IdTDtCW9PMKy6Lx0xA8139apuEqJ6C6ob48UiNlDAE9z8mGQ+2mPe5qvIUNSatipd6Q43KsFQcVi5a88P49VPw==
 
-"@tronmask/trx-ledger-bridge-keyring@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@tronmask/trx-ledger-bridge-keyring/-/trx-ledger-bridge-keyring-1.0.4.tgz#19a2de1030b4f9eb37f9a63f64b13fad560a8701"
-  integrity sha512-AOmZSebdhJlH1Gt1gSVBm9tvD1cN5UcOSmDv3XRugErEzdtrf910bCXxAegnqJ2woXMki/Nh7O1q46scOlWf4g==
+"@tronmask/trx-ledger-bridge-keyring@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@tronmask/trx-ledger-bridge-keyring/-/trx-ledger-bridge-keyring-1.0.5.tgz#1c0b7001c86f0bc37533958a8c3e56f8e884a548"
+  integrity sha512-N40IgCsM0cniTP9jNq2AF8TSUWfVh80ycCidI5CU9HoOneDXIngmIAu5GwBvuCRaZlNbr1DMYwL3XxZjM7BoRw==
   dependencies:
     "@opentron/tron-eth-conversions" "^0.4.5"
     "@opentron/tron-sig-util" "^0.4.7"
