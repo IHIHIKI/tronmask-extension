@@ -5,6 +5,7 @@ import createId from '../lib/random-id'
 import { bnToHex } from '../lib/util'
 import fetchWithTimeout from '../lib/fetch-with-timeout'
 import { ethAddress } from '@opentron/tron-eth-conversions'
+import { contractTypes } from '../lib/tronscan-contract-types';
 
 import {
   MAINNET,
@@ -289,6 +290,7 @@ export default class IncomingTransactionsController {
       TRANSFER: 1,
     }
     */
+
     return {
       blockNumber: `${txMeta.block}`,
       id: createId(),
@@ -296,6 +298,19 @@ export default class IncomingTransactionsController {
       // status: txMeta.contractRet === 'SUCCESS' ? 1 : 0,
       status: txMeta.revert ? 'failed' : 'confirmed',
       time: txMeta.timestamp,
+      // contractType: contractTypes[txMeta.contractType],
+      // contractData: txMeta.contractData,
+      // TODO: extract this into utility function?
+      tronTx: {
+        raw_data: {
+          contract: [{
+            parameter: {
+              value: txMeta.contractData,
+            },
+            type: contractTypes[txMeta.contractType],
+          }],
+        },
+      },
       txParams: {
         // TODO: handle different contract types...
         from: ethAddress.fromTron(txMeta.ownerAddress),
@@ -307,6 +322,7 @@ export default class IncomingTransactionsController {
         nonce: bnToHex(new BN(0)),
       },
       hash: `0x${txMeta.hash}`,
+      // TODO: use determineTransactionCategory function...
       transactionCategory: 'incoming',
     }
   }

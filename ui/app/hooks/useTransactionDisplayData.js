@@ -118,7 +118,12 @@ export function useTransactionDisplayData (transactionGroup) {
     subtitleContainsOrigin = true
   } else if (transactionCategory === INCOMING_TRANSACTION) {
     category = TRANSACTION_CATEGORY_RECEIVE
-    title = t('receive')
+    title = primaryTransaction.tronTx.raw_data.contract[0].type
+    title = title.replace(/Contract$/u, '')
+    if (title === 'Transfer') {
+      title = t('receive')
+    }
+    // title = t('receive')
     prefix = ''
     subtitle = t('fromAddress', [shortenAddress(senderAddress)])
   } else if (transactionCategory === TOKEN_METHOD_TRANSFER_FROM || transactionCategory === TOKEN_METHOD_TRANSFER) {
@@ -133,11 +138,11 @@ export function useTransactionDisplayData (transactionGroup) {
   } else if (transactionCategory === SIGN_TRON_TRANSACTION_ACTION_KEY) {
     category = TRANSACTION_CATEGORY_SIGN_TRON_TRANSACTION
     // TODO: get contract type from primaryTransaction.tronTx
-    console.log(primaryTransaction)
     const { tronTx } = primaryTransaction
     const contractType = tronTx.raw_data.contract[0].type
     // @TODO(tron): translacte? e.g. t(contractType)
     title = contractType
+    title = title.replace(/Contract$/u, '')
     prefix = ''
     // TODO: get contract type from primaryTransaction.tronTx
     subtitle = t('fromAddress', [shortenAddress(senderAddress)])
