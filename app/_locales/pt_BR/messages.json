@@ -1,6 +1,6 @@
 {
   "chartOnlyAvailableEth": {
-    "message": "Tabela disponível apenas em redes de Ethereum."
+    "message": "Tabela disponível apenas em redes de Tron."
   },
   "contractInteraction": {
     "message": "Interação do Contrato"
@@ -82,7 +82,7 @@
     "message": "Valor"
   },
   "appDescription": {
-    "message": "Uma Carteira Ethereum no seu Navegador",
+    "message": "Uma Carteira Tron no seu Navegador",
     "description": "The description of the application"
   },
   "approve": {
@@ -387,7 +387,7 @@
     "message": "Erro ao registrar nome de TNS"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Nome de TNS não encontrado na rede atual. Experimente alternar para a Rede Principal de Ethereum."
+    "message": "Nome de TNS não encontrado na rede atual. Experimente alternar para a Rede Principal de Tron."
   },
   "enterAnAlias": {
     "message": "Digite um pseudônimo"
@@ -399,7 +399,7 @@
     "message": "Insira a senha para continuar"
   },
   "tronPublicAddress": {
-    "message": "Endereço Público do Ethereum"
+    "message": "Endereço Público do Tron"
   },
   "etherscanView": {
     "message": "Ver conta no Tronscan"
@@ -619,7 +619,7 @@
     "message": "Sair"
   },
   "mainnet": {
-    "message": "Rede Ethereum Principal"
+    "message": "Rede Tron Principal"
   },
   "memorizePhrase": {
     "message": "Memorize esta frase."
@@ -631,7 +631,7 @@
     "message": "Mensagem"
   },
   "tronmaskDescription": {
-    "message": "Conectando você ao Ethereum e à Web Descentralizada."
+    "message": "Conectando você ao Tron e à Web Descentralizada."
   },
   "tronmaskVersion": {
     "message": "Versão do TronMask"
@@ -1079,7 +1079,7 @@
     "message": "3. Comece a usar dApps e muito mais!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Use sua conta física como faria com qualquer conta de Ethereum. Faça login em dApps, envie Eth, compre e guarde tokens ERC20 e Tokens Não Fungíveis, como CryptoKitties."
+    "message": "Use sua conta física como faria com qualquer conta de Tron. Faça login em dApps, envie Eth, compre e guarde tokens ERC20 e Tokens Não Fungíveis, como CryptoKitties."
   },
   "storePhrase": {
     "message": "Guarde esta frase em um gerenciador de senhas como o 1Password."

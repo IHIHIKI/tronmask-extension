@@ -1,6 +1,6 @@
 {
   "chartOnlyAvailableEth": {
-    "message": "Mostra només els disponibles a les xarxes Ethereum."
+    "message": "Mostra només els disponibles a les xarxes Tron."
   },
   "contractInteraction": {
     "message": "Contractar Interacció"
@@ -78,7 +78,7 @@
     "message": "Quantitat"
   },
   "appDescription": {
-    "message": "Un Moneder Ethereum al teu Navegador",
+    "message": "Un Moneder Tron al teu Navegador",
     "description": "The description of the application"
   },
   "appName": {
@@ -231,7 +231,7 @@
     "message": "Conectant a la xarxa de Kovan Test"
   },
   "connectingToMainnet": {
-    "message": "Connectant a Xarxa Principal Ethereum"
+    "message": "Connectant a Xarxa Principal Tron"
   },
   "connectingToRopsten": {
     "message": "Connectant a la xarxa de test Ropsten"
@@ -390,7 +390,7 @@
     "message": "Error al registre de nom TNS"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "El nom TNS no s'ha trovat a la xarxa actual. Prova a cambiar a la xarxa principal d'Ethereum."
+    "message": "El nom TNS no s'ha trovat a la xarxa actual. Prova a cambiar a la xarxa principal d'Tron."
   },
   "enterAnAlias": {
     "message": "Introdueix Àlies"
@@ -402,7 +402,7 @@
     "message": "Introdueix la contrasenya per continuar"
   },
   "tronPublicAddress": {
-    "message": "Adreça Pública d'Ethereum"
+    "message": "Adreça Pública d'Tron"
   },
   "etherscanView": {
     "message": "Veure compte a Tronscan"
@@ -615,7 +615,7 @@
     "message": "Tanca la sessió"
   },
   "mainnet": {
-    "message": "Xarxa Ethereum principal"
+    "message": "Xarxa Tron principal"
   },
   "memorizePhrase": {
     "message": "Memoritza aquesta frase"
@@ -627,7 +627,7 @@
     "message": "Missatge"
   },
   "tronmaskDescription": {
-    "message": "Conectant-te a Ethereum i la web descentralitzada."
+    "message": "Conectant-te a Tron i la web descentralitzada."
   },
   "tronmaskVersion": {
     "message": "Versió TronMask"
@@ -1069,7 +1069,7 @@
     "message": "3. Comença a utilitzar dApps i altres!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Fes servir el teu compte de hardware com ho faries amb qualsevol compte Ethereum. Inicia sessió a DApps, envia Eth, compra i emmagatzema fitxes ERC20 i fitxes No Fungibles com CryptoKitties."
+    "message": "Fes servir el teu compte de hardware com ho faries amb qualsevol compte Tron. Inicia sessió a DApps, envia Eth, compra i emmagatzema fitxes ERC20 i fitxes No Fungibles com CryptoKitties."
   },
   "storePhrase": {
     "message": "Guarda aquesta frase a un gestor de contrasenyes com Contrasenya 1"

@@ -1,6 +1,6 @@
 {
   "chartOnlyAvailableEth": {
-    "message": "Таблиця доступна тільки в мережах Ethereum."
+    "message": "Таблиця доступна тільки в мережах Tron."
   },
   "contractInteraction": {
     "message": "Контрактна взаємодія"
@@ -78,7 +78,7 @@
     "message": "Кількість"
   },
   "appDescription": {
-    "message": "Гаманець Ethereum у вашому браузері",
+    "message": "Гаманець Tron у вашому браузері",
     "description": "The description of the application"
   },
   "appName": {
@@ -234,7 +234,7 @@
     "message": "Підключення до тестової мережі Kovan"
   },
   "connectingToMainnet": {
-    "message": "З'єднуємось з Головною мережею Ethereum"
+    "message": "З'єднуємось з Головною мережею Tron"
   },
   "connectingToRopsten": {
     "message": "Під'єднуємось до Тестової мережі Ropsten"
@@ -393,7 +393,7 @@
     "message": "Помилка у реєстрації TNS ім'я"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Ім'я TNS не знайдено у даній мережі. Спробуйте перейти у Main Ethereum Network."
+    "message": "Ім'я TNS не знайдено у даній мережі. Спробуйте перейти у Main Tron Network."
   },
   "enterAnAlias": {
     "message": "Введіть псевдонім"
@@ -405,7 +405,7 @@
     "message": "Введіть пароль, щоб продовжити"
   },
   "tronPublicAddress": {
-    "message": "Публічна адреса Ethereum"
+    "message": "Публічна адреса Tron"
   },
   "etherscanView": {
     "message": "Переглянути обліковий запис на Tronscan"
@@ -631,7 +631,7 @@
     "message": "Вийти"
   },
   "mainnet": {
-    "message": "Головна Мережа Ethereum"
+    "message": "Головна Мережа Tron"
   },
   "memorizePhrase": {
     "message": "Запам'ятайте цю фразу."
@@ -643,7 +643,7 @@
     "message": "Повідомлення"
   },
   "tronmaskDescription": {
-    "message": "Під'єднуємо вас до Ethereum та децентралізованої мережі."
+    "message": "Під'єднуємо вас до Tron та децентралізованої мережі."
   },
   "tronmaskVersion": {
     "message": "Версія TronMask"
@@ -1091,7 +1091,7 @@
     "message": "3. Почніть користуватись dApps та більше!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Використовуйте ваш апаратний обліковий запис, як би ви використовували будь-який обліковий запис Ethereum. Увійдіть в dApps, надсилайте Eth, купуйте та зберігайте токени ERC20 та токени, які не є взаємозамінними, такі як CryptoKitties."
+    "message": "Використовуйте ваш апаратний обліковий запис, як би ви використовували будь-який обліковий запис Tron. Увійдіть в dApps, надсилайте Eth, купуйте та зберігайте токени ERC20 та токени, які не є взаємозамінними, такі як CryptoKitties."
   },
   "storePhrase": {
     "message": "Зберігайте цю фразу у менеджері паролів, як 1Password."

@@ -1,6 +1,6 @@
 {
   "chartOnlyAvailableEth": {
-    "message": "チャートはEthereumネットワークでのみ利用可能です。"
+    "message": "チャートはTronネットワークでのみ利用可能です。"
   },
   "contractInteraction": {
     "message": "コントラクトへのアクセス"
@@ -75,7 +75,7 @@
     "message": "金額"
   },
   "appDescription": {
-    "message": "Ethereumのブラウザ・エクステンション",
+    "message": "Tronのブラウザ・エクステンション",
     "description": "The description of the application"
   },
   "appName": {
@@ -303,7 +303,7 @@
     "message": "ログアウト"
   },
   "mainnet": {
-    "message": "Ethereumメインネットワーク"
+    "message": "Tronメインネットワーク"
   },
   "message": {
     "message": "メッセージ"

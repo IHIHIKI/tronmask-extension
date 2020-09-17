@@ -28,7 +28,7 @@ describe('AdvancedTabContent Component', function () {
         insufficientBalance={false}
         customPriceIsSafe
         isSpeedUp={false}
-        isEthereumNetwork
+        isTronNetwork
       />
     ))
   })

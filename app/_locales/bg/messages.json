@@ -1,6 +1,6 @@
 {
   "chartOnlyAvailableEth": {
-    "message": "Диаграмата е достъпна само в мрежи на Ethereum."
+    "message": "Диаграмата е достъпна само в мрежи на Tron."
   },
   "contractInteraction": {
     "message": "Взаимодействие с договор"
@@ -234,7 +234,7 @@
     "message": "Свързване с тестовата мрежа на Kovan"
   },
   "connectingToMainnet": {
-    "message": "Свързване с главната мрежа Ethereum"
+    "message": "Свързване с главната мрежа Tron"
   },
   "connectingToRopsten": {
     "message": "Свързване с тестова мрежа Ropsten"
@@ -639,7 +639,7 @@
     "message": "Съобщение"
   },
   "tronmaskDescription": {
-    "message": "Свързва ви с Ethereum и децентрализираната мрежа."
+    "message": "Свързва ви с Tron и децентрализираната мрежа."
   },
   "tronmaskVersion": {
     "message": "Версия на TronMask"
@@ -1087,7 +1087,7 @@
     "message": "3. Започнете да използвате dApps и други!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Използвайте хардуерния си акаунт, както бихте правили с всеки акаунт в Ethereum. Влезте в dApps, изпратете Eth, купете и съхранявайте жетони ERC20 и незаменими жетони като CryptoKitties."
+    "message": "Използвайте хардуерния си акаунт, както бихте правили с всеки акаунт в Tron. Влезте в dApps, изпратете Eth, купете и съхранявайте жетони ERC20 и незаменими жетони като CryptoKitties."
   },
   "storePhrase": {
     "message": "Съхранявайте тази фраза в мениджър на пароли като 1Password."

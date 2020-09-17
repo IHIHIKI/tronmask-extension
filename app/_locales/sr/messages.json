@@ -1,6 +1,6 @@
 {
   "chartOnlyAvailableEth": {
-    "message": "Grafikon dostupan jedino na mrežama Ethereum."
+    "message": "Grafikon dostupan jedino na mrežama Tron."
   },
   "contractInteraction": {
     "message": "Ugovorna interakcija"
@@ -78,7 +78,7 @@
     "message": "Iznos"
   },
   "appDescription": {
-    "message": "Ethereum novčanik u vašem pregledaču",
+    "message": "Tron novčanik u vašem pregledaču",
     "description": "The description of the application"
   },
   "appName": {
@@ -231,7 +231,7 @@
     "message": "Povezuje se na test mrežu Kovan"
   },
   "connectingToMainnet": {
-    "message": "Povezuje se na glavnu Ethereum mrežu"
+    "message": "Povezuje se na glavnu Tron mrežu"
   },
   "connectingToRopsten": {
     "message": "Povezuje se na Ropsten Test mrežu"
@@ -390,7 +390,7 @@
     "message": "Greška u registraciji TNS imena."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "TNS ime nije nađeno na trenutnoj mreži. Probajte da se prebacite na glavnu Ethereum mrežu."
+    "message": "TNS ime nije nađeno na trenutnoj mreži. Probajte da se prebacite na glavnu Tron mrežu."
   },
   "enterAnAlias": {
     "message": "Unesite pseudonim"
@@ -402,7 +402,7 @@
     "message": "Unesite lozinku kako biste nastavili"
   },
   "tronPublicAddress": {
-    "message": "Ethereum javna adresa"
+    "message": "Tron javna adresa"
   },
   "etherscanView": {
     "message": "Pogledajte račun na Tronscan-u"
@@ -625,7 +625,7 @@
     "message": "Odjavi se"
   },
   "mainnet": {
-    "message": "Glavna Ethereum mreža"
+    "message": "Glavna Tron mreža"
   },
   "memorizePhrase": {
     "message": "Zapamtite ovaj izraz."
@@ -634,7 +634,7 @@
     "message": "Poruka"
   },
   "tronmaskDescription": {
-    "message": "Povezivanje na Ethereum i decentralizovani veb."
+    "message": "Povezivanje na Tron i decentralizovani veb."
   },
   "tronmaskVersion": {
     "message": "TronMask verzija"
@@ -1082,7 +1082,7 @@
     "message": "3. Počnite da koristite dApps i još mnogo toga!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Koristite nalog na vašem hardveru isto onako kako biste koristili bilo koji Ethereum nalog. Prijavite se na dApps, šaljite Eth, kupujte i skladištite ERC20 tokene i nezamenljive tokene poput CryptoKitties."
+    "message": "Koristite nalog na vašem hardveru isto onako kako biste koristili bilo koji Tron nalog. Prijavite se na dApps, šaljite Eth, kupujte i skladištite ERC20 tokene i nezamenljive tokene poput CryptoKitties."
   },
   "storePhrase": {
     "message": "Čuvajte ovaj izraz u menadžeru šifri kao što je 1Password."

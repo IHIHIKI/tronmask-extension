@@ -42,7 +42,7 @@ export default class GasModalPageContainer extends Component {
     isSpeedUp: PropTypes.bool,
     isRetry: PropTypes.bool,
     disableSave: PropTypes.bool,
-    isEthereumNetwork: PropTypes.bool,
+    isTronNetwork: PropTypes.bool,
   }
 
   state = {}
@@ -83,7 +83,7 @@ export default class GasModalPageContainer extends Component {
       infoRowProps: {
         transactionFee,
       },
-      isEthereumNetwork,
+      isTronNetwork,
     } = this.props
 
     return (
@@ -100,7 +100,7 @@ export default class GasModalPageContainer extends Component {
         customPriceIsSafe={customPriceIsSafe}
         isSpeedUp={isSpeedUp}
         isRetry={isRetry}
-        isEthereumNetwork={isEthereumNetwork}
+        isTronNetwork={isTronNetwork}
       />
     )
   }

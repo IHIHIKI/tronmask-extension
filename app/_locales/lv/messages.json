@@ -1,6 +1,6 @@
 {
   "chartOnlyAvailableEth": {
-    "message": "Grafiks pieejams vienīgi Ethereum tīklos."
+    "message": "Grafiks pieejams vienīgi Tron tīklos."
   },
   "contractInteraction": {
     "message": "Līguma mijiedarbības"
@@ -82,7 +82,7 @@
     "message": "Apjoms"
   },
   "appDescription": {
-    "message": "Ethereum maks pārlūkā",
+    "message": "Tron maks pārlūkā",
     "description": "The description of the application"
   },
   "approve": {
@@ -234,7 +234,7 @@
     "message": "Savienojas ar Kovan testa tīklu"
   },
   "connectingToMainnet": {
-    "message": "Savienojas ar galveno Ethereum tīklu"
+    "message": "Savienojas ar galveno Tron tīklu"
   },
   "connectingToRopsten": {
     "message": "Pieslēdzas Ropsten testa tīklam"
@@ -393,7 +393,7 @@
     "message": "Kļūda TNS vārda reģistrācijā"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Šajā tīklā TNS nosaukums nav atrasts. Pamēģiniet pārslēgties uz galveno Ethereum tīklu."
+    "message": "Šajā tīklā TNS nosaukums nav atrasts. Pamēģiniet pārslēgties uz galveno Tron tīklu."
   },
   "enterAnAlias": {
     "message": "Ievadiet segvārdu"
@@ -405,7 +405,7 @@
     "message": "Ievadiet paroli, lai turpinātu"
   },
   "tronPublicAddress": {
-    "message": "Ethereum publiskā adrese"
+    "message": "Tron publiskā adrese"
   },
   "etherscanView": {
     "message": "Skatīt kontu ar Tronscan"
@@ -627,7 +627,7 @@
     "message": "Izrakstīties"
   },
   "mainnet": {
-    "message": "Galvenais Ethereum tīkls"
+    "message": "Galvenais Tron tīkls"
   },
   "memorizePhrase": {
     "message": "Iegaumējiet šo frāzi."
@@ -639,7 +639,7 @@
     "message": "Ziņojums"
   },
   "tronmaskDescription": {
-    "message": "Veido savienojumu ar Ethereum un decentralizēto tīmekli."
+    "message": "Veido savienojumu ar Tron un decentralizēto tīmekli."
   },
   "tronmaskVersion": {
     "message": "TronMask versija"
@@ -1087,7 +1087,7 @@
     "message": "3. Sāciet izmantot dApps un citas funkcijas!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Lietojiet aparatūras kontu līdzīgi citiem Ethereum kontiem. Pierakstieties dApps, sūtiet Eth, pērciet un glabājiet ERC20 žetonus un neatvietojamos žetonus, piemēram, CryptoKitties."
+    "message": "Lietojiet aparatūras kontu līdzīgi citiem Tron kontiem. Pierakstieties dApps, sūtiet Eth, pērciet un glabājiet ERC20 žetonus un neatvietojamos žetonus, piemēram, CryptoKitties."
   },
   "storePhrase": {
     "message": "Saglabājiet šo frāzi paroļu pārvaldniekā, piemēram, 1Password."

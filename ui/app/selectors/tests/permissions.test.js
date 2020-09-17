@@ -20,7 +20,7 @@ describe('selectors', function () {
             },
             'https://remix.tron.org': {
               'icon': 'https://remix.tron.org/icon.png',
-              'name': 'Remix - Ethereum IDE',
+              'name': 'Remix - Tron IDE',
               'host': 'remix.tron.org',
             },
           },
@@ -81,7 +81,7 @@ describe('selectors', function () {
         host: 'peepeth.com',
       }, {
         extensionId,
-        name: 'Remix - Ethereum IDE',
+        name: 'Remix - Tron IDE',
         icon: 'https://remix.tron.org/icon.png',
         origin: 'https://remix.tron.org',
         host: 'remix.tron.org',
@@ -100,7 +100,7 @@ describe('selectors', function () {
             },
             'https://remix.tron.org': {
               'icon': 'https://remix.tron.org/icon.png',
-              'name': 'Remix - Ethereum IDE',
+              'name': 'Remix - Tron IDE',
               'host': 'remix.tron.com',
             },
           },
@@ -156,7 +156,7 @@ describe('selectors', function () {
       const extensionId = undefined
       assert.deepEqual(getConnectedDomainsForSelectedAddress(mockState), [{
         extensionId,
-        name: 'Remix - Ethereum IDE',
+        name: 'Remix - Tron IDE',
         icon: 'https://remix.tron.org/icon.png',
         origin: 'https://remix.tron.org',
         host: 'remix.tron.com',
@@ -421,7 +421,7 @@ describe('selectors', function () {
         domainMetadata: {
           'https://remix.tron.org': {
             'icon': 'https://remix.tron.org/icon.png',
-            'name': 'Remix - Ethereum IDE',
+            'name': 'Remix - Tron IDE',
           },
         },
         permissionsHistory: {

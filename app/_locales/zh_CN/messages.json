@@ -631,7 +631,7 @@
     "message": "消息"
   },
   "tronmaskDescription": {
-    "message": "TronMask is a secure identity vault for Ethereum."
+    "message": "TronMask is a secure identity vault for Tron."
   },
   "tronmaskVersion": {
     "message": "TronMask 版本"

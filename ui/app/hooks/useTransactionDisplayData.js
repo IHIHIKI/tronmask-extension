@@ -40,8 +40,8 @@ import { useTokenData } from './useTokenData'
  * @property {string} primaryCurrency        - the currency string to display in the primary position
  * @property {string} [secondaryCurrency]    - the currency string to display in the secondary position
  * @property {string} status                 - the status of the transaction
- * @property {string} senderAddress          - the Ethereum address of the sender
- * @property {string} recipientAddress       - the Ethereum address of the recipient
+ * @property {string} senderAddress          - the Tron address of the sender
+ * @property {string} recipientAddress       - the Tron address of the recipient
  */
 
 /**

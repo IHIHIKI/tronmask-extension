@@ -78,7 +78,7 @@
     "message": "Znesek"
   },
   "appDescription": {
-    "message": "Denarnica za Ethereum v brskalniku",
+    "message": "Denarnica za Tron v brskalniku",
     "description": "The description of the application"
   },
   "appName": {
@@ -393,7 +393,7 @@
     "message": "Napaka pri registraciji imena TNS"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Imena TNS v trenutnem omrežju ni mogoče najti. Poskusite preklopiti na glavno omrežje Ethereum."
+    "message": "Imena TNS v trenutnem omrežju ni mogoče najti. Poskusite preklopiti na glavno omrežje Tron."
   },
   "enterAnAlias": {
     "message": "Vnesite vzdevek"
@@ -405,7 +405,7 @@
     "message": "Za nadaljevanje vnesite geslo"
   },
   "tronPublicAddress": {
-    "message": "Javni naslov Ethereum"
+    "message": "Javni naslov Tron"
   },
   "etherscanView": {
     "message": "Poglej račun na Tronscan"
@@ -628,7 +628,7 @@
     "message": "Sporočilo"
   },
   "tronmaskDescription": {
-    "message": "TronMask je varen identitetni sklad za Ethereum."
+    "message": "TronMask je varen identitetni sklad za Tron."
   },
   "tronmaskVersion": {
     "message": "Različica"
@@ -1073,7 +1073,7 @@
     "message": "3. Začnite uporabljati dApps in več!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Uporabite strojno denarnico kot katerikoli drug Ethereum račun. Prijavite se v dApps, pošljite Ether in ERC20 žetone in žetone kot CryptoKitties."
+    "message": "Uporabite strojno denarnico kot katerikoli drug Tron račun. Prijavite se v dApps, pošljite Ether in ERC20 žetone in žetone kot CryptoKitties."
   },
   "storePhrase": {
     "message": "To geslo shranite v upravitelja gesel, kot je 1Password."

@@ -36,7 +36,7 @@
     "message": "Kantite lajan"
   },
   "appDescription": {
-    "message": "Ekstansyon Navigatè Ethereum",
+    "message": "Ekstansyon Navigatè Tron",
     "description": "The description of the application"
   },
   "appName": {
@@ -119,7 +119,7 @@
     "message": "Konekte nan Kovan Tès Rezo a"
   },
   "connectingToMainnet": {
-    "message": "Konekte ak Prensipal Ethereum Rezo a"
+    "message": "Konekte ak Prensipal Tron Rezo a"
   },
   "connectingToRopsten": {
     "message": "Konekte ak Ropsten Tès Rezo a"
@@ -369,13 +369,13 @@
     "message": "Dekonekte"
   },
   "mainnet": {
-    "message": "Prensipal Ethereum Rezo a"
+    "message": "Prensipal Tron Rezo a"
   },
   "message": {
     "message": "Mesaje"
   },
   "tronmaskDescription": {
-    "message": "TronMask sekirize idantite pou Ethereum."
+    "message": "TronMask sekirize idantite pou Tron."
   },
   "tronmaskVersion": {
     "message": "TronMask Vèsyon"

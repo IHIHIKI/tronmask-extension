@@ -1,6 +1,6 @@
 {
   "chartOnlyAvailableEth": {
-    "message": "Tabel on saadaval vaid Ethereumi võrkudes."
+    "message": "Tabel on saadaval vaid Troni võrkudes."
   },
   "contractInteraction": {
     "message": "Lepingu suhtlus"
@@ -78,7 +78,7 @@
     "message": "Summa"
   },
   "appDescription": {
-    "message": "Ethereumi rahakott teie lehitsejas",
+    "message": "Troni rahakott teie lehitsejas",
     "description": "The description of the application"
   },
   "appName": {
@@ -393,7 +393,7 @@
     "message": "Tõrge TNS-i nime registreerimisel"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "TNS-i nime ei leitud praegusest võrgust. Proovige lülituda peamisele Ethereumi võrgule."
+    "message": "TNS-i nime ei leitud praegusest võrgust. Proovige lülituda peamisele Troni võrgule."
   },
   "enterAnAlias": {
     "message": "Sisestage alias"
@@ -405,7 +405,7 @@
     "message": "Jätkamiseks sisestage parool"
   },
   "tronPublicAddress": {
-    "message": "Ethereumi avalik aadress"
+    "message": "Troni avalik aadress"
   },
   "etherscanView": {
     "message": "Vaadake kontot Tronscanil"
@@ -621,7 +621,7 @@
     "message": "Logi välja"
   },
   "mainnet": {
-    "message": "Ethereumi põhivõrk"
+    "message": "Troni põhivõrk"
   },
   "memorizePhrase": {
     "message": "Jätke fraas meelde."
@@ -633,7 +633,7 @@
     "message": "Sõnum"
   },
   "tronmaskDescription": {
-    "message": "Teid ühendatakse Ethereumi ja detsentraliseeritud võrguga."
+    "message": "Teid ühendatakse Troni ja detsentraliseeritud võrguga."
   },
   "tronmaskVersion": {
     "message": "TronMaski versioon"
@@ -1081,7 +1081,7 @@
     "message": "3. Hakake kasutama dAppse ja muud!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Kasutage oma riistvarakontot nagu mis tahes teist Ethereumi kontot. Logige dAppsi, saatke Eth-d, ostke ja hoiustage ERC20 lube ning asendamatuid lube nagu CryptoKitties."
+    "message": "Kasutage oma riistvarakontot nagu mis tahes teist Troni kontot. Logige dAppsi, saatke Eth-d, ostke ja hoiustage ERC20 lube ning asendamatuid lube nagu CryptoKitties."
   },
   "storePhrase": {
     "message": "Salvestage see fraas paroolihaldurisse, nagu 1Password."

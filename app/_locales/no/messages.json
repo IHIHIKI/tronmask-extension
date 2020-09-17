@@ -1,6 +1,6 @@
 {
   "chartOnlyAvailableEth": {
-    "message": "Diagram kun tilgjengelig på Ethereum-nettverk."
+    "message": "Diagram kun tilgjengelig på Tron-nettverk."
   },
   "contractInteraction": {
     "message": "Kontraktssamhandling"
@@ -78,7 +78,7 @@
     "message": "Sum"
   },
   "appDescription": {
-    "message": "En Ethereum-lommebok i nettleseren din",
+    "message": "En Tron-lommebok i nettleseren din",
     "description": "The description of the application"
   },
   "appName": {
@@ -231,7 +231,7 @@
     "message": "Kobler til Kovan testnettverk"
   },
   "connectingToMainnet": {
-    "message": "Forbinder med hoved-Ethereumnettverk "
+    "message": "Forbinder med hoved-Tronnettverk "
   },
   "connectingToRopsten": {
     "message": "Kobler til Ropsten testnettverk"
@@ -390,7 +390,7 @@
     "message": "Feil i TNS-navneregistrering"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "TNS-navn ikke funnet i det gjeldende nettverket. Prøv å bytte til hovednettverket for Ethereum."
+    "message": "TNS-navn ikke funnet i det gjeldende nettverket. Prøv å bytte til hovednettverket for Tron."
   },
   "enterAnAlias": {
     "message": "Oppgi et alias"
@@ -402,7 +402,7 @@
     "message": "Skriv inn passord for å fortsette"
   },
   "tronPublicAddress": {
-    "message": "Ethereum offentlig adresse"
+    "message": "Tron offentlig adresse"
   },
   "etherscanView": {
     "message": "Vis konto på Tronscan "
@@ -621,7 +621,7 @@
     "message": "Logg ut "
   },
   "mainnet": {
-    "message": "Ethereum hovednettverk"
+    "message": "Tron hovednettverk"
   },
   "memorizePhrase": {
     "message": "Memorer denne frasen. "
@@ -633,7 +633,7 @@
     "message": "Melding "
   },
   "tronmaskDescription": {
-    "message": "Kobler deg til Ethereum og det desentraliserte nettet."
+    "message": "Kobler deg til Tron og det desentraliserte nettet."
   },
   "tronmaskVersion": {
     "message": "TronMask-versjon "
@@ -1069,7 +1069,7 @@
     "message": "3. Begynn å bruke dApps mer! "
   },
   "step3HardwareWalletMsg": {
-    "message": "Bruk hardware-kontoen din slik du ville gjort med enhver Ethereumkonto. Logg på dApps, send Eth, kjøp og lagre ERC20-tokener og ikke-fungible tokener som CryptoKitties."
+    "message": "Bruk hardware-kontoen din slik du ville gjort med enhver Tronkonto. Logg på dApps, send Eth, kjøp og lagre ERC20-tokener og ikke-fungible tokener som CryptoKitties."
   },
   "storePhrase": {
     "message": "Lagre denne frasen i en passordbehandler slik som 1Password."

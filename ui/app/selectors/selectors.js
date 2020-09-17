@@ -247,7 +247,7 @@ export function getIsMainnet (state) {
   return networkType === NETWORK_TYPES.MAINNET
 }
 
-export function isEthereumNetwork (state) {
+export function isTronNetwork (state) {
   const networkType = getNetworkIdentifier(state)
   const {
     MAINNET,

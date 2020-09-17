@@ -21,7 +21,7 @@
     "message": "Částka"
   },
   "appDescription": {
-    "message": "Ethereum rozšíření prohlížeče",
+    "message": "Tron rozšíření prohlížeče",
     "description": "The description of the application"
   },
   "appName": {
@@ -74,7 +74,7 @@
     "message": "Připojuji se k Kovan Test Network"
   },
   "connectingToMainnet": {
-    "message": "Připojuji se k Main Ethereum Network"
+    "message": "Připojuji se k Main Tron Network"
   },
   "connectingToRopsten": {
     "message": "Připojuji se k Ropsten Test Network"
@@ -260,7 +260,7 @@
     "message": "Zpráva"
   },
   "tronmaskDescription": {
-    "message": "TronMask je bezpečný osobní trezor pro Ethereum."
+    "message": "TronMask je bezpečný osobní trezor pro Tron."
   },
   "myAccounts": {
     "message": "Moje účty"

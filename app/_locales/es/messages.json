@@ -1,6 +1,6 @@
 {
   "chartOnlyAvailableEth": {
-    "message": "Tabla solo disponible en redes Ethereum."
+    "message": "Tabla solo disponible en redes Tron."
   },
   "contractInteraction": {
     "message": "Interacción con contrato"
@@ -75,7 +75,7 @@
     "message": "Cantidad"
   },
   "appDescription": {
-    "message": "Extensión del navegador para Ethereum",
+    "message": "Extensión del navegador para Tron",
     "description": "The description of the application"
   },
   "appName": {
@@ -191,7 +191,7 @@
     "message": "Conectando a la red de test Kovan"
   },
   "connectingToMainnet": {
-    "message": "Conectando a la red principal de Ethereum (Main Net)"
+    "message": "Conectando a la red principal de Tron (Main Net)"
   },
   "connectingToRopsten": {
     "message": "Conectando a la red de test Ropsten"
@@ -513,13 +513,13 @@
     "message": "Cerrar sesión"
   },
   "mainnet": {
-    "message": "Red principal de Ethereum (Main Net)"
+    "message": "Red principal de Tron (Main Net)"
   },
   "message": {
     "message": "Mensaje"
   },
   "tronmaskDescription": {
-    "message": "TronMask es una identidad segura en Ethereum"
+    "message": "TronMask es una identidad segura en Tron"
   },
   "tronmaskVersion": {
     "message": "Versión de TronMask"
@@ -874,7 +874,7 @@
     "message": "3. Empezar a usar dApps y más!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Usa tu cuenta física igual que harías con cualquier cuenta de Ethereum. Regístrate con dApps, manda Eth, compra y almacena tokens de ERC20 y otros tokens no-fungibles, como CryptoKitties."
+    "message": "Usa tu cuenta física igual que harías con cualquier cuenta de Tron. Regístrate con dApps, manda Eth, compra y almacena tokens de ERC20 y otros tokens no-fungibles, como CryptoKitties."
   },
   "submitted": {
     "message": "Enviado"

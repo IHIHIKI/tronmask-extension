@@ -21,7 +21,7 @@
     "message": "Valor"
   },
   "appDescription": {
-    "message": "Extensão para o browser de Ethereum",
+    "message": "Extensão para o browser de Tron",
     "description": "The description of the application"
   },
   "appName": {
@@ -234,13 +234,13 @@
     "message": "Sair"
   },
   "mainnet": {
-    "message": "Rede Principal de Ethereum"
+    "message": "Rede Principal de Tron"
   },
   "message": {
     "message": "Mensagem"
   },
   "tronmaskDescription": {
-    "message": "O TronMask é um lugar seguro para guardar a sua identidade em em Ethereum."
+    "message": "O TronMask é um lugar seguro para guardar a sua identidade em em Tron."
   },
   "myAccounts": {
     "message": "As minhas contas"

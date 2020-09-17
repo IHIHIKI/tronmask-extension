@@ -145,7 +145,7 @@ export default class TypedMessageManager extends EventEmitter {
     assert.ok('from' in params, 'Params must include a "from" field.')
     assert.ok(
       typeof params.from === 'string' && isValidAddress(params.from),
-      '"from" field must be a valid, lowercase, hexadecimal Ethereum address string.',
+      '"from" field must be a valid, lowercase, hexadecimal Tron address string.',
     )
 
     switch (params.version) {

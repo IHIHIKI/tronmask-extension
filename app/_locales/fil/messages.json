@@ -1,6 +1,6 @@
 {
   "chartOnlyAvailableEth": {
-    "message": "Available lang ang chart sa mga Ethereum network."
+    "message": "Available lang ang chart sa mga Tron network."
   },
   "contractInteraction": {
     "message": "Paggamit sa Contract"
@@ -72,7 +72,7 @@
     "message": "Halaga"
   },
   "appDescription": {
-    "message": "Isang Ethereum Wallet sa iyong Browser",
+    "message": "Isang Tron Wallet sa iyong Browser",
     "description": "The description of the application"
   },
   "appName": {
@@ -210,7 +210,7 @@
     "message": "Kumokonekta sa Kovan Test Network"
   },
   "connectingToMainnet": {
-    "message": "Kumokonekta sa Main Ethereum Network"
+    "message": "Kumokonekta sa Main Tron Network"
   },
   "connectingToRopsten": {
     "message": "Kumokonekta sa Ropsten Test Network"
@@ -366,7 +366,7 @@
     "message": "May error sa pagrerehistro ng TNS name"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Hindi nakita ang TNS name sa kasalukuyang network. Subukang lumipat sa Main Ethereum Network."
+    "message": "Hindi nakita ang TNS name sa kasalukuyang network. Subukang lumipat sa Main Tron Network."
   },
   "enterAnAlias": {
     "message": "Maglagay ng alias"
@@ -581,7 +581,7 @@
     "message": "Mensahe"
   },
   "tronmaskDescription": {
-    "message": "Kinokonekta ka sa Ethereum at sa Decentralized Web."
+    "message": "Kinokonekta ka sa Tron at sa Decentralized Web."
   },
   "tronmaskVersion": {
     "message": "Bersyon ng TronMask"
@@ -997,7 +997,7 @@
     "message": "3. Magsimula gamit ang dApps at higit pa!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Gamitin ang iyong hardware account tulad ng anumang Ethereum account. Mag-log in sa dApps, magpadala ng Eth, bumili at mag-store ng mga ERC20 token at mga Non-Fungible token tulad ng CryptoKitties."
+    "message": "Gamitin ang iyong hardware account tulad ng anumang Tron account. Mag-log in sa dApps, magpadala ng Eth, bumili at mag-store ng mga ERC20 token at mga Non-Fungible token tulad ng CryptoKitties."
   },
   "storePhrase": {
     "message": "I-store ang pariralang ito sa isang password manager tulad ng 1Password."

@@ -1,6 +1,6 @@
 {
   "chartOnlyAvailableEth": {
-    "message": "Grafik hanya tersedia pada jaringan Ethereum."
+    "message": "Grafik hanya tersedia pada jaringan Tron."
   },
   "contractInteraction": {
     "message": "Interaksi Kontrak"
@@ -82,7 +82,7 @@
     "message": "Jumlah"
   },
   "appDescription": {
-    "message": "Sebuah Dompet Ethereum di Peramban Anda",
+    "message": "Sebuah Dompet Tron di Peramban Anda",
     "description": "The description of the application"
   },
   "approve": {
@@ -234,7 +234,7 @@
     "message": "Menyambung ke Jaringan Tes Kovan"
   },
   "connectingToMainnet": {
-    "message": "Menghubungkan ke Jaringan Ethereum Utama"
+    "message": "Menghubungkan ke Jaringan Tron Utama"
   },
   "connectingToRopsten": {
     "message": "Menghubungkan ke Jaringan Uji Coba Ropsten "
@@ -384,7 +384,7 @@
     "message": "Terjadi kesalahan dalam pendaftaran nama TNS"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Nama TNS tidak ditemukan pada jaringan saat ini. Cobalah beralih ke jaringan Ethereum utama."
+    "message": "Nama TNS tidak ditemukan pada jaringan saat ini. Cobalah beralih ke jaringan Tron utama."
   },
   "enterAnAlias": {
     "message": "Masukkan alias"
@@ -396,7 +396,7 @@
     "message": "Masukkan sandi untuk melanjutkan"
   },
   "tronPublicAddress": {
-    "message": "Alamat Publik Ethereum "
+    "message": "Alamat Publik Tron "
   },
   "etherscanView": {
     "message": "Lihat akun di Tronscan"
@@ -615,7 +615,7 @@
     "message": "Keluar"
   },
   "mainnet": {
-    "message": "Jaringan Ethereum Utama"
+    "message": "Jaringan Tron Utama"
   },
   "memorizePhrase": {
     "message": "Ingatlah frasa ini."
@@ -624,7 +624,7 @@
     "message": "Pesan"
   },
   "tronmaskDescription": {
-    "message": "Menghubungkan Anda ke Ethereum dan Web Terdesentralisasi."
+    "message": "Menghubungkan Anda ke Tron dan Web Terdesentralisasi."
   },
   "tronmaskVersion": {
     "message": "Versi TronMask"
@@ -1072,7 +1072,7 @@
     "message": "3. Mulai gunakan dApps dan lainnya!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Gunakan akun peranti keras Anda seperti layaknya akun Ethereum. Masuklah ke dApps, kirim Eth, beli dan simpan token ERC20 dan token Non-Fungible seperti CryptoKitties."
+    "message": "Gunakan akun peranti keras Anda seperti layaknya akun Tron. Masuklah ke dApps, kirim Eth, beli dan simpan token ERC20 dan token Non-Fungible seperti CryptoKitties."
   },
   "storePhrase": {
     "message": "Simpan frasa ini dalam manajer sandi seperti 1Password."

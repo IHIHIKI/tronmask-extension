@@ -21,7 +21,7 @@
     "message": "Tutar"
   },
   "appDescription": {
-    "message": "Ethereum Tarayıcı Uzantısı",
+    "message": "Tron Tarayıcı Uzantısı",
     "description": "The description of the application"
   },
   "appName": {
@@ -77,7 +77,7 @@
     "message": "Kovan Test Ağına bağlanıyor"
   },
   "connectingToMainnet": {
-    "message": "Main Ethereum Ağına bağlanıyor"
+    "message": "Main Tron Ağına bağlanıyor"
   },
   "connectingToRopsten": {
     "message": "Ropsten Test Ağına bağlanıyor"
@@ -270,13 +270,13 @@
     "message": "Çıkış"
   },
   "mainnet": {
-    "message": "Main Ethereum Ağı"
+    "message": "Main Tron Ağı"
   },
   "message": {
     "message": "Mesaj"
   },
   "tronmaskDescription": {
-    "message": "TronMask Ethereum için güvenli bir kimlik kasasıdır."
+    "message": "TronMask Tron için güvenli bir kimlik kasasıdır."
   },
   "myAccounts": {
     "message": "Hesaplarım"

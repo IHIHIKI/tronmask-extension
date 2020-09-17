@@ -1028,7 +1028,7 @@ export default class TronmaskController extends EventEmitter {
   /**
    * Imports an account with the specified import strategy.
    * These are defined in app/scripts/account-import-strategies
-   * Each strategy represents a different way of serializing an Ethereum key pair.
+   * Each strategy represents a different way of serializing an Tron key pair.
    *
    * @param  {string} strategy - A unique identifier for an account import strategy.
    * @param  {any} args - The data required by that strategy to import an account.
@@ -1880,7 +1880,7 @@ export default class TronmaskController extends EventEmitter {
   // network
   /**
    * A method for selecting a custom URL for an tron RPC provider and updating it
-   * @param {string} rpcUrl - A URL for a valid Ethereum RPC API.
+   * @param {string} rpcUrl - A URL for a valid Tron RPC API.
    * @param {string} chainId - The chainId of the selected network.
    * @param {string} ticker - The ticker symbol of the selected network.
    * @param {string} nickname - Optional nickname of the selected network.
@@ -1895,7 +1895,7 @@ export default class TronmaskController extends EventEmitter {
 
   /**
    * A method for selecting a custom URL for an tron RPC provider.
-   * @param {string} rpcTarget - A URL for a valid Ethereum RPC API.
+   * @param {string} rpcTarget - A URL for a valid Tron RPC API.
    * @param {string} chainId - The chainId of the selected network.
    * @param {string} ticker - The ticker symbol of the selected network.
    * @param {string} nickname - Optional nickname of the selected network.

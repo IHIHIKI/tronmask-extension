@@ -8,7 +8,7 @@ import {
   decGSUNToHexSUN,
 } from '../../helpers/utils/conversions.util'
 import {
-  isEthereumNetwork,
+  isTronNetwork,
 } from '../../selectors'
 
 // Actions
@@ -379,7 +379,7 @@ export function fetchGasEstimates (blockTime) {
   return (dispatch, getState) => {
     const state = getState()
 
-    if (!isEthereumNetwork(state)) {
+    if (!isTronNetwork(state)) {
       return Promise.resolve(null)
     }
 

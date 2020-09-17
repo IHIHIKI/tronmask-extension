@@ -1,6 +1,6 @@
 {
   "chartOnlyAvailableEth": {
-    "message": "Diagramos yra tik „Ethereum“ tinkluose."
+    "message": "Diagramos yra tik „Tron“ tinkluose."
   },
   "contractInteraction": {
     "message": "Sutartinė sąveika"
@@ -78,7 +78,7 @@
     "message": "Suma"
   },
   "appDescription": {
-    "message": "„Ethereum“ piniginė jūsų naršyklėje",
+    "message": "„Tron“ piniginė jūsų naršyklėje",
     "description": "The description of the application"
   },
   "appName": {
@@ -234,7 +234,7 @@
     "message": "Jungiamasi prie „Kovan“ bandomojo tinklo"
   },
   "connectingToMainnet": {
-    "message": "Jungiamasi prie pagrindinio „Ethereum“ tinklo"
+    "message": "Jungiamasi prie pagrindinio „Tron“ tinklo"
   },
   "connectingToRopsten": {
     "message": "Jungiamasi prie „Ropsten“ bandomojo tinklo"
@@ -393,7 +393,7 @@
     "message": "TNS pavadinimo registracijos klaida"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "TNS pavadinimas dabartiniame tinkle nerastas. Mėginkite perjungti į pagrindinį „Ethereum“ tinklą."
+    "message": "TNS pavadinimas dabartiniame tinkle nerastas. Mėginkite perjungti į pagrindinį „Tron“ tinklą."
   },
   "enterAnAlias": {
     "message": "Įveskite alternatyvųjį vardą"
@@ -405,7 +405,7 @@
     "message": "Norėdami tęsti, įveskite slaptažodį"
   },
   "tronPublicAddress": {
-    "message": "„Ethereum“ viešasis adresas"
+    "message": "„Tron“ viešasis adresas"
   },
   "etherscanView": {
     "message": "Peržiūrėti paskyrą „Tronscan“ programoje"
@@ -631,7 +631,7 @@
     "message": "Atsijungti"
   },
   "mainnet": {
-    "message": "Pagrindinis „Ethereum“ tinklas"
+    "message": "Pagrindinis „Tron“ tinklas"
   },
   "memorizePhrase": {
     "message": "Įsiminti šią frazę."
@@ -643,7 +643,7 @@
     "message": "Pranešimas"
   },
   "tronmaskDescription": {
-    "message": "Prijungiame jus prie „Ethereum“ ir decentralizuotojo žiniatinklio."
+    "message": "Prijungiame jus prie „Tron“ ir decentralizuotojo žiniatinklio."
   },
   "tronmaskVersion": {
     "message": "„TronMask“ versija"
@@ -1091,7 +1091,7 @@
     "message": "3. Pradėkite naudoti decentralizuotas programas ir daugiau!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Naudokitės savo aparatinės įrangos paskyra kaip „Ethereum“ paskyra. Junkitės prie decentralizuotų programų, siųskite eterius, pirkite ir laikykite ERC20 žetonus ir nekeičiamus žetonus, tokius kaip „CryptoKitties“."
+    "message": "Naudokitės savo aparatinės įrangos paskyra kaip „Tron“ paskyra. Junkitės prie decentralizuotų programų, siųskite eterius, pirkite ir laikykite ERC20 žetonus ir nekeičiamus žetonus, tokius kaip „CryptoKitties“."
   },
   "storePhrase": {
     "message": "Laikykite šią frazę slaptažodžių tvarkyklėje kaip 1 slaptažodį."

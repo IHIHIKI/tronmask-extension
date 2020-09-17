@@ -1,6 +1,6 @@
 {
   "chartOnlyAvailableEth": {
-    "message": "A diagram csak Ethereum hálózatokon érhető el"
+    "message": "A diagram csak Tron hálózatokon érhető el"
   },
   "contractInteraction": {
     "message": "Szerződéses interakció"
@@ -82,7 +82,7 @@
     "message": "Összeg"
   },
   "appDescription": {
-    "message": "Ethereum tárca a böngészőjében",
+    "message": "Tron tárca a böngészőjében",
     "description": "The description of the application"
   },
   "approve": {
@@ -234,7 +234,7 @@
     "message": "Csatlakozás a Kovan teszthálózathoz"
   },
   "connectingToMainnet": {
-    "message": "Csatlakozás a fő Ethereum hálózathoz"
+    "message": "Csatlakozás a fő Tron hálózathoz"
   },
   "connectingToRopsten": {
     "message": "Csatlakozás a Ropsten teszthálózathoz"
@@ -393,7 +393,7 @@
     "message": "Hiba történt az TNS név regisztrációjakor"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "TNS név nem található a jelenlegi hálózaton. Próbálj váltani Ethereum főhálózatra."
+    "message": "TNS név nem található a jelenlegi hálózaton. Próbálj váltani Tron főhálózatra."
   },
   "enterAnAlias": {
     "message": "Adjon meg álnevet"
@@ -405,7 +405,7 @@
     "message": "A folytatáshoz adja meg a jelszót"
   },
   "tronPublicAddress": {
-    "message": "Ethereum nyilvános címe"
+    "message": "Tron nyilvános címe"
   },
   "etherscanView": {
     "message": "Fiók megtekintése Tronscanen"
@@ -624,7 +624,7 @@
     "message": "Kilépés"
   },
   "mainnet": {
-    "message": "Fő Ethereum hálózat"
+    "message": "Fő Tron hálózat"
   },
   "memorizePhrase": {
     "message": "Jegyezze meg ezt a szakaszt."
@@ -636,7 +636,7 @@
     "message": "Üzenet"
   },
   "tronmaskDescription": {
-    "message": "Csatlakozás az Ethereumhoz és a decentralizált hálózathoz."
+    "message": "Csatlakozás az Tronhoz és a decentralizált hálózathoz."
   },
   "tronmaskVersion": {
     "message": "TronMask verzió"
@@ -1084,7 +1084,7 @@
     "message": "3. Kezdje el használni a dApps-t és másokat!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Használja hardveres fiókját úgy, mint bármilyen Ethereum fiókot. Jelentkezzen be a dAppsba, küldjön Ethet, vásároljon és tároljon ERC20 tokeneket és nem helyettesíthető tokeneket, például CryptoKitties-t."
+    "message": "Használja hardveres fiókját úgy, mint bármilyen Tron fiókot. Jelentkezzen be a dAppsba, küldjön Ethet, vásároljon és tároljon ERC20 tokeneket és nem helyettesíthető tokeneket, például CryptoKitties-t."
   },
   "storePhrase": {
     "message": "Tárolja a mondatot jelszókezelőben, például az 1Passwordben."

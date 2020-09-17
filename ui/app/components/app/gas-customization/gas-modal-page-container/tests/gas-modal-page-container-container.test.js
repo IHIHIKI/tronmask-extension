@@ -155,7 +155,7 @@ describe('gas-modal-page-container container', function () {
         isSpeedUp: false,
         isRetry: false,
         txId: 34,
-        isEthereumNetwork: true,
+        isTronNetwork: true,
         isMainnet: true,
         maxModeOn: false,
         sendToken: null,

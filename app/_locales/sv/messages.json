@@ -1,6 +1,6 @@
 {
   "chartOnlyAvailableEth": {
-    "message": "Tabellen är endast tillgänglig på Ethereum-nätverk."
+    "message": "Tabellen är endast tillgänglig på Tron-nätverk."
   },
   "contractInteraction": {
     "message": "Kontraktinteraktion"
@@ -82,7 +82,7 @@
     "message": "Belopp"
   },
   "appDescription": {
-    "message": "En Ethereum-plånbok i din webbläsare",
+    "message": "En Tron-plånbok i din webbläsare",
     "description": "The description of the application"
   },
   "approve": {
@@ -228,7 +228,7 @@
     "message": "Ansluter till Kovans testnätverk"
   },
   "connectingToMainnet": {
-    "message": "Koppla till Ethereums huvudnätverk"
+    "message": "Koppla till Trons huvudnätverk"
   },
   "connectingToRopsten": {
     "message": "Ansluter till Ropsten Test Network"
@@ -387,7 +387,7 @@
     "message": "Fel i TNS-namnregistrering"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "TNS-namnet hittades inte i det aktuella nätverket. Prova att byta till Main Ethereum Network."
+    "message": "TNS-namnet hittades inte i det aktuella nätverket. Prova att byta till Main Tron Network."
   },
   "enterAnAlias": {
     "message": "Ange ett alias"
@@ -399,7 +399,7 @@
     "message": "Ange lösenord för att fortsätta"
   },
   "tronPublicAddress": {
-    "message": "Ethereum offentlig adress"
+    "message": "Tron offentlig adress"
   },
   "etherscanView": {
     "message": "Visa konto på Tronscan"
@@ -618,7 +618,7 @@
     "message": "Logga ut"
   },
   "mainnet": {
-    "message": "Ethereums huvudnätverk"
+    "message": "Trons huvudnätverk"
   },
   "memorizePhrase": {
     "message": "Memorera denna fras."
@@ -627,7 +627,7 @@
     "message": "Meddelande"
   },
   "tronmaskDescription": {
-    "message": "Ansluter dig mot Ethereum och den decentraliserade webben."
+    "message": "Ansluter dig mot Tron och den decentraliserade webben."
   },
   "tronmaskVersion": {
     "message": "TronMask-version"
@@ -1075,7 +1075,7 @@
     "message": "3. Börja använda dApps och mer!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Använd ditt hårdvarukonto som du skulle använda andra Ethereum-konton. Logga in i dAppar, skicka ETH, köp och förvara ERC20-tokens och Non-Fungible tokens som CryptoKitties."
+    "message": "Använd ditt hårdvarukonto som du skulle använda andra Tron-konton. Logga in i dAppar, skicka ETH, köp och förvara ERC20-tokens och Non-Fungible tokens som CryptoKitties."
   },
   "storePhrase": {
     "message": "Lagra denna fras i en lösenordshanterare såsom 1Password."

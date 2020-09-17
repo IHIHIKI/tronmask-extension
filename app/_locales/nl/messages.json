@@ -18,7 +18,7 @@
     "message": "Bedrag"
   },
   "appDescription": {
-    "message": "Ethereum Browser-extensie",
+    "message": "Tron Browser-extensie",
     "description": "The description of the application"
   },
   "appName": {
@@ -234,7 +234,7 @@
     "message": "Bericht"
   },
   "tronmaskDescription": {
-    "message": "TronMask is een veilige identiteitskluis voor Ethereum."
+    "message": "TronMask is een veilige identiteitskluis voor Tron."
   },
   "myAccounts": {
     "message": "Mijn accounts"

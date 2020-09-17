@@ -1,6 +1,6 @@
 {
   "chartOnlyAvailableEth": {
-    "message": "Die Grafik ist nur in Ethereum-Netzwerken verfügbar."
+    "message": "Die Grafik ist nur in Tron-Netzwerken verfügbar."
   },
   "contractInteraction": {
     "message": "Vertragsinteraktion"
@@ -75,7 +75,7 @@
     "message": "Betrag"
   },
   "appDescription": {
-    "message": "Ethereum Browsererweiterung",
+    "message": "Tron Browsererweiterung",
     "description": "The description of the application"
   },
   "appName": {
@@ -222,7 +222,7 @@
     "message": " Verbinde zum Kovan Testnetzwerk"
   },
   "connectingToMainnet": {
-    "message": "Verbinde zum Ethereum Main Net"
+    "message": "Verbinde zum Tron Main Net"
   },
   "connectingToRopsten": {
     "message": " Verbinde zum Ropsten Testnetzwerk"
@@ -378,7 +378,7 @@
     "message": "Fehler bei der TNS-Namensregistrierung"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "TNS-Name wurde im aktuellen Netzwerk nicht gefunden. Versuchen Sie, zum Main Ethereum Network zu wechseln."
+    "message": "TNS-Name wurde im aktuellen Netzwerk nicht gefunden. Versuchen Sie, zum Main Tron Network zu wechseln."
   },
   "enterAnAlias": {
     "message": "Ein Alias eingeben"
@@ -390,7 +390,7 @@
     "message": "Zum Fortfahren Passwort eingeben"
   },
   "tronPublicAddress": {
-    "message": "Öffentliche Ethereum-Adresse"
+    "message": "Öffentliche Tron-Adresse"
   },
   "etherscanView": {
     "message": "Account auf Tronscan anschauen"
@@ -607,7 +607,7 @@
     "message": "Ausloggen"
   },
   "mainnet": {
-    "message": "Ethereum Main Net"
+    "message": "Tron Main Net"
   },
   "memorizePhrase": {
     "message": "Prägen Sie sich diese Phrase ein."
@@ -619,7 +619,7 @@
     "message": "Nachricht"
   },
   "tronmaskDescription": {
-    "message": "TronMask ist ein sicherer Identitätssafe für Ethereum."
+    "message": "TronMask ist ein sicherer Identitätssafe für Tron."
   },
   "tronmaskVersion": {
     "message": "TronMask-Version"
@@ -1057,7 +1057,7 @@
     "message": "3. Erste Schritte mit dApps und mehr!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Verwenden Sie Ihr Hardware-Konto so wie jedes Ethereum-Konto. Loggen Sie sich bei dApps ein, senden Sie Eth, kaufen und speichern Sie ERC20-Token und Nicht-Fungible-Token wie CryptoKitties."
+    "message": "Verwenden Sie Ihr Hardware-Konto so wie jedes Tron-Konto. Loggen Sie sich bei dApps ein, senden Sie Eth, kaufen und speichern Sie ERC20-Token und Nicht-Fungible-Token wie CryptoKitties."
   },
   "storePhrase": {
     "message": "Speichern Sie diesen Schlüssel in einem Passwortmanager wie 1Password."

@@ -144,7 +144,7 @@ export default class QrScanner extends Component {
     // To parse other type of links
     // For ex. EIP-681 (https://eips.tron.org/EIPS/eip-681)
 
-    // Ethereum address links - fox ex. tron:0x.....1111
+    // Tron address links - fox ex. tron:0x.....1111
     if (content.split('tron:').length > 1) {
 
       type = 'address'

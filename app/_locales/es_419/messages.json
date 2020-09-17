@@ -1,6 +1,6 @@
 {
   "chartOnlyAvailableEth": {
-    "message": "Chart está disponible únicamente en las redes de Ethereum."
+    "message": "Chart está disponible únicamente en las redes de Tron."
   },
   "contractInteraction": {
     "message": "Interacción contractual"
@@ -78,7 +78,7 @@
     "message": "Monto"
   },
   "appDescription": {
-    "message": "Una billetera de Ethereum en tu navegador",
+    "message": "Una billetera de Tron en tu navegador",
     "description": "The description of the application"
   },
   "appName": {
@@ -231,7 +231,7 @@
     "message": "Conexión con la red de prueba Kovan"
   },
   "connectingToMainnet": {
-    "message": "Conexión con la red principal de Ethereum"
+    "message": "Conexión con la red principal de Tron"
   },
   "connectingToRopsten": {
     "message": "Conexión con la red de prueba Ropsten"
@@ -390,7 +390,7 @@
     "message": "Error en el registro de nombres de TNS"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "No se pudo encontrar el nombre de TNS en la red actual. Intenta cambiar a la red principal de Ethereum."
+    "message": "No se pudo encontrar el nombre de TNS en la red actual. Intenta cambiar a la red principal de Tron."
   },
   "enterAnAlias": {
     "message": "Ingresa un alias"
@@ -402,7 +402,7 @@
     "message": "Ingresa tu contraseña para continuar"
   },
   "tronPublicAddress": {
-    "message": "Dirección pública de Ethereum"
+    "message": "Dirección pública de Tron"
   },
   "etherscanView": {
     "message": "Ver cuenta en Tronscan"
@@ -619,7 +619,7 @@
     "message": "Cerrar sesión"
   },
   "mainnet": {
-    "message": "Red principal de Ethereum"
+    "message": "Red principal de Tron"
   },
   "memorizePhrase": {
     "message": "Memoriza esta frase."
@@ -628,7 +628,7 @@
     "message": "Mensaje"
   },
   "tronmaskDescription": {
-    "message": "Te estamos conectando a Ethereum y a la web descentralizada."
+    "message": "Te estamos conectando a Tron y a la web descentralizada."
   },
   "tronmaskVersion": {
     "message": "Versión de TronMask"
@@ -1076,7 +1076,7 @@
     "message": "3. ¡Comienza a utilizar dApps y más!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Utiliza tu cuenta de hardware como si fuera una cuenta de Ethereum. Inicia sesión en dApps, envía ETH, compra y almacena tokens ERC20 y tokens no fungibles como CryptoKitties."
+    "message": "Utiliza tu cuenta de hardware como si fuera una cuenta de Tron. Inicia sesión en dApps, envía ETH, compra y almacena tokens ERC20 y tokens no fungibles como CryptoKitties."
   },
   "storePhrase": {
     "message": "Almacena esta frase en un administrador de contraseñas como 1Password."

@@ -71,7 +71,7 @@
     "message": "Usa Tronscan per visualizzare le transazioni in ingresso nella lista delle transazioni"
   },
   "chartOnlyAvailableEth": {
-    "message": "Grafico disponibile solo per le reti Ethereum."
+    "message": "Grafico disponibile solo per le reti Tron."
   },
   "connecting": {
     "message": "Connessione..."
@@ -214,7 +214,7 @@
     "message": "Importo:"
   },
   "appDescription": {
-    "message": "Ethereum Browser Extension",
+    "message": "Tron Browser Extension",
     "description": "The description of the application"
   },
   "appName": {
@@ -385,7 +385,7 @@
     "message": "Connessione alla Rete di test Kovan"
   },
   "connectingToMainnet": {
-    "message": "Connessione alla Rete Ethereum Principale"
+    "message": "Connessione alla Rete Tron Principale"
   },
   "connectingToRopsten": {
     "message": "Connessione alla Rete di test Ropsten"
@@ -478,7 +478,7 @@
     "message": "Precisione Decimali"
   },
   "defaultNetwork": {
-    "message": "La rete predefinita per transazioni in Ether è la Rete Ethereum Principale."
+    "message": "La rete predefinita per transazioni in Ether è la Rete Tron Principale."
   },
   "delete": {
     "message": "Elimina"
@@ -572,7 +572,7 @@
     "message": "Errore nella registrazione del nome TNS"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Nome TNS non trovato sulla rete attuale. Prova a passare alla rete principale di Ethereum."
+    "message": "Nome TNS non trovato sulla rete attuale. Prova a passare alla rete principale di Tron."
   },
   "enterAnAlias": {
     "message": "Inserisci un alias"
@@ -619,7 +619,7 @@
     "description": "Title for error stack, which is displayed for debugging purposes"
   },
   "tronPublicAddress": {
-    "message": "Indirizzo pubblico Ethereum "
+    "message": "Indirizzo pubblico Tron "
   },
   "etherscanView": {
     "message": "Vedi account su Tronscan"
@@ -894,7 +894,7 @@
     "message": "Tempo di inattività troppo lungo"
   },
   "mainnet": {
-    "message": "Rete Ethereum Principale"
+    "message": "Rete Tron Principale"
   },
   "memorizePhrase": {
     "message": "Memorizza questa frase."
@@ -915,7 +915,7 @@
     "message": "Clicca per gestire i tuo account connessi."
   },
   "tronmaskDescription": {
-    "message": "TronMask è una cassaforte sicura per identità su Ethereum."
+    "message": "TronMask è una cassaforte sicura per identità su Tron."
   },
   "tronmaskVersion": {
     "message": "versione di TronMask"
@@ -1001,7 +1001,7 @@
     "message": "Connettiti solo con siti di cui ti fidi."
   },
   "onlyAddTrustedNetworks": {
-    "message": "Una rete Ethereum malevola può mentire sullo stato della blockchain e registrare le tue azioni. Aggiungi solo reti fidate."
+    "message": "Una rete Tron malevola può mentire sullo stato della blockchain e registrare le tue azioni. Aggiungi solo reti fidate."
   },
   "optionalChainId": {
     "message": "ChainID (opzionale)"
@@ -1455,7 +1455,7 @@
     "message": "3. Inizia a usare dApps e molto altro ancora!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Usa il tuo account hardware come utilizzeresti qualsiasi account Ethereum. Accedi alle dApps, invia Eth, compra e conserva token ERC20 e token non fungibili come CryptoKitties"
+    "message": "Usa il tuo account hardware come utilizzeresti qualsiasi account Tron. Accedi alle dApps, invia Eth, compra e conserva token ERC20 e token non fungibili come CryptoKitties"
   },
   "storePhrase": {
     "message": "Conserva questa frase in un gestore di password come 1Password."
@@ -1588,7 +1588,7 @@
     "message": "Tempo Conferma Transazione"
   },
   "showTransactionTimeDescription": {
-    "message": "Seleziona per mostrare nella scheda attività una stima dei tempi di transazione per le transazioni in corso sulla rete Ethereum principale. Nota: la stima è approssimativa basata sulle condizioni della rete."
+    "message": "Seleziona per mostrare nella scheda attività una stima dei tempi di transazione per le transazioni in corso sulla rete Tron principale. Nota: la stima è approssimativa basata sulle condizioni della rete."
   },
   "transfer": {
     "message": "Trasferisci"
@@ -1662,7 +1662,7 @@
     "message": "Rilevamento del Phishing"
   },
   "usePhishingDetectionDescription": {
-    "message": "Visualizza un avvertimento sui domini di phishing rivolto a utenti di Ethereum"
+    "message": "Visualizza un avvertimento sui domini di phishing rivolto a utenti di Tron"
   },
   "userName": {
     "message": "Nome utente"

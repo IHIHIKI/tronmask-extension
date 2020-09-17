@@ -25,7 +25,7 @@ export default class AdvancedTabContent extends Component {
     insufficientBalance: PropTypes.bool,
     customPriceIsSafe: PropTypes.bool,
     isSpeedUp: PropTypes.bool,
-    isEthereumNetwork: PropTypes.bool,
+    isTronNetwork: PropTypes.bool,
   }
 
   renderDataSummary (transactionFee, timeRemaining) {
@@ -64,7 +64,7 @@ export default class AdvancedTabContent extends Component {
       customPriceIsSafe,
       isSpeedUp,
       transactionFee,
-      isEthereumNetwork,
+      isTronNetwork,
     } = this.props
 
     return (
@@ -82,7 +82,7 @@ export default class AdvancedTabContent extends Component {
               isSpeedUp={isSpeedUp}
             />
           </div>
-          { isEthereumNetwork
+          { isTronNetwork
             ? (
               <div>
                 <div className="advanced-tab__fee-chart__title">{ t('liveGasPricePredictions') }</div>

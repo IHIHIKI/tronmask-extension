@@ -231,7 +231,7 @@
     "message": "連線到 Kovan 測試網路"
   },
   "connectingToMainnet": {
-    "message": "連線到主 Ethereum 網路"
+    "message": "連線到主 Tron 網路"
   },
   "connectingToRopsten": {
     "message": "連線到 Ropsten 測試網路"

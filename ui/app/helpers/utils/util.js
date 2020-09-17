@@ -281,7 +281,7 @@ export function checksumAddress (address) {
 }
 
 /**
- * Shortens an Ethereum address for display, preserving the beginning and end.
+ * Shortens an Tron address for display, preserving the beginning and end.
  * Returns the given address if it is no longer than 10 characters.
  * Shortened addresses are 13 characters long.
  *

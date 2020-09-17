@@ -1,6 +1,6 @@
 {
   "chartOnlyAvailableEth": {
-    "message": "Graf je k dispozícii iba v sieťach Ethereum."
+    "message": "Graf je k dispozícii iba v sieťach Tron."
   },
   "contractInteraction": {
     "message": "Zmluvná interakcia"
@@ -78,7 +78,7 @@
     "message": "Částka"
   },
   "appDescription": {
-    "message": "Ethereum rozšíření prohlížeče",
+    "message": "Tron rozšíření prohlížeče",
     "description": "The description of the application"
   },
   "appName": {
@@ -225,7 +225,7 @@
     "message": "Připojuji se k Kovan Test Network"
   },
   "connectingToMainnet": {
-    "message": "Připojuji se k Main Ethereum Network"
+    "message": "Připojuji se k Main Tron Network"
   },
   "connectingToRopsten": {
     "message": "Připojuji se k Ropsten Test Network"
@@ -384,7 +384,7 @@
     "message": "Chyba pri registrácii názvu TNS"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Názov TNS sa nenašiel v aktuálnej sieti. Skúste sa prepnúť na hlavnú sieť Ethereum."
+    "message": "Názov TNS sa nenašiel v aktuálnej sieti. Skúste sa prepnúť na hlavnú sieť Tron."
   },
   "enterAnAlias": {
     "message": "Zadať alias"
@@ -396,7 +396,7 @@
     "message": "Pokračujte zadaním hesla"
   },
   "tronPublicAddress": {
-    "message": "Verejná adresa Ethereum"
+    "message": "Verejná adresa Tron"
   },
   "etherscanView": {
     "message": "Prohlédněte si účet na Tronscan"
@@ -612,7 +612,7 @@
     "message": "Zpráva"
   },
   "tronmaskDescription": {
-    "message": "TronMask je bezpečný osobní trezor pro Ethereum."
+    "message": "TronMask je bezpečný osobní trezor pro Tron."
   },
   "tronmaskVersion": {
     "message": "Verzia TronMask"
@@ -1054,7 +1054,7 @@
     "message": "3. Začať používať dApps a ďalšie!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Použite svoj hardvérový účet, ako keby ste použili akýkoľvek účet Ethereum. Prihláste sa do Dapps, pošlite Eth, nakupujte a ukladajte tokeny ERC20 a nezameniteľné tokeny ako CryptoKitties."
+    "message": "Použite svoj hardvérový účet, ako keby ste použili akýkoľvek účet Tron. Prihláste sa do Dapps, pošlite Eth, nakupujte a ukladajte tokeny ERC20 a nezameniteľné tokeny ako CryptoKitties."
   },
   "storePhrase": {
     "message": "Túto frázu uložte do správcu hesiel ako 1Password."
