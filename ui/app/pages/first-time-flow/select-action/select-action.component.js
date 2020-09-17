@@ -4,6 +4,9 @@ import Button from '../../../components/ui/button'
 import MetaFoxLogo from '../../../components/ui/metafox-logo'
 import {
   INITIALIZE_METAMETRICS_OPT_IN_ROUTE,
+  INITIALIZE_CREATE_PASSWORD_ROUTE,
+  INITIALIZE_IMPORT_WITH_SEED_PHRASE_ROUTE,
+
 } from '../../../helpers/constants/routes'
 
 export default class SelectAction extends PureComponent {
@@ -28,13 +31,15 @@ export default class SelectAction extends PureComponent {
 
   handleCreate = () => {
     this.props.setFirstTimeFlowType('create')
-    this.props.history.push(this.props.nextRoute)
+    this.props.history.push(INITIALIZE_CREATE_PASSWORD_ROUTE)
+    // this.props.history.push(this.props.nextRoute)
     // this.props.history.push(INITIALIZE_METAMETRICS_OPT_IN_ROUTE)
   }
 
   handleImport = () => {
     this.props.setFirstTimeFlowType('import')
-    this.props.history.push(this.props.nextRoute)
+    this.props.history.push(INITIALIZE_IMPORT_WITH_SEED_PHRASE_ROUTE)
+    // this.props.history.push(this.props.nextRoute)
     // this.props.history.push(INITIALIZE_METAMETRICS_OPT_IN_ROUTE)
   }
 
