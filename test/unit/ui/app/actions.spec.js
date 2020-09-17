@@ -233,7 +233,7 @@ describe('Actions', function () {
       const expectedActions = [
         'SHOW_LOADING_INDICATION',
         'SELECTED_ADDRESS_CHANGED',
-        'UPDATE_METAMASK_STATE',
+        'UPDATE_TRONMASK_STATE',
         'HIDE_LOADING_INDICATION',
         'SHOW_ACCOUNTS_PAGE',
       ]
@@ -922,7 +922,7 @@ describe('Actions', function () {
         { type: 'SHOW_LOADING_INDICATION', value: undefined },
         { type: 'DISPLAY_WARNING', value: 'error' },
         { type: 'HIDE_LOADING_INDICATION' },
-        { type: 'LOCK_METAMASK' },
+        { type: 'LOCK_TRONMASK' },
       ]
       backgroundSetLockedSpy = sinon.stub(background, 'setLocked')
       backgroundSetLockedSpy.callsFake((callback) => {

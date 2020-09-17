@@ -6,7 +6,7 @@ import deepFreeze from 'deep-freeze-strict'
 
 if (
   process.env.IN_TEST !== 'true' &&
-  process.env.METAMASK_ENV !== 'test'
+  process.env.TRONMASK_ENV !== 'test'
 ) {
   freeze(global, 'Promise')
 }

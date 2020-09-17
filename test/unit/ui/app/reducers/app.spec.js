@@ -136,7 +136,7 @@ describe('App State', function () {
 
   it('locks Metamask', function () {
     const state = reduceApp(tronmaskState, {
-      type: actions.LOCK_METAMASK,
+      type: actions.LOCK_TRONMASK,
     })
 
     assert.equal(state.warning, null)

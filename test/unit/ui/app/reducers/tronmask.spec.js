@@ -15,7 +15,7 @@ describe('TronMask Reducers', function () {
       selectedAddress: 'test address',
     }
     const lockTronMask = reduceMetamask(unlockTronMaskState, {
-      type: actionConstants.LOCK_METAMASK,
+      type: actionConstants.LOCK_TRONMASK,
     })
 
     assert.equal(lockTronMask.isUnlocked, false)

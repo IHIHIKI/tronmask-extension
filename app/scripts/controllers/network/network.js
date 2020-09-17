@@ -22,13 +22,13 @@ import {
 
 const networks = { networkList: {} }
 
-const env = process.env.METAMASK_ENV
-const { METAMASK_DEBUG } = process.env
+const env = process.env.TRONMASK_ENV
+const { TRONMASK_DEBUG } = process.env
 
 let defaultProviderConfigType
 if (process.env.IN_TEST === 'true') {
   defaultProviderConfigType = LOCALHOST
-} else if (METAMASK_DEBUG || env === 'test') {
+} else if (TRONMASK_DEBUG || env === 'test') {
   defaultProviderConfigType = NILE
 } else {
   defaultProviderConfigType = MAINNET

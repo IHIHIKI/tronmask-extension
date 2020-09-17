@@ -20,7 +20,7 @@ import {
   getUnconnectedAccountAlertShown,
 } from './app/ducks/tronmask/tronmask'
 
-log.setLevel(global.METAMASK_DEBUG ? 'debug' : 'warn')
+log.setLevel(global.TRONMASK_DEBUG ? 'debug' : 'warn')
 
 export default function launchTronmaskUi (opts, cb) {
   const { backgroundConnection } = opts

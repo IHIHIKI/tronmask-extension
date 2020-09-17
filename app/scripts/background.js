@@ -41,14 +41,14 @@ import {
 } from './lib/enums'
 /* eslint-enable import/first */
 
-// METAMASK_TEST_CONFIG is used in e2e tests to set the default network to localhost
-const firstTimeState = { ...rawFirstTimeState, ...global.METAMASK_TEST_CONFIG }
+// TRONMASK_TEST_CONFIG is used in e2e tests to set the default network to localhost
+const firstTimeState = { ...rawFirstTimeState, ...global.TRONMASK_TEST_CONFIG }
 
-log.setDefaultLevel(process.env.METAMASK_DEBUG ? 'debug' : 'warn')
+log.setDefaultLevel(process.env.TRONMASK_DEBUG ? 'debug' : 'warn')
 
 const platform = new ExtensionPlatform()
 const notificationManager = new NotificationManager()
-global.METAMASK_NOTIFIER = notificationManager
+global.TRONMASK_NOTIFIER = notificationManager
 
 // setup sentry error reporting
 const release = platform.getVersion()
@@ -66,7 +66,7 @@ const localStore = inTest
   : new LocalStore()
 let versionedData
 
-if (inTest || process.env.METAMASK_DEBUG) {
+if (inTest || process.env.TRONMASK_DEBUG) {
   global.tronmaskGetState = localStore.get.bind(localStore)
 }
 
@@ -461,7 +461,7 @@ async function openPopup () {
 
 // On first install, open a new tab with TronMask
 extension.runtime.onInstalled.addListener(({ reason }) => {
-  if (reason === 'install' && !(process.env.METAMASK_DEBUG || process.env.IN_TEST)) {
+  if (reason === 'install' && !(process.env.TRONMASK_DEBUG || process.env.IN_TEST)) {
     platform.openExtensionInBrowser()
   }
 })

@@ -51,10 +51,10 @@ export default function reduceTronmask (state = {}, action) {
 
   switch (action.type) {
 
-    case actionConstants.UPDATE_METAMASK_STATE:
+    case actionConstants.UPDATE_TRONMASK_STATE:
       return { ...tronmaskState, ...action.value }
 
-    case actionConstants.LOCK_METAMASK:
+    case actionConstants.LOCK_TRONMASK:
       return {
         ...tronmaskState,
         isUnlocked: false,

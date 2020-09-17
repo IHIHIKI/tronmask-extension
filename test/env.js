@@ -1,1 +1,1 @@
-process.env.METAMASK_ENV = 'test'
+process.env.TRONMASK_ENV = 'test'

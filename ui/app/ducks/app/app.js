@@ -155,7 +155,7 @@ export default function reduceApp (state = {}, action) {
         warning: null,
       }
 
-    case actionConstants.LOCK_METAMASK:
+    case actionConstants.LOCK_TRONMASK:
       return {
         ...appState,
         warning: null,
@@ -348,7 +348,7 @@ export default function reduceApp (state = {}, action) {
         requestAccountTabs: action.value,
       }
 
-    case actionConstants.SET_OPEN_METAMASK_TAB_IDS:
+    case actionConstants.SET_OPEN_TRONMASK_TAB_IDS:
       return {
         ...appState,
         openTronMaskTabs: action.value,

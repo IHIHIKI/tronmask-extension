@@ -3,7 +3,7 @@ import { Dedupe, ExtraErrorData } from '@sentry/integrations'
 
 import extractEthjsErrorMessage from './extractEthjsErrorMessage'
 
-const { METAMASK_DEBUG, METAMASK_ENVIRONMENT } = process.env
+const { TRONMASK_DEBUG, TRONMASK_ENVIRONMENT } = process.env
 const SENTRY_DSN_DEV = 'https://f59f3dd640d2429d9d0e2445a87ea8e1@sentry.io/273496'
 
 // This describes the subset of Redux state attached to errors sent to Sentry
@@ -70,23 +70,23 @@ export const SENTRY_STATE = {
 export default function setupSentry ({ release, getState }) {
   let sentryTarget
 
-  if (METAMASK_DEBUG) {
+  if (TRONMASK_DEBUG) {
     return undefined
-  } else if (METAMASK_ENVIRONMENT === 'production') {
+  } else if (TRONMASK_ENVIRONMENT === 'production') {
     if (!process.env.SENTRY_DSN) {
       throw new Error(`Missing SENTRY_DSN environment variable in production environment`)
     }
-    console.log(`Setting up Sentry Remote Error Reporting for '${METAMASK_ENVIRONMENT}': SENTRY_DSN`)
+    console.log(`Setting up Sentry Remote Error Reporting for '${TRONMASK_ENVIRONMENT}': SENTRY_DSN`)
     sentryTarget = process.env.SENTRY_DSN
   } else {
-    console.log(`Setting up Sentry Remote Error Reporting for '${METAMASK_ENVIRONMENT}': SENTRY_DSN_DEV`)
+    console.log(`Setting up Sentry Remote Error Reporting for '${TRONMASK_ENVIRONMENT}': SENTRY_DSN_DEV`)
     sentryTarget = SENTRY_DSN_DEV
   }
 
   Sentry.init({
     dsn: sentryTarget,
-    debug: METAMASK_DEBUG,
-    environment: METAMASK_ENVIRONMENT,
+    debug: TRONMASK_DEBUG,
+    environment: TRONMASK_ENVIRONMENT,
     integrations: [
       new Dedupe(),
       new ExtraErrorData(),

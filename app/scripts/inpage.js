@@ -42,7 +42,7 @@ import setupTronweb from './lib/setupTronweb'
 
 restoreContextAfterImports()
 
-log.setDefaultLevel(process.env.METAMASK_DEBUG ? 'debug' : 'warn')
+log.setDefaultLevel(process.env.TRONMASK_DEBUG ? 'debug' : 'warn')
 
 //
 // setup plugin communication

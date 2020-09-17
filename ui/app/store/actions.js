@@ -1141,7 +1141,7 @@ export function updateTronmaskState (newState) {
     }
 
     dispatch({
-      type: actionConstants.UPDATE_METAMASK_STATE,
+      type: actionConstants.UPDATE_TRONMASK_STATE,
       value: newState,
     })
   }
@@ -1174,11 +1174,11 @@ export function lockTronmask () {
       .then((newState) => {
         dispatch(updateTronmaskState(newState))
         dispatch(hideLoadingIndication())
-        dispatch({ type: actionConstants.LOCK_METAMASK })
+        dispatch({ type: actionConstants.LOCK_TRONMASK })
       })
       .catch(() => {
         dispatch(hideLoadingIndication())
-        dispatch({ type: actionConstants.LOCK_METAMASK })
+        dispatch({ type: actionConstants.LOCK_TRONMASK })
       })
   }
 }
@@ -2441,7 +2441,7 @@ export function getRequestAccountTabIds () {
 
 export function setOpenTronmaskTabsIDs (openTronMaskTabIDs) {
   return {
-    type: actionConstants.SET_OPEN_METAMASK_TAB_IDS,
+    type: actionConstants.SET_OPEN_TRONMASK_TAB_IDS,
     value: openTronMaskTabIDs,
   }
 }

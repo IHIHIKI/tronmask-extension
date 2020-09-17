@@ -2,7 +2,7 @@
 
 import ethUtil from 'ethereumjs-util'
 
-const inDevelopment = process.env.METAMASK_DEBUG || process.env.IN_TEST
+const inDevelopment = process.env.TRONMASK_DEBUG || process.env.IN_TEST
 
 let projectId = process.env.METAMETRICS_PROJECT_ID
 if (!projectId) {
