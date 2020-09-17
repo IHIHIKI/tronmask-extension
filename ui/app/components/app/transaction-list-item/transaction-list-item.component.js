@@ -51,6 +51,22 @@ export default function TransactionListItem ({ transactionGroup, isEarliestNonce
     senderAddress,
   } = useTransactionDisplayData(transactionGroup)
 
+  if (category === 'sign-tron-transaction') {
+    console.log({
+      title,
+      subtitle,
+      subtitleContainsOrigin,
+      date,
+      category,
+      primaryCurrency,
+      recipientAddress,
+      secondaryCurrency,
+      status,
+      isPending,
+      senderAddress,
+    })
+  }
+
   const timeRemaining = useTransactionTimeRemaining(isPending, isEarliestNonce, submittedTime, gasPrice)
 
   const isSignatureReq = category === TRANSACTION_CATEGORY_SIGNATURE_REQUEST

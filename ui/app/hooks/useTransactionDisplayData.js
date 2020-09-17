@@ -12,11 +12,13 @@ import {
   TOKEN_METHOD_TRANSFER,
   TOKEN_METHOD_TRANSFER_FROM,
   SEND_ETHER_ACTION_KEY,
+  SIGN_TRON_TRANSACTION_ACTION_KEY,
   TRANSACTION_CATEGORY_APPROVAL,
   TRANSACTION_CATEGORY_INTERACTION,
   TRANSACTION_CATEGORY_RECEIVE,
   TRANSACTION_CATEGORY_SEND,
   TRANSACTION_CATEGORY_SIGNATURE_REQUEST,
+  TRANSACTION_CATEGORY_SIGN_TRON_TRANSACTION,
   TOKEN_METHOD_APPROVE,
   PENDING_STATUS_HASH,
   TOKEN_CATEGORY_HASH,
@@ -128,6 +130,17 @@ export function useTransactionDisplayData (transactionGroup) {
     category = TRANSACTION_CATEGORY_SEND
     title = t('sendETH')
     subtitle = t('toAddress', [shortenAddress(recipientAddress)])
+  } else if (transactionCategory === SIGN_TRON_TRANSACTION_ACTION_KEY) {
+    category = TRANSACTION_CATEGORY_SIGN_TRON_TRANSACTION
+    // TODO: get contract type from primaryTransaction.tronTx
+    console.log(primaryTransaction)
+    const { tronTx } = primaryTransaction
+    const contractType = tronTx.raw_data.contract[0].type
+    // @TODO(tron): translacte? e.g. t(contractType)
+    title = contractType
+    prefix = ''
+    // TODO: get contract type from primaryTransaction.tronTx
+    subtitle = t('fromAddress', [shortenAddress(senderAddress)])
   }
 
   const primaryCurrencyPreferences = useUserPreferencedCurrency(PRIMARY)
